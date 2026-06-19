@@ -1,0 +1,345 @@
+/* src/styles/landing.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  padding: var(--space-lg) 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeInUp 0.8s forwards ease-out;
+}
+
+.delay1 { animation-delay: 0.15s; opacity: 0; }
+.delay2 { animation-delay: 0.3s; opacity: 0; }
+.delay3 { animation-delay: 0.45s; opacity: 0; }
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: var(--space-2xl) 0 var(--space-xl) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 850;
+  letter-spacing: -1.5px;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+  line-height: 1.1;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-cs);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.description {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.ctas {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 480px) {
+  .ctas {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+.btnPrimary,
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background-color: var(--color-cs);
+  color: var(--bg-primary);
+  border: 1px solid var(--color-cs);
+  box-shadow: 0 4px 14px 0 var(--shadow-glow);
+}
+
+.btnPrimary:hover {
+  background-color: var(--color-cs);
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 var(--shadow-glow);
+}
+
+.btnSecondary {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btnSecondary:hover {
+  background-color: var(--bg-surface);
+  border-color: var(--text-secondary);
+  transform: translateY(-1px);
+}
+
+/* Stats Section */
+.statsStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  padding: var(--space-xl) var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .statsStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .statsStrip {
+    grid-template-columns: 1fr;
+  }
+}
+
+.statCard {
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: monospace;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+/* Showcase Section */
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.sectionSubtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.showcaseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.showcaseCard {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  transition: all var(--transition-fast);
+}
+
+.showcaseCard:hover {
+  background: var(--bg-surface);
+  border-color: var(--color-cs);
+  transform: translateY(-2px);
+}
+
+.showcaseCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.showcaseTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.showcaseCount {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.showcaseDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--space-md);
+  flex: 1;
+}
+
+.showcaseLink {
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--transition-fast);
+}
+
+/* Hikma Teaser */
+.hikmaTeaser {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .hikmaTeaser {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+.teaserInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.mockChatWindow {
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chatBubble {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  max-width: 85%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.userBubble {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--color-cs);
+  color: var(--text-primary);
+  align-self: flex-end;
+  border-bottom-right-radius: 2px;
+}
+
+.aiBubble {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  align-self: flex-start;
+  border-bottom-left-radius: 2px;
+}
+
+/* Philosophy Section */
+.philosophy {
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-2xl);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.philosophyQuote {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  position: relative;
+  padding: 0 var(--space-xl);
+}
+
+.philosophyQuote::before,
+.philosophyQuote::after {
+  font-size: 4rem;
+  color: var(--border-color);
+  position: absolute;
+  font-family: serif;
+}
+
+.philosophyQuote::before {
+  content: "“";
+  top: -20px;
+  left: -10px;
+}
+
+.philosophyQuote::after {
+  content: "”";
+  bottom: -40px;
+  right: -10px;
+}
+
+.philosophyAuthor {
+  margin-top: var(--space-md);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-cs);
+  letter-spacing: 2px;
+  text-align: center;
+}

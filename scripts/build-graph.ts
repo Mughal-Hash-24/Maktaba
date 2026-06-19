@@ -1,5 +1,20 @@
 import type { NoteFull, GraphData, GraphNode, GraphEdge } from './types.js';
 
+// Helper to determine which wing a subject tag belongs to
+const getSubjectWing = (subjectTag: string): string => {
+  const name = (subjectTag.split('/')[1] || '').toLowerCase();
+  
+  const formal = ['math', 'discrete', 'linear-algebra', 'statistics', 'logic'];
+  const social = ['economics', 'psychology', 'cognitive-science', 'pak-studies', 'history', 'russia', 'law'];
+  const humanities = ['philosophy', 'fiqh', 'literature', 'music'];
+  
+  if (formal.some(s => name.includes(s))) return 'formal-sciences';
+  if (social.some(s => name.includes(s))) return 'social-sciences';
+  if (humanities.some(s => name.includes(s))) return 'humanities-arts';
+  
+  return 'science-tech';
+};
+
 /**
  * Build the graph data structure for the Night Sky visualizer.
  *
@@ -16,12 +31,12 @@ export function buildGraphData(notes: NoteFull[]): GraphData {
 
   // Initialize one node per note
   for (const note of notes) {
-    const fieldTag = note.tags.find((t) => t.startsWith('field/'));
-    const field = fieldTag ? fieldTag.replace('field/', '') : 'unknown';
+    const subjectTag = note.tags.find((t) => t.startsWith('subject/'));
+    const wing = subjectTag ? getSubjectWing(subjectTag) : 'science-tech';
     nodeMap.set(note.slug, {
       id: note.slug,
       title: note.title,
-      field,
+      field: wing,
       linkCount: 0,
     });
   }
