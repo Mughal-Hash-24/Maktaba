@@ -125,19 +125,23 @@ export default function TopBar() {
           }
 
           const searchResult = await pagefind.search(query);
-          const data = await Promise.all(
-            searchResult.results.slice(0, 8).map(async (r: { data: () => Promise<{ url: string; meta: { title?: string }; excerpt: string }> }) => {
-              const data = await r.data();
-              // Parse slug from URL (e.g. /notes/virtual-memory -> virtual-memory)
-              const urlParts = data.url.split('/');
-              const slug = urlParts[urlParts.length - 1] || urlParts[urlParts.length - 2];
-              return {
+          const data: SearchResult[] = [];
+          
+          for (const r of searchResult.results) {
+            const rData = await r.data();
+            // Parse slug from URL (e.g. /notes/virtual-memory.html -> virtual-memory)
+            const match = rData.url.match(/\/notes\/([^/.]+)/);
+            if (match) {
+              const slug = match[1];
+              data.push({
                 slug,
-                title: data.meta.title || slug,
-                snippet: data.excerpt,
-              };
-            })
-          );
+                title: rData.meta.title || slug,
+                snippet: rData.excerpt,
+              });
+            }
+            if (data.length >= 8) break; // Limit to top 8 note results
+          }
+          
           setResults(data);
           setIsLoading(false);
           return;
