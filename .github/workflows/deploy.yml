@@ -36,6 +36,18 @@ jobs:
         env:
           VAULT_PATH: vault-content
 
+      - name: Restore Embeddings Cache
+        uses: actions/cache@v4
+        with:
+          path: content/embeddings-cache.json
+          key: embeddings-cache-${{ hashFiles('vault-content/**/*.md') }}
+          restore-keys: embeddings-cache-
+
+      - name: Build Embeddings
+        run: npm run build:embeddings
+        env:
+          VECTORIZE_BACKEND_URL: ${{ secrets.VECTORIZE_BACKEND_URL }}
+
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
@@ -52,7 +64,7 @@ jobs:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prebuilt --prod --archive=tgz --token=${{ secrets.VERCEL_TOKEN }}
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
