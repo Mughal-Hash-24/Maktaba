@@ -112,7 +112,7 @@ export default function HikmaSettings({ onSaved, defaultTab }: HikmaSettingsProp
     setMistralKeyError(null);
   };
 
-  const systemPromptToDisplay = `${PRESET_INSTRUCTIONS[activePreset]}\n\n${DEFAULT_SYSTEM_INSTRUCTION}`;
+  const systemPromptToDisplay = `${PRESET_INSTRUCTIONS[activePreset]}\n\n${DEFAULT_SYSTEM_INSTRUCTION(name)}`;
 
   return (
     <form onSubmit={handleSave} className={styles.card}>

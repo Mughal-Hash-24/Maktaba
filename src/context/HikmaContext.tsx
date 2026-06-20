@@ -23,7 +23,8 @@ export const PRESET_INSTRUCTIONS: Record<PersonalityPreset, string> = {
   concise: 'Style: You are a highly direct assistant. Keep your responses short, concise, and focused. Limit elaboration and summarize the core point in 1-2 paragraphs.'
 };
 
-export const DEFAULT_SYSTEM_INSTRUCTION = `You are Hikma, the AI scholar and learning companion for the Maktaba library.
+export const DEFAULT_SYSTEM_INSTRUCTION = (name: string) =>
+`You are ${name}, the AI scholar and learning companion for the Maktaba library.
 You answer user queries by gathering relevant notes and sections using the tools available to you.
 
 Instructions:
@@ -72,8 +73,8 @@ export function HikmaProvider({ children }: { children: React.ReactNode }) {
   const [preset, setPreset] = useState<PersonalityPreset>('scholar');
   const [userInstructions, setUserInstructions] = useState('');
 
-  // Derived compiled system prompt
-  const systemPrompt = `${PRESET_INSTRUCTIONS[preset]}\n\n${DEFAULT_SYSTEM_INSTRUCTION}${
+  // Derived compiled system prompt — rebuilds whenever name, preset, or instructions change
+  const systemPrompt = `${PRESET_INSTRUCTIONS[preset]}\n\n${DEFAULT_SYSTEM_INSTRUCTION(hikmaName)}${
     userInstructions.trim() ? `\n\nUser Instructions:\n${userInstructions.trim()}` : ''
   }`;
 
