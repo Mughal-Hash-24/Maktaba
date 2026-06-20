@@ -294,9 +294,22 @@ export function parseMarkdown(text: string): string {
   // 5. Italic: *text*
   html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
 
-  // 6. Double bracket wiki links: [[slug]] or [[title|slug]]
+  // 6. Standard markdown links: [text](url) — handle before wikilinks
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+    const isInternal = url.startsWith('/');
+    const target = isInternal ? '' : ' target="_blank" rel="noopener noreferrer"';
+    return `<a href="${url}"${target} class="wiki-link" style="color:var(--color-cs);font-weight:500;text-decoration:underline;">${label}</a>`;
+  });
+
+  // 6b. Double bracket wiki links: [[slug]] or [[display|slug]]
   html = html.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, p1, p2) => {
-    const targetSlug = (p2 || p1).trim().toLowerCase().replace(/[-\s]+/g, '-').replace(/[^\w-]/g, '');
+    // p2 is the slug if pipe syntax [[display|slug]], otherwise p1 is used as-is
+    const rawSlug = (p2 || p1).trim();
+    // Only re-slugify if it looks like a human title (has spaces or uppercase)
+    // If it's already kebab-case, use it directly to avoid corrupting valid slugs
+    const targetSlug = /[A-Z\s]/.test(rawSlug)
+      ? rawSlug.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^\w-]/g, '')
+      : rawSlug.toLowerCase();
     const label = p1.trim();
     return `<a href="/notes/${targetSlug}" class="wiki-link" style="color:var(--color-cs);font-weight:500;text-decoration:underline;">${label}</a>`;
   });
