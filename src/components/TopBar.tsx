@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import { useHikma } from '../context/HikmaContext';
 import styles from '../styles/layout.module.css';
 
 // Type for search results
@@ -15,12 +16,16 @@ interface SearchResult {
   tags?: string[];
 }
 
-export default function TopBar() {
+interface TopBarProps {
+  onToggleChat?: () => void;
+}
+
+export default function TopBar({ onToggleChat }: TopBarProps) {
   const router = useRouter();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isOpen, setIsOpen] = useState(false);
-  const [hasApiKey, setHasApiKey] = useState(false);
+  const { isKeySaved } = useHikma();
   const [isLoading, setIsLoading] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -48,23 +53,7 @@ export default function TopBar() {
     window.dispatchEvent(new Event('themechange'));
   };
 
-  // Check for API Key (Stage 4 feature, but let's wire indicator now)
-  useEffect(() => {
-    const checkApiKey = () => {
-      const key = sessionStorage.getItem('gemini_api_key') || localStorage.getItem('gemini_api_key');
-      setHasApiKey(!!key);
-    };
-
-    checkApiKey();
-    // Check every 2 seconds or on storage event
-    const interval = setInterval(checkApiKey, 2000);
-    window.addEventListener('storage', checkApiKey);
-    
-    return () => {
-      clearInterval(interval);
-      window.removeEventListener('storage', checkApiKey);
-    };
-  }, []);
+  // API key is handled reactively via useHikma context now
 
   // Keyboard shortcut Ctrl+K or / to focus search
   useEffect(() => {
@@ -311,10 +300,17 @@ export default function TopBar() {
             </svg>
           )}
         </button>
-        <div className={styles.apiKeyIndicator}>
-          <span className={`${styles.indicatorDot} ${hasApiKey ? styles.indicatorDotActive : ''}`} />
-          <span>{hasApiKey ? 'Hikma Engine Active' : 'Hikma Offline'}</span>
-        </div>
+        <button
+          onClick={onToggleChat}
+          className={styles.hikmaBtn}
+          title="Open Hikma AI companion"
+        >
+          <span className={`${styles.indicatorDot} ${isKeySaved ? styles.indicatorDotActive : ''}`} />
+          <span className={styles.hikmaBtnText}>Hikma</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}>
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+        </button>
       </div>
       
       {/* Inject custom styling rules for hover */}

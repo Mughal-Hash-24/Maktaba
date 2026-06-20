@@ -4,13 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack && npx pagefind --site .next --output-path public/pagefind",
+    "build": "next build && npx pagefind --site .next --output-path public/pagefind",
     "start": "next start",
     "lint": "eslint",
     "build:content": "tsx scripts/build-content.ts",
+    "build:embeddings": "tsx scripts/build-embeddings.ts",
     "export:content": "tsx scripts/export-vault.ts"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@huggingface/transformers": "^4.2.0",
     "gray-matter": "^4.0.3",
     "next": "15.5.19",
     "react": "19.1.0",

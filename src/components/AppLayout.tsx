@@ -2,8 +2,10 @@
 'use client';
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Sidebar from './Sidebar';
 import TopBar from './TopBar';
+import HikmaChat from './HikmaChat';
 import styles from '../styles/layout.module.css';
 
 interface AppLayoutProps {
@@ -12,14 +14,14 @@ interface AppLayoutProps {
 
 export default function AppLayout({ children }: AppLayoutProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const pathname = usePathname();
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  // Pages that handle their own full-bleed layout
+  const isFlushPage = pathname === '/search';
 
-  const closeSidebar = () => {
-    setIsSidebarOpen(false);
-  };
+  const toggleSidebar = () => setIsSidebarOpen(v => !v);
+  const closeSidebar  = () => setIsSidebarOpen(false);
 
   return (
     <div className={styles.container}>
@@ -28,16 +30,11 @@ export default function AppLayout({ children }: AppLayoutProps) {
         className={styles.mobileMenuToggle}
         onClick={toggleSidebar}
         aria-label="Toggle navigation menu"
-        style={{
-          position: 'fixed',
-          top: '12px',
-          left: '16px',
-          zIndex: 105,
-        }}
+        style={{ position: 'fixed', top: '12px', left: '16px', zIndex: 105 }}
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <line x1="3" y1="12" x2="21" y2="12" />
-          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="6"  x2="21" y2="6"  />
           <line x1="3" y1="18" x2="21" y2="18" />
         </svg>
       </button>
@@ -46,10 +43,16 @@ export default function AppLayout({ children }: AppLayoutProps) {
       <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
 
       {/* Main Content Area */}
-      <div className={styles.mainContent}>
-        <TopBar />
-        <main className={styles.pageBody}>{children}</main>
+      <div className={`${styles.mainContent} ${isChatOpen ? styles.mainContentWithChat : ''}`}>
+        <TopBar onToggleChat={() => setIsChatOpen(v => !v)} />
+        <main className={isFlushPage ? styles.pageBodyFlush : styles.pageBody}>
+          {children}
+        </main>
       </div>
+
+      {/* AI Scholar Assistant Drawer */}
+      <HikmaChat isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
     </div>
   );
 }
+

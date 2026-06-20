@@ -12,7 +12,7 @@ Within each stage, work is broken into **Phases**. Phases are atomic, independen
 ```mermaid
 graph LR
     S1[Stage 1: Content Pipeline] --> S2[Stage 2: Static Site Shell]
-    S2 --> S3[Stage 3: Graph-RAG Engine]
+    S2 --> S3[Stage 3: Agent Harness & Search Engine]
     S3 --> S4[Stage 4: Hikma AI Companion]
     S4 --> S5[Stage 5: Auth & Backend]
     S5 --> S6[Stage 6: CI/CD & Launch]
@@ -467,11 +467,11 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
 
 ---
 
-# Stage 3: The Graph-RAG Engine
+# Stage 3: The Agent Harness & Search Engine
 
-**Goal:** Build the offline embedding pipeline and the client-side retrieval library. This stage produces the `embeddings.bin` file and a JavaScript module that can search it. No chat UI yet — just the search engine.
+**Goal:** Build the offline embedding pipeline, the client-side search tools, and the deterministic Agent Harness execution loop. This stage produces the `embeddings.bin` file and the core JS controller that runs Gemini's reasoning-and-tool-calling cycle. No chat UI yet — just the agent runtime and search interface.
 
-**Deliverable:** A `scripts/build-embeddings.ts` pipeline and a `src/lib/search-engine.ts` client module. Running the build produces `public/embeddings.bin`. Calling `searchEngine.query("what is virtual memory?")` in the browser returns the top 3 relevant note sections with scores.
+**Deliverable:** A `scripts/build-embeddings.ts` pipeline, a `src/lib/search-engine.ts` client search library, and a `src/lib/agent-harness.ts` execution controller. Running the build produces `public/embeddings.bin`. The agent harness allows execution of tool loops (`semanticSearch`, `readNoteSummary`, `readNoteSection`) client-side and includes a test/debug page at `/search`.
 
 ---
 
@@ -522,7 +522,7 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
    - Only re-embed sections belonging to notes whose MD5 hash has changed.
    - Read previously computed embeddings from an `embeddings-cache.json` for unchanged sections.
    - Write updated `embeddings-cache.json` after processing.
-8. Output raw embedding vectors as a flat array of `{ sectionId, vector: number[768] }`.
+   - Output raw embedding vectors as a flat array of `{ sectionId, vector: number[768] }`.
 
 **Inputs:** `content/sections.json`, `GEMINI_API_KEY` env var.
 **Outputs:** Raw embedding data (in-memory or temporary JSON).
@@ -561,66 +561,74 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
 
 ---
 
-### Phase 3.4 — Client-Side Search Engine
+### Phase 3.4 — Agent Harness & Execution Loop Controller
 
-**What:** Build the JavaScript module that loads the binary index and performs threshold-based multi-note retrieval in the browser.
+**What:** Build the core execution engine that manages the multi-turn agent logic (ReAct / tool execution loops) and provides deterministic limits and caching.
 
 **Steps:**
-1. Create `src/lib/search-engine.ts`.
-2. **Loading:**
-   - `async function loadIndex(): Promise<SearchIndex>` — fetches `embeddings.bin`, reads the header, parses the metadata block, and loads the vector block into a `Float32Array` (upcast from float16 for calculation accuracy).
-3. **Query execution:**
-   - `async function search(queryVector: number[], threshold: number = 0.70, topK: number = 3): Promise<SearchResult[]>`
-   - Compute cosine similarity between the query vector and every section vector.
-   - Filter out all results below the threshold.
-   - Group remaining results by `noteSlug`.
-   - For each note group, keep only the highest-scoring section.
-   - Sort note groups by their top section's score descending.
-   - Return the top `topK` note groups, each containing:
-     ```typescript
-     {
-       noteSlug: string;
-       noteTitle: string;
-       topSection: { breadcrumb: string; score: number; sectionId: string };
-       allMatchingSections: { breadcrumb: string; score: number }[];
-     }
-     ```
-4. **No-result handling:** If zero sections exceed the threshold, return an empty array. The calling code (Hikma UI in Stage 4) will display the graceful fallback message.
-5. **Pre-fetching hook:**
-   - Create `src/lib/use-search-preload.ts` — a React hook that calls `loadIndex()` during `requestIdleCallback` after the page mounts. The index is stored in a module-level variable so it's loaded only once across the session.
+1. Create `src/lib/agent-harness.ts`.
+2. **Deterministic Loop Controller:**
+   - Manage the browser-side execution loop invoking the `@google/generative-ai` SDK.
+   - Limit cycles to a maximum of 5 loops per prompt to prevent runaway consumption.
+   - Implement duplicate tool-call detection (intercepting repeating argument patterns and returning correction prompts).
+   - Support run cancellation to allow users to interrupt active loops.
+3. **Execution Caching:**
+   - Implement a simple memory cache to save results of active tool calls (e.g. if `readNote` is called twice in a session, return the cached content).
+4. **Parallel Tool Resolver:**
+   - Check if Gemini issues multiple tool calls simultaneously in one turn (e.g. reading three notes at once). Resolve them concurrently using `Promise.all()` to minimize latency.
 
-**Inputs:** `public/embeddings.bin` fetched via HTTP.
-**Outputs:** A `search()` function callable from any React component.
-**Acceptance:** Calling `search()` with a test vector returns results within 10ms. Calling with a random vector returns an empty array (nothing exceeds threshold). The pre-fetch hook loads the index silently without blocking page render.
+**Inputs:** Gemini JS SDK, user settings.
+**Outputs:** An `AgentHarness` class and state engine.
+**Acceptance:** Running a test agent prompt that triggers multiple tool requests finishes successfully. The loop halts and raises an error if duplicate tools are called, or if the step limit of 5 is exceeded.
 
 ---
 
-### Phase 3.5 — Standalone Semantic Search UI
+### Phase 3.5 — Agent Tool Registry & Data Providers
 
-**What:** Expose the search engine as a standalone user-facing "Semantic Search" page (per the product spec, Feature 6).
+**What:** Define and register the specific browser tools as Gemini-compatible FunctionDeclarations, and implement the JavaScript backends.
 
 **Steps:**
-1. Create `src/app/search/page.tsx`.
-2. Render a search input field with a label: *"Search by meaning, not just keywords."*
-3. When the user submits a query:
-   - Call the Gemini Embedding API directly from the browser using the visitor's API key to vectorize the query.
-   - If no API key is stored, display a prompt asking the user to enter their Google AI key (same component reused in Stage 4).
-   - Pass the query vector to `search()`.
-   - Display results as cards: note title, matching section breadcrumb, relevance score (as a percentage bar), domain badge.
-   - Clicking a result navigates to `/notes/{slug}`.
-4. If no results exceed the threshold, display: *"No notes in the library match this query closely enough. Would you like to request a note on this topic?"* with a link to the Request a Note page.
+1. Create `src/lib/agent-tools.ts`.
+2. Define the schema specs for the following tools:
+   - `semanticSearch(query: string, threshold?: number)`: Queries the binary search index (`embeddings.bin`) from Phase 3.3.
+   - `readNoteSummary(slug: string)`: Returns the title, tags, breadcrumbs, and a list of section headers for a note (not the full text, to conserve context tokens).
+   - `readNoteSection(slug: string, sectionId: string)`: Returns the detailed Markdown text for a specific heading section.
+   - `readNoteFull(slug: string)`: Returns the entire Markdown body (called only if metadata summaries are insufficient).
+   - `askUser(question: string, options?: string[])`: Pauses execution, prompting the user for input.
+3. Wire the tool outputs into the `AgentHarness` feed context block.
 
-**Inputs:** Search engine from Phase 3.4, visitor's API key.
-**Outputs:** `/search` page with working semantic search.
-**Acceptance:** Searching "how does virtual memory work" returns relevant OS notes. Searching "quantum entanglement" (a topic not in the vault) returns zero results with the fallback message.
+**Inputs:** `embeddings.bin`, static note content directory.
+**Outputs:** Mappings of JS tools to Gemini function calling syntax.
+**Acceptance:** The harness successfully maps model parameters to local JS functions, executes them, and formats the output return JSON to the Gemini API.
+
+---
+
+### Phase 3.6 — Standalone Agent Playground & Debug Shell
+
+**What:** Build a playground interface at `/search` allowing users to directly interact with the raw agent loop, trace thought logs, and verify tool execution.
+
+**Steps:**
+1. Create `src/app/search/page.tsx` as a debugger shell.
+2. Render a chat/query input.
+3. When submitted, initialize the `AgentHarness`.
+4. Output a real-time event log mapping the execution steps:
+   - `[Search]` "Running semantic search for user query..."
+   - `[Read]` "Reading note metadata for virtual-memory..."
+   - `[Answering]` "Synthesizing final response..."
+5. Include support for the `askUser` tool: render prompt modals inline when the loop pauses.
+6. Display the final response with citations.
+
+**Inputs:** Agent harness from Phase 3.4, tool registry from Phase 3.5.
+**Outputs:** A fully operational debug playground on `/search`.
+**Acceptance:** Running a multi-step query shows real-time progress logs. Tools fire, logs display, and responses are returned.
 
 ---
 
 # Stage 4: Hikma AI Companion
 
-**Goal:** Build the conversational AI chat interface. The visitor enters a query, the system retrieves relevant context via the Graph-RAG engine, and streams a response from Gemini grounded in the library's content.
+**Goal:** Build the conversational AI chat interface. The visitor enters a query, the system invokes the client-side Agent Harness to dynamically query, navigate, and fetch context notes, and streams a response from Gemini grounded in the library's content.
 
-**Deliverable:** A fully functional chat panel with streaming responses, source citations, `@note` referencing, and personalization presets.
+**Deliverable:** A fully functional chat panel with streaming responses, real-time ReAct thought step logs, source citations, `@note` pin referencing, and personalization presets.
 
 ---
 
@@ -632,108 +640,89 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
 1. Create `src/components/ApiKeyManager.tsx`.
 2. UI states:
    - **No key:** A compact input field with a "Enter your Google AI API key" placeholder and a "Save" button. A small link: *"How to get a free key →"* (links to Google AI Studio's key creation page).
-   - **Key saved:** A green dot indicator with "API Key Active" text and a "Clear" button.
+   - **Key saved:** A green dot indicator with "API Key Active (Direct Client Mode)" text and a "Clear" button.
+   - **No key entered fallback:** Clear indicator showing "API Key Inactive (Server Proxy Mode)".
 3. Key storage:
    - By default, store in `sessionStorage` (cleared on tab close).
    - A checkbox: "Remember on this device" — if checked, store in `localStorage` instead.
-4. Key validation: On save, make a lightweight test call to the Gemini API (e.g., embed a single word). If the call fails, show an inline error: *"Invalid key or quota exceeded."*
+4. Key validation: On save, make a lightweight test generation call using the direct Google Generative AI client SDK (e.g., asking model `gemma-4-31b-it` to generate a single greeting word). If the call fails, show an inline error: *"Invalid key or quota exceeded."*
 5. **Transparency notice:** A permanent, small text line below the key input: *"Your key is stored only in this browser and calls Google's servers directly. Maktaba never sees it. Verify in the source code."*
 
 **Inputs:** None.
-**Outputs:** Reusable `<ApiKeyManager />` component. A `useApiKey()` hook that returns the current key or `null`.
+**Outputs:** Reusable `<ApiKeyManager />` component. A `useApiKey()` hook or context provider that returns the current key or `null`.
 **Acceptance:** Entering a valid key shows the green indicator. Closing the tab and reopening clears the key (unless "Remember" was checked). Entering an invalid key shows the error inline.
 
 ---
 
 ### Phase 4.2 — Hikma Chat Panel (Core UI)
 
-**What:** Build the chat interface component — message list, input box, and streaming response display.
+**What:** Build the chat interface component — message list, input box, live thought log drawer, and streaming response display.
 
 **Steps:**
 1. Create `src/components/HikmaChat.tsx` — the main chat panel.
 2. Layout:
    - **Chat history:** A scrollable message list. User messages aligned right (dark bubble). Hikma messages aligned left (glass-effect bubble with the Hikma accent color).
+   - **Thought logs:** Inside or directly above the active Hikma bubble, show a collapsible section detailing the agent's thought progress steps (e.g., "🔍 Searching for 'Rumi'...", "📖 Reading outline of 'iqbal-rumi-khudi'...", "📖 Reading section 'The Paradox of Annihilation'...").
    - **Input area:** A text input at the bottom with a send button. Supports `Enter` to send, `Shift+Enter` for newline.
-   - **Streaming display:** As Gemini streams tokens, they appear character-by-character in the Hikma bubble. Use a blinking cursor animation at the end of the stream.
-3. **Source citations:** After each Hikma response, display a "Sources" section listing the notes that were used as context. Each source shows the note title and breadcrumb as a clickable link to `/notes/{slug}`.
+   - **Streaming display:** As Gemini streams final tokens, they appear character-by-character in the Hikma bubble. Use a blinking cursor animation at the end of the stream.
+3. **Source citations:** Extract cited notes directly from the ReAct tool responses (e.g., matching notes read during the current turn). Display a "Sources" section below the message with clickable links format: `/notes/{slug}`.
 4. **Responsive positioning:**
    - Desktop: The chat panel is a slide-out drawer on the right side of the screen (can be opened from any page without leaving the current note).
    - Mobile: Full-screen overlay.
-5. Chat messages are stored in React state. For guest users, also persist to `localStorage` (keyed by a random session ID) so the chat survives page navigation within the session.
+5. Chat messages are stored in React state. For guest users, persist to `sessionStorage` or `localStorage` (keyed by a random session ID) so the chat survives page navigation.
 
 **Inputs:** None (standalone UI component).
 **Outputs:** `<HikmaChat />` component with message rendering and input handling.
-**Acceptance:** Messages render correctly. Streaming text appears smoothly. Source citations are clickable. The panel opens and closes with a smooth slide animation.
+**Acceptance:** Messages render correctly. Streaming text appears smoothly. Live thought steps display sequentially as the ReAct loop executes. Source citations are clickable.
 
 ---
 
-### Phase 4.3 — RAG-Powered Response Pipeline
+### Phase 4.3 — Agentic ReAct Response Integration
 
-**What:** Wire the search engine, prompt assembly, and Gemini Chat API together.
+**What:** Integrate the chat interface with the client-side `AgentHarness` and local search/retrieval tools.
 
 **Steps:**
-1. Create `src/lib/hikma-engine.ts`.
+1. Integrate the `AgentHarness` class inside the chat panel.
 2. When the user sends a message:
-   - **Step 1:** Call the Gemini Embedding API (using the visitor's key) to vectorize the user's query.
-   - **Step 2:** Pass the query vector to `searchEngine.search()` to retrieve the top 3 matching note sections.
-   - **Step 3:** Fetch the raw Markdown content for each matched section from the statically served note JSON files.
-   - **Step 4:** Assemble the system prompt:
-     ```
-     You are Hikma, an AI companion for the Maktaba library. You answer questions 
-     using ONLY the library content provided below. If the library does not contain 
-     relevant information, say so honestly. Always cite which notes you draw from.
-
-     === Library Context ===
-
-     Source: {noteTitle}
-     Section: {breadcrumb}
-     Content:
-     {sectionContent}
-
-     ---
-
-     Source: {noteTitle2}
-     ...
-
-     === End of Library Context ===
-     ```
-   - **Step 5:** Call the Gemini Chat API (`gemini-2.0-flash` or equivalent) with the system prompt + user message. Use the streaming endpoint to receive tokens incrementally.
-   - **Step 6:** As tokens arrive, push them into the chat UI via a callback.
-   - **Step 7:** After the stream completes, attach the source citations (note slugs and titles from the search results) to the message.
+   - Instantiate `new AgentHarness(apiKey, onStepLog, onStreamText, onClarificationPrompt)`.
+   - Compile the base system instruction dynamically, incorporating personalization parameters (name, preset constraints, custom instructions).
+   - Execute `harness.run(userQuery, history, systemInstruction)`.
+   - Update the UI step logs dynamically as the `onStepLog` callback fires.
+   - Stream the final output tokens as `onStreamText` fires.
+   - Render the custom clarification modal if the harness invokes `onClarificationPrompt` (e.g., when the agent calls `askUser`).
 3. **Error handling:**
-   - API key invalid/expired → show inline error, prompt to re-enter key.
+   - API key invalid/expired → show inline error in thought log and prompt to re-enter key.
    - Rate limit exceeded → show "Please wait a moment and try again."
    - Network failure → show "Connection lost. Check your internet."
 
-**Inputs:** Search engine from Phase 3.4, visitor's API key, raw note content.
-**Outputs:** Streaming Hikma responses grounded in library content with citations.
-**Acceptance:** Asking "explain virtual memory" produces a response that references specific sections from the library. The response cites the correct source notes. Asking about a topic not in the library produces an honest "I don't have notes on that" response.
+**Inputs:** `AgentHarness` from Phase 3.4.
+**Outputs:** Integrated chat execution pipeline.
+**Acceptance:** Asking "explain virtual memory" executes the client-side ReAct loop. Live logs show the agent calling `semanticSearch` and reading subsections. The final response is streamed with clickable citations.
 
 ---
 
-### Phase 4.4 — `@note` Direct Referencing
+### Phase 4.4 — `@note` Pin Reference Injection
 
-**What:** Implement the `@note` syntax that lets visitors explicitly pull specific notes into context.
+**What:** Implement the `@note` syntax to pin specific notes directly into the agent's reasoning focus.
 
 **Steps:**
-1. In `hikma-engine.ts`, before running the semantic search, scan the user's message for `@NoteTitle` patterns.
-2. Parse rules:
-   - Match `@` followed by text until the next `@` or end of message.
-   - Fuzzy-match the extracted text against `slug-map.json` titles (case-insensitive, ignore underscores/hyphens).
-   - If a match is found, force-include that note's content in the context (bypass the similarity threshold).
-3. Combine force-included notes with the threshold-based search results. If the user referenced 2 notes via `@` and the search found 1 more, all 3 are included. Cap total context at 5 notes to avoid exceeding token limits.
-4. In the chat UI input, implement an autocomplete dropdown:
-   - When the user types `@`, show a searchable dropdown of all note titles.
-   - Selecting a title inserts it as `@Note Title ` (with a trailing space).
-   - Visually highlight `@references` in the input field with a subtle background color.
+1. In the input text box, scan for `@` mentions.
+2. Autocomplete UI:
+   - When the user types `@`, display a floating dropdown showing matching notes from `slug-map.json` (or `/api/notes?slugMap=true`).
+   - Selecting a note inserts its title as `@Note Title ` and stores its slug.
+3. Pre-run context injection:
+   - Scan the input message for pinned notes.
+   - If pinned notes exist, prepend an instruction to the system prompt or user query for this session, e.g.:
+     `Note: The user has explicitly pinned the note "{Note Title}" (slug: "{slug}") as highly relevant. You should prioritize reading this note summary or its sections using your tools first.`
+   - This bypasses the search threshold step and forces the agent's focus on the specified document.
 
 **Inputs:** User message text, `slug-map.json`.
-**Outputs:** Force-included notes in the Hikma context.
-**Acceptance:** Typing `@Virtual Memory what is paging?` includes Virtual Memory's content regardless of threshold. The autocomplete dropdown shows filtered results as the user types after `@`.
+**Outputs:** Pre-run focus instructions injected into the ReAct session.
+**Acceptance:** Typing `@Virtual Memory what is paging?` forces the agent to read `virtual-memory` and prioritize it, displaying it in the thought logs. Autocomplete works on keying `@`.
 
 ---
 
-### Phase 4.5 — Personalization & Presets
+### Phase 4.5 — Personalization & presets
 
 **What:** Build the settings panel for customizing Hikma's behavior.
 
@@ -742,18 +731,17 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
 2. Settings:
    - **Custom name:** Text input. Default: "Hikma". Changes the name displayed in chat bubbles and the greeting.
    - **Custom system prompt:** Textarea where the visitor can write additional instructions appended to the base system prompt (e.g., "Always respond in Urdu" or "Be very concise").
-   - **Personality presets:** Radio buttons selecting a pre-built modifier:
-     - **Scholar** — detailed, comprehensive, academic tone.
-     - **Tutor** — Socratic questioning, builds understanding step by step.
-     - **Debate** — presents counterarguments and alternative perspectives.
-     - **Concise** — short, direct answers with minimal elaboration.
-   - Selecting a preset populates the custom system prompt textarea with the preset's text. The user can then edit it further.
-3. All settings stored in `localStorage`. If the user is signed in (Stage 5), settings are also synced to Supabase.
-4. Accessible from a gear icon in the Hikma chat panel header.
+   - **Personality & Search Presets:** Radio buttons selecting a pre-built modifier:
+     - **Scholar** (Default) — detailed, academic tone. Set max loops to 5 to allow extensive multi-hop note reading.
+     - **Tutor** — Socratic questioning. Instructs agent to use `askUser` to guide understanding.
+     - **Debate** — presents counterarguments. Instructs agent to search for opposing viewpoints in notes.
+     - **Concise** — short, direct answers. Limit max loops to 2 and instruct the agent to minimize tool calls.
+   - Selecting a preset populates the custom system prompt textarea.
+3. All settings stored in `localStorage`. Accessible from a gear icon in the Hikma chat panel header.
 
 **Inputs:** None.
-**Outputs:** Personalization panel. Settings are applied to the system prompt in Phase 4.3.
-**Acceptance:** Changing the name updates the chat UI immediately. Selecting "Concise" mode produces noticeably shorter responses. Custom system prompts are respected by Gemini.
+**Outputs:** Personalization panel. Settings are applied to the system prompt and loop configuration in Phase 4.3.
+**Acceptance:** Changing the name updates the chat UI immediately. Custom system prompts are respected by Gemini. Preset behavior dictates the number of tool execution steps shown in the thought logs.
 
 ---
 
@@ -1135,15 +1123,16 @@ gantt
     Graph visualizer               :s2p6, after s2p4, 3d
     Landing page                   :s2p7, after s2p6, 2d
 
-    section Stage 3: Graph-RAG Engine
+    section Stage 3: Agent Harness & Search
     AST section parser             :s3p1, after s2p7, 2d
     Embedding generator            :s3p2, after s3p1, 2d
     Binary packer                  :s3p3, after s3p2, 1d
-    Client-side search engine      :s3p4, after s3p3, 2d
-    Semantic search UI             :s3p5, after s3p4, 1d
+    Agent harness loop             :s3p4, after s3p3, 2d
+    Tool registry & providers      :s3p5, after s3p4, 1d
+    Agent playground UI            :s3p6, after s3p5, 2d
 
     section Stage 4: Hikma AI
-    API key manager                :s4p1, after s3p5, 1d
+    API key manager                :s4p1, after s3p6, 1d
     Chat panel UI                  :s4p2, after s4p1, 3d
     RAG response pipeline          :s4p3, after s4p2, 3d
     @note referencing              :s4p4, after s4p3, 2d

@@ -2,7 +2,9 @@
 import type { Metadata } from 'next';
 import { Newsreader, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+import 'katex/dist/katex.min.css';
 import AppLayout from '../components/AppLayout';
+import { HikmaProvider } from '../context/HikmaContext';
 
 const newsreader = Newsreader({
   variable: '--font-newsreader',
@@ -31,7 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${newsreader.variable} ${jetbrainsMono.variable}`}>
       <body>
-        <AppLayout>{children}</AppLayout>
+        <HikmaProvider>
+          <AppLayout>{children}</AppLayout>
+        </HikmaProvider>
       </body>
     </html>
   );

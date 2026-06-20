@@ -1,0 +1,319 @@
+/* src/components/HikmaSettings.module.css */
+
+.card {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-mono), monospace;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.input {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+  font-family: var(--font-mono), monospace;
+}
+
+.input:focus {
+  border-color: var(--color-cs);
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.textarea {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  color: var(--text-primary);
+  font-size: 0.813rem;
+  font-family: var(--font-mono), monospace;
+  outline: none;
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.4;
+  transition: border-color var(--transition-fast);
+}
+
+.textarea:focus {
+  border-color: var(--color-cs);
+}
+
+.presetsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.presetOption {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.presetOption:hover {
+  border-color: var(--color-cs);
+}
+
+.presetActive {
+  border-color: var(--color-cs);
+  background: rgba(224, 90, 71, 0.05);
+}
+
+.presetLabel {
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.presetDesc {
+  font-size: 0.688rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.3;
+}
+
+.saveRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+.btn {
+  background: var(--color-cs);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  box-shadow: 0 0 10px rgba(224, 90, 71, 0.3);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnSecondary {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.btnSecondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-secondary);
+}
+
+/* Tabs styles */
+.tabsContainer {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.tabBtn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tabBtn:hover {
+  color: var(--text-secondary);
+}
+
+.tabActive {
+  color: var(--color-cs) !important;
+  border-bottom-color: var(--color-cs);
+  font-weight: 600;
+}
+
+.tabContent {
+  animation: tabFadeIn 0.25s ease;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.banner {
+  background: rgba(224, 90, 71, 0.08);
+  border: 1px solid rgba(224, 90, 71, 0.15);
+  border-radius: var(--radius-sm);
+  padding: 0.625rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.helperText {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  display: inline-block;
+  line-height: 1.35;
+}
+
+/* API tab specific styles */
+.apiHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.statusWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotActive {
+  background-color: #10b981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+.dotInactive {
+  background-color: var(--text-muted);
+}
+
+.statusText {
+  color: var(--text-secondary);
+}
+
+.keyInputBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.checkboxRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  accent-color: var(--color-cs);
+}
+
+.link {
+  color: var(--color-cs);
+  text-decoration: none;
+  font-size: 0.75rem;
+  transition: color var(--transition-fast);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.notice {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-top: 0.75rem;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 0.5rem;
+}
+
+.errorText {
+  color: #f87171;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
