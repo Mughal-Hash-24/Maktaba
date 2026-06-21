@@ -5,6 +5,7 @@ import './globals.css';
 import 'katex/dist/katex.min.css';
 import AppLayout from '../components/AppLayout';
 import { HikmaProvider } from '../context/HikmaContext';
+import { AuthProvider } from '../context/AuthContext';
 
 const newsreader = Newsreader({
   variable: '--font-newsreader',
@@ -33,9 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${newsreader.variable} ${jetbrainsMono.variable}`}>
       <body>
-        <HikmaProvider>
-          <AppLayout>{children}</AppLayout>
-        </HikmaProvider>
+        <AuthProvider>
+          <HikmaProvider>
+            <AppLayout>{children}</AppLayout>
+          </HikmaProvider>
+        </AuthProvider>
       </body>
     </html>
   );

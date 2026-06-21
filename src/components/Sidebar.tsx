@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from '../styles/layout.module.css';
+import AuthButton from './AuthButton';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -58,8 +59,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     },
     {
       name: 'Request Note',
-      path: '#',
-      disabled: true,
+      path: '/request',
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
@@ -91,18 +91,6 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       <nav className={styles.sidebarNav}>
         {navItems.map((item) => {
           const isActive = pathname === item.path || (item.path !== '/' && pathname.startsWith(item.path));
-          if (item.disabled) {
-            return (
-              <span
-                key={item.name}
-                className={`${styles.navItem} ${styles.disabledNavItem}`}
-                title="Coming soon in Stage 4/5"
-              >
-                {item.icon}
-                <span className={styles.navItemText}>{item.name} (Locked)</span>
-              </span>
-            );
-          }
           return (
             <Link
               key={item.name}
@@ -116,6 +104,10 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           );
         })}
       </nav>
+
+      <div style={{ padding: '0 var(--space-lg) var(--space-lg)' }}>
+        <AuthButton />
+      </div>
 
       <div className={styles.sidebarFooter}>
         <span className={styles.sidebarFooterText}>Built on a scholar&apos;s personal vault.</span>

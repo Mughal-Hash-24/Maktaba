@@ -10,7 +10,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const backendUrl = process.env.VECTORIZE_BACKEND_URL;
+    let backendUrl = process.env.VECTORIZE_BACKEND_URL;
 
     if (!backendUrl) {
       console.error('[vectorize-api] VECTORIZE_BACKEND_URL is not configured.');
@@ -18,6 +18,10 @@ export async function POST(request: Request) {
         { error: 'Vectorization backend is not configured. Set VECTORIZE_BACKEND_URL.' },
         { status: 503 }
       );
+    }
+
+    if (backendUrl.endsWith('/health')) {
+      backendUrl = backendUrl.slice(0, -7) + '/vectorize';
     }
 
     const res = await fetch(backendUrl, {

@@ -747,9 +747,9 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
 
 # Stage 5: Authentication & Backend
 
-**Goal:** Integrate Supabase for optional user accounts. Guests can do everything except persist data across devices and submit note requests. Signed-in users get cross-device sync and the Request a Note feature.
+**Goal:** Integrate Supabase for optional user accounts. Guests can do everything except persist data across devices and submit note requests. Signed-in users get cross-device settings/theme sync, chat history sync (including full ReAct multi-part messages and thought logs), and the Request a Note feature.
 
-**Deliverable:** Working Google/GitHub OAuth login, chat history sync, settings sync, guest-to-user migration, and the Request a Note submission form.
+**Deliverable:** Working Google/GitHub OAuth login using `@supabase/ssr`, structured chat history sync (preserving `parts` arrays and execution `metadata`), settings sync (custom name, presets, user instructions, model selection), guest-to-user migration, and the Request a Note submission form.
 
 ---
 
@@ -768,11 +768,14 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
      id uuid references auth.users primary key,
      display_name text,
      hikma_name text default 'Hikma',
-     system_prompt text,
      personality_preset text default 'scholar',
+     user_instructions text,
+     selected_model text default 'gemma-4-31b-it',
      created_at timestamptz default now()
    );
    ```
+   > [!NOTE]
+   > For security and privacy, Gemini and Mistral API keys **MUST NOT** be stored in the database. They remain strictly client-side (sessionStorage/localStorage).
 
    **`chat_sessions`**:
    ```sql
@@ -780,6 +783,7 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
      id uuid primary key default gen_random_uuid(),
      user_id uuid references profiles(id) not null,
      title text,
+     model_name text, -- Track active model for the session
      created_at timestamptz default now(),
      updated_at timestamptz default now()
    );
@@ -790,9 +794,9 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
    create table chat_messages (
      id uuid primary key default gen_random_uuid(),
      session_id uuid references chat_sessions(id) on delete cascade not null,
-     role text check (role in ('user', 'assistant')) not null,
-     content text not null,
-     sources jsonb,
+     role text check (role in ('user', 'model', 'system')) not null,
+     parts jsonb not null, -- Stores the multi-part structure (text, functionCall, functionResponse)
+     metadata jsonb, -- Stores ThoughtStep[] logs and generation details
      created_at timestamptz default now()
    );
    ```
@@ -833,11 +837,11 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
 
 ### Phase 5.2 — Auth Integration & Login Flow
 
-**What:** Wire Supabase Auth into the Next.js frontend.
+**What:** Wire Supabase Auth into the Next.js frontend using the modern `@supabase/ssr` package.
 
 **Steps:**
-1. Install `@supabase/supabase-js` and `@supabase/auth-helpers-nextjs`.
-2. Create `src/lib/supabase.ts` — initialize the Supabase client with the project URL and anon key (public, safe to expose).
+1. Install `@supabase/supabase-js` and `@supabase/ssr`.
+2. Create `src/lib/supabase.ts` — initialize the Supabase client using browser-based client client creations for hooks, and server-based client configurations (with cookie handling) for Route Handlers or Server Actions.
 3. Create `src/components/AuthButton.tsx`:
    - **Signed out:** Shows "Sign In" button. Clicking opens a modal with Google and GitHub OAuth options.
    - **Signed in:** Shows the user's avatar/name and a "Sign Out" button.
@@ -855,51 +859,56 @@ These numbers were measured directly from `~/Kybernetes` and inform every sizing
 
 ---
 
-### Phase 5.3 — Chat History Sync
+### Phase 5.3 — Chat & Settings Sync
 
-**What:** For signed-in users, persist chat sessions and messages to Supabase. For guests, keep everything in `localStorage`.
+**What:** Persist chat sessions, multi-part messages, thought steps, and companion configuration settings to Supabase for signed-in users. For guests, store them in local/session storage.
 
 **Steps:**
 1. Create `src/lib/chat-storage.ts` — an abstraction layer:
-   - `saveMessage(sessionId, role, content, sources)` → writes to Supabase if signed in, `localStorage` if guest.
+   - `saveMessage(sessionId, role, parts, metadata)` → writes to Supabase if signed in, `localStorage` if guest.
    - `loadSessions()` → reads from Supabase if signed in, `localStorage` if guest.
    - `loadMessages(sessionId)` → reads from Supabase if signed in, `localStorage` if guest.
-   - `createSession(title)` → creates a new chat session.
-2. Update `HikmaChat.tsx` to use `chat-storage.ts` instead of raw React state.
-3. Add a "Chat History" sidebar within the Hikma panel showing previous sessions (title + date). Clicking a session loads its messages.
-4. For signed-in users, sessions are stored in Supabase and accessible from any device.
+   - `createSession(title, modelName)` → creates a new chat session.
+2. Update `HikmaChat.tsx` to use `chat-storage.ts` instead of raw sessionStorage.
+3. Update `HikmaContext.tsx` settings save routines:
+   - If signed in, sync changes to `hikmaName`, `preset`, `userInstructions`, and `selectedModel` directly to Supabase `profiles`.
+   - If guest, preserve in `localStorage`.
+   - Load user settings from Supabase profile on mount if authenticated.
+4. Add a "Chat History" sidebar within the Hikma panel showing previous sessions (title + date). Clicking a session loads its messages, thought steps metadata, and active model.
 
-**Inputs:** Auth state from Phase 5.2, Supabase client.
-**Outputs:** Persistent chat history for signed-in users. Session-scoped history for guests.
-**Acceptance:** As a signed-in user, sending messages → closing the browser → reopening → chat history is preserved. As a guest, messages persist during the session but are gone after closing the tab.
+**Inputs:** Auth state from Phase 5.2, Supabase client, current settings.
+**Outputs:** Persistent chat history and profile settings for signed-in users.
+**Acceptance:** As a signed-in user, settings and chat history sync across devices. Inactive API keys remain client-only. Thought logs are successfully reloaded from the database on historical messages.
 
 ---
 
 ### Phase 5.4 — Guest-to-User Migration
 
-**What:** When a guest signs in, offer to migrate their local chat history to the cloud.
+**What:** When a guest signs in, offer to migrate their local chat history and settings to the cloud.
 
 **Steps:**
-1. In the auth callback (after successful sign-in), check if `localStorage` contains any guest chat sessions.
+1. In the auth callback (after successful sign-in), check if `localStorage` contains any guest chat sessions or custom settings.
 2. If yes, display a modal:
    - Title: *"Sync your session?"*
-   - Body: *"You have chat history from your guest session. Would you like to save it to your account?"*
+   - Body: *"You have chat history and custom companion settings from your guest session. Would you like to save them to your account?"*
    - Buttons: "Yes, sync it" / "No, start fresh"
-3. If "Yes": iterate over local sessions and messages, write them to Supabase under the new user's UID, then clear `localStorage`.
-4. If "No": clear `localStorage` and start with an empty Supabase history.
+3. If "Yes": 
+   - Write settings (hikmaName, preset, userInstructions, selectedModel) to Supabase under the profile.
+   - Iterate over local sessions, serialize their multi-part `parts` and thought log `metadata`, write them to Supabase, then clear guest data from `localStorage`.
+4. If "No": clear local guest data and start with an empty Supabase history.
 
 **Inputs:** Auth state change event, `localStorage` guest data.
 **Outputs:** Migration modal and sync logic.
-**Acceptance:** Guest browses → chats with Hikma → signs in → sees modal → clicks "Yes" → chat history appears in Supabase-backed session list.
+**Acceptance:** Guest chats with Hikma → signs in → clicks "Yes" in modal → chat history and settings are transferred to Supabase and disappear from local storage.
 
 ---
 
 ### Phase 5.5 — Request a Note Page
 
-**What:** Build the "Request a Note" submission form, available only to signed-in users.
+**What:** Build the "Request a Note" submission form, available only to signed-in users. Unlock the navigation link in the Sidebar.
 
 **Steps:**
-1. Create `src/app/request/page.tsx`.
+1. Create `src/app/request/page.tsx` and unlock the sidebar link by changing `disabled: true` to `disabled: false`.
 2. If the user is a guest, display:
    - *"Sign in to request a note."* with a sign-in button.
 3. If signed in, display a form:

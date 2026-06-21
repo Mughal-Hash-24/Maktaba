@@ -695,3 +695,125 @@
   color: var(--text-secondary);
   font-family: var(--font-mono), monospace;
 }
+
+/* History Panel Styles */
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: 0.5rem 0;
+}
+
+.historyItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem var(--space-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.historyItem:hover {
+  background: rgba(0, 212, 255, 0.03);
+  border-color: var(--color-cs);
+}
+
+.activeHistoryItem {
+  background: rgba(0, 212, 255, 0.05);
+  border-color: var(--color-cs);
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+}
+
+.historyItemTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.historyItemTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.historyItemMeta {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono), monospace;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.historyModelBadge {
+  padding: 1px 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  font-size: 0.65rem;
+}
+
+.newSessionBtn {
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-color);
+  color: var(--color-cs);
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.newSessionBtn:hover {
+  border-style: solid;
+  border-color: var(--color-cs);
+  background: rgba(0, 212, 255, 0.02);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.1);
+}
+
+.deleteSessionBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  margin-left: var(--space-sm);
+}
+
+.deleteSessionBtn:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.dashboardSessionItem {
+  transition: all var(--transition-fast) ease-in-out;
+}
+
+.dashboardSessionItem:hover {
+  background: rgba(224, 90, 71, 0.04) !important;
+  border-color: var(--color-cs) !important;
+}
+
+.dashboardSessionItem:hover svg {
+  stroke: var(--color-cs) !important;
+}
+

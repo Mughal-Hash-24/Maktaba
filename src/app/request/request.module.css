@@ -1,0 +1,212 @@
+/* src/app/request/request.module.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  animation: fadeIn 0.4s ease-out;
+}
+
+.title {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
+}
+
+.unauthenticated {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
+
+.unauthTitle {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.unauthText {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.authBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 0.6rem var(--space-xl);
+  background-color: var(--color-cs);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.authBtn:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.input {
+  padding: var(--space-md);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color var(--transition-fast);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-cs);
+}
+
+.textarea {
+  padding: var(--space-md);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  min-height: 120px;
+  resize: vertical;
+  transition: border-color var(--transition-fast);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-cs);
+}
+
+.submitBtn {
+  align-self: flex-start;
+  padding: 0.75rem var(--space-xl);
+  background-color: var(--color-cs);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.submitBtn:hover:not(:disabled) {
+  opacity: 0.95;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  padding: var(--space-md);
+  background-color: rgba(16, 185, 129, 0.08);
+  border: 1px solid var(--color-humanities);
+  border-radius: var(--radius-md);
+  color: var(--color-humanities);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.historyTitle {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.requestList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.requestItem {
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  transition: background-color var(--transition-fast);
+}
+
+.requestItem:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.requestHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.requestTopic {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.requestDate {
+  font-size: 0.725rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono), monospace;
+}
+
+.requestContext {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

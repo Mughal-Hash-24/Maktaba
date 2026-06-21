@@ -5,10 +5,20 @@ import React, { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import styles from './HikmaChat.module.css';
 import { useHikma, ActiveModel } from '../context/HikmaContext';
-import { AgentHarness, ThoughtStep } from '../lib/agent-harness';
+import { AgentHarness, ThoughtStep, parseModelResponse } from '../lib/agent-harness';
 import { Content } from '@google/generative-ai';
 import HikmaSettings from './HikmaSettings';
 import katex from 'katex';
+import { useAuth } from '../context/AuthContext';
+import { getSupabaseBrowserClient } from '../lib/supabase';
+import {
+  createSession,
+  loadMessages,
+  saveMessage,
+  deleteSession,
+  migrateGuestData,
+  clearAllLocalGuestData
+} from '../lib/chat-storage';
 
 interface HikmaChatProps {
   isOpen: boolean;
@@ -22,39 +32,6 @@ interface ParsedResponse {
   response: string;
 }
 
-function parseTag(text: string, tag: string): string {
-  const startTag = `<${tag}>`;
-  const endTag = `</${tag}>`;
-  const startIdx = text.indexOf(startTag);
-  const endIdx = text.indexOf(endTag);
-
-  if (startIdx !== -1) {
-    if (endIdx !== -1) {
-      return text.slice(startIdx + startTag.length, endIdx).trim();
-    }
-    return text.slice(startIdx + startTag.length).trim();
-  }
-  return '';
-}
-
-function parseModelResponse(text: string): ParsedResponse {
-  const thoughts = parseTag(text, 'thought');
-  const searchPlan = parseTag(text, 'search_plan');
-  const notesAnalysis = parseTag(text, 'notes_analysis');
-  const response = parseTag(text, 'response');
-
-  // Fallback if model did not use tags (for backward compatibility)
-  if (!thoughts && !searchPlan && !notesAnalysis && !response) {
-    return {
-      thoughts: '',
-      searchPlan: '',
-      notesAnalysis: '',
-      response: text.trim()
-    };
-  }
-
-  return { thoughts, searchPlan, notesAnalysis, response };
-}
 
 function renderThoughtsDashboard(parsed: ParsedResponse, isExpanded: boolean = false) {
   const { thoughts, searchPlan, notesAnalysis } = parsed;
@@ -76,7 +53,7 @@ function renderThoughtsDashboard(parsed: ParsedResponse, isExpanded: boolean = f
         color: 'var(--text-secondary)',
         userSelect: 'none'
       }}>
-        💡 View Companion Thoughts & Analysis
+        View Companion Thoughts & Analysis
       </summary>
       
       <div style={{
@@ -195,8 +172,29 @@ function parseTables(text: string): string {
     result.push(line);
     i++;
   }
-  
   return result.join('\n');
+}
+
+function resolveSlugToUrl(slug: string): string {
+  const s = slug.trim();
+  if (s.includes('::')) {
+    const parts = s.split('::');
+    const parent = parts[0].toLowerCase();
+    const section = parts[parts.length - 1].toLowerCase();
+    if (section === 'introduction') {
+      return `/notes/${parent}`;
+    }
+    return `/notes/${parent}#${section}`;
+  }
+  
+  if (s.startsWith('/') || s.startsWith('http://') || s.startsWith('https://')) {
+    return s;
+  }
+  
+  const target = /[A-Z\s]/.test(s)
+    ? s.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^\w-]/g, '')
+    : s.toLowerCase();
+  return `/notes/${target}`;
 }
 
 // Custom Markdown and Wiki-Link Compiler
@@ -296,32 +294,40 @@ export function parseMarkdown(text: string): string {
 
   // 6. Standard markdown links: [text](url) — handle before wikilinks
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
-    const isInternal = url.startsWith('/');
+    const targetUrl = resolveSlugToUrl(url);
+    const isInternal = targetUrl.startsWith('/');
     const target = isInternal ? '' : ' target="_blank" rel="noopener noreferrer"';
-    return `<a href="${url}"${target} class="wiki-link" style="color:var(--color-cs);font-weight:500;text-decoration:underline;">${label}</a>`;
+    return `<a href="${targetUrl}"${target} class="wiki-link" style="color:var(--color-cs);font-weight:500;text-decoration:underline;">${label}</a>`;
   });
 
   // 6b. Double bracket wiki links: [[slug]] or [[display|slug]]
   html = html.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, p1, p2) => {
-    // p2 is the slug if pipe syntax [[display|slug]], otherwise p1 is used as-is
     const rawSlug = (p2 || p1).trim();
-    // Only re-slugify if it looks like a human title (has spaces or uppercase)
-    // If it's already kebab-case, use it directly to avoid corrupting valid slugs
-    const targetSlug = /[A-Z\s]/.test(rawSlug)
-      ? rawSlug.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^\w-]/g, '')
-      : rawSlug.toLowerCase();
+    const targetUrl = resolveSlugToUrl(rawSlug);
     const label = p1.trim();
-    return `<a href="/notes/${targetSlug}" class="wiki-link" style="color:var(--color-cs);font-weight:500;text-decoration:underline;">${label}</a>`;
+    return `<a href="${targetUrl}" class="wiki-link" style="color:var(--color-cs);font-weight:500;text-decoration:underline;">${label}</a>`;
   });
 
-  // 7. Bullet and Numbered lists
+  // 7. Bullet and Numbered lists & Horizontal Rules
   const lines = html.split('\n');
   let inList = false;
   let inNumberedList = false;
   const processedLines = lines.map(line => {
+    const hrMatch = line.match(/^\s*([-*_])\s*\1\s*\1(?:\s*\1)*\s*$/);
     const listMatch = line.match(/^(\s*)[*-]\s+(.+)$/);
     const numMatch = line.match(/^(\s*)\d+\.\s+(.+)$/);
-    if (listMatch) {
+    if (hrMatch) {
+      let prefix = '';
+      if (inList) {
+        prefix += '</ul>';
+        inList = false;
+      }
+      if (inNumberedList) {
+        prefix += '</ol>';
+        inNumberedList = false;
+      }
+      return `${prefix}\n\n<hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1.5rem 0;" />\n\n`;
+    } else if (listMatch) {
       let prefix = '';
       if (inNumberedList) {
         prefix += '</ol>';
@@ -380,6 +386,7 @@ export function parseMarkdown(text: string): string {
       trimmed.startsWith('<h') ||
       trimmed.startsWith('<blockquote') ||
       trimmed.startsWith('<table') ||
+      trimmed.startsWith('<hr') ||
       trimmed.startsWith('__CODE_BLOCK_PLACEHOLDER_') ||
       trimmed.startsWith('__MATH_BLOCK_PLACEHOLDER_')
     ) {
@@ -406,6 +413,9 @@ export function parseMarkdown(text: string): string {
 }
 
 export default function HikmaChat({ isOpen, onClose }: HikmaChatProps) {
+  const { user } = useAuth();
+  const supabase = getSupabaseBrowserClient();
+
   const {
     apiKey,
     mistralApiKey,
@@ -415,6 +425,10 @@ export default function HikmaChat({ isOpen, onClose }: HikmaChatProps) {
     setSelectedModel,
     isKeySaved,
     isMistralKeySaved,
+    activeSessionId,
+    setActiveSessionId,
+    sessions,
+    refreshSessions,
   } = useHikma();
 
   const pathname = usePathname();
@@ -445,31 +459,72 @@ export default function HikmaChat({ isOpen, onClose }: HikmaChatProps) {
     resolve: (answer: string) => void;
   } | null>(null);
 
-  // Overlay panel controls ('chat' | 'settings')
-  const [activePanel, setActivePanel] = useState<'chat' | 'settings'>('chat');
+  // Sessions and Migration states
+  const [migrationModalOpen, setMigrationModalOpen] = useState(false);
+
+  // Overlay panel controls ('chat' | 'settings' | 'history')
+  const [activePanel, setActivePanel] = useState<'chat' | 'settings' | 'history'>('chat');
   const [settingsTab, setSettingsTab] = useState<'agent' | 'api' | 'system' | 'user'>('agent');
 
   const activeHarnessRef = useRef<AgentHarness | null>(null);
   const chatAreaRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const skipNextLoadRef = useRef(false);
 
-  // Load chat history from sessionStorage on mount
+  // Load slug map on mount
   useEffect(() => {
-    const savedHistory = sessionStorage.getItem('hikma_chat_history');
-    if (savedHistory) {
-      try {
-        setMessages(JSON.parse(savedHistory));
-      } catch (err) {
-        console.error('Failed to parse chat history:', err);
-      }
-    }
-
-    // Load slug map
     fetch('/api/notes?slugMap=true')
       .then(res => res.json())
       .then(data => setSlugMap(data))
       .catch(err => console.error('Failed to load slugMap:', err));
   }, []);
+
+  // Listen for guest state migration flag from URL callback
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('migratestate') === 'true' && user) {
+        const guestSessions = localStorage.getItem('maktaba_guest_sessions');
+        if (guestSessions && JSON.parse(guestSessions).length > 0) {
+          setMigrationModalOpen(true);
+        }
+        // Clean URL parameters
+        const newUrl = window.location.pathname;
+        window.history.replaceState({}, '', newUrl);
+      }
+    }
+  }, [user]);
+
+  // Load sessions list on user auth change, when drawer opens, or when history panel is shown
+  useEffect(() => {
+    refreshSessions();
+  }, [user, supabase, isOpen, activePanel, refreshSessions]);
+
+  // Load messages whenever active session changes
+  useEffect(() => {
+    if (skipNextLoadRef.current) {
+      skipNextLoadRef.current = false;
+      return;
+    }
+
+    if (activeSessionId) {
+      setIsThinking(false);
+      setThoughtSteps([]);
+      setCurrentResponse('');
+      
+      loadMessages(supabase, user, activeSessionId)
+        .then((dbMsgs) => {
+          const modelMsgs: Content[] = dbMsgs.map((m) => ({
+            role: m.role,
+            parts: m.parts,
+          }));
+          setMessages(modelMsgs);
+        })
+        .catch(err => console.error('[HikmaChat] Failed to load messages:', err));
+    } else {
+      setMessages([]);
+    }
+  }, [activeSessionId, supabase, user]);
 
   // Auto-scroll chat area to bottom when messages or thoughts update
   useEffect(() => {
@@ -671,31 +726,69 @@ ${finalQuery}`;
     // Budget loops according to preset
     const maxLoops = 20;
 
-    const harness = new AgentHarness(apiKey, onStepLog, onStreamText, onClarificationPrompt);
-    activeHarnessRef.current = harness;
+    let currentSessionId = activeSessionId;
 
     try {
-      const updatedHistory = await harness.run(finalQuery, messages, systemPrompt, maxLoops, selectedModel, mistralApiKey);
-      setMessages(updatedHistory);
-      sessionStorage.setItem('hikma_chat_history', JSON.stringify(updatedHistory));
+      if (!currentSessionId) {
+        skipNextLoadRef.current = true;
+        const sessionTitle = queryText.length > 30 ? queryText.slice(0, 30) + '...' : queryText;
+        const sessionObj = await createSession(supabase, user, sessionTitle, selectedModel);
+        currentSessionId = sessionObj.id;
+        setActiveSessionId(currentSessionId);
+        // Refresh sessions list
+        refreshSessions();
+      }
+
+      // Save user message to storage
+      await saveMessage(supabase, user, currentSessionId, 'user', [{ text: finalQuery }]);
+
+      const harness = new AgentHarness(apiKey, onStepLog, onStreamText, onClarificationPrompt);
+      activeHarnessRef.current = harness;
+
+      // Run harness with current messages context mapped to Content[]
+      const historyContext: Content[] = messages.map((m) => ({
+        role: m.role,
+        parts: m.parts,
+      }));
+
+      const updatedHistory = await harness.run(finalQuery, historyContext, systemPrompt, maxLoops, selectedModel, mistralApiKey);
+      
+      // Save all subsequent messages (tool calls, tool responses, and model response) to storage
+      const newMsgs = updatedHistory.slice(historyContext.length + 1);
+      for (const msg of newMsgs) {
+        const isFinalModelResponse = msg === updatedHistory[updatedHistory.length - 1];
+        await saveMessage(
+          supabase,
+          user,
+          currentSessionId,
+          msg.role as 'user' | 'model' | 'system',
+          msg.parts,
+          isFinalModelResponse ? thoughtSteps : undefined
+        );
+      }
+
+      // Load fresh messages from DB to update state
+      const freshDbMsgs = await loadMessages(supabase, user, currentSessionId);
+      const mappedMsgs: Content[] = freshDbMsgs.map((m) => ({
+        role: m.role,
+        parts: m.parts,
+      }));
+      setMessages(mappedMsgs);
     } catch (err) {
       console.error('[HikmaChat] ReAct execution failed:', err);
       const errMsg = err instanceof Error ? err.message : 'An unexpected error occurred';
-      const errHistory: Content[] = [
-        ...messages,
-        {
-          role: 'user',
-          parts: [{ text: finalQuery }]
-        },
-        {
-          role: 'model',
-          parts: [{ text: `Error: ${errMsg}` }]
+      
+      if (currentSessionId) {
+        try {
+          await saveMessage(supabase, user, currentSessionId, 'model', [{ text: `Error: ${errMsg}` }]);
+          const freshDbMsgs = await loadMessages(supabase, user, currentSessionId);
+          setMessages(freshDbMsgs.map(m => ({ role: m.role, parts: m.parts })));
+        } catch (saveErr) {
+          console.error('[HikmaChat] Failed to save error message:', saveErr);
         }
-      ];
-      setMessages(errHistory);
-      sessionStorage.setItem('hikma_chat_history', JSON.stringify(errHistory));
+      }
     } finally {
-      setPendingUserMessage(null); // History now contains the message
+      setPendingUserMessage(null);
       setIsThinking(false);
       activeHarnessRef.current = null;
     }
@@ -709,8 +802,8 @@ ${finalQuery}`;
   };
 
   const handleClearChat = () => {
+    setActiveSessionId(null);
     setMessages([]);
-    sessionStorage.removeItem('hikma_chat_history');
     setThoughtSteps([]);
   };
 
@@ -721,6 +814,101 @@ ${finalQuery}`;
 
   const isToolMessage = (msg: Content): boolean => {
     return msg.parts.some(p => p.functionCall || p.functionResponse);
+  };
+
+
+
+  const getToolLogsForModelMessage = (modelMsgIdx: number, allMessages: Content[]): { name: string; query?: string; slug?: string; success: boolean }[] => {
+    const logs: { name: string; query?: string; slug?: string; success: boolean }[] = [];
+    let i = modelMsgIdx - 1;
+    const collectedToolMessages: Content[] = [];
+    while (i >= 0) {
+      const prevMsg = allMessages[i];
+      if (prevMsg.role === 'user' && !isToolMessage(prevMsg)) {
+        break;
+      }
+      if (isToolMessage(prevMsg)) {
+        collectedToolMessages.push(prevMsg);
+      }
+      i--;
+    }
+    collectedToolMessages.reverse();
+
+    collectedToolMessages.forEach(msg => {
+      msg.parts.forEach(part => {
+        if (part.functionCall) {
+          const call = part.functionCall;
+          const args = call.args as Record<string, string | number | boolean | undefined>;
+          const query = args?.query ? String(args.query) : undefined;
+          const slug = args?.slug ? String(args.slug) : undefined;
+          logs.push({
+            name: call.name,
+            query,
+            slug,
+            success: true,
+          });
+        }
+        if (part.functionResponse) {
+          const resp = part.functionResponse;
+          const responseData = resp.response as Record<string, unknown> | undefined;
+          const success = !(responseData && (responseData.error || responseData.err || responseData.failed));
+          const matchingCall = [...logs].reverse().find(c => c.name === resp.name);
+          if (matchingCall && !success) {
+            matchingCall.success = false;
+          }
+        }
+      });
+    });
+    return logs;
+  };
+
+  const renderToolLogsDashboard = (logs: { name: string; query?: string; slug?: string; success: boolean }[]) => {
+    if (logs.length === 0) return null;
+
+    return (
+      <details style={{
+        marginBottom: '0.75rem',
+        border: '1px solid var(--border-color)',
+        borderRadius: 'var(--radius-sm)',
+        background: 'rgba(0, 0, 0, 0.15)',
+        overflow: 'hidden'
+      }}>
+        <summary style={{
+          padding: '0.35rem 0.5rem',
+          fontSize: '0.725rem',
+          cursor: 'pointer',
+          fontFamily: 'var(--font-mono), monospace',
+          color: 'var(--text-secondary)',
+          userSelect: 'none'
+        }}>
+          Tool call logs ({logs.length})
+        </summary>
+        
+        <div style={{
+          padding: '0.5rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.35rem',
+          borderTop: '1px solid var(--border-color)',
+          fontSize: '0.725rem',
+          fontFamily: 'var(--font-mono), monospace',
+          color: 'var(--text-muted)',
+          lineHeight: '1.4'
+        }}>
+          {logs.map((log, lIdx) => {
+            const status = log.success ? '✓' : '✗';
+            let hint = '';
+            if (log.query) hint = ` "${log.query}"`;
+            else if (log.slug) hint = ` "${log.slug}"`;
+            return (
+              <div key={lIdx} style={{ color: log.success ? 'inherit' : 'var(--color-cs)' }}>
+                {status} {log.name}{hint}
+              </div>
+            );
+          })}
+        </div>
+      </details>
+    );
   };
 
   // Scans final response text for standard double bracket references to show source pills
@@ -776,6 +964,21 @@ ${finalQuery}`;
           <div className={styles.headerActions}>
             <button
               className={`${styles.iconBtn} ${
+                activePanel === 'history' ? styles.activeAction : ''
+              }`}
+              title="Conversation History"
+              onClick={() => {
+                setActivePanel(prev => (prev === 'history' ? 'chat' : 'history'));
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 8v4l3 3" />
+                <circle cx="12" cy="12" r="9" />
+              </svg>
+            </button>
+
+            <button
+              className={`${styles.iconBtn} ${
                 activePanel === 'settings' && settingsTab === 'api' ? styles.activeAction : ''
               }`}
               title="Google AI Credentials"
@@ -809,12 +1012,12 @@ ${finalQuery}`;
             {messages.length > 0 && (
               <button
                 className={styles.iconBtn}
-                title="Clear Chat History"
+                title="New Conversation"
                 onClick={handleClearChat}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <polyline points="3 6 5 6 21 6"></polyline>
-                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
                 </svg>
               </button>
             )}
@@ -850,6 +1053,98 @@ ${finalQuery}`;
               </div>
               <div className={styles.overlayContent} style={{ overflowY: 'auto', flex: 1, padding: '0.25rem 0' }}>
                 <HikmaSettings defaultTab={settingsTab} onSaved={() => setActivePanel('chat')} />
+              </div>
+            </div>
+          )}
+
+          {/* History Overlay */}
+          {activePanel === 'history' && (
+            <div className={styles.overlayPanel}>
+              <div className={styles.overlayHeader}>
+                <span className={styles.overlayTitle}>CONVERSATION HISTORY</span>
+                <button
+                  className={styles.iconBtn}
+                  onClick={() => setActivePanel('chat')}
+                >
+                  Close
+                </button>
+              </div>
+              <div className={styles.overlayContent}>
+                <button
+                  className={styles.newSessionBtn}
+                  onClick={() => {
+                    handleClearChat();
+                    setActivePanel('chat');
+                  }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                  New Conversation
+                </button>
+
+                {sessions.length === 0 ? (
+                  <div style={{ textAlign: 'center', marginTop: '3rem', color: 'var(--text-muted)', fontSize: '0.8rem' }}>
+                    No saved conversations found.
+                  </div>
+                ) : (
+                  <div className={styles.historyList}>
+                    {sessions.map((session) => {
+                      const isActive = session.id === activeSessionId;
+                      const dateStr = new Date(session.updated_at).toLocaleDateString(undefined, {
+                        month: 'short',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                      });
+
+                      return (
+                        <div
+                          key={session.id}
+                          className={`${styles.historyItem} ${isActive ? styles.activeHistoryItem : ''}`}
+                          onClick={() => {
+                            setActiveSessionId(session.id);
+                            setActivePanel('chat');
+                          }}
+                        >
+                          <div className={styles.historyItemTitleWrapper}>
+                            <div className={styles.historyItemTitle} title={session.title}>
+                              {session.title}
+                            </div>
+                            <div className={styles.historyItemMeta}>
+                              <span>{dateStr}</span>
+                              <span className={styles.historyModelBadge}>{session.model_name}</span>
+                            </div>
+                          </div>
+                          <button
+                            className={styles.deleteSessionBtn}
+                            title="Delete Conversation"
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              if (confirm('Are you sure you want to delete this conversation?')) {
+                                try {
+                                  await deleteSession(supabase, user, session.id);
+                                  if (activeSessionId === session.id) {
+                                    handleClearChat();
+                                  }
+                                  await refreshSessions();
+                                } catch (err) {
+                                  console.error('Failed to delete session:', err);
+                                }
+                              }
+                            }}
+                          >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <polyline points="3 6 5 6 21 6"></polyline>
+                              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            </svg>
+                          </button>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             </div>
           )}
@@ -891,13 +1186,75 @@ ${finalQuery}`;
           {/* Chat scrolling feed */}
           <div className={styles.chatArea} ref={chatAreaRef}>
             {messages.length === 0 && !isThinking && (
-              <div style={{ textAlign: 'center', marginTop: '6rem', padding: '0 2rem' }}>
-                <h4 style={{ fontFamily: 'var(--font-newsreader)', fontSize: '1.25rem', marginBottom: '0.5rem' }}>
-                  A Living Companion of Knowledge
-                </h4>
-                <p style={{ fontSize: '0.813rem', color: 'var(--text-muted)', lineHeight: '1.4' }}>
-                  Ask {hikmaName} to explain concepts, connect papers, or query tags. Use `@` followed by any keyword to pin relevant notes directly to context.
-                </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.75rem', marginTop: '1.5rem', padding: '0 0.5rem' }}>
+                <div style={{ textAlign: 'center' }}>
+                  <h4 style={{ fontFamily: 'var(--font-newsreader)', fontSize: '1.35rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+                    A Living Companion of Knowledge
+                  </h4>
+                  <p style={{ fontSize: '0.813rem', color: 'var(--text-muted)', lineHeight: '1.5' }}>
+                    Ask {hikmaName} to explain concepts, connect papers, or query tags. Use `@` followed by any keyword to pin relevant notes directly to context.
+                  </p>
+                </div>
+
+                {sessions.length > 0 && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                    <div style={{
+                      fontSize: '0.725rem',
+                      fontWeight: 700,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      color: 'var(--text-muted)',
+                      fontFamily: 'var(--font-mono), monospace',
+                      borderBottom: '1px solid var(--border-color)',
+                      paddingBottom: '0.35rem'
+                    }}>
+                      Recent Research Sessions
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                      {sessions.slice(0, 10).map((session) => {
+                        const dateStr = new Date(session.updated_at).toLocaleDateString(undefined, {
+                          month: 'short',
+                          day: 'numeric',
+                          hour: '2-digit',
+                          minute: '2-digit'
+                        });
+                        return (
+                          <div
+                            key={session.id}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'space-between',
+                              padding: '0.65rem 0.85rem',
+                              background: 'rgba(255, 255, 255, 0.02)',
+                              border: '1px solid var(--border-color)',
+                              borderRadius: 'var(--radius-sm)',
+                              cursor: 'pointer',
+                              fontSize: '0.813rem',
+                            }}
+                            className={styles.dashboardSessionItem}
+                            onClick={() => {
+                              setActiveSessionId(session.id);
+                            }}
+                          >
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', minWidth: 0, flex: 1 }}>
+                              <div style={{ fontWeight: 600, color: 'var(--text-primary)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={session.title}>
+                                {session.title}
+                              </div>
+                              <div style={{ fontSize: '0.688rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono), monospace' }}>
+                                <span>{dateStr}</span>
+                                <span className={styles.historyModelBadge} style={{ margin: 0 }}>{session.model_name}</span>
+                              </div>
+                            </div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                              <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 
@@ -934,33 +1291,38 @@ ${finalQuery}`;
                         </span>
                       </div>
                       
-                      {msg.role === 'model' && renderThoughtsDashboard(parsed, false)}
-
-                      <div
-                        className={styles.markdown}
-                        dangerouslySetInnerHTML={{ __html: parseMarkdown(parsed.response) }}
-                      />
-
-                      {sources.length > 0 && (
-                        <div className={styles.citations}>
-                          <div className={styles.citationsTitle}>Cited library sources:</div>
-                          <div className={styles.citationsList}>
-                            {sources.map(slug => (
-                              <a
-                                key={slug}
-                                href={`/notes/${slug}`}
-                                className={styles.citationLink}
-                              >
-                                {getNoteTitleFromSlug(slug)}
-                              </a>
-                            ))}
-                          </div>
-                        </div>
+                      {msg.role === 'model' && (
+                        <>
+                          {renderToolLogsDashboard(getToolLogsForModelMessage(messages.indexOf(msg), messages))}
+                          {renderThoughtsDashboard(parsed, false)}
+                        </>
                       )}
-                    </div>
+
+                    <div
+                      className={styles.markdown}
+                      dangerouslySetInnerHTML={{ __html: parseMarkdown(parsed.response) }}
+                    />
+
+                    {sources.length > 0 && (
+                      <div className={styles.citations}>
+                        <div className={styles.citationsTitle}>Cited library sources:</div>
+                        <div className={styles.citationsList}>
+                          {sources.map(slug => (
+                            <a
+                              key={slug}
+                              href={`/notes/${slug}`}
+                              className={styles.citationLink}
+                            >
+                              {getNoteTitleFromSlug(slug)}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
-                );
-              })}
+                </div>
+              );
+            })}
 
             {/* Pending user bubble — shows immediately while agent is running */}
             {pendingUserMessage && (
@@ -1173,6 +1535,50 @@ ${finalQuery}`;
           </div>
         </div>
       </div>
+
+      {migrationModalOpen && (
+        <div className={styles.clarificationOverlay} style={{ zIndex: 2000 }}>
+          <div className={styles.clarificationCard} style={{ maxWidth: '400px', padding: '1.5rem' }}>
+            <h4 style={{ fontFamily: 'var(--font-newsreader)', fontSize: '1.25rem', marginBottom: '0.75rem', color: 'var(--text-primary)' }}>
+              Sync Guest Conversations
+            </h4>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.4', marginBottom: '1.5rem' }}>
+              We found local chat history and customized companion settings from your guest session. Would you like to sync them to your cloud account so they are preserved across devices?
+            </p>
+            <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end' }}>
+              <button
+                className={styles.btn}
+                style={{ background: 'transparent', border: '1px solid var(--border-color)', color: 'var(--text-secondary)' }}
+                onClick={async () => {
+                  await clearAllLocalGuestData();
+                  setMigrationModalOpen(false);
+                  refreshSessions();
+                }}
+              >
+                No, Clear Local Data
+              </button>
+              <button
+                className={styles.btn}
+                onClick={async () => {
+                  if (supabase && user) {
+                    try {
+                      await migrateGuestData(supabase, user.id);
+                      // Force reload to sync all settings fresh from Supabase profile
+                      window.location.reload();
+                    } catch (err) {
+                      console.error('Migration failed:', err);
+                      alert('Migration failed. Check console for details.');
+                    }
+                  }
+                  setMigrationModalOpen(false);
+                }}
+              >
+                Yes, Sync Data
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

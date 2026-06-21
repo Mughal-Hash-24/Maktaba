@@ -1,8 +1,11 @@
 /* src/context/HikmaContext.tsx */
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { useAuth } from './AuthContext';
+import { getSupabaseBrowserClient } from '../lib/supabase';
+import { loadSessions, ChatSession } from '../lib/chat-storage';
 
 export type PersonalityPreset = 'scholar' | 'tutor' | 'debate' | 'concise';
 export type ActiveModel =
@@ -34,7 +37,12 @@ Instructions:
 - Use semanticSearch to locate relevant note sections. Use readNoteSummary to view the outline of a note, and readNoteSection to read the exact text blocks you need.
 - Always fetch the summary of a note before requesting its full body.
 - If the user's intent is ambiguous or too broad, invoke askUser with clarifying choices.
-- You must structure your text response using XML-like blocks. Wrap your internal thinking steps inside <thought>...</thought> tags. Wrap your search planning strategy inside <search_plan>...</search_plan> tags. Wrap your comparisons and links between library notes inside <notes_analysis>...</notes_analysis> tags. Wrap your final, polite, and scholarly answer to the user inside <response>...</response> tags. Do not output anything outside of these tags.`;
+- You must structure your text response using XML-like blocks to separate reasoning from response. Do not output anything outside of these tags:
+  * Wrap your internal thinking steps inside <thought>...</thought> tags.
+  * Wrap your search planning strategy inside <search_plan>...</search_plan> tags.
+  * Wrap your comparisons and links between library notes inside <notes_analysis>...</notes_analysis> tags.
+  * Wrap your final, polite, and scholarly answer to the user inside <response>...</response> tags.
+- CRITICAL: All content inside these tags (especially <response>) MUST be formatted using standard Markdown only (e.g. ## Headers, **bold**, *italics*, bullet points, numbered lists, markdown tables). Do NOT use HTML formatting tags (like <div>, <section>, <p>, <ul>, <li>, <a>) for structure or layout. Use pure Markdown.`;
 
 interface HikmaContextType {
   apiKey: string | null;
@@ -54,11 +62,18 @@ interface HikmaContextType {
   clearMistralApiKey: () => void;
   setSelectedModel: (model: ActiveModel) => void;
   updateSettings: (name: string, preset: PersonalityPreset, userInstructions: string) => void;
+  activeSessionId: string | null;
+  setActiveSessionId: (id: string | null) => void;
+  sessions: ChatSession[];
+  refreshSessions: () => Promise<void>;
 }
 
 const HikmaContext = createContext<HikmaContextType | undefined>(undefined);
 
 export function HikmaProvider({ children }: { children: React.ReactNode }) {
+  const { user } = useAuth();
+  const supabase = getSupabaseBrowserClient();
+
   const [apiKey, setApiKey] = useState<string | null>(null);
   const [isKeySaved, setIsKeySaved] = useState(false);
   const [rememberKey, setRememberKey] = useState(false);
@@ -73,13 +88,26 @@ export function HikmaProvider({ children }: { children: React.ReactNode }) {
   const [preset, setPreset] = useState<PersonalityPreset>('scholar');
   const [userInstructions, setUserInstructions] = useState('');
 
+  // Centralized session state
+  const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
+  const [sessions, setSessions] = useState<ChatSession[]>([]);
+
+  const refreshSessions = useCallback(async () => {
+    const list = await loadSessions(supabase, user);
+    setSessions(list);
+  }, [supabase, user]);
+
+  useEffect(() => {
+    refreshSessions();
+  }, [refreshSessions]);
+
   // Derived compiled system prompt — rebuilds whenever name, preset, or instructions change
   const systemPrompt = `${PRESET_INSTRUCTIONS[preset]}\n\n${DEFAULT_SYSTEM_INSTRUCTION(hikmaName)}${
     userInstructions.trim() ? `\n\nUser Instructions:\n${userInstructions.trim()}` : ''
   }`;
 
   useEffect(() => {
-    // Load values from storage on mount
+    // Load values from local storage on mount
     const savedName = localStorage.getItem('hikma_custom_name');
     if (savedName) setHikmaName(savedName);
 
@@ -137,8 +165,51 @@ export function HikmaProvider({ children }: { children: React.ReactNode }) {
         setSelectedModelState('gemma-4-31b-it');
       }
     }
-
   }, []);
+
+  // Sync settings from Supabase if user is logged in
+  useEffect(() => {
+    if (!supabase || !user) return;
+
+    const fetchProfile = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('profiles')
+          .select('hikma_name, personality_preset, user_instructions, selected_model')
+          .eq('id', user.id)
+          .single();
+
+        if (error) {
+          // If the profile row doesn't exist yet, it will be handled by the trigger shortly.
+          console.warn('[HikmaContext] Could not load profile:', error.message);
+          return;
+        }
+
+        if (data) {
+          if (data.hikma_name) {
+            setHikmaName(data.hikma_name);
+            localStorage.setItem('hikma_custom_name', data.hikma_name);
+          }
+          if (data.personality_preset) {
+            setPreset(data.personality_preset as PersonalityPreset);
+            localStorage.setItem('hikma_preset', data.personality_preset);
+          }
+          if (data.user_instructions !== null && data.user_instructions !== undefined) {
+            setUserInstructions(data.user_instructions);
+            localStorage.setItem('hikma_user_instructions', data.user_instructions);
+          }
+          if (data.selected_model) {
+            setSelectedModelState(data.selected_model as ActiveModel);
+            localStorage.setItem('hikma_selected_model', data.selected_model);
+          }
+        }
+      } catch (err) {
+        console.error('[HikmaContext] Profile fetch exception:', err);
+      }
+    };
+
+    fetchProfile();
+  }, [user, supabase]);
 
   const saveApiKey = async (key: string, remember: boolean): Promise<boolean> => {
     const trimmed = key.trim();
@@ -237,12 +308,23 @@ export function HikmaProvider({ children }: { children: React.ReactNode }) {
     setSelectedModel('gemma-4-31b-it');
   };
 
-  const setSelectedModel = (model: ActiveModel) => {
+  const setSelectedModel = async (model: ActiveModel) => {
     setSelectedModelState(model);
     localStorage.setItem('hikma_selected_model', model);
+
+    if (supabase && user) {
+      try {
+        await supabase
+          .from('profiles')
+          .update({ selected_model: model })
+          .eq('id', user.id);
+      } catch (err) {
+        console.error('[HikmaContext] Error updating selected model in Supabase:', err);
+      }
+    }
   };
 
-  const updateSettings = (name: string, newPreset: PersonalityPreset, customInstructions: string) => {
+  const updateSettings = async (name: string, newPreset: PersonalityPreset, customInstructions: string) => {
     setHikmaName(name);
     setPreset(newPreset);
     setUserInstructions(customInstructions);
@@ -250,6 +332,21 @@ export function HikmaProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('hikma_custom_name', name);
     localStorage.setItem('hikma_preset', newPreset);
     localStorage.setItem('hikma_user_instructions', customInstructions);
+
+    if (supabase && user) {
+      try {
+        await supabase
+          .from('profiles')
+          .update({
+            hikma_name: name,
+            personality_preset: newPreset,
+            user_instructions: customInstructions,
+          })
+          .eq('id', user.id);
+      } catch (err) {
+        console.error('[HikmaContext] Error updating profile in Supabase:', err);
+      }
+    }
   };
 
   return (
@@ -272,6 +369,10 @@ export function HikmaProvider({ children }: { children: React.ReactNode }) {
         clearMistralApiKey,
         setSelectedModel,
         updateSettings,
+        activeSessionId,
+        setActiveSessionId,
+        sessions,
+        refreshSessions,
       }}
     >
       {children}

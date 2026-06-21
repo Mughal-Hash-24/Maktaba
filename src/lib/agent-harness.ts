@@ -182,6 +182,8 @@ export class AgentHarness {
   ): Promise<Content[]> {
     this.isCancelled = false;
     const conversation: Content[] = [...history];
+    const accessedSlugs = new Set<string>();
+    const noteTitleMap = new Map<string, string>();
 
     // Append the new user query to the active session list
     conversation.push({
@@ -356,16 +358,86 @@ export class AgentHarness {
 
       // If text response is returned alongside no function calls, run streaming callback
       if (textResponse && functionCalls.length === 0) {
+        // Intercept XML-based askUser if present
+        const parsed = parseAllXmlTags(textResponse);
+        if (parsed.askUser) {
+          loopCount++;
+          
+          this.onStepLog({
+            type: 'clarify',
+            message: `Clarifying with user (XML): "${parsed.askUser.question}"`,
+            timestamp: Date.now(),
+          });
+
+          // Push the model's text response (which contains the XML askUser) to the active conversation history
+          conversation.push({
+            role: 'model',
+            parts: responseParts,
+          });
+
+          try {
+            // Wait for user clarification response
+            const answer = await this.onClarificationPrompt(parsed.askUser.question, parsed.askUser.options);
+            
+            // Push user response back to conversation history
+            conversation.push({
+              role: 'user',
+              parts: [{ text: `User answer: ${answer}` }],
+            });
+
+            // Loop ceiling guard check
+            if (loopCount >= maxLoops) {
+              this.onStepLog({
+                type: 'error',
+                message: 'Reasoning loop limit reached. Compiling response...',
+                timestamp: Date.now(),
+              });
+              conversation.push({
+                role: 'user',
+                parts: [{ text: 'System instruction: Maximum tool execution loops reached. Compile your final study answer now based on the collected context.' }],
+              });
+            }
+            continue; // Continue the ReAct loop
+          } catch (err: unknown) {
+            const errMsg = err instanceof Error ? err.message : 'Clarification error';
+            this.onStepLog({
+              type: 'error',
+              message: `Clarification failed: ${errMsg}`,
+              timestamp: Date.now(),
+            });
+            break;
+          }
+        }
+
+        let finalResponse = textResponse;
+        const parsedTags = parseAllXmlTags(textResponse);
+        if (parsedTags.response && accessedSlugs.size > 0) {
+          const citations: string[] = [];
+          accessedSlugs.forEach(slug => {
+            const title = noteTitleMap.get(slug) || slug;
+            citations.push(`- [[${title}|${slug}]]`);
+          });
+          
+          if (citations.length > 0) {
+            const citationsBlock = `\n\n**Sources:**\n${citations.join('\n')}`;
+            if (textResponse.includes('</response>')) {
+              finalResponse = textResponse.replace('</response>', `${citationsBlock}\n</response>`);
+            } else {
+              finalResponse = `${textResponse.trim()}\n\n${citationsBlock}`;
+            }
+          }
+        }
+
         this.onStepLog({
           type: 'answering',
           message: 'Synthesizing final response...',
           timestamp: Date.now(),
         });
         
-        this.onStreamText(textResponse);
+        this.onStreamText(finalResponse);
         conversation.push({
           role: 'model',
-          parts: [{ text: textResponse }],
+          parts: [{ text: finalResponse }],
         });
         break;
       }
@@ -409,6 +481,30 @@ export class AgentHarness {
 
           try {
             const output = await executeTool(call.name, call.args as Record<string, unknown>, this.onClarificationPrompt);
+            
+            if (call.name === 'readNoteSummary' || call.name === 'readNoteSection' || call.name === 'readNoteFull') {
+              const slug = (call.args as { slug?: string }).slug;
+              if (slug) {
+                accessedSlugs.add(slug);
+                const outObj = output as { title?: string };
+                if (outObj && outObj.title) {
+                  noteTitleMap.set(slug, outObj.title);
+                } else if (!noteTitleMap.has(slug)) {
+                  try {
+                    const res = await fetch(`/api/notes?slug=${slug}`);
+                    if (res.ok) {
+                      const note = await res.json();
+                      if (note && note.title) {
+                        noteTitleMap.set(slug, note.title);
+                      }
+                    }
+                  } catch {
+                    // Ignore fetch failures
+                  }
+                }
+              }
+            }
+
             return {
               functionResponse: {
                 name: call.name,
@@ -483,4 +579,200 @@ export class AgentHarness {
       timestamp: Date.now(),
     });
   }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// XML tag parser helpers
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface ParsedTags {
+  thoughts: string;
+  searchPlan: string;
+  notesAnalysis: string;
+  response: string;
+  askUser: {
+    question: string;
+    options?: string[];
+  } | null;
+  rawTags: Record<string, string>;
+}
+
+export interface ParsedResponse {
+  thoughts: string;
+  searchPlan: string;
+  notesAnalysis: string;
+  response: string;
+}
+
+export function parseAllXmlTags(text: string): ParsedTags {
+  const rawTags: Record<string, string> = {};
+  let tempText = text;
+
+  const tagStartRegex = /<([a-zA-Z0-9_-]+)(?:\s+[^>]*)*>/g;
+  
+  const thoughtsSynonyms = ['thought', 'thoughts', 'thinking', 'reflection', 'reasoning', 'internal_thought', 'internal_thoughts'];
+  const searchPlanSynonyms = ['search_plan', 'search-plan', 'searchplan', 'plan', 'search_strategy', 'search'];
+  const notesAnalysisSynonyms = ['notes_analysis', 'notes-analysis', 'notesanalysis', 'analysis', 'notes', 'comparisons'];
+  const responseSynonyms = ['response', 'answer', 'explanation', 'solution', 'summary', 'text'];
+  const askUserSynonyms = ['askuser', 'ask_user', 'clarification', 'question', 'user_question', 'clarify'];
+
+  const EXCLUDED_TAGS = ['b', 'i', 'u', 'strong', 'em', 'code', 'span', 'a', 'sub', 'sup', 'br', 'img', 'kbd', 'mark', 'del', 'ins', 'math'];
+
+  let thoughts = '';
+  let searchPlan = '';
+  let notesAnalysis = '';
+  let response = '';
+  let askUser: ParsedTags['askUser'] = null;
+
+  const parseAskUserContent = (innerContent: string): { question: string; options?: string[] } => {
+    if (!innerContent.includes('<')) {
+      return { question: innerContent.trim() };
+    }
+    
+    let question = '';
+    const qMatch = innerContent.match(/<(?:question|query)>([\s\S]*?)<\/(?:question|query)>/i);
+    if (qMatch) {
+      question = qMatch[1].trim();
+    } else {
+      question = innerContent.replace(/<(?:options|option|choices|choice)>[\s\S]*?<\/(?:options|option|choices|choice)>/gi, '').trim();
+      question = question.replace(/<[^>]+>/g, '').trim();
+    }
+
+    const options: string[] = [];
+    const optionsBlockMatch = innerContent.match(/<(?:options|choices)>([\s\S]*?)<\/(?:options|choices)>/i);
+    const searchArea = optionsBlockMatch ? optionsBlockMatch[1] : innerContent;
+    
+    const optRegex = /<(?:option|choice)>([\s\S]*?)<\/(?:option|choice)>/gi;
+    let optMatch;
+    while ((optMatch = optRegex.exec(searchArea)) !== null) {
+      options.push(optMatch[1].trim());
+    }
+
+    if (options.length === 0 && optionsBlockMatch) {
+      const lines = optionsBlockMatch[1].split('\n');
+      lines.forEach(l => {
+        const cleaned = l.replace(/^\s*[*-]\s+/, '').trim();
+        if (cleaned) options.push(cleaned);
+      });
+    }
+
+    return {
+      question: question || innerContent.trim(),
+      options: options.length > 0 ? options : undefined
+    };
+  };
+
+  while (true) {
+    tagStartRegex.lastIndex = 0;
+    const match = tagStartRegex.exec(tempText);
+    if (!match) break;
+
+    const fullTagStart = match[0];
+    const tagName = match[1];
+    const tagLower = tagName.toLowerCase();
+    const startIdx = match.index;
+
+    // If it's an inline HTML formatting tag, skip parsing it as a block/metadata tag
+    if (EXCLUDED_TAGS.includes(tagLower)) {
+      tempText = tempText.slice(0, startIdx) + '&lt;' + tempText.slice(startIdx + 1);
+      continue;
+    }
+
+    // Parse attributes from the tag start (e.g. question="..." or options="...")
+    const attrs: Record<string, string> = {};
+    let attrMatch;
+    const attrRegex = /([a-zA-Z0-9_-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g;
+    while ((attrMatch = attrRegex.exec(fullTagStart)) !== null) {
+      const name = attrMatch[1].toLowerCase();
+      const val = attrMatch[2] ?? attrMatch[3] ?? '';
+      attrs[name] = val;
+    }
+
+    const closeTag = `</${tagName}>`;
+    const closeIdx = tempText.indexOf(closeTag, startIdx + fullTagStart.length);
+
+    let content = '';
+    let endIdx = -1;
+
+    if (closeIdx !== -1) {
+      content = tempText.slice(startIdx + fullTagStart.length, closeIdx);
+      endIdx = closeIdx + closeTag.length;
+    } else {
+      const nextMatchRegex = /<([a-zA-Z0-9_-]+)(?:\s+[^>]*)*>/g;
+      nextMatchRegex.lastIndex = startIdx + fullTagStart.length;
+      let nextMatch = nextMatchRegex.exec(tempText);
+      
+      while (nextMatch && EXCLUDED_TAGS.includes(nextMatch[1].toLowerCase())) {
+        nextMatch = nextMatchRegex.exec(tempText);
+      }
+
+      if (nextMatch) {
+        content = tempText.slice(startIdx + fullTagStart.length, nextMatch.index);
+        endIdx = nextMatch.index;
+      } else {
+        content = tempText.slice(startIdx + fullTagStart.length);
+        endIdx = tempText.length;
+      }
+    }
+
+    content = content.trim();
+    rawTags[tagLower] = content;
+
+    if (thoughtsSynonyms.includes(tagLower)) {
+      thoughts = content;
+    } else if (searchPlanSynonyms.includes(tagLower)) {
+      searchPlan = content;
+    } else if (notesAnalysisSynonyms.includes(tagLower)) {
+      notesAnalysis = content;
+    } else if (responseSynonyms.includes(tagLower)) {
+      response = content;
+    } else if (askUserSynonyms.includes(tagLower)) {
+      const innerParsed = parseAskUserContent(content);
+      const question = attrs['question'] || innerParsed.question;
+      let options = innerParsed.options;
+      if (!options && attrs['options']) {
+        options = attrs['options'].split(',').map(s => s.trim()).filter(Boolean);
+      }
+      askUser = { question, options };
+    }
+
+    tempText = tempText.slice(0, startIdx) + ' ' + tempText.slice(endIdx);
+  }
+
+  // Restore the escaped '<' for excluded tags (so HTML formatting remains)
+  tempText = tempText.replace(/&lt;/g, '<');
+
+  // Strip remaining closing tags or self-closing tags
+  tempText = tempText
+    .replace(/<\/[a-zA-Z0-9_-]+>/g, '')
+    .replace(/<[a-zA-Z0-9_-]+(?:\s+[^>]*)*\/>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (!response) {
+    response = tempText;
+  }
+
+  if (askUser && (!response || response.trim() === '')) {
+    response = `*Clarification:* ${askUser.question}`;
+  }
+
+  return {
+    thoughts,
+    searchPlan,
+    notesAnalysis,
+    response,
+    askUser,
+    rawTags
+  };
+}
+
+export function parseModelResponse(text: string): ParsedResponse {
+  const parsed = parseAllXmlTags(text);
+  return {
+    thoughts: parsed.thoughts,
+    searchPlan: parsed.searchPlan,
+    notesAnalysis: parsed.notesAnalysis,
+    response: parsed.response
+  };
 }
