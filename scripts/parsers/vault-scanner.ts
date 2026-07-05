@@ -13,6 +13,7 @@ const EXCLUDED_DIRS = new Set([
   '.agents',
   'youtube-to-docs-artifacts',
   'University_Admin',
+  'temp_agents_backup',
 ]);
 
 // Root-level files to exclude by exact filename
