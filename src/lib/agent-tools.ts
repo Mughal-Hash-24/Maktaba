@@ -313,7 +313,7 @@ export async function executeTool(
 ): Promise<unknown> {
   switch (name) {
     case 'semanticSearch': {
-      const { query, threshold = 0.35 } = args as { query: string; threshold?: number };
+      const { query, threshold = 0.25 } = args as { query: string; threshold?: number };
 
       // 1. Get query vector from backend api
       const vecRes = await fetch('/api/vectorize', {
@@ -329,12 +329,28 @@ export async function executeTool(
       // 2. Fetch and parse index
       const index = await loadSearchIndex();
 
-      // 3. Compute similarities
+      const queryTerms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+
+      // 3. Compute similarities with title/slug term boosting
       const matches: { noteSlug: string; breadcrumb: string; sectionId: string; score: number }[] = [];
       for (let i = 0; i < index.sectionCount; i++) {
-        const score = cosineSimilarity(vector, index.vectors[i]);
+        let score = cosineSimilarity(vector, index.vectors[i]);
+        const meta = index.metadata[i];
+
+        const slugLower = meta.noteSlug.toLowerCase();
+        const secLower = meta.sectionId.toLowerCase();
+        
+        let termMatches = 0;
+        for (const term of queryTerms) {
+          if (slugLower.includes(term) || secLower.includes(term)) {
+            termMatches++;
+          }
+        }
+        if (queryTerms.length > 0 && termMatches > 0) {
+          score += (termMatches / queryTerms.length) * 0.35;
+        }
+
         if (score >= threshold) {
-          const meta = index.metadata[i];
           matches.push({
             noteSlug: meta.noteSlug,
             breadcrumb: meta.breadcrumb,
@@ -449,17 +465,14 @@ export async function executeTool(
       const subjects: Record<string, number> = {};
       const concepts: Record<string, number> = {};
 
-      for (const tag of Object.keys(tagIndex)) {
-        const count = tagIndex[tag].length;
-        const [category, name] = tag.split('/');
-        if (!name) continue;
-
-        if (category === 'field') {
-          fields[name] = count;
-        } else if (category === 'subject') {
-          subjects[name] = count;
-        } else if (category === 'concept') {
-          concepts[name] = count;
+      for (const [tag, notes] of Object.entries(tagIndex as Record<string, string[]>)) {
+        const count = notes.length;
+        if (tag.startsWith('field/')) {
+          fields[tag.replace('field/', '')] = count;
+        } else if (tag.startsWith('subject/')) {
+          subjects[tag.replace('subject/', '')] = count;
+        } else if (tag.startsWith('concept/')) {
+          concepts[tag.replace('concept/', '')] = count;
         }
       }
 
@@ -467,15 +480,15 @@ export async function executeTool(
     }
 
     case 'askUser': {
-      if (!onClarification) {
-        return { response: 'User interaction not supported in current environment.' };
-      }
       const { question, options } = args as { question: string; options?: string[] };
-      const answer = await onClarification(question, options);
-      return { response: answer };
+      if (onClarification) {
+        const userChoice = await onClarification(question, options);
+        return { userResponse: userChoice };
+      }
+      return { userResponse: 'No clarification handler provided.' };
     }
 
     default:
-      throw new Error(`Unsupported tool name: ${name}`);
+      throw new Error(`Unknown tool execution: ${name}`);
   }
 }
