@@ -1,0 +1,15 @@
+{
+  "slug": "moc-data-structures",
+  "title": "(MOC)   Data Structures",
+  "tags": [
+    "field/cs",
+    "subject/dsa",
+    "type/map"
+  ],
+  "htmlContent": "<p>Up to Semester 03</p>\n<h1>Topics</h1>\n<ul>\n<li><a href=\"/notes/complexity-theory\">1.7 Complexity Theory</a></li>\n<li><a href=\"/notes/arrays\">1.1 Arrays</a></li>\n<li><a href=\"/notes/linked-lists\">1.2 Linked Lists</a></li>\n<li><a href=\"/notes/trees\">1.3 Trees</a></li>\n<li><a href=\"/notes/assignment-1-take-aways\">1.4 Assignment 1   Take Aways</a></li>\n<li>1.5 Assignment 2   Notes and Take Aways</li>\n<li><a href=\"/notes/circular-linked-list\">1.6 Circular Linked List</a></li>\n<li><a href=\"/notes/queue\">1.8 Queue</a></li>\n<li><a href=\"/notes/data-structures-stack\">1.9 Stack</a></li>\n<li><a href=\"/notes/bsts\">1.10 BSTs</a></li>\n<li><a href=\"/notes/complexity\">1.11 Complexity</a></li>\n<li><a href=\"/notes/case-study-analysis-p1\">1.12 Case Study Analysis P1</a></li>\n</ul>",
+  "rawMarkdown": "\nUp to Semester 03\n\n# Topics\n- [1.7 Complexity Theory](/notes/complexity-theory)\n- [1.1 Arrays](/notes/arrays)\n- [1.2 Linked Lists](/notes/linked-lists)\n- [1.3 Trees](/notes/trees)\n- [1.4 Assignment 1   Take Aways](/notes/assignment-1-take-aways)\n- 1.5 Assignment 2   Notes and Take Aways\n- [1.6 Circular Linked List](/notes/circular-linked-list)\n- [1.8 Queue](/notes/queue)\n- [1.9 Stack](/notes/data-structures-stack)\n- [1.10 BSTs](/notes/bsts)\n- [1.11 Complexity](/notes/complexity)\n- [1.12 Case Study Analysis P1](/notes/case-study-analysis-p1)\n",
+  "wordCount": 62,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_03/Data Structures/(MOC) - Data Structures.md",
+  "filename": "(MOC) - Data Structures"
+}

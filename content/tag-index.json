@@ -1,0 +1,1749 @@
+{
+  "field/cs": [
+    "moc-coal",
+    "registers",
+    "memory-allocation-and-accessing",
+    "movsx-and-movzx",
+    "misc",
+    "console-input-and-output",
+    "coal-stack",
+    "flags",
+    "assignment-2-take-aways",
+    "integer-arithematic",
+    "stack-frames",
+    "strings-and-arrays",
+    "floating-point",
+    "interesting-shit",
+    "assignment-1-takeaways",
+    "assignment-2-takeaways",
+    "booths-algo",
+    "coal-buddy",
+    "jumps",
+    "moc-data-structures",
+    "arrays",
+    "bsts",
+    "complexity",
+    "case-study-analysis-p1",
+    "linked-lists",
+    "trees",
+    "assignment-1-take-aways",
+    "circular-linked-list",
+    "complexity-theory",
+    "queue",
+    "data-structures-stack",
+    "10-univers-arrays-loops",
+    "moc-discrete-structures",
+    "propositions-negations-conjunctions-and-disjunctions",
+    "implications-converse-inverse-contrapositive-and-biconditionals",
+    "set-notations",
+    "proofs",
+    "moc-pf",
+    "10-univers-arrays-loops",
+    "moc-automata-theory",
+    "notations",
+    "theory-of-formal-languages",
+    "kleenes-and-positive-closure",
+    "2p-examples-problems",
+    "recursive-definitions",
+    "3p-examples-problems",
+    "regular-expressions",
+    "finite-automata",
+    "transition-graphs",
+    "generalized-tgs",
+    "pumping-lemma",
+    "re-to-e-nfa",
+    "finite-automata-with-output",
+    "chapter-12",
+    "introduction-to-computer-theorypdf",
+    "test",
+    "deadlines",
+    "timetable",
+    "software-development-instructor-info",
+    "defining-intelligence",
+    "what-is-ai",
+    "the-turing-test",
+    "ai-subfields-and-concepts",
+    "ai-vs-ml-vs-dl",
+    "types-of-machine-learning",
+    "applications-and-future-of-ai",
+    "llm-input-processing",
+    "ai-agents",
+    "agents-overview-simple-reflex",
+    "model-based-agent",
+    "goal-based-agent",
+    "utility-based-agent",
+    "learning-agents",
+    "ai-search-foundations",
+    "a-star-algorithm",
+    "dijkstra-algorithm",
+    "search-logic-details",
+    "notes-a-star-optimality-and-blocking",
+    "a-star-vs-dijkstra-comparison",
+    "a-star-termination-conditions",
+    "a-star-non-admissible-heuristics",
+    "admissible-heuristics-and-path-optimality",
+    "a-star-tree-search-optimality-blocking",
+    "8-puzzle-problem-a-star-application",
+    "search-recap",
+    "ai-uninformed-search",
+    "ai-cost-sensitive-search",
+    "ai-ucs-limitations",
+    "pancake-problem",
+    "heuristic-functions",
+    "greedy-search",
+    "ai-search-costs",
+    "local-searches",
+    "ga-introduction-and-inception",
+    "ga-core-mechanics",
+    "ga-workflow",
+    "selection-and-operators",
+    "genetic-variation",
+    "client-server-architecture",
+    "database-integration-and-migration",
+    "three-tier-architecture",
+    "software-development-instructor-info",
+    "introduction-to-databases",
+    "sql-query-construction-system",
+    "sql-nested-queries-conceptual",
+    "sql-nested-queries-practical",
+    "sql-joins-fundamentals",
+    "sql-joins-cross-join",
+    "sql-joins-inner-join",
+    "sql-joins-outer-join-fundamentals",
+    "sql-joins-full-outer-join",
+    "sql-joins-left-outer-join",
+    "sql-joins-right-outer-join",
+    "data-types-and-architecture",
+    "notes-sql-set-operations",
+    "sql-create-and-drop",
+    "sql-schema-lifecycle",
+    "notes-sql-set-operations-1",
+    "sql-create-and-drop-operations",
+    "sql-schema-workflow",
+    "sql-table-creation-and-constraints",
+    "sql-fundamentals-and-retrieval",
+    "sql-pattern-matching",
+    "sql-null-handling-and-updates",
+    "sql-sorting-and-ordering",
+    "sql-aggregate-functions-overview",
+    "sql-standard-aggregates-deep-dive",
+    "sql-aggregation-case-study",
+    "database-join-strategies",
+    "intro-to-entity-relation-diagram",
+    "technical-specifics-of-an-er-diagram",
+    "eerd-introduction",
+    "supertype-subtype-hierarchies-in-eerd",
+    "specialization-and-generalization-in-eerd",
+    "hierarchies-lattices-and-shared-subclasses",
+    "os-process-fundamentals",
+    "os-pipe-prototypes-and-arrays",
+    "os-pipe-backend-internals",
+    "os-pipe-synchronization-and-blocking",
+    "os-named-pipes",
+    "os-fork-bomb-and-signal-handling",
+    "os-pipe-inheritance-across-generations",
+    "os-io-redirection-mechanics-in-c",
+    "os-schedulers",
+    "os-process-creation-and-forking",
+    "os-parallelism-case-study",
+    "os-exec-syscalls",
+    "ipc-concepts",
+    "os-file-descriptors",
+    "os-standard-i-o-descriptors",
+    "os-read-and-write-syntax",
+    "os-pipes-for-ipc",
+    "process-scheduling",
+    "scheduling-misc",
+    "fcfs-scheduling",
+    "round-robin-scheduling",
+    "sjf-scheduling",
+    "srtf-scheduling",
+    "sjf-vs-round-robin",
+    "priority-scheduling",
+    "multilevel-queue-scheduling",
+    "mlfq-scheduling",
+    "two-state-process-model",
+    "five-state-process-model",
+    "suspended-processes",
+    "unix-v-process-state-transition",
+    "context-switching",
+    "three-level-scheduling",
+    "scheduling-and-process-transitions",
+    "decision-mode",
+    "political-parties-in-pakistan",
+    "software-development-instructor-info",
+    "lecture-01-introduction",
+    "introduction-to-software-and-sda",
+    "sda-lifecycle-and-phases",
+    "sda-methodologies",
+    "software-analysis-vs-design",
+    "uml-basics",
+    "ood-and-oop-concepts",
+    "programming-paradigms",
+    "oo-core-principles",
+    "oo-relationships",
+    "advanced-sda-concepts",
+    "use-case-analysis",
+    "system-sequence-diagrams",
+    "ssd-theory",
+    "ssd-construction-lab",
+    "domain-modelling-in-sda",
+    "sda-project-ideas",
+    "agent-harness-design-and-stateful-execution-models",
+    "claude-reponse-inline",
+    "mcp-model-context-protocol",
+    "onyx-16",
+    "singleton-pattern",
+    "software-engineering-singletons",
+    "vault-explorer-ui-design-concept",
+    "design-patterns",
+    "memory-arena-test",
+    "01-java-fundamentals",
+    "02-java-architecture",
+    "03-java-concepts",
+    "java-aggregation",
+    "java-class-definitions",
+    "java-composition",
+    "java-diamond-problem",
+    "java-fundamentals-deep-dive",
+    "java-io-mechanics-scanner-vs-buffer",
+    "java-inheritance",
+    "polymorphism",
+    "python-advanced-oop-metaprogramming",
+    "python-advanced-polymorphism-and-inheritance",
+    "python-execution-and-memory-model",
+    "python-lists-and-arrays-deep-dive",
+    "python-oop-mechanics",
+    "python-philosophy-and-intro",
+    "python-strings-and-literals",
+    "python-tuples-sets-and-dictionaries",
+    "python-variables-and-casting",
+    "a-star-heuristic-admissibility",
+    "algorithms-a-star-optimality-and-blocking",
+    "local-cost-in-search",
+    "recursion",
+    "flutters-multi-tree-architecture-widget-render-and-layer-trees",
+    "go-explores-archive-based-exploration-strategy-for-red-teaming-ai-agents",
+    "knowledge-graphs-foundations-purpose-implementation-and-applications",
+    "llmops-operationalizing-large-language-models-in-production",
+    "mis-brainstorm",
+    "neat-neuroevolution-of-augmenting-topologies",
+    "kernel-architecture-and-development",
+    "unnamed-pipe-array-behavior",
+    "virtual-memory-mechanics",
+    "design-patterns-in-oop",
+    "the-data-intelligence-pipeline",
+    "arch-linux-transition-analysis",
+    "arch-linux-vs-windows-report",
+    "fastbot",
+    "gmail-assistant",
+    "lines-of-code-chapters-of-me",
+    "nuhub",
+    "portfolio",
+    "the-mothership"
+  ],
+  "subject/coal": [
+    "moc-coal",
+    "registers",
+    "memory-allocation-and-accessing",
+    "movsx-and-movzx",
+    "misc",
+    "console-input-and-output",
+    "coal-stack",
+    "flags",
+    "assignment-2-take-aways",
+    "integer-arithematic",
+    "stack-frames",
+    "strings-and-arrays",
+    "floating-point",
+    "interesting-shit",
+    "assignment-1-takeaways",
+    "assignment-2-takeaways",
+    "booths-algo",
+    "coal-buddy",
+    "jumps"
+  ],
+  "type/map": [
+    "moc-coal",
+    "moc-data-structures",
+    "moc-discrete-structures",
+    "moc-linear-algebra",
+    "moc-pf",
+    "moc-automata-theory"
+  ],
+  "concept/1.1/registers": [
+    "registers"
+  ],
+  "concept/1.2/memory": [
+    "memory-allocation-and-accessing"
+  ],
+  "concept/1.4/movsx": [
+    "movsx-and-movzx"
+  ],
+  "concept/1.5/misc": [
+    "misc"
+  ],
+  "concept/2.0/console": [
+    "console-input-and-output"
+  ],
+  "concept/2.1/stack": [
+    "coal-stack"
+  ],
+  "concept/2.2/flags": [
+    "flags"
+  ],
+  "concept/2.3/assignment": [
+    "assignment-2-take-aways"
+  ],
+  "concept/2.4/integer": [
+    "integer-arithematic"
+  ],
+  "concept/2.5/stack": [
+    "stack-frames"
+  ],
+  "concept/3.1/strings": [
+    "strings-and-arrays"
+  ],
+  "concept/3.2/floating": [
+    "floating-point"
+  ],
+  "concept/3.3/interesting": [
+    "interesting-shit"
+  ],
+  "concept/assignment/1": [
+    "assignment-1-takeaways"
+  ],
+  "concept/assignment/2": [
+    "assignment-2-takeaways"
+  ],
+  "concept/booth's/algo": [
+    "booths-algo"
+  ],
+  "concept/coal/buddy": [
+    "coal-buddy"
+  ],
+  "concept/jumps": [
+    "jumps"
+  ],
+  "subject/dsa": [
+    "moc-data-structures",
+    "arrays",
+    "bsts",
+    "complexity",
+    "case-study-analysis-p1",
+    "linked-lists",
+    "trees",
+    "assignment-1-take-aways",
+    "circular-linked-list",
+    "complexity-theory",
+    "queue",
+    "data-structures-stack"
+  ],
+  "concept/1.1/arrays": [
+    "arrays"
+  ],
+  "concept/1.10/bsts": [
+    "bsts"
+  ],
+  "concept/1.11/complexity": [
+    "complexity"
+  ],
+  "concept/1.12/case": [
+    "case-study-analysis-p1"
+  ],
+  "concept/1.2/linked": [
+    "linked-lists"
+  ],
+  "concept/1.3/trees": [
+    "trees"
+  ],
+  "concept/1.4/assignment": [
+    "assignment-1-take-aways"
+  ],
+  "concept/1.6/circular": [
+    "circular-linked-list"
+  ],
+  "concept/1.7/complexity": [
+    "complexity-theory"
+  ],
+  "concept/1.8/queue": [
+    "queue"
+  ],
+  "concept/1.9/stack": [
+    "data-structures-stack"
+  ],
+  "subject/programming/fundamentals": [
+    "10-univers-arrays-loops",
+    "moc-pf",
+    "10-univers-arrays-loops"
+  ],
+  "concept/arrays/&": [
+    "10-univers-arrays-loops",
+    "10-univers-arrays-loops"
+  ],
+  "subject/math/discrete": [
+    "moc-discrete-structures",
+    "propositions-negations-conjunctions-and-disjunctions",
+    "implications-converse-inverse-contrapositive-and-biconditionals",
+    "set-notations",
+    "proofs"
+  ],
+  "concept/1.1.1/propositions,": [
+    "propositions-negations-conjunctions-and-disjunctions"
+  ],
+  "concept/1.1.2/implications,": [
+    "implications-converse-inverse-contrapositive-and-biconditionals"
+  ],
+  "concept/6.1/set": [
+    "set-notations"
+  ],
+  "concept/proofs": [
+    "proofs"
+  ],
+  "field/math": [
+    "moc-linear-algebra",
+    "vector-equations",
+    "eigenvectors-and-eigenvalues",
+    "span-of-vectors",
+    "permutations-and-combinations",
+    "gdels-incompleteness-theorems-mathematical-limits-as-philosophical-argument",
+    "understanding-laptops-definition-components-and-uses"
+  ],
+  "subject/linear-algebra": [
+    "moc-linear-algebra",
+    "vector-equations",
+    "eigenvectors-and-eigenvalues",
+    "span-of-vectors"
+  ],
+  "concept/1.3/vector": [
+    "vector-equations"
+  ],
+  "concept/vectors": [
+    "eigenvectors-and-eigenvalues"
+  ],
+  "concept/span/of": [
+    "span-of-vectors"
+  ],
+  "subject/automata": [
+    "moc-automata-theory",
+    "notations",
+    "theory-of-formal-languages",
+    "kleenes-and-positive-closure",
+    "2p-examples-problems",
+    "recursive-definitions",
+    "3p-examples-problems",
+    "regular-expressions",
+    "finite-automata",
+    "transition-graphs",
+    "generalized-tgs",
+    "pumping-lemma",
+    "re-to-e-nfa",
+    "finite-automata-with-output",
+    "chapter-12",
+    "introduction-to-computer-theorypdf",
+    "test"
+  ],
+  "concept/notations": [
+    "notations"
+  ],
+  "concept/2.1/theory": [
+    "theory-of-formal-languages"
+  ],
+  "concept/2.2/kleene's": [
+    "kleenes-and-positive-closure"
+  ],
+  "concept/2.p/examples": [
+    "2p-examples-problems"
+  ],
+  "concept/3.1/recursive": [
+    "recursive-definitions"
+  ],
+  "concept/3.p/examples": [
+    "3p-examples-problems"
+  ],
+  "concept/4.1/regular": [
+    "regular-expressions"
+  ],
+  "concept/5.1/finite": [
+    "finite-automata"
+  ],
+  "concept/6.1/transition": [
+    "transition-graphs"
+  ],
+  "concept/6.2/generalized": [
+    "generalized-tgs"
+  ],
+  "concept/7.1/pumping": [
+    "pumping-lemma"
+  ],
+  "concept/8.1/re": [
+    "re-to-e-nfa"
+  ],
+  "concept/9.1/finite": [
+    "finite-automata-with-output"
+  ],
+  "concept/chapter/12": [
+    "chapter-12"
+  ],
+  "concept/introduction/to": [
+    "introduction-to-computer-theorypdf",
+    "introduction-to-databases",
+    "introduction-to-software-and-sda"
+  ],
+  "concept/test": [
+    "test"
+  ],
+  "concept/deadlines": [
+    "deadlines"
+  ],
+  "concept/timetable": [
+    "timetable"
+  ],
+  "subject/sda": [
+    "software-development-instructor-info",
+    "software-development-instructor-info",
+    "software-development-instructor-info",
+    "lecture-01-introduction",
+    "introduction-to-software-and-sda",
+    "sda-lifecycle-and-phases",
+    "sda-methodologies",
+    "software-analysis-vs-design",
+    "uml-basics",
+    "ood-and-oop-concepts",
+    "programming-paradigms",
+    "oo-core-principles",
+    "oo-relationships",
+    "advanced-sda-concepts",
+    "use-case-analysis",
+    "domain-modelling-in-sda",
+    "sda-project-ideas"
+  ],
+  "concept/instructor/info": [
+    "software-development-instructor-info",
+    "software-development-instructor-info",
+    "software-development-instructor-info"
+  ],
+  "subject/ai": [
+    "defining-intelligence",
+    "what-is-ai",
+    "the-turing-test",
+    "ai-subfields-and-concepts",
+    "ai-vs-ml-vs-dl",
+    "types-of-machine-learning",
+    "applications-and-future-of-ai",
+    "llm-input-processing",
+    "ai-agents",
+    "agents-overview-simple-reflex",
+    "model-based-agent",
+    "goal-based-agent",
+    "utility-based-agent",
+    "learning-agents",
+    "ai-search-foundations",
+    "notes-a-star-optimality-and-blocking",
+    "a-star-vs-dijkstra-comparison",
+    "a-star-termination-conditions",
+    "a-star-non-admissible-heuristics",
+    "admissible-heuristics-and-path-optimality",
+    "a-star-tree-search-optimality-blocking",
+    "8-puzzle-problem-a-star-application",
+    "search-recap",
+    "ai-uninformed-search",
+    "ai-cost-sensitive-search",
+    "ai-ucs-limitations",
+    "pancake-problem",
+    "heuristic-functions",
+    "greedy-search",
+    "local-searches",
+    "ga-introduction-and-inception",
+    "ga-core-mechanics",
+    "ga-workflow",
+    "selection-and-operators",
+    "genetic-variation",
+    "go-explores-archive-based-exploration-strategy-for-red-teaming-ai-agents",
+    "knowledge-graphs-foundations-purpose-implementation-and-applications",
+    "llmops-operationalizing-large-language-models-in-production"
+  ],
+  "concept/defining/intelligence": [
+    "defining-intelligence"
+  ],
+  "concept/what/is": [
+    "what-is-ai"
+  ],
+  "concept/the/turing": [
+    "the-turing-test"
+  ],
+  "concept/ai/subfields": [
+    "ai-subfields-and-concepts"
+  ],
+  "concept/ai/vs": [
+    "ai-vs-ml-vs-dl"
+  ],
+  "concept/types/of": [
+    "types-of-machine-learning"
+  ],
+  "concept/applications/and": [
+    "applications-and-future-of-ai"
+  ],
+  "concept/llm/input": [
+    "llm-input-processing"
+  ],
+  "concept/ai/agents": [
+    "ai-agents"
+  ],
+  "concept/agents/overview": [
+    "agents-overview-simple-reflex"
+  ],
+  "concept/model/based": [
+    "model-based-agent"
+  ],
+  "concept/goal/based": [
+    "goal-based-agent"
+  ],
+  "concept/utility/based": [
+    "utility-based-agent"
+  ],
+  "concept/learning/agents": [
+    "learning-agents"
+  ],
+  "concept/ai/search": [
+    "ai-search-foundations"
+  ],
+  "concept/search/a_star": [
+    "notes-a-star-optimality-and-blocking"
+  ],
+  "concept/search/a-star": [
+    "a-star-vs-dijkstra-comparison",
+    "a-star-termination-conditions",
+    "a-star-non-admissible-heuristics",
+    "admissible-heuristics-and-path-optimality",
+    "a-star-tree-search-optimality-blocking",
+    "8-puzzle-problem-a-star-application"
+  ],
+  "concept/search/dijkstra": [
+    "a-star-vs-dijkstra-comparison"
+  ],
+  "concept/search/heuristic": [
+    "a-star-non-admissible-heuristics",
+    "admissible-heuristics-and-path-optimality"
+  ],
+  "concept/search/optimality": [
+    "a-star-tree-search-optimality-blocking"
+  ],
+  "concept/algorithm/8-puzzle": [
+    "8-puzzle-problem-a-star-application"
+  ],
+  "concept/search/recap": [
+    "search-recap"
+  ],
+  "concept/ai/uninformed": [
+    "ai-uninformed-search"
+  ],
+  "concept/ai/cost": [
+    "ai-cost-sensitive-search"
+  ],
+  "concept/ai/ucs": [
+    "ai-ucs-limitations"
+  ],
+  "concept/pancake/problem": [
+    "pancake-problem"
+  ],
+  "concept/heuristic/functions": [
+    "heuristic-functions"
+  ],
+  "concept/greedy/search": [
+    "greedy-search"
+  ],
+  "concept/search/local": [
+    "local-searches"
+  ],
+  "concept/genetic-algorithms/introduction": [
+    "ga-introduction-and-inception"
+  ],
+  "concept/genetic-algorithms/mechanics": [
+    "ga-core-mechanics"
+  ],
+  "concept/genetic-algorithms/workflow": [
+    "ga-workflow"
+  ],
+  "concept/genetic-algorithms/operators": [
+    "selection-and-operators"
+  ],
+  "concept/genetic-algorithms/variation": [
+    "genetic-variation"
+  ],
+  "concept/client/server": [
+    "client-server-architecture"
+  ],
+  "concept/database/integration": [
+    "database-integration-and-migration"
+  ],
+  "concept/three/tier": [
+    "three-tier-architecture"
+  ],
+  "subject/database": [
+    "introduction-to-databases",
+    "sql-query-construction-system",
+    "sql-nested-queries-conceptual",
+    "sql-nested-queries-practical",
+    "data-types-and-architecture",
+    "sql-create-and-drop",
+    "sql-schema-lifecycle",
+    "notes-sql-set-operations-1",
+    "sql-create-and-drop-operations",
+    "sql-schema-workflow",
+    "sql-table-creation-and-constraints",
+    "sql-fundamentals-and-retrieval",
+    "sql-pattern-matching",
+    "sql-null-handling-and-updates",
+    "sql-sorting-and-ordering",
+    "sql-aggregate-functions-overview",
+    "sql-standard-aggregates-deep-dive",
+    "sql-aggregation-case-study",
+    "database-join-strategies",
+    "intro-to-entity-relation-diagram",
+    "technical-specifics-of-an-er-diagram",
+    "eerd-introduction",
+    "supertype-subtype-hierarchies-in-eerd",
+    "specialization-and-generalization-in-eerd",
+    "hierarchies-lattices-and-shared-subclasses"
+  ],
+  "concept/sql/query": [
+    "sql-query-construction-system"
+  ],
+  "concept/sql/nested": [
+    "sql-nested-queries-conceptual",
+    "sql-nested-queries-practical"
+  ],
+  "concept/data/types": [
+    "data-types-and-architecture"
+  ],
+  "concept/sql/ddl": [
+    "sql-create-and-drop",
+    "sql-create-and-drop-operations",
+    "sql-table-creation-and-constraints"
+  ],
+  "concept/sql/schema": [
+    "sql-schema-lifecycle",
+    "sql-schema-workflow"
+  ],
+  "concept/sql/set-operations": [
+    "notes-sql-set-operations-1"
+  ],
+  "concept/sql/fundamentals": [
+    "sql-fundamentals-and-retrieval"
+  ],
+  "concept/sql/pattern": [
+    "sql-pattern-matching"
+  ],
+  "concept/sql/null": [
+    "sql-null-handling-and-updates"
+  ],
+  "concept/sql/sorting": [
+    "sql-sorting-and-ordering"
+  ],
+  "concept/sql/aggregate": [
+    "sql-aggregate-functions-overview"
+  ],
+  "concept/sql/standard": [
+    "sql-standard-aggregates-deep-dive"
+  ],
+  "concept/sql/aggregation": [
+    "sql-aggregation-case-study"
+  ],
+  "concept/sql/joins": [
+    "database-join-strategies"
+  ],
+  "concept/er-diagram": [
+    "intro-to-entity-relation-diagram",
+    "technical-specifics-of-an-er-diagram"
+  ],
+  "concept/eerd": [
+    "eerd-introduction"
+  ],
+  "concept/eerd-hierarchies": [
+    "supertype-subtype-hierarchies-in-eerd"
+  ],
+  "concept/eerd-specialization": [
+    "specialization-and-generalization-in-eerd"
+  ],
+  "concept/eerd-advanced": [
+    "hierarchies-lattices-and-shared-subclasses"
+  ],
+  "subject/os": [
+    "os-process-fundamentals",
+    "os-pipe-inheritance-across-generations",
+    "os-io-redirection-mechanics-in-c",
+    "os-schedulers",
+    "os-process-creation-and-forking",
+    "os-parallelism-case-study",
+    "os-exec-syscalls",
+    "ipc-concepts",
+    "process-scheduling",
+    "scheduling-misc",
+    "fcfs-scheduling",
+    "round-robin-scheduling",
+    "sjf-scheduling",
+    "srtf-scheduling",
+    "sjf-vs-round-robin",
+    "priority-scheduling",
+    "multilevel-queue-scheduling",
+    "mlfq-scheduling",
+    "two-state-process-model",
+    "five-state-process-model",
+    "suspended-processes",
+    "unix-v-process-state-transition",
+    "context-switching",
+    "three-level-scheduling",
+    "scheduling-and-process-transitions",
+    "decision-mode",
+    "virtual-memory-mechanics"
+  ],
+  "concept/os/process": [
+    "os-process-fundamentals",
+    "os-process-creation-and-forking"
+  ],
+  "#field/cs": [
+    "os-pipe-prototypes-and-arrays",
+    "os-pipe-backend-internals",
+    "os-pipe-synchronization-and-blocking",
+    "os-named-pipes",
+    "os-fork-bomb-and-signal-handling",
+    "os-file-descriptors",
+    "os-standard-i-o-descriptors",
+    "os-read-and-write-syntax",
+    "os-pipes-for-ipc",
+    "a-star-heuristic-admissibility",
+    "algorithms-a-star-optimality-and-blocking",
+    "unnamed-pipe-array-behavior"
+  ],
+  "#subject/os": [
+    "os-pipe-prototypes-and-arrays",
+    "os-pipe-backend-internals",
+    "os-pipe-synchronization-and-blocking",
+    "os-named-pipes",
+    "os-fork-bomb-and-signal-handling",
+    "os-file-descriptors",
+    "os-standard-i-o-descriptors",
+    "os-read-and-write-syntax",
+    "os-pipes-for-ipc",
+    "unnamed-pipe-array-behavior"
+  ],
+  "#concept/ipc/pipes": [
+    "os-pipe-prototypes-and-arrays",
+    "os-pipes-for-ipc"
+  ],
+  "#concept/ipc/pipes/internals": [
+    "os-pipe-backend-internals"
+  ],
+  "#concept/ipc/pipes/synchronization": [
+    "os-pipe-synchronization-and-blocking"
+  ],
+  "#concept/ipc/named_pipes": [
+    "os-named-pipes"
+  ],
+  "#concept/os/process_management/signals": [
+    "os-fork-bomb-and-signal-handling"
+  ],
+  "concept/os/ipc/pipe": [
+    "os-pipe-inheritance-across-generations"
+  ],
+  "concept/os/io-redirection": [
+    "os-io-redirection-mechanics-in-c"
+  ],
+  "concept/scheduling/purpose": [
+    "os-schedulers"
+  ],
+  "concept/os/parallelism": [
+    "os-parallelism-case-study"
+  ],
+  "concept/os/exec": [
+    "os-exec-syscalls"
+  ],
+  "concept/ipc/concepts": [
+    "ipc-concepts"
+  ],
+  "#concept/file_descriptors": [
+    "os-file-descriptors"
+  ],
+  "#concept/file_descriptors/standard_streams": [
+    "os-standard-i-o-descriptors"
+  ],
+  "#concept/syscalls/read_write": [
+    "os-read-and-write-syntax"
+  ],
+  "concept/process-scheduling": [
+    "process-scheduling"
+  ],
+  "concept/scheduling-misc": [
+    "scheduling-misc"
+  ],
+  "concept/fcfs": [
+    "fcfs-scheduling"
+  ],
+  "concept/round-robin": [
+    "round-robin-scheduling"
+  ],
+  "concept/sjf": [
+    "sjf-scheduling"
+  ],
+  "concept/srtf": [
+    "srtf-scheduling"
+  ],
+  "concept/scheduling-comparison": [
+    "sjf-vs-round-robin"
+  ],
+  "concept/priority-scheduling": [
+    "priority-scheduling"
+  ],
+  "concept/multilevel-queue": [
+    "multilevel-queue-scheduling"
+  ],
+  "concept/mlfq": [
+    "mlfq-scheduling"
+  ],
+  "concept/two-state-model": [
+    "two-state-process-model"
+  ],
+  "concept/five-state-model": [
+    "five-state-process-model"
+  ],
+  "concept/suspended-processes": [
+    "suspended-processes"
+  ],
+  "concept/unix-v-states": [
+    "unix-v-process-state-transition"
+  ],
+  "concept/context-switching": [
+    "context-switching"
+  ],
+  "concept/scheduling-levels": [
+    "three-level-scheduling"
+  ],
+  "concept/scheduling-transitions": [
+    "scheduling-and-process-transitions"
+  ],
+  "concept/decision-mode": [
+    "decision-mode"
+  ],
+  "field/humanities": [
+    "indus-valley-civilization",
+    "muslim-opposition-to-partition",
+    "khan-abdul-ghaffar-khan",
+    "russian-and-japanese-expansionism",
+    "altruism-vs-psychological-egoism",
+    "arguments-for-god",
+    "authenticity-in-existentialism",
+    "descartes-cogito-ergo-sum-a-philosophical-analysis",
+    "dreams-in-crime-and-punishment",
+    "ghalib-analysis-of-taghaful-and-the-diminished-gaze",
+    "iqbal-rumi-and-khudi-v2",
+    "islamic-sectarianism-in-the-subcontinent",
+    "kafkas-metamorphosis",
+    "literature-interpretation",
+    "marcus-aurelius-stoic-philosophy",
+    "origins-and-historical-evolution-of-shia-islam",
+    "platonic-eros-in-the-symposium",
+    "polishing-the-street-tongue",
+    "proxenos",
+    "rhetorical-and-thematic-analysis-of-the-tyrion-jon-dungeon-dialogue",
+    "rumis-life-before-and-after-shams-of-tabriz-a-philosophical-and-biographical-exploration",
+    "the-balance-sheet-of-literacy-and-identity",
+    "the-benares-spark-and-the-clerical-war",
+    "the-concept-of-kzl-elma-in-ottoman-thought-and-its-significance",
+    "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi",
+    "the-cursive-nightmare-and-the-flat-stone",
+    "the-dawn-of-philosophy-and-the-first-philosophers",
+    "the-empty-treasury-of-delhi",
+    "the-forced-caravan-a-dialect-transplanted",
+    "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu",
+    "the-indo-aryan-skeleton",
+    "the-invasion-of-the-vernacular",
+    "the-lab-in-calcutta",
+    "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi",
+    "the-language-of-the-courtyard-and-the-soil",
+    "the-philosophy-of-love-connection-and-understanding-in-the-before-trilogy",
+    "the-purifiers-of-delhi",
+    "the-scribes-and-the-typecasters",
+    "the-scribes-of-the-durbar",
+    "the-scribes-of-the-old-order",
+    "the-shifting-alignments-of-identity",
+    "the-southern-crucible-dakhni-and-the-royal-ghazal",
+    "the-structural-limits-of-pure-reason-immanuel-kant",
+    "the-taxonomy-of-ishq-and-the-ghalibian-reform-of-tradition",
+    "the-trojan-war-origins-conflict-and-aftermath",
+    "the-colonial-disruption-of-islamic-jurisprudence",
+    "the-historical-emergence-of-sunni-jurisprudence",
+    "the-rigidification-of-islamic-jurisprudence",
+    "the-theological-foundation-of-islamic-jurisprudence",
+    "trolley-problem",
+    "urdu-literature-and-classical-era-1",
+    "urdu-literature-and-classical-era-2",
+    "iqbal-rumi-khudi",
+    "al-ghazali-and-the-seljuk-abbasid-diarchy",
+    "chopins-ballade-no-1-analysis",
+    "economic-consequences-antonine-plague",
+    "godfather-women-analysis",
+    "historical-analysis",
+    "ihya-ulum-al-din-overview",
+    "iron-requiem-metal-slug-narrative-study",
+    "italian-american-immigration-historical-context",
+    "jinnah-final-days",
+    "kal-chaudhwin-ki-raat-thi",
+    "karnal-sher-khan-shaheed-biography",
+    "marcus-aurelius-life-and-power",
+    "michael-corleone-character-arc-analysis",
+    "mirza-asadullah-khan-ghalib",
+    "ottoman-empire-fall-causes",
+    "rasputin-and-the-romanovs",
+    "robb-stark-character-study",
+    "siege-of-constantinople-1453",
+    "siege-of-constantinople-bayezid-i",
+    "vito-corleone-sympathy-analysis",
+    "ihya-ulum-al-din-structure",
+    "the-synthesis-what-comes-after-reason",
+    "hanafi-essential-muslim-habits",
+    "hanbali-essential-muslim-habits",
+    "maliki-essential-muslim-habits",
+    "shafii-essential-muslim-habits",
+    "synthesis-essential-muslim-habits",
+    "hanafi-five-daily-prayers-ruling",
+    "hanbali-five-daily-prayers-ruling",
+    "maliki-five-daily-prayers-ruling",
+    "shafii-five-daily-prayers-ruling",
+    "synthesis-five-daily-prayers-ruling",
+    "hanafi-forex-trading-xauusd-halal",
+    "hanbali-forex-trading-xauusd-halal",
+    "maliki-forex-trading-xauusd-halal",
+    "shafii-forex-trading-xauusd-halal",
+    "synthesis-forex-trading-xauusd-halal",
+    "hanafi-hijab-niqab-women-ruling",
+    "hanbali-hijab-niqab-women-ruling",
+    "maliki-hijab-niqab-women-ruling",
+    "shafii-hijab-niqab-women-ruling",
+    "synthesis-hijab-niqab-women-ruling",
+    "hanafi-musical-instruments-ruling",
+    "hanbali-musical-instruments-ruling",
+    "maliki-musical-instruments-ruling",
+    "shafii-musical-instruments-ruling",
+    "synthesis-musical-instruments-ruling"
+  ],
+  "subject/pak-studies": [
+    "indus-valley-civilization",
+    "muslim-opposition-to-partition",
+    "khan-abdul-ghaffar-khan",
+    "russian-and-japanese-expansionism"
+  ],
+  "concept/indus/valley": [
+    "indus-valley-civilization"
+  ],
+  "concept/muslim/opposition": [
+    "muslim-opposition-to-partition"
+  ],
+  "concept/khan/abdul": [
+    "khan-abdul-ghaffar-khan"
+  ],
+  "concept/russian/and": [
+    "russian-and-japanese-expansionism"
+  ],
+  "subject/statistics": [
+    "permutations-and-combinations"
+  ],
+  "concept/combinatorics": [
+    "permutations-and-combinations"
+  ],
+  "concept/lecture/01": [
+    "lecture-01-introduction"
+  ],
+  "concept/sda/lifecycle": [
+    "sda-lifecycle-and-phases"
+  ],
+  "concept/sda/methodologies": [
+    "sda-methodologies"
+  ],
+  "concept/software/analysis": [
+    "software-analysis-vs-design"
+  ],
+  "concept/uml/basics": [
+    "uml-basics"
+  ],
+  "concept/ood/and": [
+    "ood-and-oop-concepts"
+  ],
+  "concept/programming/paradigms": [
+    "programming-paradigms"
+  ],
+  "concept/oo/core": [
+    "oo-core-principles"
+  ],
+  "concept/oo/relationships": [
+    "oo-relationships"
+  ],
+  "concept/advanced/sda": [
+    "advanced-sda-concepts"
+  ],
+  "concept/use-case": [
+    "use-case-analysis"
+  ],
+  "concept/domain-modelling": [
+    "domain-modelling-in-sda"
+  ],
+  "concept/sda/project": [
+    "sda-project-ideas"
+  ],
+  "subject/ai-agents": [
+    "agent-harness-design-and-stateful-execution-models"
+  ],
+  "concept/stateful-agent-harness": [
+    "agent-harness-design-and-stateful-execution-models"
+  ],
+  "subject/software-engineering": [
+    "mcp-model-context-protocol",
+    "singleton-pattern",
+    "software-engineering-singletons",
+    "design-patterns",
+    "kernel-architecture-and-development"
+  ],
+  "concept/mcp/(model": [
+    "mcp-model-context-protocol"
+  ],
+  "concept/design-patterns": [
+    "singleton-pattern",
+    "design-patterns"
+  ],
+  "concept/singleton": [
+    "software-engineering-singletons"
+  ],
+  "subject/development": [
+    "vault-explorer-ui-design-concept"
+  ],
+  "concept/vault-ui": [
+    "vault-explorer-ui-design-concept"
+  ],
+  "subject/programming/cpp": [
+    "memory-arena-test"
+  ],
+  "concept/memory/arena": [
+    "memory-arena-test"
+  ],
+  "subject/programming/java": [
+    "01-java-fundamentals",
+    "02-java-architecture",
+    "03-java-concepts",
+    "java-aggregation",
+    "java-class-definitions",
+    "java-composition",
+    "java-diamond-problem",
+    "java-fundamentals-deep-dive",
+    "java-io-mechanics-scanner-vs-buffer",
+    "java-inheritance",
+    "polymorphism"
+  ],
+  "concept/01/java": [
+    "01-java-fundamentals"
+  ],
+  "concept/02/java": [
+    "02-java-architecture"
+  ],
+  "concept/03/java": [
+    "03-java-concepts"
+  ],
+  "concept/java/aggregation": [
+    "java-aggregation"
+  ],
+  "concept/java/class": [
+    "java-class-definitions"
+  ],
+  "concept/java/composition": [
+    "java-composition"
+  ],
+  "concept/java/diamond": [
+    "java-diamond-problem"
+  ],
+  "concept/java/fundamentals": [
+    "java-fundamentals-deep-dive"
+  ],
+  "concept/java/io": [
+    "java-io-mechanics-scanner-vs-buffer"
+  ],
+  "concept/java/inheritance": [
+    "java-inheritance"
+  ],
+  "concept/polymorphism": [
+    "polymorphism"
+  ],
+  "subject/programming/python": [
+    "python-advanced-oop-metaprogramming",
+    "python-advanced-polymorphism-and-inheritance",
+    "python-execution-and-memory-model",
+    "python-lists-and-arrays-deep-dive",
+    "python-oop-mechanics",
+    "python-philosophy-and-intro",
+    "python-strings-and-literals",
+    "python-tuples-sets-and-dictionaries",
+    "python-variables-and-casting"
+  ],
+  "concept/python/advanced": [
+    "python-advanced-oop-metaprogramming",
+    "python-advanced-polymorphism-and-inheritance"
+  ],
+  "concept/python/execution": [
+    "python-execution-and-memory-model"
+  ],
+  "concept/python/lists": [
+    "python-lists-and-arrays-deep-dive"
+  ],
+  "concept/python/oop": [
+    "python-oop-mechanics"
+  ],
+  "concept/python/philosophy": [
+    "python-philosophy-and-intro"
+  ],
+  "concept/python/strings": [
+    "python-strings-and-literals"
+  ],
+  "concept/python/tuples": [
+    "python-tuples-sets-and-dictionaries"
+  ],
+  "concept/python/variables": [
+    "python-variables-and-casting"
+  ],
+  "#subject/algorithms": [
+    "a-star-heuristic-admissibility",
+    "algorithms-a-star-optimality-and-blocking"
+  ],
+  "#concept/search/heuristic": [
+    "a-star-heuristic-admissibility"
+  ],
+  "#concept/search/a-star": [
+    "algorithms-a-star-optimality-and-blocking"
+  ],
+  "subject/algorithms": [
+    "local-cost-in-search"
+  ],
+  "concept/search/cost": [
+    "local-cost-in-search"
+  ],
+  "subject/dsa/algorithms": [
+    "recursion"
+  ],
+  "concept/recursion": [
+    "recursion"
+  ],
+  "subject/flutter": [
+    "flutters-multi-tree-architecture-widget-render-and-layer-trees"
+  ],
+  "concept/multi-tree-architecture": [
+    "flutters-multi-tree-architecture-widget-render-and-layer-trees"
+  ],
+  "concept/archive-based-exploration": [
+    "go-explores-archive-based-exploration-strategy-for-red-teaming-ai-agents"
+  ],
+  "concept/knowledge-graph": [
+    "knowledge-graphs-foundations-purpose-implementation-and-applications"
+  ],
+  "concept/llmops": [
+    "llmops-operationalizing-large-language-models-in-production"
+  ],
+  "subject/cs-theory": [
+    "mis-brainstorm",
+    "neat-neuroevolution-of-augmenting-topologies"
+  ],
+  "concept/mis/brainstorm": [
+    "mis-brainstorm"
+  ],
+  "concept/kernel/architecture": [
+    "kernel-architecture-and-development"
+  ],
+  "#concept/unnamed-pipe": [
+    "unnamed-pipe-array-behavior"
+  ],
+  "#type/expansion": [
+    "unnamed-pipe-array-behavior"
+  ],
+  "concept/os/virtual-memory": [
+    "virtual-memory-mechanics"
+  ],
+  "subject/data-engineering": [
+    "the-data-intelligence-pipeline"
+  ],
+  "concept/data-pipeline": [
+    "the-data-intelligence-pipeline"
+  ],
+  "subject/tools": [
+    "arch-linux-transition-analysis",
+    "arch-linux-vs-windows-report"
+  ],
+  "concept/arch/linux": [
+    "arch-linux-transition-analysis",
+    "arch-linux-vs-windows-report"
+  ],
+  "subject/philosophy": [
+    "altruism-vs-psychological-egoism",
+    "arguments-for-god",
+    "authenticity-in-existentialism",
+    "descartes-cogito-ergo-sum-a-philosophical-analysis",
+    "iqbal-rumi-and-khudi-v2",
+    "marcus-aurelius-stoic-philosophy",
+    "platonic-eros-in-the-symposium",
+    "rumis-life-before-and-after-shams-of-tabriz-a-philosophical-and-biographical-exploration",
+    "the-dawn-of-philosophy-and-the-first-philosophers",
+    "the-philosophy-of-love-connection-and-understanding-in-the-before-trilogy",
+    "the-structural-limits-of-pure-reason-immanuel-kant",
+    "the-theological-foundation-of-islamic-jurisprudence",
+    "trolley-problem",
+    "iqbal-rumi-khudi",
+    "ihya-ulum-al-din-overview",
+    "ihya-ulum-al-din-structure",
+    "the-synthesis-what-comes-after-reason"
+  ],
+  "concept/ethics": [
+    "altruism-vs-psychological-egoism",
+    "trolley-problem"
+  ],
+  "concept/theology": [
+    "arguments-for-god"
+  ],
+  "concept/existentialism": [
+    "authenticity-in-existentialism"
+  ],
+  "field/social_science": [
+    "business-models",
+    "crisis-and-reform-in-islamic-jurisprudence",
+    "democracy-incentive-failure",
+    "game-theory-of-cartels",
+    "the-psychological-corruption-of-reason-freud-and-jung",
+    "the-systematic-fallibility-of-cognition-daniel-kahneman",
+    "corleone-business-organization-analysis",
+    "google-and-ai",
+    "capitalism",
+    "communism",
+    "evolution-and-institutionalization-of-islamic-jurisprudence",
+    "socialism",
+    "stoic-guide-to-procrastination"
+  ],
+  "subject/economics": [
+    "business-models",
+    "democracy-incentive-failure",
+    "game-theory-of-cartels",
+    "corleone-business-organization-analysis",
+    "economic-consequences-antonine-plague",
+    "google-and-ai",
+    "capitalism",
+    "communism",
+    "socialism"
+  ],
+  "concept/business_models": [
+    "business-models"
+  ],
+  "field/hard_science": [
+    "crispr-cas9-mechanism",
+    "gyroscopic-precession",
+    "mechanics-lenzs-law",
+    "pure-mathematics",
+    "the-biological-tethering-of-perception-hoffman-and-dawkins",
+    "the-blind-spot",
+    "the-dire-wolf"
+  ],
+  "subject/biology": [
+    "crispr-cas9-mechanism",
+    "the-biological-tethering-of-perception-hoffman-and-dawkins",
+    "the-blind-spot",
+    "the-dire-wolf"
+  ],
+  "concept/genetics": [
+    "crispr-cas9-mechanism"
+  ],
+  "concept/legal-reform": [
+    "crisis-and-reform-in-islamic-jurisprudence"
+  ],
+  "subject/fiqh": [
+    "crisis-and-reform-in-islamic-jurisprudence",
+    "hanafi-essential-muslim-habits",
+    "hanbali-essential-muslim-habits",
+    "maliki-essential-muslim-habits",
+    "shafii-essential-muslim-habits",
+    "synthesis-essential-muslim-habits",
+    "hanafi-five-daily-prayers-ruling",
+    "hanbali-five-daily-prayers-ruling",
+    "maliki-five-daily-prayers-ruling",
+    "shafii-five-daily-prayers-ruling",
+    "synthesis-five-daily-prayers-ruling",
+    "hanafi-forex-trading-xauusd-halal",
+    "hanbali-forex-trading-xauusd-halal",
+    "maliki-forex-trading-xauusd-halal",
+    "shafii-forex-trading-xauusd-halal",
+    "synthesis-forex-trading-xauusd-halal",
+    "hanafi-hijab-niqab-women-ruling",
+    "hanbali-hijab-niqab-women-ruling",
+    "maliki-hijab-niqab-women-ruling",
+    "shafii-hijab-niqab-women-ruling",
+    "synthesis-hijab-niqab-women-ruling",
+    "hanafi-musical-instruments-ruling",
+    "hanbali-musical-instruments-ruling",
+    "maliki-musical-instruments-ruling",
+    "shafii-musical-instruments-ruling",
+    "synthesis-musical-instruments-ruling"
+  ],
+  "concept/incentive_structures": [
+    "democracy-incentive-failure"
+  ],
+  "concept/cogito-ergo-sum": [
+    "descartes-cogito-ergo-sum-a-philosophical-analysis"
+  ],
+  "subject/literature": [
+    "dreams-in-crime-and-punishment",
+    "ghalib-analysis-of-taghaful-and-the-diminished-gaze",
+    "kafkas-metamorphosis",
+    "literature-interpretation",
+    "rhetorical-and-thematic-analysis-of-the-tyrion-jon-dungeon-dialogue",
+    "the-taxonomy-of-ishq-and-the-ghalibian-reform-of-tradition",
+    "urdu-literature-and-classical-era-1",
+    "urdu-literature-and-classical-era-2",
+    "godfather-women-analysis",
+    "iron-requiem-metal-slug-narrative-study",
+    "michael-corleone-character-arc-analysis",
+    "mirza-asadullah-khan-ghalib",
+    "robb-stark-character-study",
+    "vito-corleone-sympathy-analysis"
+  ],
+  "concept/analysis/psychology": [
+    "dreams-in-crime-and-punishment"
+  ],
+  "concept/game_theory": [
+    "game-theory-of-cartels",
+    "corleone-business-organization-analysis"
+  ],
+  "concept/ghalib-poetics": [
+    "ghalib-analysis-of-taghaful-and-the-diminished-gaze"
+  ],
+  "subject/physics": [
+    "gyroscopic-precession",
+    "mechanics-lenzs-law"
+  ],
+  "concept/mechanics": [
+    "gyroscopic-precession"
+  ],
+  "subject/logic": [
+    "gdels-incompleteness-theorems-mathematical-limits-as-philosophical-argument"
+  ],
+  "concept/godel-incompleteness": [
+    "gdels-incompleteness-theorems-mathematical-limits-as-philosophical-argument"
+  ],
+  "concept/khudi": [
+    "iqbal-rumi-and-khudi-v2",
+    "iqbal-rumi-khudi"
+  ],
+  "concept/islamic-sectarianism": [
+    "islamic-sectarianism-in-the-subcontinent"
+  ],
+  "subject/history": [
+    "islamic-sectarianism-in-the-subcontinent",
+    "origins-and-historical-evolution-of-shia-islam",
+    "polishing-the-street-tongue",
+    "proxenos",
+    "the-balance-sheet-of-literacy-and-identity",
+    "the-benares-spark-and-the-clerical-war",
+    "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi",
+    "the-cursive-nightmare-and-the-flat-stone",
+    "the-empty-treasury-of-delhi",
+    "the-forced-caravan-a-dialect-transplanted",
+    "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu",
+    "the-indo-aryan-skeleton",
+    "the-invasion-of-the-vernacular",
+    "the-lab-in-calcutta",
+    "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi",
+    "the-language-of-the-courtyard-and-the-soil",
+    "the-purifiers-of-delhi",
+    "the-scribes-and-the-typecasters",
+    "the-scribes-of-the-durbar",
+    "the-scribes-of-the-old-order",
+    "the-shifting-alignments-of-identity",
+    "the-southern-crucible-dakhni-and-the-royal-ghazal",
+    "the-trojan-war-origins-conflict-and-aftermath",
+    "the-colonial-disruption-of-islamic-jurisprudence",
+    "the-historical-emergence-of-sunni-jurisprudence",
+    "the-rigidification-of-islamic-jurisprudence",
+    "world-war-ii-causes-events-consequences-and-legacy",
+    "al-ghazali-and-the-seljuk-abbasid-diarchy",
+    "economic-consequences-antonine-plague",
+    "historical-analysis",
+    "italian-american-immigration-historical-context",
+    "jinnah-final-days",
+    "karnal-sher-khan-shaheed-biography",
+    "marcus-aurelius-life-and-power",
+    "ottoman-empire-fall-causes",
+    "siege-of-constantinople-1453",
+    "siege-of-constantinople-bayezid-i",
+    "the-mughal-empire-structure-governance-and-legacy"
+  ],
+  "concept/kafka-metamorphosis": [
+    "kafkas-metamorphosis"
+  ],
+  "concept/aestheticization": [
+    "literature-interpretation"
+  ],
+  "concept/stoicism": [
+    "marcus-aurelius-stoic-philosophy"
+  ],
+  "concept/lenzs-law": [
+    "mechanics-lenzs-law"
+  ],
+  "concept/shia-history": [
+    "origins-and-historical-evolution-of-shia-islam"
+  ],
+  "concept/platonic-eros": [
+    "platonic-eros-in-the-symposium"
+  ],
+  "concept/urdu-origins": [
+    "polishing-the-street-tongue",
+    "the-balance-sheet-of-literacy-and-identity",
+    "the-benares-spark-and-the-clerical-war",
+    "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi",
+    "the-cursive-nightmare-and-the-flat-stone",
+    "the-empty-treasury-of-delhi",
+    "the-forced-caravan-a-dialect-transplanted",
+    "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu",
+    "the-indo-aryan-skeleton",
+    "the-invasion-of-the-vernacular",
+    "the-lab-in-calcutta",
+    "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi",
+    "the-language-of-the-courtyard-and-the-soil",
+    "the-purifiers-of-delhi",
+    "the-scribes-and-the-typecasters",
+    "the-scribes-of-the-durbar",
+    "the-scribes-of-the-old-order",
+    "the-shifting-alignments-of-identity",
+    "the-southern-crucible-dakhni-and-the-royal-ghazal"
+  ],
+  "concept/proxenos": [
+    "proxenos"
+  ],
+  "subject/math": [
+    "pure-mathematics"
+  ],
+  "concept/calculus": [
+    "pure-mathematics"
+  ],
+  "concept/moral-philosophy": [
+    "rhetorical-and-thematic-analysis-of-the-tyrion-jon-dungeon-dialogue"
+  ],
+  "concept/rumi-sham-relationship": [
+    "rumis-life-before-and-after-shams-of-tabriz-a-philosophical-and-biographical-exploration"
+  ],
+  "concept/evolutionary-epistemology": [
+    "the-biological-tethering-of-perception-hoffman-and-dawkins"
+  ],
+  "subject/ottoman-empire": [
+    "the-concept-of-kzl-elma-in-ottoman-thought-and-its-significance"
+  ],
+  "concept/kızıl-elma": [
+    "the-concept-of-kzl-elma-in-ottoman-thought-and-its-significance"
+  ],
+  "concept/pre-socratic-thought": [
+    "the-dawn-of-philosophy-and-the-first-philosophers"
+  ],
+  "concept/before-trilogy": [
+    "the-philosophy-of-love-connection-and-understanding-in-the-before-trilogy"
+  ],
+  "subject/psychology": [
+    "the-psychological-corruption-of-reason-freud-and-jung",
+    "stoic-guide-to-procrastination"
+  ],
+  "concept/rationalization": [
+    "the-psychological-corruption-of-reason-freud-and-jung"
+  ],
+  "concept/kantian-epistemology": [
+    "the-structural-limits-of-pure-reason-immanuel-kant"
+  ],
+  "subject/cognitive-science": [
+    "the-systematic-fallibility-of-cognition-daniel-kahneman"
+  ],
+  "concept/dual-process-theory": [
+    "the-systematic-fallibility-of-cognition-daniel-kahneman"
+  ],
+  "concept/ghalib-ishq": [
+    "the-taxonomy-of-ishq-and-the-ghalibian-reform-of-tradition"
+  ],
+  "concept/trojan-war": [
+    "the-trojan-war-origins-conflict-and-aftermath"
+  ],
+  "concept/perception": [
+    "the-blind-spot"
+  ],
+  "concept/colonialism": [
+    "the-colonial-disruption-of-islamic-jurisprudence"
+  ],
+  "concept/jurisprudence": [
+    "the-historical-emergence-of-sunni-jurisprudence"
+  ],
+  "concept/ijtihad-taqlid": [
+    "the-rigidification-of-islamic-jurisprudence"
+  ],
+  "concept/islamic-jurisprudence": [
+    "the-theological-foundation-of-islamic-jurisprudence"
+  ],
+  "subject/computing": [
+    "understanding-laptops-definition-components-and-uses"
+  ],
+  "concept/laptop-architecture": [
+    "understanding-laptops-definition-components-and-uses"
+  ],
+  "concept/urdu-literature": [
+    "urdu-literature-and-classical-era-1",
+    "urdu-literature-and-classical-era-2"
+  ],
+  "field/social-science": [
+    "world-war-ii-causes-events-consequences-and-legacy"
+  ],
+  "concept/world-war-ii": [
+    "world-war-ii-causes-events-consequences-and-legacy"
+  ],
+  "concept/al-ghazali": [
+    "al-ghazali-and-the-seljuk-abbasid-diarchy"
+  ],
+  "subject/music": [
+    "chopins-ballade-no-1-analysis"
+  ],
+  "concept/analysis": [
+    "chopins-ballade-no-1-analysis"
+  ],
+  "concept/macro_history": [
+    "economic-consequences-antonine-plague"
+  ],
+  "concept/godfather": [
+    "godfather-women-analysis",
+    "michael-corleone-character-arc-analysis",
+    "vito-corleone-sympathy-analysis"
+  ],
+  "concept/innovators-dilemma": [
+    "google-and-ai"
+  ],
+  "concept/ottoman-empire": [
+    "historical-analysis",
+    "ottoman-empire-fall-causes"
+  ],
+  "concept/religion": [
+    "ihya-ulum-al-din-overview",
+    "ihya-ulum-al-din-structure"
+  ],
+  "concept/metal-slug": [
+    "iron-requiem-metal-slug-narrative-study"
+  ],
+  "concept/immigration": [
+    "italian-american-immigration-historical-context"
+  ],
+  "concept/pakistan-movement": [
+    "jinnah-final-days"
+  ],
+  "concept/kargil-war": [
+    "karnal-sher-khan-shaheed-biography"
+  ],
+  "concept/rome": [
+    "marcus-aurelius-life-and-power"
+  ],
+  "concept/ghalib": [
+    "mirza-asadullah-khan-ghalib"
+  ],
+  "concept/power-dynamics": [
+    "rasputin-and-the-romanovs"
+  ],
+  "subject/history/russia": [
+    "rasputin-and-the-romanovs"
+  ],
+  "entity/person/rasputin": [
+    "rasputin-and-the-romanovs"
+  ],
+  "concept/tragic-hero": [
+    "robb-stark-character-study"
+  ],
+  "concept/political-failure": [
+    "robb-stark-character-study"
+  ],
+  "concept/duty-vs-desire": [
+    "robb-stark-character-study"
+  ],
+  "concept/military/siege": [
+    "siege-of-constantinople-1453"
+  ],
+  "concept/siege": [
+    "siege-of-constantinople-bayezid-i"
+  ],
+  "field/hard-science": [
+    "the-mughal-empire-structure-governance-and-legacy"
+  ],
+  "concept/mughal-empire": [
+    "the-mughal-empire-structure-governance-and-legacy"
+  ],
+  "concept/de-extinction": [
+    "the-dire-wolf"
+  ],
+  "concept/economic_system": [
+    "capitalism",
+    "communism",
+    "socialism"
+  ],
+  "subject/law": [
+    "evolution-and-institutionalization-of-islamic-jurisprudence"
+  ],
+  "concept/fiqh": [
+    "evolution-and-institutionalization-of-islamic-jurisprudence"
+  ],
+  "concept/procrastination": [
+    "stoic-guide-to-procrastination"
+  ],
+  "concept/epistemic-synthesis": [
+    "the-synthesis-what-comes-after-reason"
+  ],
+  "concept/essential-habits": [
+    "hanafi-essential-muslim-habits",
+    "synthesis-essential-muslim-habits"
+  ],
+  "concept/habits": [
+    "hanbali-essential-muslim-habits",
+    "maliki-essential-muslim-habits",
+    "shafii-essential-muslim-habits"
+  ],
+  "concept/daily-prayers-ruling": [
+    "hanafi-five-daily-prayers-ruling",
+    "hanbali-five-daily-prayers-ruling",
+    "maliki-five-daily-prayers-ruling",
+    "shafii-five-daily-prayers-ruling",
+    "synthesis-five-daily-prayers-ruling"
+  ],
+  "concept/forex": [
+    "hanafi-forex-trading-xauusd-halal"
+  ],
+  "concept/forex-xauusd-trading-concept": [
+    "hanafi-forex-trading-xauusd-halal"
+  ],
+  "concept/forex_trading": [
+    "hanbali-forex-trading-xauusd-halal"
+  ],
+  "concept/forex-gold": [
+    "maliki-forex-trading-xauusd-halal",
+    "shafii-forex-trading-xauusd-halal",
+    "synthesis-forex-trading-xauusd-halal"
+  ],
+  "concept/hijab-niqab": [
+    "hanafi-hijab-niqab-women-ruling",
+    "hanbali-hijab-niqab-women-ruling",
+    "maliki-hijab-niqab-women-ruling",
+    "shafii-hijab-niqab-women-ruling",
+    "synthesis-hijab-niqab-women-ruling"
+  ],
+  "concept/music": [
+    "hanafi-musical-instruments-ruling",
+    "hanbali-musical-instruments-ruling",
+    "maliki-musical-instruments-ruling",
+    "shafii-musical-instruments-ruling",
+    "synthesis-musical-instruments-ruling"
+  ],
+  "project": [
+    "fastbot",
+    "gmail-assistant",
+    "lines-of-code-chapters-of-me",
+    "nuhub",
+    "portfolio",
+    "the-mothership"
+  ]
+}

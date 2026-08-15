@@ -1,0 +1,24 @@
+{
+  "slug": "the-cursive-nightmare-and-the-flat-stone",
+  "title": "The Cursive Nightmare and the Flat Stone",
+  "tags": [
+    "field/humanities",
+    "subject/history",
+    "concept/urdu-origins"
+  ],
+  "htmlContent": "<p>Up to History</p>\n<h3>Prerequisite</h3>\n<p><a href=\"/notes/the-scribes-and-the-typecasters\">The Scribes and the Typecasters</a></p>\n<h1>The Cursive Nightmare and the Flat Stone</h1>\n<p>Have you ever looked closely at Nastaliq? It does not walk; it dances. It flows from top-right to bottom-left, with letters changing their shape depending on the characters that flank them. A single letter might have dozens of variants. To print Nastaliq using moveable metal type required casting thousands of separate ligatures. The early attempts by British typographers at Serampore yielded blocky, disjointed, and hideous pages. Readers, accustomed to the elegant sweep of the pen, flatly refused to buy them.</p>\n<p>Here is what most people miss about this technological bottleneck: Urdu printers found an alternative, but it came with a heavy economic price. They turned to lithography—printing from flat stones. A katib would write the text using greasy ink on transfer paper, which was then pressed onto a limestone slab. The stone was treated, inked, and run through a press. For a small printer, lithography was initially cheap because you did not need to buy expensive metal type casting equipment. You only needed a stone, a press, and a scribe. But lithography could not scale. If you wanted to correct a typo, you could not just swap out a metal block. You had to scrape the stone or rewrite the whole page. The speed of the press was forever bound to the speed of the calligrapher’s hand.</p>\n<h3>Next</h3>\n<p><a href=\"/notes/the-balance-sheet-of-literacy-and-identity\">The Balance Sheet of Literacy and Identity</a></p>",
+  "rawMarkdown": "\nUp to History\n\n### Prerequisite\n[The Scribes and the Typecasters](/notes/the-scribes-and-the-typecasters)\n\n\n# The Cursive Nightmare and the Flat Stone\n\nHave you ever looked closely at Nastaliq? It does not walk; it dances. It flows from top-right to bottom-left, with letters changing their shape depending on the characters that flank them. A single letter might have dozens of variants. To print Nastaliq using moveable metal type required casting thousands of separate ligatures. The early attempts by British typographers at Serampore yielded blocky, disjointed, and hideous pages. Readers, accustomed to the elegant sweep of the pen, flatly refused to buy them.\n\nHere is what most people miss about this technological bottleneck: Urdu printers found an alternative, but it came with a heavy economic price. They turned to lithography—printing from flat stones. A katib would write the text using greasy ink on transfer paper, which was then pressed onto a limestone slab. The stone was treated, inked, and run through a press. For a small printer, lithography was initially cheap because you did not need to buy expensive metal type casting equipment. You only needed a stone, a press, and a scribe. But lithography could not scale. If you wanted to correct a typo, you could not just swap out a metal block. You had to scrape the stone or rewrite the whole page. The speed of the press was forever bound to the speed of the calligrapher’s hand.\n\n### Next\n[The Balance Sheet of Literacy and Identity](/notes/the-balance-sheet-of-literacy-and-identity)\n",
+  "wordCount": 250,
+  "backlinks": [
+    {
+      "slug": "the-balance-sheet-of-literacy-and-identity",
+      "title": "The Balance Sheet of Literacy and Identity"
+    },
+    {
+      "slug": "the-scribes-and-the-typecasters",
+      "title": "The Scribes and the Typecasters"
+    }
+  ],
+  "relativePath": "30_Knowledge_Base/10_Concepts/The Cursive Nightmare and the Flat Stone.md",
+  "filename": "The Cursive Nightmare and the Flat Stone"
+}

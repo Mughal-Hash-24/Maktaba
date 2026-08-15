@@ -1,0 +1,15 @@
+{
+  "slug": "memory-arena-test",
+  "title": "Memory Arena Test",
+  "tags": [
+    "field/cs",
+    "subject/programming/cpp",
+    "concept/memory/arena"
+  ],
+  "htmlContent": "<p>Up to Languages</p>\n<h1>Experiment: Memory_Arena_Test</h1>\n<ul>\n<li><strong>Status:</strong> Active</li>\n<li><strong>Physical Location:</strong> <a href=\"file:///D:/Languages/C%2B%2B/Memory_Arena_Test\">Open Code Folder</a></li>\n<li><strong>Created:</strong> 2026-01-23</li>\n</ul>\n<h2>Goal</h2>\n<p>To test memory arena concepts.</p>\n<h2>Log</h2>\n<ul>\n<li>Scaffolding created.</li>\n</ul>",
+  "rawMarkdown": "\nUp to Languages\n# Experiment: Memory_Arena_Test\n\n* **Status:** Active\n* **Physical Location:** [Open Code Folder](file:///D:/Languages/C%2B%2B/Memory_Arena_Test)\n* **Created:** 2026-01-23\n\n## Goal\nTo test memory arena concepts.\n\n## Log\n* Scaffolding created.",
+  "wordCount": 36,
+  "backlinks": [],
+  "relativePath": "20_CS_Core/Languages/C++/Memory_Arena_Test.md",
+  "filename": "Memory_Arena_Test"
+}

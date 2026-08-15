@@ -1,0 +1,14 @@
+{
+  "slug": "fastbot",
+  "title": "FastBot",
+  "tags": [
+    "field/cs",
+    "project"
+  ],
+  "htmlContent": "<h1>FastBot</h1>\n<p>Up to Active Projects</p>\n<blockquote>\n<p><strong>Physical Location:</strong> <a href=\"file:///D:/PROJECTS/FastBot\">Open Folder</a></p>\n</blockquote>\n<h2>Objective</h2>\n<p>(What are we building and why?)</p>\n<h2>Tech Stack</h2>\n<ul>\n<li><strong>Frontend:</strong></li>\n<li><strong>Backend:</strong></li>\n<li><strong>Database:</strong></li>\n</ul>\n<h2>Roadmap</h2>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled> Phase 1: MVP</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled> Phase 2: Features</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled> Phase 3: Polish</li>\n</ul>\n<h2>🪵 Dev Log</h2>\n<ul>\n<li><strong>2026-01-23</strong>: Project documentation scaffolded by Gemini.</li>\n</ul>",
+  "rawMarkdown": "# FastBot\n\nUp to Active Projects\n\n> **Physical Location:** [Open Folder](file:///D:/PROJECTS/FastBot)\n\n## Objective\n(What are we building and why?)\n\n## Tech Stack\n- **Frontend:**\n- **Backend:**\n- **Database:**\n\n## Roadmap\n- [ ] Phase 1: MVP\n- [ ] Phase 2: Features\n- [ ] Phase 3: Polish\n\n## 🪵 Dev Log\n- **2026-01-23**: Project documentation scaffolded by Gemini.\n",
+  "wordCount": 51,
+  "backlinks": [],
+  "relativePath": "40_Projects/Active/FastBot.md",
+  "filename": "FastBot"
+}

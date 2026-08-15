@@ -1,0 +1,20 @@
+{
+  "slug": "registers",
+  "title": "Registers",
+  "tags": [
+    "field/cs",
+    "subject/coal",
+    "concept/1.1/registers"
+  ],
+  "htmlContent": "",
+  "rawMarkdown": "\n",
+  "wordCount": 0,
+  "backlinks": [
+    {
+      "slug": "moc-coal",
+      "title": "(MOC)   C.O.A.L"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/C.O.A.L/1.1 Registers.md",
+  "filename": "1.1 Registers"
+}

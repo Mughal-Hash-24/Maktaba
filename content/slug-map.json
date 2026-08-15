@@ -1,0 +1,2241 @@
+{
+  "byFilename": {
+    "(MOC) - C.O.A.L": "moc-coal",
+    "1.1 Registers": "registers",
+    "1.2 Memory Allocation and Accessing": "memory-allocation-and-accessing",
+    "1.4 Movsx and Movzx": "movsx-and-movzx",
+    "1.5 Misc": "misc",
+    "2.0 Console Input and Output": "console-input-and-output",
+    "2.1 Stack": "coal-stack",
+    "2.2 Flags": "flags",
+    "2.3 Assignment 2 - Take Aways": "assignment-2-take-aways",
+    "2.4 Integer Arithematic": "integer-arithematic",
+    "2.5 Stack Frames": "stack-frames",
+    "3.1 Strings and Arrays": "strings-and-arrays",
+    "3.2 Floating Point": "floating-point",
+    "3.3 Interesting shit": "interesting-shit",
+    "Assignment 1 - Takeaways": "assignment-1-takeaways",
+    "Assignment 2 - Takeaways": "assignment-2-takeaways",
+    "Booth's algo": "booths-algo",
+    "Coal Buddy": "coal-buddy",
+    "Jumps": "jumps",
+    "(MOC) - Data Structures": "moc-data-structures",
+    "1.1 Arrays": "arrays",
+    "1.10 BSTs": "bsts",
+    "1.11 Complexity": "complexity",
+    "1.12 Case Study Analysis P1": "case-study-analysis-p1",
+    "1.2 Linked Lists": "linked-lists",
+    "1.3 Trees": "trees",
+    "1.4 Assignment 1 - Take Aways": "assignment-1-take-aways",
+    "1.6 Circular Linked List": "circular-linked-list",
+    "1.7 Complexity Theory": "complexity-theory",
+    "1.8 Queue": "queue",
+    "1.9 Stack": "data-structures-stack",
+    "Arrays & Loops": "10-univers-arrays-loops",
+    "(MOC) - Discrete Structures": "moc-discrete-structures",
+    "1.1.1  Propositions, Negations, Conjunctions, and Disjunctions": "propositions-negations-conjunctions-and-disjunctions",
+    "1.1.2 Implications, Converse, Inverse, Contrapositive and Biconditionals": "implications-converse-inverse-contrapositive-and-biconditionals",
+    "6.1 Set Notations": "set-notations",
+    "Proofs": "proofs",
+    "(MOC) - Linear Algebra": "moc-linear-algebra",
+    "1.3 Vector Equations": "vector-equations",
+    "Eigenvectors_and_Eigenvalues": "eigenvectors-and-eigenvalues",
+    "Span of Vectors": "span-of-vectors",
+    "(MOC) - PF": "moc-pf",
+    "(MOC) - Automata Theory": "moc-automata-theory",
+    "-NOTATIONS": "notations",
+    "2.1 Theory of Formal Languages": "theory-of-formal-languages",
+    "2.2 Kleene's and Positive Closure": "kleenes-and-positive-closure",
+    "2.p Examples & Problems": "2p-examples-problems",
+    "3.1 Recursive Definitions": "recursive-definitions",
+    "3.p Examples & Problems": "3p-examples-problems",
+    "4.1 Regular Expressions": "regular-expressions",
+    "5.1 Finite Automata": "finite-automata",
+    "6.1 Transition Graphs": "transition-graphs",
+    "6.2 Generalized TGs": "generalized-tgs",
+    "7.1 Pumping Lemma": "pumping-lemma",
+    "8.1 RE to e-NFA": "re-to-e-nfa",
+    "9.1 Finite Automata With Output": "finite-automata-with-output",
+    "Chapter 12": "chapter-12",
+    "Introduction To Computer Theory.pdf": "introduction-to-computer-theorypdf",
+    "Test": "test",
+    "Deadlines": "deadlines",
+    "Timetable": "timetable",
+    "Instructor Info": "software-development-instructor-info",
+    "1.1.1 - Defining Intelligence": "defining-intelligence",
+    "1.1.2 - What is AI": "what-is-ai",
+    "1.1.3 - The Turing Test": "the-turing-test",
+    "1.1.4 - AI Subfields and Concepts": "ai-subfields-and-concepts",
+    "1.1.5 - AI vs ML vs DL": "ai-vs-ml-vs-dl",
+    "1.1.6 - Types of Machine Learning": "types-of-machine-learning",
+    "1.1.7 - Applications and Future of AI": "applications-and-future-of-ai",
+    "1.1.8 - LLM Input Processing": "llm-input-processing",
+    "1.2.1 - AI Agents": "ai-agents",
+    "1.2.2 - Agents Overview Simple Reflex": "agents-overview-simple-reflex",
+    "1.2.3 - Model Based Agent": "model-based-agent",
+    "1.2.4 - Goal Based Agent": "goal-based-agent",
+    "1.2.5 - Utility Based Agent": "utility-based-agent",
+    "1.2.6 - Learning Agents": "learning-agents",
+    "1.3.1 - AI Search Foundations": "ai-search-foundations",
+    "1.3.10 - A Star Algorithm": "a-star-algorithm",
+    "1.3.11 - Dijkstra Algorithm": "dijkstra-algorithm",
+    "1.3.12 - Search Logic Details": "search-logic-details",
+    "1.3.13 - A Star Optimality and Blocking": "notes-a-star-optimality-and-blocking",
+    "1.3.14 - A Star vs Dijkstra Comparison": "a-star-vs-dijkstra-comparison",
+    "1.3.15 - A Star Termination Conditions": "a-star-termination-conditions",
+    "1.3.16 - A Star Non Admissible Heuristics": "a-star-non-admissible-heuristics",
+    "1.3.17 - Admissible Heuristics and Path Optimality": "admissible-heuristics-and-path-optimality",
+    "1.3.18 - A Star Tree Search Optimality Blocking": "a-star-tree-search-optimality-blocking",
+    "1.3.19 - 8 Puzzle Problem A Star Application": "8-puzzle-problem-a-star-application",
+    "1.3.2 - Search Recap": "search-recap",
+    "1.3.3 - AI Uninformed Search": "ai-uninformed-search",
+    "1.3.4 - AI Cost Sensitive Search": "ai-cost-sensitive-search",
+    "1.3.5 - AI UCS Limitations": "ai-ucs-limitations",
+    "1.3.6 - Pancake Problem": "pancake-problem",
+    "1.3.7 - Heuristic Functions": "heuristic-functions",
+    "1.3.8 - Greedy Search": "greedy-search",
+    "1.3.9 - AI Search Costs": "ai-search-costs",
+    "2.1.1 - Local Searches": "local-searches",
+    "2.2.1 - GA Introduction and Inception": "ga-introduction-and-inception",
+    "2.2.2 - GA Core Mechanics": "ga-core-mechanics",
+    "2.2.3 - GA Workflow": "ga-workflow",
+    "2.2.4 - Selection and Operators": "selection-and-operators",
+    "2.2.5 - Genetic Variation": "genetic-variation",
+    "Client_Server_Architecture": "client-server-architecture",
+    "Database_Integration_and_Migration": "database-integration-and-migration",
+    "Three_Tier_Architecture": "three-tier-architecture",
+    "1.1.1 - Introduction to Databases": "introduction-to-databases",
+    "1.1.10 - SQL Query Construction System": "sql-query-construction-system",
+    "1.1.11 - SQL Nested Queries Conceptual": "sql-nested-queries-conceptual",
+    "1.1.12 - SQL Nested Queries Practical": "sql-nested-queries-practical",
+    "1.1.13 - SQL Joins - Fundamentals": "sql-joins-fundamentals",
+    "1.1.14 - SQL Joins - Cross Join": "sql-joins-cross-join",
+    "1.1.15 - SQL Joins - Inner Join": "sql-joins-inner-join",
+    "1.1.16 - SQL Joins - Outer Join Fundamentals": "sql-joins-outer-join-fundamentals",
+    "1.1.17 - SQL Joins - Full Outer Join": "sql-joins-full-outer-join",
+    "1.1.18 - SQL Joins - Left Outer Join": "sql-joins-left-outer-join",
+    "1.1.19 - SQL Joins - Right Outer Join": "sql-joins-right-outer-join",
+    "1.1.2 - Data Types and Architecture": "data-types-and-architecture",
+    "1.1.20 - SQL Set Operations": "notes-sql-set-operations",
+    "1.1.21 - SQL Create and Drop": "sql-create-and-drop",
+    "1.1.22 - SQL Schema Lifecycle": "sql-schema-lifecycle",
+    "1.1.23 - SQL Set Operations": "notes-sql-set-operations-1",
+    "1.1.24 - SQL Create and Drop Operations": "sql-create-and-drop-operations",
+    "1.1.25 - SQL Schema Workflow": "sql-schema-workflow",
+    "1.1.26 - SQL Table Creation and Constraints": "sql-table-creation-and-constraints",
+    "1.1.3 - SQL Fundamentals and Retrieval": "sql-fundamentals-and-retrieval",
+    "1.1.4 - SQL Pattern Matching": "sql-pattern-matching",
+    "1.1.5 - SQL Null Handling and Updates": "sql-null-handling-and-updates",
+    "1.1.6 - SQL Sorting and Ordering": "sql-sorting-and-ordering",
+    "1.1.7 - SQL Aggregate Functions Overview": "sql-aggregate-functions-overview",
+    "1.1.8 - SQL Standard Aggregates Deep Dive": "sql-standard-aggregates-deep-dive",
+    "1.1.9 - SQL Aggregation Case Study": "sql-aggregation-case-study",
+    "2.1.1 - Database JOIN Strategies": "database-join-strategies",
+    "2.2.1 - Intro to Entity Relation Diagram": "intro-to-entity-relation-diagram",
+    "2.2.2 - Technical Specifics of an ER diagram": "technical-specifics-of-an-er-diagram",
+    "2.3.1 - EERD Introduction": "eerd-introduction",
+    "2.3.2 - Supertype_Subtype hierarchies in EERD": "supertype-subtype-hierarchies-in-eerd",
+    "2.3.3 - Specialization and Generalization in EERD": "specialization-and-generalization-in-eerd",
+    "2.3.4 - Hierarchies, lattices and shared subclasses": "hierarchies-lattices-and-shared-subclasses",
+    "1.1.1 - OS Process Fundamentals": "os-process-fundamentals",
+    "1.1.10 - OS Pipe Prototypes and Arrays": "os-pipe-prototypes-and-arrays",
+    "1.1.11 - OS Pipe Backend Internals": "os-pipe-backend-internals",
+    "1.1.12 - OS Pipe Synchronization and Blocking": "os-pipe-synchronization-and-blocking",
+    "1.1.13 - OS Named Pipes": "os-named-pipes",
+    "1.1.14 - OS Fork Bomb and Signal Handling": "os-fork-bomb-and-signal-handling",
+    "1.1.15 - OS Pipe Inheritance Across Generations": "os-pipe-inheritance-across-generations",
+    "1.1.16 - OS IO Redirection Mechanics in C": "os-io-redirection-mechanics-in-c",
+    "1.1.17 - OS Schedulers": "os-schedulers",
+    "1.1.2 - OS Process Creation and Forking": "os-process-creation-and-forking",
+    "1.1.3 - OS Parallelism Case Study": "os-parallelism-case-study",
+    "1.1.4 - OS Exec Syscalls": "os-exec-syscalls",
+    "1.1.5 - IPC Concepts": "ipc-concepts",
+    "1.1.6 - OS File Descriptors": "os-file-descriptors",
+    "1.1.7 - OS Standard I-O Descriptors": "os-standard-i-o-descriptors",
+    "1.1.8 - OS Read and Write Syntax": "os-read-and-write-syntax",
+    "1.1.9 - OS Pipes for IPC": "os-pipes-for-ipc",
+    "2.1.1 - Process Scheduling": "process-scheduling",
+    "2.1.10 - Scheduling Misc": "scheduling-misc",
+    "2.1.11 - FCFS Scheduling": "fcfs-scheduling",
+    "2.1.12 - Round Robin Scheduling": "round-robin-scheduling",
+    "2.1.13 - SJF Scheduling": "sjf-scheduling",
+    "2.1.14 - SRTF Scheduling": "srtf-scheduling",
+    "2.1.15 - SJF vs Round Robin": "sjf-vs-round-robin",
+    "2.1.16 - Priority Scheduling": "priority-scheduling",
+    "2.1.17 - Multilevel Queue Scheduling": "multilevel-queue-scheduling",
+    "2.1.18 - MLFQ Scheduling": "mlfq-scheduling",
+    "2.1.2 - Two-State Process Model": "two-state-process-model",
+    "2.1.3 - Five-State Process Model": "five-state-process-model",
+    "2.1.4 - Suspended Processes": "suspended-processes",
+    "2.1.5 - Unix V Process State Transition": "unix-v-process-state-transition",
+    "2.1.6 - Context Switching": "context-switching",
+    "2.1.7 - Three level Scheduling": "three-level-scheduling",
+    "2.1.8 - Scheduling and Process Transitions": "scheduling-and-process-transitions",
+    "2.1.9 - Decision Mode": "decision-mode",
+    "1.1.1 - Indus Valley Civilization": "indus-valley-civilization",
+    "1.1.2 - Muslim Opposition to Partition": "muslim-opposition-to-partition",
+    "1.1.3 - Khan Abdul Ghaffar Khan": "khan-abdul-ghaffar-khan",
+    "1.1.4 - Russian and Japanese Expansionism": "russian-and-japanese-expansionism",
+    "1.1.5 - Political Parties in Pakistan": "political-parties-in-pakistan",
+    "1.1.1 - Permutations and Combinations": "permutations-and-combinations",
+    "Lecture 01 - Introduction": "lecture-01-introduction",
+    "1.1.1 - Introduction to Software and SDA": "introduction-to-software-and-sda",
+    "1.1.2 - SDA Lifecycle and Phases": "sda-lifecycle-and-phases",
+    "1.1.3 - SDA Methodologies": "sda-methodologies",
+    "1.1.4 - Software Analysis vs Design": "software-analysis-vs-design",
+    "1.2.1 - UML Basics": "uml-basics",
+    "1.2.2 - OOD and OOP Concepts": "ood-and-oop-concepts",
+    "1.2.3 - Programming Paradigms": "programming-paradigms",
+    "1.2.4 - OO Core Principles": "oo-core-principles",
+    "1.2.5 - OO Relationships": "oo-relationships",
+    "1.3.1 - Advanced SDA Concepts": "advanced-sda-concepts",
+    "1.4.1 - Use Case Analysis": "use-case-analysis",
+    "1.5.1 - System Sequence Diagrams": "system-sequence-diagrams",
+    "1.5.2 - SSD Theory": "ssd-theory",
+    "1.5.3 - SSD Construction Lab": "ssd-construction-lab",
+    "1.6.1 - Domain Modelling in SDA": "domain-modelling-in-sda",
+    "SDA_Project_ideas": "sda-project-ideas",
+    "Agent Harness Design and Stateful Execution Models": "agent-harness-design-and-stateful-execution-models",
+    "Claude_reponse_inline": "claude-reponse-inline",
+    "MCP (Model Context Protocol)": "mcp-model-context-protocol",
+    "Onyx-16": "onyx-16",
+    "Singleton_Pattern": "singleton-pattern",
+    "Software Engineering_ Singletons": "software-engineering-singletons",
+    "Vault Explorer UI Design Concept": "vault-explorer-ui-design-concept",
+    "design_patterns": "design-patterns",
+    "Memory_Arena_Test": "memory-arena-test",
+    "01_Java_Fundamentals": "01-java-fundamentals",
+    "02_Java_Architecture": "02-java-architecture",
+    "03_Java_Concepts": "03-java-concepts",
+    "Java_Aggregation": "java-aggregation",
+    "Java_Class_Definitions": "java-class-definitions",
+    "Java_Composition": "java-composition",
+    "Java_Diamond_Problem": "java-diamond-problem",
+    "Java_Fundamentals_Deep_Dive": "java-fundamentals-deep-dive",
+    "Java_IO_Mechanics_Scanner_vs_Buffer": "java-io-mechanics-scanner-vs-buffer",
+    "Java_Inheritance": "java-inheritance",
+    "Polymorphism": "polymorphism",
+    "Python_Advanced_OOP_Metaprogramming": "python-advanced-oop-metaprogramming",
+    "Python_Advanced_Polymorphism_and_Inheritance": "python-advanced-polymorphism-and-inheritance",
+    "Python_Execution_and_Memory_Model": "python-execution-and-memory-model",
+    "Python_Lists_and_Arrays_Deep_Dive": "python-lists-and-arrays-deep-dive",
+    "Python_OOP_Mechanics": "python-oop-mechanics",
+    "Python_Philosophy_and_Intro": "python-philosophy-and-intro",
+    "Python_Strings_and_Literals": "python-strings-and-literals",
+    "Python_Tuples_Sets_and_Dictionaries": "python-tuples-sets-and-dictionaries",
+    "Python_Variables_and_Casting": "python-variables-and-casting",
+    "A_Star_Heuristic_Admissibility": "a-star-heuristic-admissibility",
+    "A_Star_Optimality_and_Blocking": "algorithms-a-star-optimality-and-blocking",
+    "Local_Cost_in_Search": "local-cost-in-search",
+    "Recursion": "recursion",
+    "Flutter's Multi-Tree Architecture - Widget, Render, and Layer Trees": "flutters-multi-tree-architecture-widget-render-and-layer-trees",
+    "Go-Explore's Archive-Based Exploration Strategy for Red Teaming AI Agents": "go-explores-archive-based-exploration-strategy-for-red-teaming-ai-agents",
+    "Knowledge Graphs Foundations Purpose Implementation and Applications": "knowledge-graphs-foundations-purpose-implementation-and-applications",
+    "LLMOps Operationalizing Large Language Models in Production": "llmops-operationalizing-large-language-models-in-production",
+    "MIS_Brainstorm": "mis-brainstorm",
+    "NEAT (NeuroEvolution of Augmenting Topologies)": "neat-neuroevolution-of-augmenting-topologies",
+    "Kernel_Architecture_and_Development": "kernel-architecture-and-development",
+    "Unnamed_Pipe_Array_Behavior": "unnamed-pipe-array-behavior",
+    "Virtual_Memory_Mechanics": "virtual-memory-mechanics",
+    "design_patterns_in_oop": "design-patterns-in-oop",
+    "The Data Intelligence Pipeline": "the-data-intelligence-pipeline",
+    "Arch_Linux_Transition_Analysis": "arch-linux-transition-analysis",
+    "Arch_Linux_vs_Windows_Report": "arch-linux-vs-windows-report",
+    "Altruism_vs_Psychological_Egoism": "altruism-vs-psychological-egoism",
+    "Arguments_for_God": "arguments-for-god",
+    "Authenticity_in_Existentialism": "authenticity-in-existentialism",
+    "Business_Models": "business-models",
+    "CRISPR-Cas9_Mechanism": "crispr-cas9-mechanism",
+    "Crisis_and_Reform_in_Islamic_Jurisprudence": "crisis-and-reform-in-islamic-jurisprudence",
+    "Democracy_Incentive_Failure": "democracy-incentive-failure",
+    "Descartes' Cogito Ergo Sum - A Philosophical Analysis": "descartes-cogito-ergo-sum-a-philosophical-analysis",
+    "Dreams_in_Crime_and_Punishment": "dreams-in-crime-and-punishment",
+    "Game_Theory_of_Cartels": "game-theory-of-cartels",
+    "Ghalib - Analysis of Taghaful and the Diminished Gaze": "ghalib-analysis-of-taghaful-and-the-diminished-gaze",
+    "Gyroscopic_Precession": "gyroscopic-precession",
+    "Gödel's Incompleteness Theorems — Mathematical Limits as Philosophical Argument": "gdels-incompleteness-theorems-mathematical-limits-as-philosophical-argument",
+    "Iqbal, Rumi, and Khudi v2": "iqbal-rumi-and-khudi-v2",
+    "Islamic_Sectarianism_in_the_Subcontinent": "islamic-sectarianism-in-the-subcontinent",
+    "Kafka's Metamorphosis": "kafkas-metamorphosis",
+    "Literature Interpretation": "literature-interpretation",
+    "Marcus_Aurelius_Stoic_Philosophy": "marcus-aurelius-stoic-philosophy",
+    "Mechanics_ Lenz's Law": "mechanics-lenzs-law",
+    "Origins and Historical Evolution of Shia Islam": "origins-and-historical-evolution-of-shia-islam",
+    "Platonic Eros in the Symposium": "platonic-eros-in-the-symposium",
+    "Polishing the Street Tongue": "polishing-the-street-tongue",
+    "Proxenos": "proxenos",
+    "Pure Mathematics": "pure-mathematics",
+    "Rhetorical and Thematic Analysis of the Tyrion-Jon Dungeon Dialogue": "rhetorical-and-thematic-analysis-of-the-tyrion-jon-dungeon-dialogue",
+    "Rumi’s Life Before and After Shams of Tabriz: A Philosophical and Biographical Exploration": "rumis-life-before-and-after-shams-of-tabriz-a-philosophical-and-biographical-exploration",
+    "The Balance Sheet of Literacy and Identity": "the-balance-sheet-of-literacy-and-identity",
+    "The Benares Spark and the Clerical War": "the-benares-spark-and-the-clerical-war",
+    "The Biological Tethering of Perception — Hoffman and Dawkins": "the-biological-tethering-of-perception-hoffman-and-dawkins",
+    "The Concept of Kızıl Elma in Ottoman Thought and Its Significance": "the-concept-of-kzl-elma-in-ottoman-thought-and-its-significance",
+    "The Crucible of Delhi_ Migration, Markets, and the Birth of Dehlavi": "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi",
+    "The Cursive Nightmare and the Flat Stone": "the-cursive-nightmare-and-the-flat-stone",
+    "The Dawn of Philosophy and the First Philosophers": "the-dawn-of-philosophy-and-the-first-philosophers",
+    "The Empty Treasury of Delhi": "the-empty-treasury-of-delhi",
+    "The Forced Caravan_ A Dialect Transplanted": "the-forced-caravan-a-dialect-transplanted",
+    "The Imperial Graft_ Daulatabad and the Genesis of Dakhni Urdu": "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu",
+    "The Indo-Aryan Skeleton": "the-indo-aryan-skeleton",
+    "The Invasion of the Vernacular": "the-invasion-of-the-vernacular",
+    "The Lab in Calcutta": "the-lab-in-calcutta",
+    "The Lahori Crucible_ Ghaznavid Military Camps and the Birth of Hindavi": "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi",
+    "The Language of the Courtyard and the Soil": "the-language-of-the-courtyard-and-the-soil",
+    "The Philosophy of Love Connection and Understanding in the Before Trilogy": "the-philosophy-of-love-connection-and-understanding-in-the-before-trilogy",
+    "The Psychological Corruption of Reason — Freud and Jung": "the-psychological-corruption-of-reason-freud-and-jung",
+    "The Purifiers of Delhi": "the-purifiers-of-delhi",
+    "The Scribes and the Typecasters": "the-scribes-and-the-typecasters",
+    "The Scribes of the Durbar": "the-scribes-of-the-durbar",
+    "The Scribes of the Old Order": "the-scribes-of-the-old-order",
+    "The Shifting Alignments of Identity": "the-shifting-alignments-of-identity",
+    "The Southern Crucible_ Dakhni and the Royal Ghazal": "the-southern-crucible-dakhni-and-the-royal-ghazal",
+    "The Structural Limits of Pure Reason — Immanuel Kant": "the-structural-limits-of-pure-reason-immanuel-kant",
+    "The Systematic Fallibility of Cognition — Daniel Kahneman": "the-systematic-fallibility-of-cognition-daniel-kahneman",
+    "The Taxonomy of Ishq and the Ghalibian Reform of Tradition": "the-taxonomy-of-ishq-and-the-ghalibian-reform-of-tradition",
+    "The Trojan War Origins, Conflict, and Aftermath": "the-trojan-war-origins-conflict-and-aftermath",
+    "The_Blind_Spot": "the-blind-spot",
+    "The_Colonial_Disruption_of_Islamic_Jurisprudence": "the-colonial-disruption-of-islamic-jurisprudence",
+    "The_Historical_Emergence_of_Sunni_Jurisprudence": "the-historical-emergence-of-sunni-jurisprudence",
+    "The_Rigidification_of_Islamic_Jurisprudence": "the-rigidification-of-islamic-jurisprudence",
+    "The_Theological_Foundation_of_Islamic_Jurisprudence": "the-theological-foundation-of-islamic-jurisprudence",
+    "Trolley_Problem": "trolley-problem",
+    "Understanding Laptops: Definition, Components, and Uses": "understanding-laptops-definition-components-and-uses",
+    "Urdu Literature and Classical Era 1": "urdu-literature-and-classical-era-1",
+    "Urdu Literature and Classical Era 2": "urdu-literature-and-classical-era-2",
+    "World War II: Causes, Events, Consequences, and Legacy": "world-war-ii-causes-events-consequences-and-legacy",
+    "iqbal_rumi_khudi": "iqbal-rumi-khudi",
+    "Al Ghazali and the Seljuk-Abbasid Diarchy": "al-ghazali-and-the-seljuk-abbasid-diarchy",
+    "Chopins_Ballade_No_1_Analysis": "chopins-ballade-no-1-analysis",
+    "Corleone_Business_Organization_Analysis": "corleone-business-organization-analysis",
+    "Economic_Consequences_Antonine_Plague": "economic-consequences-antonine-plague",
+    "Godfather_Women_Analysis": "godfather-women-analysis",
+    "Google_and_AI": "google-and-ai",
+    "Historical Analysis": "historical-analysis",
+    "Ihya_Ulum_al_Din_Overview": "ihya-ulum-al-din-overview",
+    "Iron Requiem - Metal Slug Narrative Study": "iron-requiem-metal-slug-narrative-study",
+    "Italian_American_Immigration_Historical_Context": "italian-american-immigration-historical-context",
+    "Jinnah_Final_Days": "jinnah-final-days",
+    "Kal_Chaudhwin_Ki_Raat_Thi": "kal-chaudhwin-ki-raat-thi",
+    "Karnal Sher Khan Shaheed Biography": "karnal-sher-khan-shaheed-biography",
+    "Marcus_Aurelius_Life_and_Power": "marcus-aurelius-life-and-power",
+    "Michael_Corleone_Character_Arc_Analysis": "michael-corleone-character-arc-analysis",
+    "Mirza Asadullah Khan Ghalib": "mirza-asadullah-khan-ghalib",
+    "Ottoman_Empire_Fall_Causes": "ottoman-empire-fall-causes",
+    "Rasputin_And_The_Romanovs": "rasputin-and-the-romanovs",
+    "Robb_Stark_Character_Study": "robb-stark-character-study",
+    "Siege_of_Constantinople_1453": "siege-of-constantinople-1453",
+    "Siege_of_Constantinople_Bayezid_I": "siege-of-constantinople-bayezid-i",
+    "The Mughal Empire: Structure, Governance, and Legacy": "the-mughal-empire-structure-governance-and-legacy",
+    "The_Dire_Wolf": "the-dire-wolf",
+    "Vito_Corleone_Sympathy_Analysis": "vito-corleone-sympathy-analysis",
+    "Capitalism": "capitalism",
+    "Communism": "communism",
+    "Evolution and Institutionalization of Islamic Jurisprudence": "evolution-and-institutionalization-of-islamic-jurisprudence",
+    "Ihya_Ulum_al_Din_Structure": "ihya-ulum-al-din-structure",
+    "Socialism": "socialism",
+    "Stoic_Guide_to_Procrastination": "stoic-guide-to-procrastination",
+    "The Synthesis — What Comes After Reason": "the-synthesis-what-comes-after-reason",
+    "Hanafi - essential-muslim-habits": "hanafi-essential-muslim-habits",
+    "Hanbali - essential-muslim-habits": "hanbali-essential-muslim-habits",
+    "Maliki - essential-muslim-habits": "maliki-essential-muslim-habits",
+    "Shafii - essential-muslim-habits": "shafii-essential-muslim-habits",
+    "Synthesis - essential-muslim-habits": "synthesis-essential-muslim-habits",
+    "Hanafi - five-daily-prayers-ruling": "hanafi-five-daily-prayers-ruling",
+    "Hanbali - five-daily-prayers-ruling": "hanbali-five-daily-prayers-ruling",
+    "Maliki - five-daily-prayers-ruling": "maliki-five-daily-prayers-ruling",
+    "Shafii - five-daily-prayers-ruling": "shafii-five-daily-prayers-ruling",
+    "Synthesis - five-daily-prayers-ruling": "synthesis-five-daily-prayers-ruling",
+    "Hanafi - forex-trading-xauusd-halal": "hanafi-forex-trading-xauusd-halal",
+    "Hanbali - forex-trading-xauusd-halal": "hanbali-forex-trading-xauusd-halal",
+    "Maliki - forex-trading-xauusd-halal": "maliki-forex-trading-xauusd-halal",
+    "Shafii - forex-trading-xauusd-halal": "shafii-forex-trading-xauusd-halal",
+    "Synthesis - forex-trading-xauusd-halal": "synthesis-forex-trading-xauusd-halal",
+    "Hanafi - hijab-niqab-women-ruling": "hanafi-hijab-niqab-women-ruling",
+    "Hanbali - hijab-niqab-women-ruling": "hanbali-hijab-niqab-women-ruling",
+    "Maliki - hijab-niqab-women-ruling": "maliki-hijab-niqab-women-ruling",
+    "Shafii - hijab-niqab-women-ruling": "shafii-hijab-niqab-women-ruling",
+    "Synthesis - hijab-niqab-women-ruling": "synthesis-hijab-niqab-women-ruling",
+    "Hanafi - musical-instruments-ruling": "hanafi-musical-instruments-ruling",
+    "Hanbali - musical-instruments-ruling": "hanbali-musical-instruments-ruling",
+    "Maliki - musical-instruments-ruling": "maliki-musical-instruments-ruling",
+    "Shafii - musical-instruments-ruling": "shafii-musical-instruments-ruling",
+    "Synthesis - musical-instruments-ruling": "synthesis-musical-instruments-ruling",
+    "FastBot": "fastbot",
+    "Gmail Assistant": "gmail-assistant",
+    "Lines of code, chapters of me": "lines-of-code-chapters-of-me",
+    "NuHub": "nuhub",
+    "Portfolio": "portfolio",
+    "The Mothership": "the-mothership",
+    "Read - MIS": "read-mis",
+    "Read - MIS_Architecture": "read-mis-architecture",
+    "Read - Model Context Protocol Intro": "read-model-context-protocol-intro"
+  },
+  "bySlug": {
+    "moc-coal": {
+      "filename": "(MOC) - C.O.A.L",
+      "relativePath": "10_University/Semester_03/C.O.A.L/(MOC) - C.O.A.L.md",
+      "title": "(MOC)   C.O.A.L"
+    },
+    "registers": {
+      "filename": "1.1 Registers",
+      "relativePath": "10_University/Semester_03/C.O.A.L/1.1 Registers.md",
+      "title": "Registers"
+    },
+    "memory-allocation-and-accessing": {
+      "filename": "1.2 Memory Allocation and Accessing",
+      "relativePath": "10_University/Semester_03/C.O.A.L/1.2 Memory Allocation and Accessing.md",
+      "title": "Memory Allocation and Accessing"
+    },
+    "movsx-and-movzx": {
+      "filename": "1.4 Movsx and Movzx",
+      "relativePath": "10_University/Semester_03/C.O.A.L/1.4 Movsx and Movzx.md",
+      "title": "Movsx and Movzx"
+    },
+    "misc": {
+      "filename": "1.5 Misc",
+      "relativePath": "10_University/Semester_03/C.O.A.L/1.5 Misc.md",
+      "title": "Misc"
+    },
+    "console-input-and-output": {
+      "filename": "2.0 Console Input and Output",
+      "relativePath": "10_University/Semester_03/C.O.A.L/2.0 Console Input and Output.md",
+      "title": "Console Input and Output"
+    },
+    "coal-stack": {
+      "filename": "2.1 Stack",
+      "relativePath": "10_University/Semester_03/C.O.A.L/2.1 Stack.md",
+      "title": "Stack"
+    },
+    "flags": {
+      "filename": "2.2 Flags",
+      "relativePath": "10_University/Semester_03/C.O.A.L/2.2 Flags.md",
+      "title": "Flags"
+    },
+    "assignment-2-take-aways": {
+      "filename": "2.3 Assignment 2 - Take Aways",
+      "relativePath": "10_University/Semester_03/C.O.A.L/2.3 Assignment 2 - Take Aways.md",
+      "title": "Assignment 2 - Take Aways"
+    },
+    "integer-arithematic": {
+      "filename": "2.4 Integer Arithematic",
+      "relativePath": "10_University/Semester_03/C.O.A.L/2.4 Integer Arithematic.md",
+      "title": "Integer Arithematic"
+    },
+    "stack-frames": {
+      "filename": "2.5 Stack Frames",
+      "relativePath": "10_University/Semester_03/C.O.A.L/2.5 Stack Frames.md",
+      "title": "Stack Frames"
+    },
+    "strings-and-arrays": {
+      "filename": "3.1 Strings and Arrays",
+      "relativePath": "10_University/Semester_03/C.O.A.L/3.1 Strings and Arrays.md",
+      "title": "Strings and Arrays"
+    },
+    "floating-point": {
+      "filename": "3.2 Floating Point",
+      "relativePath": "10_University/Semester_03/C.O.A.L/3.2 Floating Point.md",
+      "title": "Floating Point"
+    },
+    "interesting-shit": {
+      "filename": "3.3 Interesting shit",
+      "relativePath": "10_University/Semester_03/C.O.A.L/3.3 Interesting shit.md",
+      "title": "Interesting shit"
+    },
+    "assignment-1-takeaways": {
+      "filename": "Assignment 1 - Takeaways",
+      "relativePath": "10_University/Semester_03/C.O.A.L/Assignment 1 - Takeaways.md",
+      "title": "Assignment 1   Takeaways"
+    },
+    "assignment-2-takeaways": {
+      "filename": "Assignment 2 - Takeaways",
+      "relativePath": "10_University/Semester_03/C.O.A.L/Assignment 2 - Takeaways.md",
+      "title": "Assignment 2   Takeaways"
+    },
+    "booths-algo": {
+      "filename": "Booth's algo",
+      "relativePath": "10_University/Semester_03/C.O.A.L/Booth's algo.md",
+      "title": "Booth's algo"
+    },
+    "coal-buddy": {
+      "filename": "Coal Buddy",
+      "relativePath": "10_University/Semester_03/C.O.A.L/Coal Buddy.md",
+      "title": "Coal Buddy"
+    },
+    "jumps": {
+      "filename": "Jumps",
+      "relativePath": "10_University/Semester_03/C.O.A.L/Jumps.md",
+      "title": "Jumps"
+    },
+    "moc-data-structures": {
+      "filename": "(MOC) - Data Structures",
+      "relativePath": "10_University/Semester_03/Data Structures/(MOC) - Data Structures.md",
+      "title": "(MOC)   Data Structures"
+    },
+    "arrays": {
+      "filename": "1.1 Arrays",
+      "relativePath": "10_University/Semester_03/Data Structures/1.1 Arrays.md",
+      "title": "Arrays"
+    },
+    "bsts": {
+      "filename": "1.10 BSTs",
+      "relativePath": "10_University/Semester_03/Data Structures/1.10 BSTs.md",
+      "title": "BSTs"
+    },
+    "complexity": {
+      "filename": "1.11 Complexity",
+      "relativePath": "10_University/Semester_03/Data Structures/1.11 Complexity.md",
+      "title": "Complexity"
+    },
+    "case-study-analysis-p1": {
+      "filename": "1.12 Case Study Analysis P1",
+      "relativePath": "10_University/Semester_03/Data Structures/1.12 Case Study Analysis P1.md",
+      "title": "Case Study Analysis P1"
+    },
+    "linked-lists": {
+      "filename": "1.2 Linked Lists",
+      "relativePath": "10_University/Semester_03/Data Structures/1.2 Linked Lists.md",
+      "title": "Linked Lists"
+    },
+    "trees": {
+      "filename": "1.3 Trees",
+      "relativePath": "10_University/Semester_03/Data Structures/1.3 Trees.md",
+      "title": "Trees"
+    },
+    "assignment-1-take-aways": {
+      "filename": "1.4 Assignment 1 - Take Aways",
+      "relativePath": "10_University/Semester_03/Data Structures/1.4 Assignment 1 - Take Aways.md",
+      "title": "Assignment 1 - Take Aways"
+    },
+    "circular-linked-list": {
+      "filename": "1.6 Circular Linked List",
+      "relativePath": "10_University/Semester_03/Data Structures/1.6 Circular Linked List.md",
+      "title": "Circular Linked List"
+    },
+    "complexity-theory": {
+      "filename": "1.7 Complexity Theory",
+      "relativePath": "10_University/Semester_03/Data Structures/1.7 Complexity Theory.md",
+      "title": "Complexity Theory"
+    },
+    "queue": {
+      "filename": "1.8 Queue",
+      "relativePath": "10_University/Semester_03/Data Structures/1.8 Queue.md",
+      "title": "Queue"
+    },
+    "data-structures-stack": {
+      "filename": "1.9 Stack",
+      "relativePath": "10_University/Semester_03/Data Structures/1.9 Stack.md",
+      "title": "Stack"
+    },
+    "data-structures-arrays-loops": {
+      "filename": "Arrays & Loops",
+      "relativePath": "10_University/Semester_03/Data Structures/Arrays & Loops.md",
+      "title": "Arrays & Loops"
+    },
+    "moc-discrete-structures": {
+      "filename": "(MOC) - Discrete Structures",
+      "relativePath": "10_University/Semester_03/Discrete Structures/(MOC) - Discrete Structures.md",
+      "title": "(MOC)   Discrete Structures"
+    },
+    "propositions-negations-conjunctions-and-disjunctions": {
+      "filename": "1.1.1  Propositions, Negations, Conjunctions, and Disjunctions",
+      "relativePath": "10_University/Semester_03/Discrete Structures/1.1.1  Propositions, Negations, Conjunctions, and Disjunctions.md",
+      "title": "Propositions, Negations, Conjunctions, and Disjunctions"
+    },
+    "implications-converse-inverse-contrapositive-and-biconditionals": {
+      "filename": "1.1.2 Implications, Converse, Inverse, Contrapositive and Biconditionals",
+      "relativePath": "10_University/Semester_03/Discrete Structures/1.1.2 Implications, Converse, Inverse, Contrapositive and Biconditionals.md",
+      "title": "Implications, Converse, Inverse, Contrapositive and Biconditionals"
+    },
+    "set-notations": {
+      "filename": "6.1 Set Notations",
+      "relativePath": "10_University/Semester_03/Discrete Structures/6.1 Set Notations.md",
+      "title": "Set Notations"
+    },
+    "proofs": {
+      "filename": "Proofs",
+      "relativePath": "10_University/Semester_03/Discrete Structures/Proofs.md",
+      "title": "Proofs"
+    },
+    "moc-linear-algebra": {
+      "filename": "(MOC) - Linear Algebra",
+      "relativePath": "10_University/Semester_03/Linear Algebra/(MOC) - Linear Algebra.md",
+      "title": "(MOC)   Linear Algebra"
+    },
+    "vector-equations": {
+      "filename": "1.3 Vector Equations",
+      "relativePath": "10_University/Semester_03/Linear Algebra/1.3 Vector Equations.md",
+      "title": "Vector Equations"
+    },
+    "eigenvectors-and-eigenvalues": {
+      "filename": "Eigenvectors_and_Eigenvalues",
+      "relativePath": "10_University/Semester_03/Linear Algebra/Eigenvectors_and_Eigenvalues.md",
+      "title": "Eigenvectors and Eigenvalues"
+    },
+    "span-of-vectors": {
+      "filename": "Span of Vectors",
+      "relativePath": "10_University/Semester_03/Linear Algebra/Span of Vectors.md",
+      "title": "Span of Vectors"
+    },
+    "moc-pf": {
+      "filename": "(MOC) - PF",
+      "relativePath": "10_University/Semester_03/PF/(MOC) - PF.md",
+      "title": "(MOC)   PF"
+    },
+    "10-univers-arrays-loops": {
+      "filename": "Arrays & Loops",
+      "relativePath": "10_University/Semester_03/PF/Arrays & Loops.md",
+      "title": "Arrays & Loops"
+    },
+    "moc-automata-theory": {
+      "filename": "(MOC) - Automata Theory",
+      "relativePath": "10_University/Semester_03/Theory of Automata/(MOC) - Automata Theory.md",
+      "title": "(MOC)   Automata Theory"
+    },
+    "notations": {
+      "filename": "-NOTATIONS",
+      "relativePath": "10_University/Semester_03/Theory of Automata/-NOTATIONS.md",
+      "title": "NOTATIONS"
+    },
+    "theory-of-formal-languages": {
+      "filename": "2.1 Theory of Formal Languages",
+      "relativePath": "10_University/Semester_03/Theory of Automata/2.1 Theory of Formal Languages.md",
+      "title": "Theory of Formal Languages"
+    },
+    "kleenes-and-positive-closure": {
+      "filename": "2.2 Kleene's and Positive Closure",
+      "relativePath": "10_University/Semester_03/Theory of Automata/2.2 Kleene's and Positive Closure.md",
+      "title": "Kleene's and Positive Closure"
+    },
+    "2p-examples-problems": {
+      "filename": "2.p Examples & Problems",
+      "relativePath": "10_University/Semester_03/Theory of Automata/2.p Examples & Problems.md",
+      "title": "2.p Examples & Problems"
+    },
+    "recursive-definitions": {
+      "filename": "3.1 Recursive Definitions",
+      "relativePath": "10_University/Semester_03/Theory of Automata/3.1 Recursive Definitions.md",
+      "title": "Recursive Definitions"
+    },
+    "3p-examples-problems": {
+      "filename": "3.p Examples & Problems",
+      "relativePath": "10_University/Semester_03/Theory of Automata/3.p Examples & Problems.md",
+      "title": "3.p Examples & Problems"
+    },
+    "regular-expressions": {
+      "filename": "4.1 Regular Expressions",
+      "relativePath": "10_University/Semester_03/Theory of Automata/4.1 Regular Expressions.md",
+      "title": "Regular Expressions"
+    },
+    "finite-automata": {
+      "filename": "5.1 Finite Automata",
+      "relativePath": "10_University/Semester_03/Theory of Automata/5.1 Finite Automata.md",
+      "title": "Finite Automata"
+    },
+    "transition-graphs": {
+      "filename": "6.1 Transition Graphs",
+      "relativePath": "10_University/Semester_03/Theory of Automata/6.1 Transition Graphs.md",
+      "title": "Transition Graphs"
+    },
+    "generalized-tgs": {
+      "filename": "6.2 Generalized TGs",
+      "relativePath": "10_University/Semester_03/Theory of Automata/6.2 Generalized TGs.md",
+      "title": "Generalized TGs"
+    },
+    "pumping-lemma": {
+      "filename": "7.1 Pumping Lemma",
+      "relativePath": "10_University/Semester_03/Theory of Automata/7.1 Pumping Lemma.md",
+      "title": "Pumping Lemma"
+    },
+    "re-to-e-nfa": {
+      "filename": "8.1 RE to e-NFA",
+      "relativePath": "10_University/Semester_03/Theory of Automata/8.1 RE to e-NFA.md",
+      "title": "RE to e-NFA"
+    },
+    "finite-automata-with-output": {
+      "filename": "9.1 Finite Automata With Output",
+      "relativePath": "10_University/Semester_03/Theory of Automata/9.1 Finite Automata With Output.md",
+      "title": "Finite Automata With Output"
+    },
+    "chapter-12": {
+      "filename": "Chapter 12",
+      "relativePath": "10_University/Semester_03/Theory of Automata/Chapter 12.md",
+      "title": "Chapter 12"
+    },
+    "introduction-to-computer-theorypdf": {
+      "filename": "Introduction To Computer Theory.pdf",
+      "relativePath": "10_University/Semester_03/Theory of Automata/Introduction To Computer Theory.pdf.md",
+      "title": "Introduction To Computer Theory.pdf"
+    },
+    "test": {
+      "filename": "Test",
+      "relativePath": "10_University/Semester_03/Theory of Automata/Test.md",
+      "title": "Test"
+    },
+    "deadlines": {
+      "filename": "Deadlines",
+      "relativePath": "10_University/Semester_04/Admin/Deadlines.md",
+      "title": "Deadlines"
+    },
+    "timetable": {
+      "filename": "Timetable",
+      "relativePath": "10_University/Semester_04/Admin/Timetable.md",
+      "title": "Timetable"
+    },
+    "artificial-intellige-instructor-info": {
+      "filename": "Instructor Info",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Instructor Info.md",
+      "title": "Instructor Info"
+    },
+    "defining-intelligence": {
+      "filename": "1.1.1 - Defining Intelligence",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.1 - Defining Intelligence.md",
+      "title": "Defining Intelligence"
+    },
+    "what-is-ai": {
+      "filename": "1.1.2 - What is AI",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.2 - What is AI.md",
+      "title": "What is AI"
+    },
+    "the-turing-test": {
+      "filename": "1.1.3 - The Turing Test",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.3 - The Turing Test.md",
+      "title": "The Turing Test"
+    },
+    "ai-subfields-and-concepts": {
+      "filename": "1.1.4 - AI Subfields and Concepts",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.4 - AI Subfields and Concepts.md",
+      "title": "AI Subfields and Concepts"
+    },
+    "ai-vs-ml-vs-dl": {
+      "filename": "1.1.5 - AI vs ML vs DL",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.5 - AI vs ML vs DL.md",
+      "title": "AI vs ML vs DL"
+    },
+    "types-of-machine-learning": {
+      "filename": "1.1.6 - Types of Machine Learning",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.6 - Types of Machine Learning.md",
+      "title": "Types of Machine Learning"
+    },
+    "applications-and-future-of-ai": {
+      "filename": "1.1.7 - Applications and Future of AI",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.7 - Applications and Future of AI.md",
+      "title": "Applications and Future of AI"
+    },
+    "llm-input-processing": {
+      "filename": "1.1.8 - LLM Input Processing",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.1.8 - LLM Input Processing.md",
+      "title": "LLM Input Processing"
+    },
+    "ai-agents": {
+      "filename": "1.2.1 - AI Agents",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.2.1 - AI Agents.md",
+      "title": "AI Agents"
+    },
+    "agents-overview-simple-reflex": {
+      "filename": "1.2.2 - Agents Overview Simple Reflex",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.2.2 - Agents Overview Simple Reflex.md",
+      "title": "Agents Overview Simple Reflex"
+    },
+    "model-based-agent": {
+      "filename": "1.2.3 - Model Based Agent",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.2.3 - Model Based Agent.md",
+      "title": "Model Based Agent"
+    },
+    "goal-based-agent": {
+      "filename": "1.2.4 - Goal Based Agent",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.2.4 - Goal Based Agent.md",
+      "title": "Goal Based Agent"
+    },
+    "utility-based-agent": {
+      "filename": "1.2.5 - Utility Based Agent",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.2.5 - Utility Based Agent.md",
+      "title": "Utility Based Agent"
+    },
+    "learning-agents": {
+      "filename": "1.2.6 - Learning Agents",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.2.6 - Learning Agents.md",
+      "title": "Learning Agents"
+    },
+    "ai-search-foundations": {
+      "filename": "1.3.1 - AI Search Foundations",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.1 - AI Search Foundations.md",
+      "title": "AI Search Foundations"
+    },
+    "a-star-algorithm": {
+      "filename": "1.3.10 - A Star Algorithm",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.10 - A Star Algorithm.md",
+      "title": "A Star Algorithm"
+    },
+    "dijkstra-algorithm": {
+      "filename": "1.3.11 - Dijkstra Algorithm",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.11 - Dijkstra Algorithm.md",
+      "title": "Dijkstra Algorithm"
+    },
+    "search-logic-details": {
+      "filename": "1.3.12 - Search Logic Details",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.12 - Search Logic Details.md",
+      "title": "Search Logic Details"
+    },
+    "notes-a-star-optimality-and-blocking": {
+      "filename": "1.3.13 - A Star Optimality and Blocking",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.13 - A Star Optimality and Blocking.md",
+      "title": "A Star Optimality and Blocking"
+    },
+    "a-star-vs-dijkstra-comparison": {
+      "filename": "1.3.14 - A Star vs Dijkstra Comparison",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.14 - A Star vs Dijkstra Comparison.md",
+      "title": "A Star vs Dijkstra Comparison"
+    },
+    "a-star-termination-conditions": {
+      "filename": "1.3.15 - A Star Termination Conditions",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.15 - A Star Termination Conditions.md",
+      "title": "A Star Termination Conditions"
+    },
+    "a-star-non-admissible-heuristics": {
+      "filename": "1.3.16 - A Star Non Admissible Heuristics",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.16 - A Star Non Admissible Heuristics.md",
+      "title": "A Star Non Admissible Heuristics"
+    },
+    "admissible-heuristics-and-path-optimality": {
+      "filename": "1.3.17 - Admissible Heuristics and Path Optimality",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.17 - Admissible Heuristics and Path Optimality.md",
+      "title": "Admissible Heuristics and Path Optimality"
+    },
+    "a-star-tree-search-optimality-blocking": {
+      "filename": "1.3.18 - A Star Tree Search Optimality Blocking",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.18 - A Star Tree Search Optimality Blocking.md",
+      "title": "A Star Tree Search Optimality Blocking"
+    },
+    "8-puzzle-problem-a-star-application": {
+      "filename": "1.3.19 - 8 Puzzle Problem A Star Application",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.19 - 8 Puzzle Problem A Star Application.md",
+      "title": "8 Puzzle Problem A Star Application"
+    },
+    "search-recap": {
+      "filename": "1.3.2 - Search Recap",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.2 - Search Recap.md",
+      "title": "Search Recap"
+    },
+    "ai-uninformed-search": {
+      "filename": "1.3.3 - AI Uninformed Search",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.3 - AI Uninformed Search.md",
+      "title": "AI Uninformed Search"
+    },
+    "ai-cost-sensitive-search": {
+      "filename": "1.3.4 - AI Cost Sensitive Search",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.4 - AI Cost Sensitive Search.md",
+      "title": "AI Cost Sensitive Search"
+    },
+    "ai-ucs-limitations": {
+      "filename": "1.3.5 - AI UCS Limitations",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.5 - AI UCS Limitations.md",
+      "title": "AI UCS Limitations"
+    },
+    "pancake-problem": {
+      "filename": "1.3.6 - Pancake Problem",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.6 - Pancake Problem.md",
+      "title": "Pancake Problem"
+    },
+    "heuristic-functions": {
+      "filename": "1.3.7 - Heuristic Functions",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.7 - Heuristic Functions.md",
+      "title": "Heuristic Functions"
+    },
+    "greedy-search": {
+      "filename": "1.3.8 - Greedy Search",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.8 - Greedy Search.md",
+      "title": "Greedy Search"
+    },
+    "ai-search-costs": {
+      "filename": "1.3.9 - AI Search Costs",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/1.3.9 - AI Search Costs.md",
+      "title": "AI Search Costs"
+    },
+    "local-searches": {
+      "filename": "2.1.1 - Local Searches",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/2.1.1 - Local Searches.md",
+      "title": "Local Searches"
+    },
+    "ga-introduction-and-inception": {
+      "filename": "2.2.1 - GA Introduction and Inception",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/2.2.1 - GA Introduction and Inception.md",
+      "title": "GA Introduction and Inception"
+    },
+    "ga-core-mechanics": {
+      "filename": "2.2.2 - GA Core Mechanics",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/2.2.2 - GA Core Mechanics.md",
+      "title": "GA Core Mechanics"
+    },
+    "ga-workflow": {
+      "filename": "2.2.3 - GA Workflow",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/2.2.3 - GA Workflow.md",
+      "title": "GA Workflow"
+    },
+    "selection-and-operators": {
+      "filename": "2.2.4 - Selection and Operators",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/2.2.4 - Selection and Operators.md",
+      "title": "Selection and Operators"
+    },
+    "genetic-variation": {
+      "filename": "2.2.5 - Genetic Variation",
+      "relativePath": "10_University/Semester_04/Artificial Intelligence/Notes/2.2.5 - Genetic Variation.md",
+      "title": "Genetic Variation"
+    },
+    "client-server-architecture": {
+      "filename": "Client_Server_Architecture",
+      "relativePath": "10_University/Semester_04/DB lab/Notes/Client_Server_Architecture.md",
+      "title": "Client Server Architecture"
+    },
+    "database-integration-and-migration": {
+      "filename": "Database_Integration_and_Migration",
+      "relativePath": "10_University/Semester_04/DB lab/Notes/Database_Integration_and_Migration.md",
+      "title": "Database Integration and Migration"
+    },
+    "three-tier-architecture": {
+      "filename": "Three_Tier_Architecture",
+      "relativePath": "10_University/Semester_04/DB lab/Notes/Three_Tier_Architecture.md",
+      "title": "Three Tier Architecture"
+    },
+    "database-systems-instructor-info": {
+      "filename": "Instructor Info",
+      "relativePath": "10_University/Semester_04/Database Systems/Instructor Info.md",
+      "title": "Instructor Info"
+    },
+    "introduction-to-databases": {
+      "filename": "1.1.1 - Introduction to Databases",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.1 - Introduction to Databases.md",
+      "title": "Introduction to Databases"
+    },
+    "sql-query-construction-system": {
+      "filename": "1.1.10 - SQL Query Construction System",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.10 - SQL Query Construction System.md",
+      "title": "SQL Query Construction System"
+    },
+    "sql-nested-queries-conceptual": {
+      "filename": "1.1.11 - SQL Nested Queries Conceptual",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.11 - SQL Nested Queries Conceptual.md",
+      "title": "SQL Nested Queries Conceptual"
+    },
+    "sql-nested-queries-practical": {
+      "filename": "1.1.12 - SQL Nested Queries Practical",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.12 - SQL Nested Queries Practical.md",
+      "title": "SQL Nested Queries Practical"
+    },
+    "sql-joins-fundamentals": {
+      "filename": "1.1.13 - SQL Joins - Fundamentals",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.13 - SQL Joins - Fundamentals.md",
+      "title": "SQL Joins - Fundamentals"
+    },
+    "sql-joins-cross-join": {
+      "filename": "1.1.14 - SQL Joins - Cross Join",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.14 - SQL Joins - Cross Join.md",
+      "title": "SQL Joins - Cross Join"
+    },
+    "sql-joins-inner-join": {
+      "filename": "1.1.15 - SQL Joins - Inner Join",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.15 - SQL Joins - Inner Join.md",
+      "title": "SQL Joins - Inner Join"
+    },
+    "sql-joins-outer-join-fundamentals": {
+      "filename": "1.1.16 - SQL Joins - Outer Join Fundamentals",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.16 - SQL Joins - Outer Join Fundamentals.md",
+      "title": "SQL Joins - Outer Join Fundamentals"
+    },
+    "sql-joins-full-outer-join": {
+      "filename": "1.1.17 - SQL Joins - Full Outer Join",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.17 - SQL Joins - Full Outer Join.md",
+      "title": "SQL Joins - Full Outer Join"
+    },
+    "sql-joins-left-outer-join": {
+      "filename": "1.1.18 - SQL Joins - Left Outer Join",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.18 - SQL Joins - Left Outer Join.md",
+      "title": "SQL Joins - Left Outer Join"
+    },
+    "sql-joins-right-outer-join": {
+      "filename": "1.1.19 - SQL Joins - Right Outer Join",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.19 - SQL Joins - Right Outer Join.md",
+      "title": "SQL Joins - Right Outer Join"
+    },
+    "data-types-and-architecture": {
+      "filename": "1.1.2 - Data Types and Architecture",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.2 - Data Types and Architecture.md",
+      "title": "Data Types and Architecture"
+    },
+    "notes-sql-set-operations": {
+      "filename": "1.1.20 - SQL Set Operations",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.20 - SQL Set Operations.md",
+      "title": "SQL Set Operations"
+    },
+    "sql-create-and-drop": {
+      "filename": "1.1.21 - SQL Create and Drop",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.21 - SQL Create and Drop.md",
+      "title": "SQL Create and Drop"
+    },
+    "sql-schema-lifecycle": {
+      "filename": "1.1.22 - SQL Schema Lifecycle",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.22 - SQL Schema Lifecycle.md",
+      "title": "SQL Schema Lifecycle"
+    },
+    "notes-sql-set-operations-1": {
+      "filename": "1.1.23 - SQL Set Operations",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.23 - SQL Set Operations.md",
+      "title": "SQL Set Operations"
+    },
+    "sql-create-and-drop-operations": {
+      "filename": "1.1.24 - SQL Create and Drop Operations",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.24 - SQL Create and Drop Operations.md",
+      "title": "SQL Create and Drop Operations"
+    },
+    "sql-schema-workflow": {
+      "filename": "1.1.25 - SQL Schema Workflow",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.25 - SQL Schema Workflow.md",
+      "title": "SQL Schema Workflow"
+    },
+    "sql-table-creation-and-constraints": {
+      "filename": "1.1.26 - SQL Table Creation and Constraints",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.26 - SQL Table Creation and Constraints.md",
+      "title": "SQL Table Creation and Constraints"
+    },
+    "sql-fundamentals-and-retrieval": {
+      "filename": "1.1.3 - SQL Fundamentals and Retrieval",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.3 - SQL Fundamentals and Retrieval.md",
+      "title": "SQL Fundamentals and Retrieval"
+    },
+    "sql-pattern-matching": {
+      "filename": "1.1.4 - SQL Pattern Matching",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.4 - SQL Pattern Matching.md",
+      "title": "SQL Pattern Matching"
+    },
+    "sql-null-handling-and-updates": {
+      "filename": "1.1.5 - SQL Null Handling and Updates",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.5 - SQL Null Handling and Updates.md",
+      "title": "SQL Null Handling and Updates"
+    },
+    "sql-sorting-and-ordering": {
+      "filename": "1.1.6 - SQL Sorting and Ordering",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.6 - SQL Sorting and Ordering.md",
+      "title": "SQL Sorting and Ordering"
+    },
+    "sql-aggregate-functions-overview": {
+      "filename": "1.1.7 - SQL Aggregate Functions Overview",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.7 - SQL Aggregate Functions Overview.md",
+      "title": "SQL Aggregate Functions Overview"
+    },
+    "sql-standard-aggregates-deep-dive": {
+      "filename": "1.1.8 - SQL Standard Aggregates Deep Dive",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.8 - SQL Standard Aggregates Deep Dive.md",
+      "title": "SQL Standard Aggregates Deep Dive"
+    },
+    "sql-aggregation-case-study": {
+      "filename": "1.1.9 - SQL Aggregation Case Study",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/1.1.9 - SQL Aggregation Case Study.md",
+      "title": "SQL Aggregation Case Study"
+    },
+    "database-join-strategies": {
+      "filename": "2.1.1 - Database JOIN Strategies",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/2.1.1 - Database JOIN Strategies.md",
+      "title": "Database JOIN Strategies"
+    },
+    "intro-to-entity-relation-diagram": {
+      "filename": "2.2.1 - Intro to Entity Relation Diagram",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/2.2.1 - Intro to Entity Relation Diagram.md",
+      "title": "Intro to Entity Relation Diagram"
+    },
+    "technical-specifics-of-an-er-diagram": {
+      "filename": "2.2.2 - Technical Specifics of an ER diagram",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/2.2.2 - Technical Specifics of an ER diagram.md",
+      "title": "Technical Specifics of an ER diagram"
+    },
+    "eerd-introduction": {
+      "filename": "2.3.1 - EERD Introduction",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/2.3.1 - EERD Introduction.md",
+      "title": "EERD Introduction"
+    },
+    "supertype-subtype-hierarchies-in-eerd": {
+      "filename": "2.3.2 - Supertype_Subtype hierarchies in EERD",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/2.3.2 - Supertype_Subtype hierarchies in EERD.md",
+      "title": "Supertype_Subtype hierarchies in EERD"
+    },
+    "specialization-and-generalization-in-eerd": {
+      "filename": "2.3.3 - Specialization and Generalization in EERD",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/2.3.3 - Specialization and Generalization in EERD.md",
+      "title": "Specialization and Generalization in EERD"
+    },
+    "hierarchies-lattices-and-shared-subclasses": {
+      "filename": "2.3.4 - Hierarchies, lattices and shared subclasses",
+      "relativePath": "10_University/Semester_04/Database Systems/Notes/2.3.4 - Hierarchies, lattices and shared subclasses.md",
+      "title": "Hierarchies, lattices and shared subclasses"
+    },
+    "os-process-fundamentals": {
+      "filename": "1.1.1 - OS Process Fundamentals",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.1 - OS Process Fundamentals.md",
+      "title": "OS Process Fundamentals"
+    },
+    "os-pipe-prototypes-and-arrays": {
+      "filename": "1.1.10 - OS Pipe Prototypes and Arrays",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.10 - OS Pipe Prototypes and Arrays.md",
+      "title": "OS Pipe Prototypes and Arrays"
+    },
+    "os-pipe-backend-internals": {
+      "filename": "1.1.11 - OS Pipe Backend Internals",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.11 - OS Pipe Backend Internals.md",
+      "title": "OS Pipe Backend Internals"
+    },
+    "os-pipe-synchronization-and-blocking": {
+      "filename": "1.1.12 - OS Pipe Synchronization and Blocking",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.12 - OS Pipe Synchronization and Blocking.md",
+      "title": "OS Pipe Synchronization and Blocking"
+    },
+    "os-named-pipes": {
+      "filename": "1.1.13 - OS Named Pipes",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.13 - OS Named Pipes.md",
+      "title": "OS Named Pipes"
+    },
+    "os-fork-bomb-and-signal-handling": {
+      "filename": "1.1.14 - OS Fork Bomb and Signal Handling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.14 - OS Fork Bomb and Signal Handling.md",
+      "title": "OS Fork Bomb and Signal Handling"
+    },
+    "os-pipe-inheritance-across-generations": {
+      "filename": "1.1.15 - OS Pipe Inheritance Across Generations",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.15 - OS Pipe Inheritance Across Generations.md",
+      "title": "OS Pipe Inheritance Across Generations"
+    },
+    "os-io-redirection-mechanics-in-c": {
+      "filename": "1.1.16 - OS IO Redirection Mechanics in C",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.16 - OS IO Redirection Mechanics in C.md",
+      "title": "OS IO Redirection Mechanics in C"
+    },
+    "os-schedulers": {
+      "filename": "1.1.17 - OS Schedulers",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.17 - OS Schedulers.md",
+      "title": "OS Schedulers"
+    },
+    "os-process-creation-and-forking": {
+      "filename": "1.1.2 - OS Process Creation and Forking",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.2 - OS Process Creation and Forking.md",
+      "title": "OS Process Creation and Forking"
+    },
+    "os-parallelism-case-study": {
+      "filename": "1.1.3 - OS Parallelism Case Study",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.3 - OS Parallelism Case Study.md",
+      "title": "OS Parallelism Case Study"
+    },
+    "os-exec-syscalls": {
+      "filename": "1.1.4 - OS Exec Syscalls",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.4 - OS Exec Syscalls.md",
+      "title": "OS Exec Syscalls"
+    },
+    "ipc-concepts": {
+      "filename": "1.1.5 - IPC Concepts",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.5 - IPC Concepts.md",
+      "title": "IPC Concepts"
+    },
+    "os-file-descriptors": {
+      "filename": "1.1.6 - OS File Descriptors",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.6 - OS File Descriptors.md",
+      "title": "OS File Descriptors"
+    },
+    "os-standard-i-o-descriptors": {
+      "filename": "1.1.7 - OS Standard I-O Descriptors",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.7 - OS Standard I-O Descriptors.md",
+      "title": "OS Standard I-O Descriptors"
+    },
+    "os-read-and-write-syntax": {
+      "filename": "1.1.8 - OS Read and Write Syntax",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.8 - OS Read and Write Syntax.md",
+      "title": "OS Read and Write Syntax"
+    },
+    "os-pipes-for-ipc": {
+      "filename": "1.1.9 - OS Pipes for IPC",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/1.1.9 - OS Pipes for IPC.md",
+      "title": "OS Pipes for IPC"
+    },
+    "process-scheduling": {
+      "filename": "2.1.1 - Process Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.1 - Process Scheduling.md",
+      "title": "Process Scheduling"
+    },
+    "scheduling-misc": {
+      "filename": "2.1.10 - Scheduling Misc",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.10 - Scheduling Misc.md",
+      "title": "Scheduling Misc"
+    },
+    "fcfs-scheduling": {
+      "filename": "2.1.11 - FCFS Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.11 - FCFS Scheduling.md",
+      "title": "FCFS Scheduling"
+    },
+    "round-robin-scheduling": {
+      "filename": "2.1.12 - Round Robin Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.12 - Round Robin Scheduling.md",
+      "title": "Round Robin Scheduling"
+    },
+    "sjf-scheduling": {
+      "filename": "2.1.13 - SJF Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.13 - SJF Scheduling.md",
+      "title": "SJF Scheduling"
+    },
+    "srtf-scheduling": {
+      "filename": "2.1.14 - SRTF Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.14 - SRTF Scheduling.md",
+      "title": "SRTF Scheduling"
+    },
+    "sjf-vs-round-robin": {
+      "filename": "2.1.15 - SJF vs Round Robin",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.15 - SJF vs Round Robin.md",
+      "title": "SJF vs Round Robin"
+    },
+    "priority-scheduling": {
+      "filename": "2.1.16 - Priority Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.16 - Priority Scheduling.md",
+      "title": "Priority Scheduling"
+    },
+    "multilevel-queue-scheduling": {
+      "filename": "2.1.17 - Multilevel Queue Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.17 - Multilevel Queue Scheduling.md",
+      "title": "Multilevel Queue Scheduling"
+    },
+    "mlfq-scheduling": {
+      "filename": "2.1.18 - MLFQ Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.18 - MLFQ Scheduling.md",
+      "title": "MLFQ Scheduling"
+    },
+    "two-state-process-model": {
+      "filename": "2.1.2 - Two-State Process Model",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.2 - Two-State Process Model.md",
+      "title": "Two-State Process Model"
+    },
+    "five-state-process-model": {
+      "filename": "2.1.3 - Five-State Process Model",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.3 - Five-State Process Model.md",
+      "title": "Five-State Process Model"
+    },
+    "suspended-processes": {
+      "filename": "2.1.4 - Suspended Processes",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.4 - Suspended Processes.md",
+      "title": "Suspended Processes"
+    },
+    "unix-v-process-state-transition": {
+      "filename": "2.1.5 - Unix V Process State Transition",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.5 - Unix V Process State Transition.md",
+      "title": "Unix V Process State Transition"
+    },
+    "context-switching": {
+      "filename": "2.1.6 - Context Switching",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.6 - Context Switching.md",
+      "title": "Context Switching"
+    },
+    "three-level-scheduling": {
+      "filename": "2.1.7 - Three level Scheduling",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.7 - Three level Scheduling.md",
+      "title": "Three level Scheduling"
+    },
+    "scheduling-and-process-transitions": {
+      "filename": "2.1.8 - Scheduling and Process Transitions",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.8 - Scheduling and Process Transitions.md",
+      "title": "Scheduling and Process Transitions"
+    },
+    "decision-mode": {
+      "filename": "2.1.9 - Decision Mode",
+      "relativePath": "10_University/Semester_04/Operating Systems/Notes/2.1.9 - Decision Mode.md",
+      "title": "Decision Mode"
+    },
+    "indus-valley-civilization": {
+      "filename": "1.1.1 - Indus Valley Civilization",
+      "relativePath": "10_University/Semester_04/Pak Studies/Notes/1.1.1 - Indus Valley Civilization.md",
+      "title": "Indus Valley Civilization"
+    },
+    "muslim-opposition-to-partition": {
+      "filename": "1.1.2 - Muslim Opposition to Partition",
+      "relativePath": "10_University/Semester_04/Pak Studies/Notes/1.1.2 - Muslim Opposition to Partition.md",
+      "title": "Muslim Opposition to Partition"
+    },
+    "khan-abdul-ghaffar-khan": {
+      "filename": "1.1.3 - Khan Abdul Ghaffar Khan",
+      "relativePath": "10_University/Semester_04/Pak Studies/Notes/1.1.3 - Khan Abdul Ghaffar Khan.md",
+      "title": "Khan Abdul Ghaffar Khan"
+    },
+    "russian-and-japanese-expansionism": {
+      "filename": "1.1.4 - Russian and Japanese Expansionism",
+      "relativePath": "10_University/Semester_04/Pak Studies/Notes/1.1.4 - Russian and Japanese Expansionism.md",
+      "title": "Russian and Japanese Expansionism"
+    },
+    "political-parties-in-pakistan": {
+      "filename": "1.1.5 - Political Parties in Pakistan",
+      "relativePath": "10_University/Semester_04/Pak Studies/Notes/1.1.5 - Political Parties in Pakistan.md",
+      "title": "Political Parties in Pakistan"
+    },
+    "permutations-and-combinations": {
+      "filename": "1.1.1 - Permutations and Combinations",
+      "relativePath": "10_University/Semester_04/Prob n Stats/Notes/1.1.1 - Permutations and Combinations.md",
+      "title": "Permutations and Combinations"
+    },
+    "software-development-instructor-info": {
+      "filename": "Instructor Info",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Instructor Info.md",
+      "title": "Instructor Info"
+    },
+    "lecture-01-introduction": {
+      "filename": "Lecture 01 - Introduction",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Lectures/Lecture 01 - Introduction.md",
+      "title": "Lecture 01   Introduction"
+    },
+    "introduction-to-software-and-sda": {
+      "filename": "1.1.1 - Introduction to Software and SDA",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.1.1 - Introduction to Software and SDA.md",
+      "title": "Introduction to Software and SDA"
+    },
+    "sda-lifecycle-and-phases": {
+      "filename": "1.1.2 - SDA Lifecycle and Phases",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.1.2 - SDA Lifecycle and Phases.md",
+      "title": "SDA Lifecycle and Phases"
+    },
+    "sda-methodologies": {
+      "filename": "1.1.3 - SDA Methodologies",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.1.3 - SDA Methodologies.md",
+      "title": "SDA Methodologies"
+    },
+    "software-analysis-vs-design": {
+      "filename": "1.1.4 - Software Analysis vs Design",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.1.4 - Software Analysis vs Design.md",
+      "title": "Software Analysis vs Design"
+    },
+    "uml-basics": {
+      "filename": "1.2.1 - UML Basics",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.2.1 - UML Basics.md",
+      "title": "UML Basics"
+    },
+    "ood-and-oop-concepts": {
+      "filename": "1.2.2 - OOD and OOP Concepts",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.2.2 - OOD and OOP Concepts.md",
+      "title": "OOD and OOP Concepts"
+    },
+    "programming-paradigms": {
+      "filename": "1.2.3 - Programming Paradigms",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.2.3 - Programming Paradigms.md",
+      "title": "Programming Paradigms"
+    },
+    "oo-core-principles": {
+      "filename": "1.2.4 - OO Core Principles",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.2.4 - OO Core Principles.md",
+      "title": "OO Core Principles"
+    },
+    "oo-relationships": {
+      "filename": "1.2.5 - OO Relationships",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.2.5 - OO Relationships.md",
+      "title": "OO Relationships"
+    },
+    "advanced-sda-concepts": {
+      "filename": "1.3.1 - Advanced SDA Concepts",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.3.1 - Advanced SDA Concepts.md",
+      "title": "Advanced SDA Concepts"
+    },
+    "use-case-analysis": {
+      "filename": "1.4.1 - Use Case Analysis",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.4.1 - Use Case Analysis.md",
+      "title": "Use Case Analysis"
+    },
+    "system-sequence-diagrams": {
+      "filename": "1.5.1 - System Sequence Diagrams",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.5.1 - System Sequence Diagrams.md",
+      "title": "System Sequence Diagrams"
+    },
+    "ssd-theory": {
+      "filename": "1.5.2 - SSD Theory",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.5.2 - SSD Theory.md",
+      "title": "SSD Theory"
+    },
+    "ssd-construction-lab": {
+      "filename": "1.5.3 - SSD Construction Lab",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.5.3 - SSD Construction Lab.md",
+      "title": "SSD Construction Lab"
+    },
+    "domain-modelling-in-sda": {
+      "filename": "1.6.1 - Domain Modelling in SDA",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.6.1 - Domain Modelling in SDA.md",
+      "title": "Domain Modelling in SDA"
+    },
+    "sda-project-ideas": {
+      "filename": "SDA_Project_ideas",
+      "relativePath": "10_University/Semester_04/Software Development and Analysis/Projects/SDA_Project_ideas.md",
+      "title": "SDA Project ideas"
+    },
+    "agent-harness-design-and-stateful-execution-models": {
+      "filename": "Agent Harness Design and Stateful Execution Models",
+      "relativePath": "20_CS_Core/Development/Agent Harness Design and Stateful Execution Models.md",
+      "title": "Agent Harness Design and Stateful Execution Models"
+    },
+    "claude-reponse-inline": {
+      "filename": "Claude_reponse_inline",
+      "relativePath": "20_CS_Core/Development/Claude_reponse_inline.md",
+      "title": "Claude reponse inline"
+    },
+    "mcp-model-context-protocol": {
+      "filename": "MCP (Model Context Protocol)",
+      "relativePath": "20_CS_Core/Development/MCP (Model Context Protocol).md",
+      "title": "MCP (Model Context Protocol)"
+    },
+    "onyx-16": {
+      "filename": "Onyx-16",
+      "relativePath": "20_CS_Core/Development/Onyx-16.md",
+      "title": "Onyx 16"
+    },
+    "singleton-pattern": {
+      "filename": "Singleton_Pattern",
+      "relativePath": "20_CS_Core/Development/Singleton_Pattern.md",
+      "title": "Singleton Pattern"
+    },
+    "software-engineering-singletons": {
+      "filename": "Software Engineering_ Singletons",
+      "relativePath": "20_CS_Core/Development/Software Engineering_ Singletons.md",
+      "title": "Software Engineering  Singletons"
+    },
+    "vault-explorer-ui-design-concept": {
+      "filename": "Vault Explorer UI Design Concept",
+      "relativePath": "20_CS_Core/Development/Vault Explorer UI Design Concept.md",
+      "title": "Vault Explorer UI Design Concept"
+    },
+    "design-patterns": {
+      "filename": "design_patterns",
+      "relativePath": "20_CS_Core/Development/design_patterns.md",
+      "title": "design patterns"
+    },
+    "memory-arena-test": {
+      "filename": "Memory_Arena_Test",
+      "relativePath": "20_CS_Core/Languages/C++/Memory_Arena_Test.md",
+      "title": "Memory Arena Test"
+    },
+    "01-java-fundamentals": {
+      "filename": "01_Java_Fundamentals",
+      "relativePath": "20_CS_Core/Languages/Java/01_Java_Fundamentals.md",
+      "title": "01 Java Fundamentals"
+    },
+    "02-java-architecture": {
+      "filename": "02_Java_Architecture",
+      "relativePath": "20_CS_Core/Languages/Java/02_Java_Architecture.md",
+      "title": "02 Java Architecture"
+    },
+    "03-java-concepts": {
+      "filename": "03_Java_Concepts",
+      "relativePath": "20_CS_Core/Languages/Java/03_Java_Concepts.md",
+      "title": "03 Java Concepts"
+    },
+    "java-aggregation": {
+      "filename": "Java_Aggregation",
+      "relativePath": "20_CS_Core/Languages/Java/Java_Aggregation.md",
+      "title": "Java Aggregation"
+    },
+    "java-class-definitions": {
+      "filename": "Java_Class_Definitions",
+      "relativePath": "20_CS_Core/Languages/Java/Java_Class_Definitions.md",
+      "title": "Java Class Definitions"
+    },
+    "java-composition": {
+      "filename": "Java_Composition",
+      "relativePath": "20_CS_Core/Languages/Java/Java_Composition.md",
+      "title": "Java Composition"
+    },
+    "java-diamond-problem": {
+      "filename": "Java_Diamond_Problem",
+      "relativePath": "20_CS_Core/Languages/Java/Java_Diamond_Problem.md",
+      "title": "Java Diamond Problem"
+    },
+    "java-fundamentals-deep-dive": {
+      "filename": "Java_Fundamentals_Deep_Dive",
+      "relativePath": "20_CS_Core/Languages/Java/Java_Fundamentals_Deep_Dive.md",
+      "title": "Java Fundamentals Deep Dive"
+    },
+    "java-io-mechanics-scanner-vs-buffer": {
+      "filename": "Java_IO_Mechanics_Scanner_vs_Buffer",
+      "relativePath": "20_CS_Core/Languages/Java/Java_IO_Mechanics_Scanner_vs_Buffer.md",
+      "title": "Java IO Mechanics Scanner vs Buffer"
+    },
+    "java-inheritance": {
+      "filename": "Java_Inheritance",
+      "relativePath": "20_CS_Core/Languages/Java/Java_Inheritance.md",
+      "title": "Java Inheritance"
+    },
+    "polymorphism": {
+      "filename": "Polymorphism",
+      "relativePath": "20_CS_Core/Languages/Java/Polymorphism.md",
+      "title": "Polymorphism"
+    },
+    "python-advanced-oop-metaprogramming": {
+      "filename": "Python_Advanced_OOP_Metaprogramming",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Advanced_OOP_Metaprogramming.md",
+      "title": "Python Advanced OOP Metaprogramming"
+    },
+    "python-advanced-polymorphism-and-inheritance": {
+      "filename": "Python_Advanced_Polymorphism_and_Inheritance",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Advanced_Polymorphism_and_Inheritance.md",
+      "title": "Python Advanced Polymorphism and Inheritance"
+    },
+    "python-execution-and-memory-model": {
+      "filename": "Python_Execution_and_Memory_Model",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Execution_and_Memory_Model.md",
+      "title": "Python Execution and Memory Model"
+    },
+    "python-lists-and-arrays-deep-dive": {
+      "filename": "Python_Lists_and_Arrays_Deep_Dive",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Lists_and_Arrays_Deep_Dive.md",
+      "title": "Python Lists and Arrays Deep Dive"
+    },
+    "python-oop-mechanics": {
+      "filename": "Python_OOP_Mechanics",
+      "relativePath": "20_CS_Core/Languages/Python/Python_OOP_Mechanics.md",
+      "title": "Python OOP Mechanics"
+    },
+    "python-philosophy-and-intro": {
+      "filename": "Python_Philosophy_and_Intro",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Philosophy_and_Intro.md",
+      "title": "Python Philosophy and Intro"
+    },
+    "python-strings-and-literals": {
+      "filename": "Python_Strings_and_Literals",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Strings_and_Literals.md",
+      "title": "Python Strings and Literals"
+    },
+    "python-tuples-sets-and-dictionaries": {
+      "filename": "Python_Tuples_Sets_and_Dictionaries",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Tuples_Sets_and_Dictionaries.md",
+      "title": "Python Tuples Sets and Dictionaries"
+    },
+    "python-variables-and-casting": {
+      "filename": "Python_Variables_and_Casting",
+      "relativePath": "20_CS_Core/Languages/Python/Python_Variables_and_Casting.md",
+      "title": "Python Variables and Casting"
+    },
+    "a-star-heuristic-admissibility": {
+      "filename": "A_Star_Heuristic_Admissibility",
+      "relativePath": "20_CS_Core/Theory/Algorithms/A_Star_Heuristic_Admissibility.md",
+      "title": "A Star Heuristic Admissibility"
+    },
+    "algorithms-a-star-optimality-and-blocking": {
+      "filename": "A_Star_Optimality_and_Blocking",
+      "relativePath": "20_CS_Core/Theory/Algorithms/A_Star_Optimality_and_Blocking.md",
+      "title": "A Star Optimality and Blocking"
+    },
+    "local-cost-in-search": {
+      "filename": "Local_Cost_in_Search",
+      "relativePath": "20_CS_Core/Theory/Algorithms/Local_Cost_in_Search.md",
+      "title": "Local Cost in Search"
+    },
+    "recursion": {
+      "filename": "Recursion",
+      "relativePath": "20_CS_Core/Theory/Algorithms/Recursion.md",
+      "title": "Recursion"
+    },
+    "flutters-multi-tree-architecture-widget-render-and-layer-trees": {
+      "filename": "Flutter's Multi-Tree Architecture - Widget, Render, and Layer Trees",
+      "relativePath": "20_CS_Core/Theory/Flutter's Multi-Tree Architecture - Widget, Render, and Layer Trees.md",
+      "title": "Flutter's Multi Tree Architecture   Widget, Render, and Layer Trees"
+    },
+    "go-explores-archive-based-exploration-strategy-for-red-teaming-ai-agents": {
+      "filename": "Go-Explore's Archive-Based Exploration Strategy for Red Teaming AI Agents",
+      "relativePath": "20_CS_Core/Theory/Go-Explore's Archive-Based Exploration Strategy for Red Teaming AI Agents.md",
+      "title": "Go Explore's Archive Based Exploration Strategy for Red Teaming AI Agents"
+    },
+    "knowledge-graphs-foundations-purpose-implementation-and-applications": {
+      "filename": "Knowledge Graphs Foundations Purpose Implementation and Applications",
+      "relativePath": "20_CS_Core/Theory/Knowledge Graphs Foundations Purpose Implementation and Applications.md",
+      "title": "Knowledge Graphs Foundations Purpose Implementation and Applications"
+    },
+    "llmops-operationalizing-large-language-models-in-production": {
+      "filename": "LLMOps Operationalizing Large Language Models in Production",
+      "relativePath": "20_CS_Core/Theory/LLMOps Operationalizing Large Language Models in Production.md",
+      "title": "LLMOps Operationalizing Large Language Models in Production"
+    },
+    "mis-brainstorm": {
+      "filename": "MIS_Brainstorm",
+      "relativePath": "20_CS_Core/Theory/MIS_Brainstorm.md",
+      "title": "MIS Brainstorm"
+    },
+    "neat-neuroevolution-of-augmenting-topologies": {
+      "filename": "NEAT (NeuroEvolution of Augmenting Topologies)",
+      "relativePath": "20_CS_Core/Theory/NEAT (NeuroEvolution of Augmenting Topologies).md",
+      "title": "NEAT (NeuroEvolution of Augmenting Topologies)"
+    },
+    "kernel-architecture-and-development": {
+      "filename": "Kernel_Architecture_and_Development",
+      "relativePath": "20_CS_Core/Theory/Operating Systems/Kernel_Architecture_and_Development.md",
+      "title": "Kernel Architecture and Development"
+    },
+    "unnamed-pipe-array-behavior": {
+      "filename": "Unnamed_Pipe_Array_Behavior",
+      "relativePath": "20_CS_Core/Theory/Operating Systems/Unnamed_Pipe_Array_Behavior.md",
+      "title": "Unnamed Pipe Array Behavior"
+    },
+    "virtual-memory-mechanics": {
+      "filename": "Virtual_Memory_Mechanics",
+      "relativePath": "20_CS_Core/Theory/Operating Systems/Virtual_Memory_Mechanics.md",
+      "title": "Virtual Memory Mechanics"
+    },
+    "design-patterns-in-oop": {
+      "filename": "design_patterns_in_oop",
+      "relativePath": "20_CS_Core/Theory/Software_Engineering/design_patterns_in_oop.md",
+      "title": "design patterns in oop"
+    },
+    "the-data-intelligence-pipeline": {
+      "filename": "The Data Intelligence Pipeline",
+      "relativePath": "20_CS_Core/Theory/The Data Intelligence Pipeline.md",
+      "title": "The Data Intelligence Pipeline"
+    },
+    "arch-linux-transition-analysis": {
+      "filename": "Arch_Linux_Transition_Analysis",
+      "relativePath": "20_CS_Core/Tools/Arch_Linux_Transition_Analysis.md",
+      "title": "Arch Linux Transition Analysis"
+    },
+    "arch-linux-vs-windows-report": {
+      "filename": "Arch_Linux_vs_Windows_Report",
+      "relativePath": "20_CS_Core/Tools/Arch_Linux_vs_Windows_Report.md",
+      "title": "Arch Linux vs Windows Report"
+    },
+    "altruism-vs-psychological-egoism": {
+      "filename": "Altruism_vs_Psychological_Egoism",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Altruism_vs_Psychological_Egoism.md",
+      "title": "Altruism vs Psychological Egoism"
+    },
+    "arguments-for-god": {
+      "filename": "Arguments_for_God",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Arguments_for_God.md",
+      "title": "Arguments for God"
+    },
+    "authenticity-in-existentialism": {
+      "filename": "Authenticity_in_Existentialism",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Authenticity_in_Existentialism.md",
+      "title": "Authenticity in Existentialism"
+    },
+    "business-models": {
+      "filename": "Business_Models",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Business_Models.md",
+      "title": "Business Models"
+    },
+    "crispr-cas9-mechanism": {
+      "filename": "CRISPR-Cas9_Mechanism",
+      "relativePath": "30_Knowledge_Base/10_Concepts/CRISPR-Cas9_Mechanism.md",
+      "title": "CRISPR Cas9 Mechanism"
+    },
+    "crisis-and-reform-in-islamic-jurisprudence": {
+      "filename": "Crisis_and_Reform_in_Islamic_Jurisprudence",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Crisis_and_Reform_in_Islamic_Jurisprudence.md",
+      "title": "Crisis and Reform in Islamic Jurisprudence"
+    },
+    "democracy-incentive-failure": {
+      "filename": "Democracy_Incentive_Failure",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Democracy_Incentive_Failure.md",
+      "title": "Democracy Incentive Failure"
+    },
+    "descartes-cogito-ergo-sum-a-philosophical-analysis": {
+      "filename": "Descartes' Cogito Ergo Sum - A Philosophical Analysis",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Descartes' Cogito Ergo Sum - A Philosophical Analysis.md",
+      "title": "Descartes' Cogito Ergo Sum   A Philosophical Analysis"
+    },
+    "dreams-in-crime-and-punishment": {
+      "filename": "Dreams_in_Crime_and_Punishment",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Dreams_in_Crime_and_Punishment.md",
+      "title": "Dreams in Crime and Punishment"
+    },
+    "game-theory-of-cartels": {
+      "filename": "Game_Theory_of_Cartels",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Game_Theory_of_Cartels.md",
+      "title": "Game Theory of Cartels"
+    },
+    "ghalib-analysis-of-taghaful-and-the-diminished-gaze": {
+      "filename": "Ghalib - Analysis of Taghaful and the Diminished Gaze",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Ghalib - Analysis of Taghaful and the Diminished Gaze.md",
+      "title": "Ghalib   Analysis of Taghaful and the Diminished Gaze"
+    },
+    "gyroscopic-precession": {
+      "filename": "Gyroscopic_Precession",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Gyroscopic_Precession.md",
+      "title": "Gyroscopic Precession"
+    },
+    "gdels-incompleteness-theorems-mathematical-limits-as-philosophical-argument": {
+      "filename": "Gödel's Incompleteness Theorems — Mathematical Limits as Philosophical Argument",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Gödel's Incompleteness Theorems — Mathematical Limits as Philosophical Argument.md",
+      "title": "Gödel's Incompleteness Theorems — Mathematical Limits as Philosophical Argument"
+    },
+    "iqbal-rumi-and-khudi-v2": {
+      "filename": "Iqbal, Rumi, and Khudi v2",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Iqbal, Rumi, and Khudi v2.md",
+      "title": "Iqbal, Rumi, and Khudi v2"
+    },
+    "islamic-sectarianism-in-the-subcontinent": {
+      "filename": "Islamic_Sectarianism_in_the_Subcontinent",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Islamic_Sectarianism_in_the_Subcontinent.md",
+      "title": "Islamic Sectarianism in the Subcontinent"
+    },
+    "kafkas-metamorphosis": {
+      "filename": "Kafka's Metamorphosis",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Kafka's Metamorphosis.md",
+      "title": "Kafka's Metamorphosis"
+    },
+    "literature-interpretation": {
+      "filename": "Literature Interpretation",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Literature Interpretation.md",
+      "title": "Literature Interpretation"
+    },
+    "marcus-aurelius-stoic-philosophy": {
+      "filename": "Marcus_Aurelius_Stoic_Philosophy",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Marcus_Aurelius_Stoic_Philosophy.md",
+      "title": "Marcus Aurelius Stoic Philosophy"
+    },
+    "mechanics-lenzs-law": {
+      "filename": "Mechanics_ Lenz's Law",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Mechanics_ Lenz's Law.md",
+      "title": "Mechanics  Lenz's Law"
+    },
+    "origins-and-historical-evolution-of-shia-islam": {
+      "filename": "Origins and Historical Evolution of Shia Islam",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Origins and Historical Evolution of Shia Islam.md",
+      "title": "Origins and Historical Evolution of Shia Islam"
+    },
+    "platonic-eros-in-the-symposium": {
+      "filename": "Platonic Eros in the Symposium",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Platonic Eros in the Symposium.md",
+      "title": "Platonic Eros in the Symposium"
+    },
+    "polishing-the-street-tongue": {
+      "filename": "Polishing the Street Tongue",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Polishing the Street Tongue.md",
+      "title": "Polishing the Street Tongue"
+    },
+    "proxenos": {
+      "filename": "Proxenos",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Proxenos.md",
+      "title": "Proxenos"
+    },
+    "pure-mathematics": {
+      "filename": "Pure Mathematics",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Pure Mathematics.md",
+      "title": "Pure Mathematics"
+    },
+    "rhetorical-and-thematic-analysis-of-the-tyrion-jon-dungeon-dialogue": {
+      "filename": "Rhetorical and Thematic Analysis of the Tyrion-Jon Dungeon Dialogue",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Rhetorical and Thematic Analysis of the Tyrion-Jon Dungeon Dialogue.md",
+      "title": "Rhetorical and Thematic Analysis of the Tyrion Jon Dungeon Dialogue"
+    },
+    "rumis-life-before-and-after-shams-of-tabriz-a-philosophical-and-biographical-exploration": {
+      "filename": "Rumi’s Life Before and After Shams of Tabriz: A Philosophical and Biographical Exploration",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Rumi’s Life Before and After Shams of Tabriz: A Philosophical and Biographical Exploration.md",
+      "title": "Rumi’s Life Before and After Shams of Tabriz: A Philosophical and Biographical Exploration"
+    },
+    "the-balance-sheet-of-literacy-and-identity": {
+      "filename": "The Balance Sheet of Literacy and Identity",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Balance Sheet of Literacy and Identity.md",
+      "title": "The Balance Sheet of Literacy and Identity"
+    },
+    "the-benares-spark-and-the-clerical-war": {
+      "filename": "The Benares Spark and the Clerical War",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Benares Spark and the Clerical War.md",
+      "title": "The Benares Spark and the Clerical War"
+    },
+    "the-biological-tethering-of-perception-hoffman-and-dawkins": {
+      "filename": "The Biological Tethering of Perception — Hoffman and Dawkins",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Biological Tethering of Perception — Hoffman and Dawkins.md",
+      "title": "The Biological Tethering of Perception — Hoffman and Dawkins"
+    },
+    "the-concept-of-kzl-elma-in-ottoman-thought-and-its-significance": {
+      "filename": "The Concept of Kızıl Elma in Ottoman Thought and Its Significance",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Concept of Kızıl Elma in Ottoman Thought and Its Significance.md",
+      "title": "The Concept of Kızıl Elma in Ottoman Thought and Its Significance"
+    },
+    "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi": {
+      "filename": "The Crucible of Delhi_ Migration, Markets, and the Birth of Dehlavi",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Crucible of Delhi_ Migration, Markets, and the Birth of Dehlavi.md",
+      "title": "The Crucible of Delhi  Migration, Markets, and the Birth of Dehlavi"
+    },
+    "the-cursive-nightmare-and-the-flat-stone": {
+      "filename": "The Cursive Nightmare and the Flat Stone",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Cursive Nightmare and the Flat Stone.md",
+      "title": "The Cursive Nightmare and the Flat Stone"
+    },
+    "the-dawn-of-philosophy-and-the-first-philosophers": {
+      "filename": "The Dawn of Philosophy and the First Philosophers",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Dawn of Philosophy and the First Philosophers.md",
+      "title": "The Dawn of Philosophy and the First Philosophers"
+    },
+    "the-empty-treasury-of-delhi": {
+      "filename": "The Empty Treasury of Delhi",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Empty Treasury of Delhi.md",
+      "title": "The Empty Treasury of Delhi"
+    },
+    "the-forced-caravan-a-dialect-transplanted": {
+      "filename": "The Forced Caravan_ A Dialect Transplanted",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Forced Caravan_ A Dialect Transplanted.md",
+      "title": "The Forced Caravan  A Dialect Transplanted"
+    },
+    "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu": {
+      "filename": "The Imperial Graft_ Daulatabad and the Genesis of Dakhni Urdu",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Imperial Graft_ Daulatabad and the Genesis of Dakhni Urdu.md",
+      "title": "The Imperial Graft  Daulatabad and the Genesis of Dakhni Urdu"
+    },
+    "the-indo-aryan-skeleton": {
+      "filename": "The Indo-Aryan Skeleton",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Indo-Aryan Skeleton.md",
+      "title": "The Indo Aryan Skeleton"
+    },
+    "the-invasion-of-the-vernacular": {
+      "filename": "The Invasion of the Vernacular",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Invasion of the Vernacular.md",
+      "title": "The Invasion of the Vernacular"
+    },
+    "the-lab-in-calcutta": {
+      "filename": "The Lab in Calcutta",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Lab in Calcutta.md",
+      "title": "The Lab in Calcutta"
+    },
+    "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi": {
+      "filename": "The Lahori Crucible_ Ghaznavid Military Camps and the Birth of Hindavi",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Lahori Crucible_ Ghaznavid Military Camps and the Birth of Hindavi.md",
+      "title": "The Lahori Crucible  Ghaznavid Military Camps and the Birth of Hindavi"
+    },
+    "the-language-of-the-courtyard-and-the-soil": {
+      "filename": "The Language of the Courtyard and the Soil",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Language of the Courtyard and the Soil.md",
+      "title": "The Language of the Courtyard and the Soil"
+    },
+    "the-philosophy-of-love-connection-and-understanding-in-the-before-trilogy": {
+      "filename": "The Philosophy of Love Connection and Understanding in the Before Trilogy",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Philosophy of Love Connection and Understanding in the Before Trilogy.md",
+      "title": "The Philosophy of Love Connection and Understanding in the Before Trilogy"
+    },
+    "the-psychological-corruption-of-reason-freud-and-jung": {
+      "filename": "The Psychological Corruption of Reason — Freud and Jung",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Psychological Corruption of Reason — Freud and Jung.md",
+      "title": "The Psychological Corruption of Reason — Freud and Jung"
+    },
+    "the-purifiers-of-delhi": {
+      "filename": "The Purifiers of Delhi",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Purifiers of Delhi.md",
+      "title": "The Purifiers of Delhi"
+    },
+    "the-scribes-and-the-typecasters": {
+      "filename": "The Scribes and the Typecasters",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Scribes and the Typecasters.md",
+      "title": "The Scribes and the Typecasters"
+    },
+    "the-scribes-of-the-durbar": {
+      "filename": "The Scribes of the Durbar",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Scribes of the Durbar.md",
+      "title": "The Scribes of the Durbar"
+    },
+    "the-scribes-of-the-old-order": {
+      "filename": "The Scribes of the Old Order",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Scribes of the Old Order.md",
+      "title": "The Scribes of the Old Order"
+    },
+    "the-shifting-alignments-of-identity": {
+      "filename": "The Shifting Alignments of Identity",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Shifting Alignments of Identity.md",
+      "title": "The Shifting Alignments of Identity"
+    },
+    "the-southern-crucible-dakhni-and-the-royal-ghazal": {
+      "filename": "The Southern Crucible_ Dakhni and the Royal Ghazal",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Southern Crucible_ Dakhni and the Royal Ghazal.md",
+      "title": "The Southern Crucible  Dakhni and the Royal Ghazal"
+    },
+    "the-structural-limits-of-pure-reason-immanuel-kant": {
+      "filename": "The Structural Limits of Pure Reason — Immanuel Kant",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Structural Limits of Pure Reason — Immanuel Kant.md",
+      "title": "The Structural Limits of Pure Reason — Immanuel Kant"
+    },
+    "the-systematic-fallibility-of-cognition-daniel-kahneman": {
+      "filename": "The Systematic Fallibility of Cognition — Daniel Kahneman",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Systematic Fallibility of Cognition — Daniel Kahneman.md",
+      "title": "The Systematic Fallibility of Cognition — Daniel Kahneman"
+    },
+    "the-taxonomy-of-ishq-and-the-ghalibian-reform-of-tradition": {
+      "filename": "The Taxonomy of Ishq and the Ghalibian Reform of Tradition",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Taxonomy of Ishq and the Ghalibian Reform of Tradition.md",
+      "title": "The Taxonomy of Ishq and the Ghalibian Reform of Tradition"
+    },
+    "the-trojan-war-origins-conflict-and-aftermath": {
+      "filename": "The Trojan War Origins, Conflict, and Aftermath",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The Trojan War Origins, Conflict, and Aftermath.md",
+      "title": "The Trojan War Origins, Conflict, and Aftermath"
+    },
+    "the-blind-spot": {
+      "filename": "The_Blind_Spot",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The_Blind_Spot.md",
+      "title": "The Blind Spot"
+    },
+    "the-colonial-disruption-of-islamic-jurisprudence": {
+      "filename": "The_Colonial_Disruption_of_Islamic_Jurisprudence",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The_Colonial_Disruption_of_Islamic_Jurisprudence.md",
+      "title": "The Colonial Disruption of Islamic Jurisprudence"
+    },
+    "the-historical-emergence-of-sunni-jurisprudence": {
+      "filename": "The_Historical_Emergence_of_Sunni_Jurisprudence",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The_Historical_Emergence_of_Sunni_Jurisprudence.md",
+      "title": "The Historical Emergence of Sunni Jurisprudence"
+    },
+    "the-rigidification-of-islamic-jurisprudence": {
+      "filename": "The_Rigidification_of_Islamic_Jurisprudence",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The_Rigidification_of_Islamic_Jurisprudence.md",
+      "title": "The Rigidification of Islamic Jurisprudence"
+    },
+    "the-theological-foundation-of-islamic-jurisprudence": {
+      "filename": "The_Theological_Foundation_of_Islamic_Jurisprudence",
+      "relativePath": "30_Knowledge_Base/10_Concepts/The_Theological_Foundation_of_Islamic_Jurisprudence.md",
+      "title": "The Theological Foundation of Islamic Jurisprudence"
+    },
+    "trolley-problem": {
+      "filename": "Trolley_Problem",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Trolley_Problem.md",
+      "title": "Trolley Problem"
+    },
+    "understanding-laptops-definition-components-and-uses": {
+      "filename": "Understanding Laptops: Definition, Components, and Uses",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Understanding Laptops: Definition, Components, and Uses.md",
+      "title": "Understanding Laptops: Definition, Components, and Uses"
+    },
+    "urdu-literature-and-classical-era-1": {
+      "filename": "Urdu Literature and Classical Era 1",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Urdu Literature and Classical Era 1.md",
+      "title": "Urdu Literature and Classical Era 1"
+    },
+    "urdu-literature-and-classical-era-2": {
+      "filename": "Urdu Literature and Classical Era 2",
+      "relativePath": "30_Knowledge_Base/10_Concepts/Urdu Literature and Classical Era 2.md",
+      "title": "Urdu Literature and Classical Era 2"
+    },
+    "world-war-ii-causes-events-consequences-and-legacy": {
+      "filename": "World War II: Causes, Events, Consequences, and Legacy",
+      "relativePath": "30_Knowledge_Base/10_Concepts/World War II: Causes, Events, Consequences, and Legacy.md",
+      "title": "World War II: Causes, Events, Consequences, and Legacy"
+    },
+    "iqbal-rumi-khudi": {
+      "filename": "iqbal_rumi_khudi",
+      "relativePath": "30_Knowledge_Base/10_Concepts/iqbal_rumi_khudi.md",
+      "title": "iqbal rumi khudi"
+    },
+    "al-ghazali-and-the-seljuk-abbasid-diarchy": {
+      "filename": "Al Ghazali and the Seljuk-Abbasid Diarchy",
+      "relativePath": "30_Knowledge_Base/20_Entities/Al Ghazali and the Seljuk-Abbasid Diarchy.md",
+      "title": "Al Ghazali and the Seljuk Abbasid Diarchy"
+    },
+    "chopins-ballade-no-1-analysis": {
+      "filename": "Chopins_Ballade_No_1_Analysis",
+      "relativePath": "30_Knowledge_Base/20_Entities/Chopins_Ballade_No_1_Analysis.md",
+      "title": "Chopins Ballade No 1 Analysis"
+    },
+    "corleone-business-organization-analysis": {
+      "filename": "Corleone_Business_Organization_Analysis",
+      "relativePath": "30_Knowledge_Base/20_Entities/Corleone_Business_Organization_Analysis.md",
+      "title": "Corleone Business Organization Analysis"
+    },
+    "economic-consequences-antonine-plague": {
+      "filename": "Economic_Consequences_Antonine_Plague",
+      "relativePath": "30_Knowledge_Base/20_Entities/Economic_Consequences_Antonine_Plague.md",
+      "title": "Economic Consequences Antonine Plague"
+    },
+    "godfather-women-analysis": {
+      "filename": "Godfather_Women_Analysis",
+      "relativePath": "30_Knowledge_Base/20_Entities/Godfather_Women_Analysis.md",
+      "title": "Godfather Women Analysis"
+    },
+    "google-and-ai": {
+      "filename": "Google_and_AI",
+      "relativePath": "30_Knowledge_Base/20_Entities/Google_and_AI.md",
+      "title": "Google and AI"
+    },
+    "historical-analysis": {
+      "filename": "Historical Analysis",
+      "relativePath": "30_Knowledge_Base/20_Entities/Historical Analysis.md",
+      "title": "Historical Analysis"
+    },
+    "ihya-ulum-al-din-overview": {
+      "filename": "Ihya_Ulum_al_Din_Overview",
+      "relativePath": "30_Knowledge_Base/20_Entities/Ihya_Ulum_al_Din_Overview.md",
+      "title": "Ihya Ulum al Din Overview"
+    },
+    "iron-requiem-metal-slug-narrative-study": {
+      "filename": "Iron Requiem - Metal Slug Narrative Study",
+      "relativePath": "30_Knowledge_Base/20_Entities/Iron Requiem - Metal Slug Narrative Study.md",
+      "title": "Iron Requiem   Metal Slug Narrative Study"
+    },
+    "italian-american-immigration-historical-context": {
+      "filename": "Italian_American_Immigration_Historical_Context",
+      "relativePath": "30_Knowledge_Base/20_Entities/Italian_American_Immigration_Historical_Context.md",
+      "title": "Italian American Immigration Historical Context"
+    },
+    "jinnah-final-days": {
+      "filename": "Jinnah_Final_Days",
+      "relativePath": "30_Knowledge_Base/20_Entities/Jinnah_Final_Days.md",
+      "title": "Jinnah Final Days"
+    },
+    "kal-chaudhwin-ki-raat-thi": {
+      "filename": "Kal_Chaudhwin_Ki_Raat_Thi",
+      "relativePath": "30_Knowledge_Base/20_Entities/Kal_Chaudhwin_Ki_Raat_Thi.md",
+      "title": "Kal Chaudhwin Ki Raat Thi"
+    },
+    "karnal-sher-khan-shaheed-biography": {
+      "filename": "Karnal Sher Khan Shaheed Biography",
+      "relativePath": "30_Knowledge_Base/20_Entities/Karnal Sher Khan Shaheed Biography.md",
+      "title": "Karnal Sher Khan Shaheed Biography"
+    },
+    "marcus-aurelius-life-and-power": {
+      "filename": "Marcus_Aurelius_Life_and_Power",
+      "relativePath": "30_Knowledge_Base/20_Entities/Marcus_Aurelius_Life_and_Power.md",
+      "title": "Marcus Aurelius Life and Power"
+    },
+    "michael-corleone-character-arc-analysis": {
+      "filename": "Michael_Corleone_Character_Arc_Analysis",
+      "relativePath": "30_Knowledge_Base/20_Entities/Michael_Corleone_Character_Arc_Analysis.md",
+      "title": "Michael Corleone Character Arc Analysis"
+    },
+    "mirza-asadullah-khan-ghalib": {
+      "filename": "Mirza Asadullah Khan Ghalib",
+      "relativePath": "30_Knowledge_Base/20_Entities/Mirza Asadullah Khan Ghalib.md",
+      "title": "Mirza Asadullah Khan Ghalib"
+    },
+    "ottoman-empire-fall-causes": {
+      "filename": "Ottoman_Empire_Fall_Causes",
+      "relativePath": "30_Knowledge_Base/20_Entities/Ottoman_Empire_Fall_Causes.md",
+      "title": "Ottoman Empire Fall Causes"
+    },
+    "rasputin-and-the-romanovs": {
+      "filename": "Rasputin_And_The_Romanovs",
+      "relativePath": "30_Knowledge_Base/20_Entities/Rasputin_And_The_Romanovs.md",
+      "title": "Rasputin And The Romanovs"
+    },
+    "robb-stark-character-study": {
+      "filename": "Robb_Stark_Character_Study",
+      "relativePath": "30_Knowledge_Base/20_Entities/Robb_Stark_Character_Study.md",
+      "title": "Robb Stark Character Study"
+    },
+    "siege-of-constantinople-1453": {
+      "filename": "Siege_of_Constantinople_1453",
+      "relativePath": "30_Knowledge_Base/20_Entities/Siege_of_Constantinople_1453.md",
+      "title": "Siege of Constantinople 1453"
+    },
+    "siege-of-constantinople-bayezid-i": {
+      "filename": "Siege_of_Constantinople_Bayezid_I",
+      "relativePath": "30_Knowledge_Base/20_Entities/Siege_of_Constantinople_Bayezid_I.md",
+      "title": "Siege of Constantinople Bayezid I"
+    },
+    "the-mughal-empire-structure-governance-and-legacy": {
+      "filename": "The Mughal Empire: Structure, Governance, and Legacy",
+      "relativePath": "30_Knowledge_Base/20_Entities/The Mughal Empire: Structure, Governance, and Legacy.md",
+      "title": "The Mughal Empire: Structure, Governance, and Legacy"
+    },
+    "the-dire-wolf": {
+      "filename": "The_Dire_Wolf",
+      "relativePath": "30_Knowledge_Base/20_Entities/The_Dire_Wolf.md",
+      "title": "The Dire Wolf"
+    },
+    "vito-corleone-sympathy-analysis": {
+      "filename": "Vito_Corleone_Sympathy_Analysis",
+      "relativePath": "30_Knowledge_Base/20_Entities/Vito_Corleone_Sympathy_Analysis.md",
+      "title": "Vito Corleone Sympathy Analysis"
+    },
+    "capitalism": {
+      "filename": "Capitalism",
+      "relativePath": "30_Knowledge_Base/30_Frameworks/Capitalism.md",
+      "title": "Capitalism"
+    },
+    "communism": {
+      "filename": "Communism",
+      "relativePath": "30_Knowledge_Base/30_Frameworks/Communism.md",
+      "title": "Communism"
+    },
+    "evolution-and-institutionalization-of-islamic-jurisprudence": {
+      "filename": "Evolution and Institutionalization of Islamic Jurisprudence",
+      "relativePath": "30_Knowledge_Base/30_Frameworks/Evolution and Institutionalization of Islamic Jurisprudence.md",
+      "title": "Evolution and Institutionalization of Islamic Jurisprudence"
+    },
+    "ihya-ulum-al-din-structure": {
+      "filename": "Ihya_Ulum_al_Din_Structure",
+      "relativePath": "30_Knowledge_Base/30_Frameworks/Ihya_Ulum_al_Din_Structure.md",
+      "title": "Ihya Ulum al Din Structure"
+    },
+    "socialism": {
+      "filename": "Socialism",
+      "relativePath": "30_Knowledge_Base/30_Frameworks/Socialism.md",
+      "title": "Socialism"
+    },
+    "stoic-guide-to-procrastination": {
+      "filename": "Stoic_Guide_to_Procrastination",
+      "relativePath": "30_Knowledge_Base/30_Frameworks/Stoic_Guide_to_Procrastination.md",
+      "title": "Stoic Guide to Procrastination"
+    },
+    "the-synthesis-what-comes-after-reason": {
+      "filename": "The Synthesis — What Comes After Reason",
+      "relativePath": "30_Knowledge_Base/30_Frameworks/The Synthesis — What Comes After Reason.md",
+      "title": "The Synthesis — What Comes After Reason"
+    },
+    "hanafi-essential-muslim-habits": {
+      "filename": "Hanafi - essential-muslim-habits",
+      "relativePath": "30_Knowledge_Base/Fiqh/essential-muslim-habits/Hanafi - essential-muslim-habits.md",
+      "title": "Hanafi   essential muslim habits"
+    },
+    "hanbali-essential-muslim-habits": {
+      "filename": "Hanbali - essential-muslim-habits",
+      "relativePath": "30_Knowledge_Base/Fiqh/essential-muslim-habits/Hanbali - essential-muslim-habits.md",
+      "title": "Hanbali   essential muslim habits"
+    },
+    "maliki-essential-muslim-habits": {
+      "filename": "Maliki - essential-muslim-habits",
+      "relativePath": "30_Knowledge_Base/Fiqh/essential-muslim-habits/Maliki - essential-muslim-habits.md",
+      "title": "Maliki   essential muslim habits"
+    },
+    "shafii-essential-muslim-habits": {
+      "filename": "Shafii - essential-muslim-habits",
+      "relativePath": "30_Knowledge_Base/Fiqh/essential-muslim-habits/Shafii - essential-muslim-habits.md",
+      "title": "Shafii   essential muslim habits"
+    },
+    "synthesis-essential-muslim-habits": {
+      "filename": "Synthesis - essential-muslim-habits",
+      "relativePath": "30_Knowledge_Base/Fiqh/essential-muslim-habits/Synthesis - essential-muslim-habits.md",
+      "title": "Synthesis   essential muslim habits"
+    },
+    "hanafi-five-daily-prayers-ruling": {
+      "filename": "Hanafi - five-daily-prayers-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Hanafi - five-daily-prayers-ruling.md",
+      "title": "Hanafi   five daily prayers ruling"
+    },
+    "hanbali-five-daily-prayers-ruling": {
+      "filename": "Hanbali - five-daily-prayers-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Hanbali - five-daily-prayers-ruling.md",
+      "title": "Hanbali   five daily prayers ruling"
+    },
+    "maliki-five-daily-prayers-ruling": {
+      "filename": "Maliki - five-daily-prayers-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Maliki - five-daily-prayers-ruling.md",
+      "title": "Maliki   five daily prayers ruling"
+    },
+    "shafii-five-daily-prayers-ruling": {
+      "filename": "Shafii - five-daily-prayers-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Shafii - five-daily-prayers-ruling.md",
+      "title": "Shafii   five daily prayers ruling"
+    },
+    "synthesis-five-daily-prayers-ruling": {
+      "filename": "Synthesis - five-daily-prayers-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Synthesis - five-daily-prayers-ruling.md",
+      "title": "Synthesis   five daily prayers ruling"
+    },
+    "hanafi-forex-trading-xauusd-halal": {
+      "filename": "Hanafi - forex-trading-xauusd-halal",
+      "relativePath": "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Hanafi - forex-trading-xauusd-halal.md",
+      "title": "Hanafi   forex trading xauusd halal"
+    },
+    "hanbali-forex-trading-xauusd-halal": {
+      "filename": "Hanbali - forex-trading-xauusd-halal",
+      "relativePath": "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Hanbali - forex-trading-xauusd-halal.md",
+      "title": "Hanbali   forex trading xauusd halal"
+    },
+    "maliki-forex-trading-xauusd-halal": {
+      "filename": "Maliki - forex-trading-xauusd-halal",
+      "relativePath": "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Maliki - forex-trading-xauusd-halal.md",
+      "title": "Maliki   forex trading xauusd halal"
+    },
+    "shafii-forex-trading-xauusd-halal": {
+      "filename": "Shafii - forex-trading-xauusd-halal",
+      "relativePath": "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Shafii - forex-trading-xauusd-halal.md",
+      "title": "Shafii   forex trading xauusd halal"
+    },
+    "synthesis-forex-trading-xauusd-halal": {
+      "filename": "Synthesis - forex-trading-xauusd-halal",
+      "relativePath": "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Synthesis - forex-trading-xauusd-halal.md",
+      "title": "Synthesis   forex trading xauusd halal"
+    },
+    "hanafi-hijab-niqab-women-ruling": {
+      "filename": "Hanafi - hijab-niqab-women-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Hanafi - hijab-niqab-women-ruling.md",
+      "title": "Hanafi   hijab niqab women ruling"
+    },
+    "hanbali-hijab-niqab-women-ruling": {
+      "filename": "Hanbali - hijab-niqab-women-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Hanbali - hijab-niqab-women-ruling.md",
+      "title": "Hanbali   hijab niqab women ruling"
+    },
+    "maliki-hijab-niqab-women-ruling": {
+      "filename": "Maliki - hijab-niqab-women-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Maliki - hijab-niqab-women-ruling.md",
+      "title": "Maliki   hijab niqab women ruling"
+    },
+    "shafii-hijab-niqab-women-ruling": {
+      "filename": "Shafii - hijab-niqab-women-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Shafii - hijab-niqab-women-ruling.md",
+      "title": "Shafii   hijab niqab women ruling"
+    },
+    "synthesis-hijab-niqab-women-ruling": {
+      "filename": "Synthesis - hijab-niqab-women-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Synthesis - hijab-niqab-women-ruling.md",
+      "title": "Synthesis   hijab niqab women ruling"
+    },
+    "hanafi-musical-instruments-ruling": {
+      "filename": "Hanafi - musical-instruments-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Hanafi - musical-instruments-ruling.md",
+      "title": "Hanafi   musical instruments ruling"
+    },
+    "hanbali-musical-instruments-ruling": {
+      "filename": "Hanbali - musical-instruments-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Hanbali - musical-instruments-ruling.md",
+      "title": "Hanbali   musical instruments ruling"
+    },
+    "maliki-musical-instruments-ruling": {
+      "filename": "Maliki - musical-instruments-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Maliki - musical-instruments-ruling.md",
+      "title": "Maliki   musical instruments ruling"
+    },
+    "shafii-musical-instruments-ruling": {
+      "filename": "Shafii - musical-instruments-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Shafii - musical-instruments-ruling.md",
+      "title": "Shafii   musical instruments ruling"
+    },
+    "synthesis-musical-instruments-ruling": {
+      "filename": "Synthesis - musical-instruments-ruling",
+      "relativePath": "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Synthesis - musical-instruments-ruling.md",
+      "title": "Synthesis   musical instruments ruling"
+    },
+    "fastbot": {
+      "filename": "FastBot",
+      "relativePath": "40_Projects/Active/FastBot.md",
+      "title": "FastBot"
+    },
+    "gmail-assistant": {
+      "filename": "Gmail Assistant",
+      "relativePath": "40_Projects/Active/Gmail Assistant.md",
+      "title": "Gmail Assistant"
+    },
+    "lines-of-code-chapters-of-me": {
+      "filename": "Lines of code, chapters of me",
+      "relativePath": "40_Projects/Active/Lines of code, chapters of me.md",
+      "title": "Lines of code, chapters of me"
+    },
+    "nuhub": {
+      "filename": "NuHub",
+      "relativePath": "40_Projects/Active/NuHub.md",
+      "title": "NuHub"
+    },
+    "portfolio": {
+      "filename": "Portfolio",
+      "relativePath": "40_Projects/Active/Portfolio.md",
+      "title": "Portfolio"
+    },
+    "the-mothership": {
+      "filename": "The Mothership",
+      "relativePath": "40_Projects/Active/The Mothership.md",
+      "title": "The Mothership"
+    },
+    "read-mis": {
+      "filename": "Read - MIS",
+      "relativePath": "50_Resources/Articles_Papers/Read - MIS.md",
+      "title": "Read   MIS"
+    },
+    "read-mis-architecture": {
+      "filename": "Read - MIS_Architecture",
+      "relativePath": "50_Resources/Articles_Papers/Read - MIS_Architecture.md",
+      "title": "Read   MIS Architecture"
+    },
+    "read-model-context-protocol-intro": {
+      "filename": "Read - Model Context Protocol Intro",
+      "relativePath": "50_Resources/Articles_Papers/Read - Model Context Protocol Intro.md",
+      "title": "Read   Model Context Protocol Intro"
+    }
+  }
+}

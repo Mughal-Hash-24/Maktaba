@@ -1,0 +1,20 @@
+{
+  "slug": "chapter-12",
+  "title": "Chapter 12",
+  "tags": [
+    "field/cs",
+    "subject/automata",
+    "concept/chapter/12"
+  ],
+  "htmlContent": "",
+  "rawMarkdown": "\n",
+  "wordCount": 0,
+  "backlinks": [
+    {
+      "slug": "regular-expressions",
+      "title": "Regular Expressions"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/Theory of Automata/Chapter 12.md",
+  "filename": "Chapter 12"
+}

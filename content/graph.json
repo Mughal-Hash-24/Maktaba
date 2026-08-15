@@ -1,0 +1,2650 @@
+{
+  "nodes": [
+    {
+      "id": "moc-coal",
+      "title": "(MOC)   C.O.A.L",
+      "field": "science-tech",
+      "linkCount": 14
+    },
+    {
+      "id": "registers",
+      "title": "Registers",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "memory-allocation-and-accessing",
+      "title": "Memory Allocation and Accessing",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "movsx-and-movzx",
+      "title": "Movsx and Movzx",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "misc",
+      "title": "Misc",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "console-input-and-output",
+      "title": "Console Input and Output",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "coal-stack",
+      "title": "Stack",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "flags",
+      "title": "Flags",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "assignment-2-take-aways",
+      "title": "Assignment 2 - Take Aways",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "integer-arithematic",
+      "title": "Integer Arithematic",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "stack-frames",
+      "title": "Stack Frames",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "strings-and-arrays",
+      "title": "Strings and Arrays",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "floating-point",
+      "title": "Floating Point",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "interesting-shit",
+      "title": "Interesting shit",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "assignment-1-takeaways",
+      "title": "Assignment 1   Takeaways",
+      "field": "science-tech",
+      "linkCount": 4
+    },
+    {
+      "id": "assignment-2-takeaways",
+      "title": "Assignment 2   Takeaways",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "booths-algo",
+      "title": "Booth's algo",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "coal-buddy",
+      "title": "Coal Buddy",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "jumps",
+      "title": "Jumps",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "moc-data-structures",
+      "title": "(MOC)   Data Structures",
+      "field": "science-tech",
+      "linkCount": 11
+    },
+    {
+      "id": "arrays",
+      "title": "Arrays",
+      "field": "science-tech",
+      "linkCount": 3
+    },
+    {
+      "id": "bsts",
+      "title": "BSTs",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "complexity",
+      "title": "Complexity",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "case-study-analysis-p1",
+      "title": "Case Study Analysis P1",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "linked-lists",
+      "title": "Linked Lists",
+      "field": "science-tech",
+      "linkCount": 4
+    },
+    {
+      "id": "trees",
+      "title": "Trees",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "assignment-1-take-aways",
+      "title": "Assignment 1 - Take Aways",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "circular-linked-list",
+      "title": "Circular Linked List",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "complexity-theory",
+      "title": "Complexity Theory",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "queue",
+      "title": "Queue",
+      "field": "science-tech",
+      "linkCount": 3
+    },
+    {
+      "id": "data-structures-stack",
+      "title": "Stack",
+      "field": "science-tech",
+      "linkCount": 3
+    },
+    {
+      "id": "10-univers-arrays-loops",
+      "title": "Arrays & Loops",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "moc-discrete-structures",
+      "title": "(MOC)   Discrete Structures",
+      "field": "formal-sciences",
+      "linkCount": 4
+    },
+    {
+      "id": "propositions-negations-conjunctions-and-disjunctions",
+      "title": "Propositions, Negations, Conjunctions, and Disjunctions",
+      "field": "formal-sciences",
+      "linkCount": 1
+    },
+    {
+      "id": "implications-converse-inverse-contrapositive-and-biconditionals",
+      "title": "Implications, Converse, Inverse, Contrapositive and Biconditionals",
+      "field": "formal-sciences",
+      "linkCount": 1
+    },
+    {
+      "id": "set-notations",
+      "title": "Set Notations",
+      "field": "formal-sciences",
+      "linkCount": 1
+    },
+    {
+      "id": "proofs",
+      "title": "Proofs",
+      "field": "formal-sciences",
+      "linkCount": 1
+    },
+    {
+      "id": "moc-linear-algebra",
+      "title": "(MOC)   Linear Algebra",
+      "field": "formal-sciences",
+      "linkCount": 3
+    },
+    {
+      "id": "vector-equations",
+      "title": "Vector Equations",
+      "field": "formal-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "eigenvectors-and-eigenvalues",
+      "title": "Eigenvectors and Eigenvalues",
+      "field": "formal-sciences",
+      "linkCount": 1
+    },
+    {
+      "id": "span-of-vectors",
+      "title": "Span of Vectors",
+      "field": "formal-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "moc-pf",
+      "title": "(MOC)   PF",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "moc-automata-theory",
+      "title": "(MOC)   Automata Theory",
+      "field": "science-tech",
+      "linkCount": 13
+    },
+    {
+      "id": "notations",
+      "title": "NOTATIONS",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "theory-of-formal-languages",
+      "title": "Theory of Formal Languages",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "kleenes-and-positive-closure",
+      "title": "Kleene's and Positive Closure",
+      "field": "science-tech",
+      "linkCount": 3
+    },
+    {
+      "id": "2p-examples-problems",
+      "title": "2.p Examples & Problems",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "recursive-definitions",
+      "title": "Recursive Definitions",
+      "field": "science-tech",
+      "linkCount": 3
+    },
+    {
+      "id": "3p-examples-problems",
+      "title": "3.p Examples & Problems",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "regular-expressions",
+      "title": "Regular Expressions",
+      "field": "science-tech",
+      "linkCount": 4
+    },
+    {
+      "id": "finite-automata",
+      "title": "Finite Automata",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "transition-graphs",
+      "title": "Transition Graphs",
+      "field": "science-tech",
+      "linkCount": 3
+    },
+    {
+      "id": "generalized-tgs",
+      "title": "Generalized TGs",
+      "field": "science-tech",
+      "linkCount": 2
+    },
+    {
+      "id": "pumping-lemma",
+      "title": "Pumping Lemma",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "re-to-e-nfa",
+      "title": "RE to e-NFA",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "finite-automata-with-output",
+      "title": "Finite Automata With Output",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "chapter-12",
+      "title": "Chapter 12",
+      "field": "science-tech",
+      "linkCount": 1
+    },
+    {
+      "id": "introduction-to-computer-theorypdf",
+      "title": "Introduction To Computer Theory.pdf",
+      "field": "science-tech",
+      "linkCount": 4
+    },
+    {
+      "id": "test",
+      "title": "Test",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "deadlines",
+      "title": "Deadlines",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "timetable",
+      "title": "Timetable",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "software-development-instructor-info",
+      "title": "Instructor Info",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "defining-intelligence",
+      "title": "Defining Intelligence",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "what-is-ai",
+      "title": "What is AI",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "the-turing-test",
+      "title": "The Turing Test",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-subfields-and-concepts",
+      "title": "AI Subfields and Concepts",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-vs-ml-vs-dl",
+      "title": "AI vs ML vs DL",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "types-of-machine-learning",
+      "title": "Types of Machine Learning",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "applications-and-future-of-ai",
+      "title": "Applications and Future of AI",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "llm-input-processing",
+      "title": "LLM Input Processing",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-agents",
+      "title": "AI Agents",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "agents-overview-simple-reflex",
+      "title": "Agents Overview Simple Reflex",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "model-based-agent",
+      "title": "Model Based Agent",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "goal-based-agent",
+      "title": "Goal Based Agent",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "utility-based-agent",
+      "title": "Utility Based Agent",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "learning-agents",
+      "title": "Learning Agents",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-search-foundations",
+      "title": "AI Search Foundations",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "a-star-algorithm",
+      "title": "A Star Algorithm",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "dijkstra-algorithm",
+      "title": "Dijkstra Algorithm",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "search-logic-details",
+      "title": "Search Logic Details",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "notes-a-star-optimality-and-blocking",
+      "title": "A Star Optimality and Blocking",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "a-star-vs-dijkstra-comparison",
+      "title": "A Star vs Dijkstra Comparison",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "a-star-termination-conditions",
+      "title": "A Star Termination Conditions",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "a-star-non-admissible-heuristics",
+      "title": "A Star Non Admissible Heuristics",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "admissible-heuristics-and-path-optimality",
+      "title": "Admissible Heuristics and Path Optimality",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "a-star-tree-search-optimality-blocking",
+      "title": "A Star Tree Search Optimality Blocking",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "8-puzzle-problem-a-star-application",
+      "title": "8 Puzzle Problem A Star Application",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "search-recap",
+      "title": "Search Recap",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-uninformed-search",
+      "title": "AI Uninformed Search",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-cost-sensitive-search",
+      "title": "AI Cost Sensitive Search",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-ucs-limitations",
+      "title": "AI UCS Limitations",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "pancake-problem",
+      "title": "Pancake Problem",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "heuristic-functions",
+      "title": "Heuristic Functions",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "greedy-search",
+      "title": "Greedy Search",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ai-search-costs",
+      "title": "AI Search Costs",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "local-searches",
+      "title": "Local Searches",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ga-introduction-and-inception",
+      "title": "GA Introduction and Inception",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ga-core-mechanics",
+      "title": "GA Core Mechanics",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ga-workflow",
+      "title": "GA Workflow",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "selection-and-operators",
+      "title": "Selection and Operators",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "genetic-variation",
+      "title": "Genetic Variation",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "client-server-architecture",
+      "title": "Client Server Architecture",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "database-integration-and-migration",
+      "title": "Database Integration and Migration",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "three-tier-architecture",
+      "title": "Three Tier Architecture",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "introduction-to-databases",
+      "title": "Introduction to Databases",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-query-construction-system",
+      "title": "SQL Query Construction System",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-nested-queries-conceptual",
+      "title": "SQL Nested Queries Conceptual",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-nested-queries-practical",
+      "title": "SQL Nested Queries Practical",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-joins-fundamentals",
+      "title": "SQL Joins - Fundamentals",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-joins-cross-join",
+      "title": "SQL Joins - Cross Join",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-joins-inner-join",
+      "title": "SQL Joins - Inner Join",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-joins-outer-join-fundamentals",
+      "title": "SQL Joins - Outer Join Fundamentals",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-joins-full-outer-join",
+      "title": "SQL Joins - Full Outer Join",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-joins-left-outer-join",
+      "title": "SQL Joins - Left Outer Join",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-joins-right-outer-join",
+      "title": "SQL Joins - Right Outer Join",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "data-types-and-architecture",
+      "title": "Data Types and Architecture",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "notes-sql-set-operations",
+      "title": "SQL Set Operations",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-create-and-drop",
+      "title": "SQL Create and Drop",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-schema-lifecycle",
+      "title": "SQL Schema Lifecycle",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "notes-sql-set-operations-1",
+      "title": "SQL Set Operations",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-create-and-drop-operations",
+      "title": "SQL Create and Drop Operations",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-schema-workflow",
+      "title": "SQL Schema Workflow",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-table-creation-and-constraints",
+      "title": "SQL Table Creation and Constraints",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-fundamentals-and-retrieval",
+      "title": "SQL Fundamentals and Retrieval",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-pattern-matching",
+      "title": "SQL Pattern Matching",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-null-handling-and-updates",
+      "title": "SQL Null Handling and Updates",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-sorting-and-ordering",
+      "title": "SQL Sorting and Ordering",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-aggregate-functions-overview",
+      "title": "SQL Aggregate Functions Overview",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-standard-aggregates-deep-dive",
+      "title": "SQL Standard Aggregates Deep Dive",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sql-aggregation-case-study",
+      "title": "SQL Aggregation Case Study",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "database-join-strategies",
+      "title": "Database JOIN Strategies",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "intro-to-entity-relation-diagram",
+      "title": "Intro to Entity Relation Diagram",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "technical-specifics-of-an-er-diagram",
+      "title": "Technical Specifics of an ER diagram",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "eerd-introduction",
+      "title": "EERD Introduction",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "supertype-subtype-hierarchies-in-eerd",
+      "title": "Supertype_Subtype hierarchies in EERD",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "specialization-and-generalization-in-eerd",
+      "title": "Specialization and Generalization in EERD",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "hierarchies-lattices-and-shared-subclasses",
+      "title": "Hierarchies, lattices and shared subclasses",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-process-fundamentals",
+      "title": "OS Process Fundamentals",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-pipe-prototypes-and-arrays",
+      "title": "OS Pipe Prototypes and Arrays",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-pipe-backend-internals",
+      "title": "OS Pipe Backend Internals",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-pipe-synchronization-and-blocking",
+      "title": "OS Pipe Synchronization and Blocking",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-named-pipes",
+      "title": "OS Named Pipes",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-fork-bomb-and-signal-handling",
+      "title": "OS Fork Bomb and Signal Handling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-pipe-inheritance-across-generations",
+      "title": "OS Pipe Inheritance Across Generations",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-io-redirection-mechanics-in-c",
+      "title": "OS IO Redirection Mechanics in C",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-schedulers",
+      "title": "OS Schedulers",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-process-creation-and-forking",
+      "title": "OS Process Creation and Forking",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-parallelism-case-study",
+      "title": "OS Parallelism Case Study",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-exec-syscalls",
+      "title": "OS Exec Syscalls",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ipc-concepts",
+      "title": "IPC Concepts",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-file-descriptors",
+      "title": "OS File Descriptors",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-standard-i-o-descriptors",
+      "title": "OS Standard I-O Descriptors",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-read-and-write-syntax",
+      "title": "OS Read and Write Syntax",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "os-pipes-for-ipc",
+      "title": "OS Pipes for IPC",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "process-scheduling",
+      "title": "Process Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "scheduling-misc",
+      "title": "Scheduling Misc",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "fcfs-scheduling",
+      "title": "FCFS Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "round-robin-scheduling",
+      "title": "Round Robin Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sjf-scheduling",
+      "title": "SJF Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "srtf-scheduling",
+      "title": "SRTF Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sjf-vs-round-robin",
+      "title": "SJF vs Round Robin",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "priority-scheduling",
+      "title": "Priority Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "multilevel-queue-scheduling",
+      "title": "Multilevel Queue Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "mlfq-scheduling",
+      "title": "MLFQ Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "two-state-process-model",
+      "title": "Two-State Process Model",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "five-state-process-model",
+      "title": "Five-State Process Model",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "suspended-processes",
+      "title": "Suspended Processes",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "unix-v-process-state-transition",
+      "title": "Unix V Process State Transition",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "context-switching",
+      "title": "Context Switching",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "three-level-scheduling",
+      "title": "Three level Scheduling",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "scheduling-and-process-transitions",
+      "title": "Scheduling and Process Transitions",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "decision-mode",
+      "title": "Decision Mode",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "indus-valley-civilization",
+      "title": "Indus Valley Civilization",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "muslim-opposition-to-partition",
+      "title": "Muslim Opposition to Partition",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "khan-abdul-ghaffar-khan",
+      "title": "Khan Abdul Ghaffar Khan",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "russian-and-japanese-expansionism",
+      "title": "Russian and Japanese Expansionism",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "political-parties-in-pakistan",
+      "title": "Political Parties in Pakistan",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "permutations-and-combinations",
+      "title": "Permutations and Combinations",
+      "field": "formal-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "lecture-01-introduction",
+      "title": "Lecture 01   Introduction",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "introduction-to-software-and-sda",
+      "title": "Introduction to Software and SDA",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sda-lifecycle-and-phases",
+      "title": "SDA Lifecycle and Phases",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sda-methodologies",
+      "title": "SDA Methodologies",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "software-analysis-vs-design",
+      "title": "Software Analysis vs Design",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "uml-basics",
+      "title": "UML Basics",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ood-and-oop-concepts",
+      "title": "OOD and OOP Concepts",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "programming-paradigms",
+      "title": "Programming Paradigms",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "oo-core-principles",
+      "title": "OO Core Principles",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "oo-relationships",
+      "title": "OO Relationships",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "advanced-sda-concepts",
+      "title": "Advanced SDA Concepts",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "use-case-analysis",
+      "title": "Use Case Analysis",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "system-sequence-diagrams",
+      "title": "System Sequence Diagrams",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ssd-theory",
+      "title": "SSD Theory",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "ssd-construction-lab",
+      "title": "SSD Construction Lab",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "domain-modelling-in-sda",
+      "title": "Domain Modelling in SDA",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "sda-project-ideas",
+      "title": "SDA Project ideas",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "agent-harness-design-and-stateful-execution-models",
+      "title": "Agent Harness Design and Stateful Execution Models",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "claude-reponse-inline",
+      "title": "Claude reponse inline",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "mcp-model-context-protocol",
+      "title": "MCP (Model Context Protocol)",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "onyx-16",
+      "title": "Onyx 16",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "singleton-pattern",
+      "title": "Singleton Pattern",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "software-engineering-singletons",
+      "title": "Software Engineering  Singletons",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "vault-explorer-ui-design-concept",
+      "title": "Vault Explorer UI Design Concept",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "design-patterns",
+      "title": "design patterns",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "memory-arena-test",
+      "title": "Memory Arena Test",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "01-java-fundamentals",
+      "title": "01 Java Fundamentals",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "02-java-architecture",
+      "title": "02 Java Architecture",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "03-java-concepts",
+      "title": "03 Java Concepts",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "java-aggregation",
+      "title": "Java Aggregation",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "java-class-definitions",
+      "title": "Java Class Definitions",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "java-composition",
+      "title": "Java Composition",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "java-diamond-problem",
+      "title": "Java Diamond Problem",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "java-fundamentals-deep-dive",
+      "title": "Java Fundamentals Deep Dive",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "java-io-mechanics-scanner-vs-buffer",
+      "title": "Java IO Mechanics Scanner vs Buffer",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "java-inheritance",
+      "title": "Java Inheritance",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "polymorphism",
+      "title": "Polymorphism",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-advanced-oop-metaprogramming",
+      "title": "Python Advanced OOP Metaprogramming",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-advanced-polymorphism-and-inheritance",
+      "title": "Python Advanced Polymorphism and Inheritance",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-execution-and-memory-model",
+      "title": "Python Execution and Memory Model",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-lists-and-arrays-deep-dive",
+      "title": "Python Lists and Arrays Deep Dive",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-oop-mechanics",
+      "title": "Python OOP Mechanics",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-philosophy-and-intro",
+      "title": "Python Philosophy and Intro",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-strings-and-literals",
+      "title": "Python Strings and Literals",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-tuples-sets-and-dictionaries",
+      "title": "Python Tuples Sets and Dictionaries",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "python-variables-and-casting",
+      "title": "Python Variables and Casting",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "a-star-heuristic-admissibility",
+      "title": "A Star Heuristic Admissibility",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "algorithms-a-star-optimality-and-blocking",
+      "title": "A Star Optimality and Blocking",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "local-cost-in-search",
+      "title": "Local Cost in Search",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "recursion",
+      "title": "Recursion",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "flutters-multi-tree-architecture-widget-render-and-layer-trees",
+      "title": "Flutter's Multi Tree Architecture   Widget, Render, and Layer Trees",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "go-explores-archive-based-exploration-strategy-for-red-teaming-ai-agents",
+      "title": "Go Explore's Archive Based Exploration Strategy for Red Teaming AI Agents",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "knowledge-graphs-foundations-purpose-implementation-and-applications",
+      "title": "Knowledge Graphs Foundations Purpose Implementation and Applications",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "llmops-operationalizing-large-language-models-in-production",
+      "title": "LLMOps Operationalizing Large Language Models in Production",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "mis-brainstorm",
+      "title": "MIS Brainstorm",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "neat-neuroevolution-of-augmenting-topologies",
+      "title": "NEAT (NeuroEvolution of Augmenting Topologies)",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "kernel-architecture-and-development",
+      "title": "Kernel Architecture and Development",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "unnamed-pipe-array-behavior",
+      "title": "Unnamed Pipe Array Behavior",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "virtual-memory-mechanics",
+      "title": "Virtual Memory Mechanics",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "design-patterns-in-oop",
+      "title": "design patterns in oop",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "the-data-intelligence-pipeline",
+      "title": "The Data Intelligence Pipeline",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "arch-linux-transition-analysis",
+      "title": "Arch Linux Transition Analysis",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "arch-linux-vs-windows-report",
+      "title": "Arch Linux vs Windows Report",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "altruism-vs-psychological-egoism",
+      "title": "Altruism vs Psychological Egoism",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "arguments-for-god",
+      "title": "Arguments for God",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "authenticity-in-existentialism",
+      "title": "Authenticity in Existentialism",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "business-models",
+      "title": "Business Models",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "crispr-cas9-mechanism",
+      "title": "CRISPR Cas9 Mechanism",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "crisis-and-reform-in-islamic-jurisprudence",
+      "title": "Crisis and Reform in Islamic Jurisprudence",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "democracy-incentive-failure",
+      "title": "Democracy Incentive Failure",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "descartes-cogito-ergo-sum-a-philosophical-analysis",
+      "title": "Descartes' Cogito Ergo Sum   A Philosophical Analysis",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "dreams-in-crime-and-punishment",
+      "title": "Dreams in Crime and Punishment",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "game-theory-of-cartels",
+      "title": "Game Theory of Cartels",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "ghalib-analysis-of-taghaful-and-the-diminished-gaze",
+      "title": "Ghalib   Analysis of Taghaful and the Diminished Gaze",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "gyroscopic-precession",
+      "title": "Gyroscopic Precession",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "gdels-incompleteness-theorems-mathematical-limits-as-philosophical-argument",
+      "title": "Gödel's Incompleteness Theorems — Mathematical Limits as Philosophical Argument",
+      "field": "formal-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "iqbal-rumi-and-khudi-v2",
+      "title": "Iqbal, Rumi, and Khudi v2",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "islamic-sectarianism-in-the-subcontinent",
+      "title": "Islamic Sectarianism in the Subcontinent",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "kafkas-metamorphosis",
+      "title": "Kafka's Metamorphosis",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "literature-interpretation",
+      "title": "Literature Interpretation",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "marcus-aurelius-stoic-philosophy",
+      "title": "Marcus Aurelius Stoic Philosophy",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "mechanics-lenzs-law",
+      "title": "Mechanics  Lenz's Law",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "origins-and-historical-evolution-of-shia-islam",
+      "title": "Origins and Historical Evolution of Shia Islam",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "platonic-eros-in-the-symposium",
+      "title": "Platonic Eros in the Symposium",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "polishing-the-street-tongue",
+      "title": "Polishing the Street Tongue",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "proxenos",
+      "title": "Proxenos",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "pure-mathematics",
+      "title": "Pure Mathematics",
+      "field": "formal-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "rhetorical-and-thematic-analysis-of-the-tyrion-jon-dungeon-dialogue",
+      "title": "Rhetorical and Thematic Analysis of the Tyrion Jon Dungeon Dialogue",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "rumis-life-before-and-after-shams-of-tabriz-a-philosophical-and-biographical-exploration",
+      "title": "Rumi’s Life Before and After Shams of Tabriz: A Philosophical and Biographical Exploration",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "the-balance-sheet-of-literacy-and-identity",
+      "title": "The Balance Sheet of Literacy and Identity",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-benares-spark-and-the-clerical-war",
+      "title": "The Benares Spark and the Clerical War",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-biological-tethering-of-perception-hoffman-and-dawkins",
+      "title": "The Biological Tethering of Perception — Hoffman and Dawkins",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "the-concept-of-kzl-elma-in-ottoman-thought-and-its-significance",
+      "title": "The Concept of Kızıl Elma in Ottoman Thought and Its Significance",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi",
+      "title": "The Crucible of Delhi  Migration, Markets, and the Birth of Dehlavi",
+      "field": "social-sciences",
+      "linkCount": 1
+    },
+    {
+      "id": "the-cursive-nightmare-and-the-flat-stone",
+      "title": "The Cursive Nightmare and the Flat Stone",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-dawn-of-philosophy-and-the-first-philosophers",
+      "title": "The Dawn of Philosophy and the First Philosophers",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "the-empty-treasury-of-delhi",
+      "title": "The Empty Treasury of Delhi",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-forced-caravan-a-dialect-transplanted",
+      "title": "The Forced Caravan  A Dialect Transplanted",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu",
+      "title": "The Imperial Graft  Daulatabad and the Genesis of Dakhni Urdu",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-indo-aryan-skeleton",
+      "title": "The Indo Aryan Skeleton",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-invasion-of-the-vernacular",
+      "title": "The Invasion of the Vernacular",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-lab-in-calcutta",
+      "title": "The Lab in Calcutta",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi",
+      "title": "The Lahori Crucible  Ghaznavid Military Camps and the Birth of Hindavi",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-language-of-the-courtyard-and-the-soil",
+      "title": "The Language of the Courtyard and the Soil",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-philosophy-of-love-connection-and-understanding-in-the-before-trilogy",
+      "title": "The Philosophy of Love Connection and Understanding in the Before Trilogy",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "the-psychological-corruption-of-reason-freud-and-jung",
+      "title": "The Psychological Corruption of Reason — Freud and Jung",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-purifiers-of-delhi",
+      "title": "The Purifiers of Delhi",
+      "field": "social-sciences",
+      "linkCount": 1
+    },
+    {
+      "id": "the-scribes-and-the-typecasters",
+      "title": "The Scribes and the Typecasters",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-scribes-of-the-durbar",
+      "title": "The Scribes of the Durbar",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-scribes-of-the-old-order",
+      "title": "The Scribes of the Old Order",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-shifting-alignments-of-identity",
+      "title": "The Shifting Alignments of Identity",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-southern-crucible-dakhni-and-the-royal-ghazal",
+      "title": "The Southern Crucible  Dakhni and the Royal Ghazal",
+      "field": "social-sciences",
+      "linkCount": 2
+    },
+    {
+      "id": "the-structural-limits-of-pure-reason-immanuel-kant",
+      "title": "The Structural Limits of Pure Reason — Immanuel Kant",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "the-systematic-fallibility-of-cognition-daniel-kahneman",
+      "title": "The Systematic Fallibility of Cognition — Daniel Kahneman",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-taxonomy-of-ishq-and-the-ghalibian-reform-of-tradition",
+      "title": "The Taxonomy of Ishq and the Ghalibian Reform of Tradition",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "the-trojan-war-origins-conflict-and-aftermath",
+      "title": "The Trojan War Origins, Conflict, and Aftermath",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-blind-spot",
+      "title": "The Blind Spot",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "the-colonial-disruption-of-islamic-jurisprudence",
+      "title": "The Colonial Disruption of Islamic Jurisprudence",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-historical-emergence-of-sunni-jurisprudence",
+      "title": "The Historical Emergence of Sunni Jurisprudence",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-rigidification-of-islamic-jurisprudence",
+      "title": "The Rigidification of Islamic Jurisprudence",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-theological-foundation-of-islamic-jurisprudence",
+      "title": "The Theological Foundation of Islamic Jurisprudence",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "trolley-problem",
+      "title": "Trolley Problem",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "understanding-laptops-definition-components-and-uses",
+      "title": "Understanding Laptops: Definition, Components, and Uses",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "urdu-literature-and-classical-era-1",
+      "title": "Urdu Literature and Classical Era 1",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "urdu-literature-and-classical-era-2",
+      "title": "Urdu Literature and Classical Era 2",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "world-war-ii-causes-events-consequences-and-legacy",
+      "title": "World War II: Causes, Events, Consequences, and Legacy",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "iqbal-rumi-khudi",
+      "title": "iqbal rumi khudi",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "al-ghazali-and-the-seljuk-abbasid-diarchy",
+      "title": "Al Ghazali and the Seljuk Abbasid Diarchy",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "chopins-ballade-no-1-analysis",
+      "title": "Chopins Ballade No 1 Analysis",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "corleone-business-organization-analysis",
+      "title": "Corleone Business Organization Analysis",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "economic-consequences-antonine-plague",
+      "title": "Economic Consequences Antonine Plague",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "godfather-women-analysis",
+      "title": "Godfather Women Analysis",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "google-and-ai",
+      "title": "Google and AI",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "historical-analysis",
+      "title": "Historical Analysis",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "ihya-ulum-al-din-overview",
+      "title": "Ihya Ulum al Din Overview",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "iron-requiem-metal-slug-narrative-study",
+      "title": "Iron Requiem   Metal Slug Narrative Study",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "italian-american-immigration-historical-context",
+      "title": "Italian American Immigration Historical Context",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "jinnah-final-days",
+      "title": "Jinnah Final Days",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "kal-chaudhwin-ki-raat-thi",
+      "title": "Kal Chaudhwin Ki Raat Thi",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "karnal-sher-khan-shaheed-biography",
+      "title": "Karnal Sher Khan Shaheed Biography",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "marcus-aurelius-life-and-power",
+      "title": "Marcus Aurelius Life and Power",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "michael-corleone-character-arc-analysis",
+      "title": "Michael Corleone Character Arc Analysis",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "mirza-asadullah-khan-ghalib",
+      "title": "Mirza Asadullah Khan Ghalib",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "ottoman-empire-fall-causes",
+      "title": "Ottoman Empire Fall Causes",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "rasputin-and-the-romanovs",
+      "title": "Rasputin And The Romanovs",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "robb-stark-character-study",
+      "title": "Robb Stark Character Study",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "siege-of-constantinople-1453",
+      "title": "Siege of Constantinople 1453",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "siege-of-constantinople-bayezid-i",
+      "title": "Siege of Constantinople Bayezid I",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-mughal-empire-structure-governance-and-legacy",
+      "title": "The Mughal Empire: Structure, Governance, and Legacy",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-dire-wolf",
+      "title": "The Dire Wolf",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "vito-corleone-sympathy-analysis",
+      "title": "Vito Corleone Sympathy Analysis",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "capitalism",
+      "title": "Capitalism",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "communism",
+      "title": "Communism",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "evolution-and-institutionalization-of-islamic-jurisprudence",
+      "title": "Evolution and Institutionalization of Islamic Jurisprudence",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "ihya-ulum-al-din-structure",
+      "title": "Ihya Ulum al Din Structure",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "socialism",
+      "title": "Socialism",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "stoic-guide-to-procrastination",
+      "title": "Stoic Guide to Procrastination",
+      "field": "social-sciences",
+      "linkCount": 0
+    },
+    {
+      "id": "the-synthesis-what-comes-after-reason",
+      "title": "The Synthesis — What Comes After Reason",
+      "field": "humanities-arts",
+      "linkCount": 0
+    },
+    {
+      "id": "hanafi-essential-muslim-habits",
+      "title": "Hanafi   essential muslim habits",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "hanbali-essential-muslim-habits",
+      "title": "Hanbali   essential muslim habits",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "maliki-essential-muslim-habits",
+      "title": "Maliki   essential muslim habits",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "shafii-essential-muslim-habits",
+      "title": "Shafii   essential muslim habits",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "synthesis-essential-muslim-habits",
+      "title": "Synthesis   essential muslim habits",
+      "field": "humanities-arts",
+      "linkCount": 4
+    },
+    {
+      "id": "hanafi-five-daily-prayers-ruling",
+      "title": "Hanafi   five daily prayers ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "hanbali-five-daily-prayers-ruling",
+      "title": "Hanbali   five daily prayers ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "maliki-five-daily-prayers-ruling",
+      "title": "Maliki   five daily prayers ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "shafii-five-daily-prayers-ruling",
+      "title": "Shafii   five daily prayers ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "synthesis-five-daily-prayers-ruling",
+      "title": "Synthesis   five daily prayers ruling",
+      "field": "humanities-arts",
+      "linkCount": 4
+    },
+    {
+      "id": "hanafi-forex-trading-xauusd-halal",
+      "title": "Hanafi   forex trading xauusd halal",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "hanbali-forex-trading-xauusd-halal",
+      "title": "Hanbali   forex trading xauusd halal",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "maliki-forex-trading-xauusd-halal",
+      "title": "Maliki   forex trading xauusd halal",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "shafii-forex-trading-xauusd-halal",
+      "title": "Shafii   forex trading xauusd halal",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "synthesis-forex-trading-xauusd-halal",
+      "title": "Synthesis   forex trading xauusd halal",
+      "field": "humanities-arts",
+      "linkCount": 4
+    },
+    {
+      "id": "hanafi-hijab-niqab-women-ruling",
+      "title": "Hanafi   hijab niqab women ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "hanbali-hijab-niqab-women-ruling",
+      "title": "Hanbali   hijab niqab women ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "maliki-hijab-niqab-women-ruling",
+      "title": "Maliki   hijab niqab women ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "shafii-hijab-niqab-women-ruling",
+      "title": "Shafii   hijab niqab women ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "synthesis-hijab-niqab-women-ruling",
+      "title": "Synthesis   hijab niqab women ruling",
+      "field": "humanities-arts",
+      "linkCount": 4
+    },
+    {
+      "id": "hanafi-musical-instruments-ruling",
+      "title": "Hanafi   musical instruments ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "hanbali-musical-instruments-ruling",
+      "title": "Hanbali   musical instruments ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "maliki-musical-instruments-ruling",
+      "title": "Maliki   musical instruments ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "shafii-musical-instruments-ruling",
+      "title": "Shafii   musical instruments ruling",
+      "field": "humanities-arts",
+      "linkCount": 1
+    },
+    {
+      "id": "synthesis-musical-instruments-ruling",
+      "title": "Synthesis   musical instruments ruling",
+      "field": "humanities-arts",
+      "linkCount": 4
+    },
+    {
+      "id": "fastbot",
+      "title": "FastBot",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "gmail-assistant",
+      "title": "Gmail Assistant",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "lines-of-code-chapters-of-me",
+      "title": "Lines of code, chapters of me",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "nuhub",
+      "title": "NuHub",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "the-mothership",
+      "title": "The Mothership",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "read-mis",
+      "title": "Read   MIS",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "read-mis-architecture",
+      "title": "Read   MIS Architecture",
+      "field": "science-tech",
+      "linkCount": 0
+    },
+    {
+      "id": "read-model-context-protocol-intro",
+      "title": "Read   Model Context Protocol Intro",
+      "field": "science-tech",
+      "linkCount": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "moc-coal",
+      "target": "registers"
+    },
+    {
+      "source": "moc-coal",
+      "target": "memory-allocation-and-accessing"
+    },
+    {
+      "source": "assignment-1-takeaways",
+      "target": "memory-allocation-and-accessing"
+    },
+    {
+      "source": "moc-coal",
+      "target": "movsx-and-movzx"
+    },
+    {
+      "source": "assignment-1-takeaways",
+      "target": "movsx-and-movzx"
+    },
+    {
+      "source": "moc-coal",
+      "target": "misc"
+    },
+    {
+      "source": "assignment-1-takeaways",
+      "target": "misc"
+    },
+    {
+      "source": "moc-coal",
+      "target": "console-input-and-output"
+    },
+    {
+      "source": "moc-coal",
+      "target": "coal-stack"
+    },
+    {
+      "source": "console-input-and-output",
+      "target": "coal-stack"
+    },
+    {
+      "source": "moc-coal",
+      "target": "flags"
+    },
+    {
+      "source": "moc-coal",
+      "target": "assignment-2-take-aways"
+    },
+    {
+      "source": "moc-coal",
+      "target": "integer-arithematic"
+    },
+    {
+      "source": "moc-coal",
+      "target": "stack-frames"
+    },
+    {
+      "source": "moc-coal",
+      "target": "strings-and-arrays"
+    },
+    {
+      "source": "moc-coal",
+      "target": "floating-point"
+    },
+    {
+      "source": "moc-coal",
+      "target": "interesting-shit"
+    },
+    {
+      "source": "moc-coal",
+      "target": "assignment-1-takeaways"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "arrays"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "bsts"
+    },
+    {
+      "source": "trees",
+      "target": "bsts"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "complexity"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "case-study-analysis-p1"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "linked-lists"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "trees"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "assignment-1-take-aways"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "circular-linked-list"
+    },
+    {
+      "source": "linked-lists",
+      "target": "circular-linked-list"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "complexity-theory"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "queue"
+    },
+    {
+      "source": "arrays",
+      "target": "queue"
+    },
+    {
+      "source": "linked-lists",
+      "target": "queue"
+    },
+    {
+      "source": "moc-data-structures",
+      "target": "data-structures-stack"
+    },
+    {
+      "source": "arrays",
+      "target": "data-structures-stack"
+    },
+    {
+      "source": "linked-lists",
+      "target": "data-structures-stack"
+    },
+    {
+      "source": "moc-pf",
+      "target": "10-univers-arrays-loops"
+    },
+    {
+      "source": "moc-discrete-structures",
+      "target": "propositions-negations-conjunctions-and-disjunctions"
+    },
+    {
+      "source": "moc-discrete-structures",
+      "target": "implications-converse-inverse-contrapositive-and-biconditionals"
+    },
+    {
+      "source": "moc-discrete-structures",
+      "target": "set-notations"
+    },
+    {
+      "source": "moc-discrete-structures",
+      "target": "proofs"
+    },
+    {
+      "source": "eigenvectors-and-eigenvalues",
+      "target": "moc-linear-algebra"
+    },
+    {
+      "source": "moc-linear-algebra",
+      "target": "vector-equations"
+    },
+    {
+      "source": "moc-linear-algebra",
+      "target": "span-of-vectors"
+    },
+    {
+      "source": "vector-equations",
+      "target": "span-of-vectors"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "notations"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "theory-of-formal-languages"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "kleenes-and-positive-closure"
+    },
+    {
+      "source": "theory-of-formal-languages",
+      "target": "kleenes-and-positive-closure"
+    },
+    {
+      "source": "regular-expressions",
+      "target": "kleenes-and-positive-closure"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "2p-examples-problems"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "recursive-definitions"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "3p-examples-problems"
+    },
+    {
+      "source": "recursive-definitions",
+      "target": "3p-examples-problems"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "regular-expressions"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "finite-automata"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "transition-graphs"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "generalized-tgs"
+    },
+    {
+      "source": "transition-graphs",
+      "target": "generalized-tgs"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "pumping-lemma"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "re-to-e-nfa"
+    },
+    {
+      "source": "moc-automata-theory",
+      "target": "finite-automata-with-output"
+    },
+    {
+      "source": "regular-expressions",
+      "target": "chapter-12"
+    },
+    {
+      "source": "recursive-definitions",
+      "target": "introduction-to-computer-theorypdf"
+    },
+    {
+      "source": "regular-expressions",
+      "target": "introduction-to-computer-theorypdf"
+    },
+    {
+      "source": "finite-automata",
+      "target": "introduction-to-computer-theorypdf"
+    },
+    {
+      "source": "transition-graphs",
+      "target": "introduction-to-computer-theorypdf"
+    },
+    {
+      "source": "the-invasion-of-the-vernacular",
+      "target": "polishing-the-street-tongue"
+    },
+    {
+      "source": "the-lab-in-calcutta",
+      "target": "polishing-the-street-tongue"
+    },
+    {
+      "source": "the-cursive-nightmare-and-the-flat-stone",
+      "target": "the-balance-sheet-of-literacy-and-identity"
+    },
+    {
+      "source": "the-scribes-of-the-durbar",
+      "target": "the-balance-sheet-of-literacy-and-identity"
+    },
+    {
+      "source": "the-scribes-of-the-old-order",
+      "target": "the-benares-spark-and-the-clerical-war"
+    },
+    {
+      "source": "the-shifting-alignments-of-identity",
+      "target": "the-benares-spark-and-the-clerical-war"
+    },
+    {
+      "source": "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi",
+      "target": "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi"
+    },
+    {
+      "source": "the-scribes-and-the-typecasters",
+      "target": "the-cursive-nightmare-and-the-flat-stone"
+    },
+    {
+      "source": "the-invasion-of-the-vernacular",
+      "target": "the-empty-treasury-of-delhi"
+    },
+    {
+      "source": "the-language-of-the-courtyard-and-the-soil",
+      "target": "the-empty-treasury-of-delhi"
+    },
+    {
+      "source": "the-indo-aryan-skeleton",
+      "target": "the-forced-caravan-a-dialect-transplanted"
+    },
+    {
+      "source": "the-scribes-of-the-durbar",
+      "target": "the-forced-caravan-a-dialect-transplanted"
+    },
+    {
+      "source": "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi",
+      "target": "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu"
+    },
+    {
+      "source": "the-language-of-the-courtyard-and-the-soil",
+      "target": "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu"
+    },
+    {
+      "source": "the-southern-crucible-dakhni-and-the-royal-ghazal",
+      "target": "the-indo-aryan-skeleton"
+    },
+    {
+      "source": "the-scribes-of-the-old-order",
+      "target": "the-lab-in-calcutta"
+    },
+    {
+      "source": "the-southern-crucible-dakhni-and-the-royal-ghazal",
+      "target": "the-purifiers-of-delhi"
+    },
+    {
+      "source": "the-shifting-alignments-of-identity",
+      "target": "the-scribes-and-the-typecasters"
+    },
+    {
+      "source": "urdu-literature-and-classical-era-2",
+      "target": "urdu-literature-and-classical-era-1"
+    },
+    {
+      "source": "ihya-ulum-al-din-structure",
+      "target": "ihya-ulum-al-din-overview"
+    },
+    {
+      "source": "synthesis-essential-muslim-habits",
+      "target": "hanafi-essential-muslim-habits"
+    },
+    {
+      "source": "synthesis-essential-muslim-habits",
+      "target": "hanbali-essential-muslim-habits"
+    },
+    {
+      "source": "synthesis-essential-muslim-habits",
+      "target": "maliki-essential-muslim-habits"
+    },
+    {
+      "source": "synthesis-essential-muslim-habits",
+      "target": "shafii-essential-muslim-habits"
+    },
+    {
+      "source": "synthesis-five-daily-prayers-ruling",
+      "target": "hanafi-five-daily-prayers-ruling"
+    },
+    {
+      "source": "synthesis-five-daily-prayers-ruling",
+      "target": "hanbali-five-daily-prayers-ruling"
+    },
+    {
+      "source": "synthesis-five-daily-prayers-ruling",
+      "target": "maliki-five-daily-prayers-ruling"
+    },
+    {
+      "source": "synthesis-five-daily-prayers-ruling",
+      "target": "shafii-five-daily-prayers-ruling"
+    },
+    {
+      "source": "synthesis-forex-trading-xauusd-halal",
+      "target": "hanafi-forex-trading-xauusd-halal"
+    },
+    {
+      "source": "synthesis-forex-trading-xauusd-halal",
+      "target": "hanbali-forex-trading-xauusd-halal"
+    },
+    {
+      "source": "synthesis-forex-trading-xauusd-halal",
+      "target": "maliki-forex-trading-xauusd-halal"
+    },
+    {
+      "source": "synthesis-forex-trading-xauusd-halal",
+      "target": "shafii-forex-trading-xauusd-halal"
+    },
+    {
+      "source": "synthesis-hijab-niqab-women-ruling",
+      "target": "hanafi-hijab-niqab-women-ruling"
+    },
+    {
+      "source": "synthesis-hijab-niqab-women-ruling",
+      "target": "hanbali-hijab-niqab-women-ruling"
+    },
+    {
+      "source": "synthesis-hijab-niqab-women-ruling",
+      "target": "maliki-hijab-niqab-women-ruling"
+    },
+    {
+      "source": "synthesis-hijab-niqab-women-ruling",
+      "target": "shafii-hijab-niqab-women-ruling"
+    },
+    {
+      "source": "synthesis-musical-instruments-ruling",
+      "target": "hanafi-musical-instruments-ruling"
+    },
+    {
+      "source": "synthesis-musical-instruments-ruling",
+      "target": "hanbali-musical-instruments-ruling"
+    },
+    {
+      "source": "synthesis-musical-instruments-ruling",
+      "target": "maliki-musical-instruments-ruling"
+    },
+    {
+      "source": "synthesis-musical-instruments-ruling",
+      "target": "shafii-musical-instruments-ruling"
+    }
+  ]
+}

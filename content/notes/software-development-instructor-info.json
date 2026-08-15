@@ -1,0 +1,15 @@
+{
+  "slug": "software-development-instructor-info",
+  "title": "Instructor Info",
+  "tags": [
+    "field/cs",
+    "subject/sda",
+    "concept/instructor/info"
+  ],
+  "htmlContent": "<h1>Instructor Info</h1>\n<p>Up to Software Development and Analysis</p>\n<h2>Instructor Details</h2>\n<ul>\n<li><strong>Name:</strong> Afia Zafar</li>\n<li><strong>Email:</strong> <a href=\"mailto:afia.zafar@isb.nu.edu.pk\">afia.zafar@isb.nu.edu.pk</a></li>\n<li><strong>Office:</strong> D-109-A</li>\n<li><strong>Consultation Hours:</strong></li>\n</ul>",
+  "rawMarkdown": "\n# Instructor Info\n\nUp to Software Development and Analysis\n\n## Instructor Details\n- **Name:** Afia Zafar\n- **Email:** afia.zafar@isb.nu.edu.pk\n- **Office:** D-109-A\n- **Consultation Hours:** \n",
+  "wordCount": 39,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_04/Software Development and Analysis/Instructor Info.md",
+  "filename": "Instructor Info"
+}

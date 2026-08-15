@@ -1,0 +1,15 @@
+{
+  "slug": "booths-algo",
+  "title": "Booth's algo",
+  "tags": [
+    "field/cs",
+    "subject/coal",
+    "concept/booth's/algo"
+  ],
+  "htmlContent": "<p>1010 (-6) x 0101 (5) = -30</p>\n<p>Q0Q-1 :\nif 00 or 11 -> shifting\nelse if 10 -> A - M -> shift\nelse if 01 -> A + M -> shift</p>\n<p>Q-1\nif 0 -> shift\nelse if 1 -> A + M , shift</p>\n<p>A          Q         Q-1    M<br>\n0000    0101       0     1010<br>\n0000    0010       1        -</p>\n<p>1101    0010       1\n1110    1001       0</p>\n<p>0100    1001       0\n0010    0100       1</p>\n<p>1100    0100       1\n1110    0010       0</p>\n<p>1110    0010</p>",
+  "rawMarkdown": "\n1010 (-6) x 0101 (5) = -30\n\nQ0Q-1 : \nif 00 or 11 -> shifting\nelse if 10 -> A - M -> shift\nelse if 01 -> A + M -> shift\n\n\nQ-1\nif 0 -> shift\nelse if 1 -> A + M , shift\n\n\nA          Q         Q-1    M      \n0000    0101       0     1010   \n0000    0010       1        -    \n\n1101    0010       1\n1110    1001       0\n\n0100    1001       0\n0010    0100       1\n\n1100    0100       1\n1110    0010       0\n\n1110    0010",
+  "wordCount": 68,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_03/C.O.A.L/Booth's algo.md",
+  "filename": "Booth's algo"
+}

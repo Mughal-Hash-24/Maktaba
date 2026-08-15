@@ -1,0 +1,15 @@
+{
+  "slug": "lecture-01-introduction",
+  "title": "Lecture 01   Introduction",
+  "tags": [
+    "field/cs",
+    "subject/sda",
+    "concept/lecture/01"
+  ],
+  "htmlContent": "<h1>Lecture 01 - Introduction</h1>\n<p>Up to SDA Lectures</p>\n<h2>Lecture Slides</h2>\n<h2>Key Takeaways</h2>\n<ul>\n<li>Introduction to Software Development and Analysis.</li>\n<li>Understanding the difference between Analysis and Design.</li>\n<li>Overview of Software Development Lifecycle (SDLC).</li>\n</ul>",
+  "rawMarkdown": "# Lecture 01 - Introduction\n\nUp to SDA Lectures\n\n## Lecture Slides\n\n\n## Key Takeaways\n- Introduction to Software Development and Analysis.\n- Understanding the difference between Analysis and Design.\n- Overview of Software Development Lifecycle (SDLC).\n",
+  "wordCount": 49,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_04/Software Development and Analysis/Lectures/Lecture 01 - Introduction.md",
+  "filename": "Lecture 01 - Introduction"
+}

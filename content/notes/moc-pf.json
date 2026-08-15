@@ -1,0 +1,15 @@
+{
+  "slug": "moc-pf",
+  "title": "(MOC)   PF",
+  "tags": [
+    "field/cs",
+    "subject/programming/fundamentals",
+    "type/map"
+  ],
+  "htmlContent": "<h1>(MOC) - PF</h1>\n<p>Up to Semester 03</p>\n<ul>\n<li><a href=\"/notes/10-univers-arrays-loops\">Arrays &#x26; Loops</a></li>\n</ul>",
+  "rawMarkdown": "\n# (MOC) - PF\n\nUp to Semester 03\n\n* [Arrays & Loops](/notes/10-univers-arrays-loops)\n",
+  "wordCount": 14,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_03/PF/(MOC) - PF.md",
+  "filename": "(MOC) - PF"
+}

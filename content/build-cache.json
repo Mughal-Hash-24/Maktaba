@@ -1,0 +1,1494 @@
+{
+  "10_University/Semester_03/C.O.A.L/(MOC) - C.O.A.L.md": {
+    "md5": "4532aa0870984e5a2b0a76adea3764d4",
+    "slug": "moc-coal"
+  },
+  "10_University/Semester_03/C.O.A.L/1.1 Registers.md": {
+    "md5": "e5458fa879722b697765f15ff406c15d",
+    "slug": "registers"
+  },
+  "10_University/Semester_03/C.O.A.L/1.2 Memory Allocation and Accessing.md": {
+    "md5": "c9e853d0af0f395b06d9864474a89659",
+    "slug": "memory-allocation-and-accessing"
+  },
+  "10_University/Semester_03/C.O.A.L/1.4 Movsx and Movzx.md": {
+    "md5": "662fadf33191a5abcc019b586225ac07",
+    "slug": "movsx-and-movzx"
+  },
+  "10_University/Semester_03/C.O.A.L/1.5 Misc.md": {
+    "md5": "e0f458b38ca9da42af2308c772cc4007",
+    "slug": "misc"
+  },
+  "10_University/Semester_03/C.O.A.L/2.0 Console Input and Output.md": {
+    "md5": "3e71ea504cd6dc392afd2ab63a4ba133",
+    "slug": "console-input-and-output"
+  },
+  "10_University/Semester_03/C.O.A.L/2.1 Stack.md": {
+    "md5": "ea987c2680fc9698afa640115f737d6a",
+    "slug": "coal-stack"
+  },
+  "10_University/Semester_03/C.O.A.L/2.2 Flags.md": {
+    "md5": "94beff9bd583842df2531b453cdb0137",
+    "slug": "flags"
+  },
+  "10_University/Semester_03/C.O.A.L/2.3 Assignment 2 - Take Aways.md": {
+    "md5": "d89961bf0e8f4b351a620add01075044",
+    "slug": "assignment-2-take-aways"
+  },
+  "10_University/Semester_03/C.O.A.L/2.4 Integer Arithematic.md": {
+    "md5": "1f052df46ce29ddb89b5da29b64bbe27",
+    "slug": "integer-arithematic"
+  },
+  "10_University/Semester_03/C.O.A.L/2.5 Stack Frames.md": {
+    "md5": "97dcda889ec4b6b796e9ec4339eabef8",
+    "slug": "stack-frames"
+  },
+  "10_University/Semester_03/C.O.A.L/3.1 Strings and Arrays.md": {
+    "md5": "d97e1feff3582eaf52844c60dc301edc",
+    "slug": "strings-and-arrays"
+  },
+  "10_University/Semester_03/C.O.A.L/3.2 Floating Point.md": {
+    "md5": "ed4a3b64c5c1015a997e81c82c6fad1b",
+    "slug": "floating-point"
+  },
+  "10_University/Semester_03/C.O.A.L/3.3 Interesting shit.md": {
+    "md5": "64f19114e0932efbb84a641bc32b3ba4",
+    "slug": "interesting-shit"
+  },
+  "10_University/Semester_03/C.O.A.L/Assignment 1 - Takeaways.md": {
+    "md5": "90c89f10d0e9c81dc74d47f6a974cde4",
+    "slug": "assignment-1-takeaways"
+  },
+  "10_University/Semester_03/C.O.A.L/Assignment 2 - Takeaways.md": {
+    "md5": "59b03e35b3415f4a7a27d222e5d05c7a",
+    "slug": "assignment-2-takeaways"
+  },
+  "10_University/Semester_03/C.O.A.L/Booth's algo.md": {
+    "md5": "8c8f444fa5109cb45e311254bff690a6",
+    "slug": "booths-algo"
+  },
+  "10_University/Semester_03/C.O.A.L/Coal Buddy.md": {
+    "md5": "ee6c8535cbf438498b2c518c78fe0128",
+    "slug": "coal-buddy"
+  },
+  "10_University/Semester_03/C.O.A.L/Jumps.md": {
+    "md5": "f9907af1b69fb36b2736a22231e14cf4",
+    "slug": "jumps"
+  },
+  "10_University/Semester_03/Data Structures/(MOC) - Data Structures.md": {
+    "md5": "f6f3b4b48a271c764ce1dd4aaf93696e",
+    "slug": "moc-data-structures"
+  },
+  "10_University/Semester_03/Data Structures/1.1 Arrays.md": {
+    "md5": "76570504fe4baaaddc211680b224cedd",
+    "slug": "arrays"
+  },
+  "10_University/Semester_03/Data Structures/1.10 BSTs.md": {
+    "md5": "72759b7fa4a0a85a4c254c114a23cc09",
+    "slug": "bsts"
+  },
+  "10_University/Semester_03/Data Structures/1.11 Complexity.md": {
+    "md5": "2f6c70ab97edb1f5793766ed027cc9f1",
+    "slug": "complexity"
+  },
+  "10_University/Semester_03/Data Structures/1.12 Case Study Analysis P1.md": {
+    "md5": "bfca61a98a400dadc1f861e58848d74f",
+    "slug": "case-study-analysis-p1"
+  },
+  "10_University/Semester_03/Data Structures/1.2 Linked Lists.md": {
+    "md5": "670ceccf319d1afcd8e09a04896aab1f",
+    "slug": "linked-lists"
+  },
+  "10_University/Semester_03/Data Structures/1.3 Trees.md": {
+    "md5": "9714bae707936dce5eae595b240ed451",
+    "slug": "trees"
+  },
+  "10_University/Semester_03/Data Structures/1.4 Assignment 1 - Take Aways.md": {
+    "md5": "39cadcca1833a3f7e45c0b5f434aba49",
+    "slug": "assignment-1-take-aways"
+  },
+  "10_University/Semester_03/Data Structures/1.6 Circular Linked List.md": {
+    "md5": "3f2ff48f0785304473b9a67ff2f926c6",
+    "slug": "circular-linked-list"
+  },
+  "10_University/Semester_03/Data Structures/1.7 Complexity Theory.md": {
+    "md5": "648e7c511d8967158ba2b54e86a79342",
+    "slug": "complexity-theory"
+  },
+  "10_University/Semester_03/Data Structures/1.8 Queue.md": {
+    "md5": "67cc369c60432fb05935164b4c1707a6",
+    "slug": "queue"
+  },
+  "10_University/Semester_03/Data Structures/1.9 Stack.md": {
+    "md5": "44cda758994099ae8094f32c07840cbf",
+    "slug": "data-structures-stack"
+  },
+  "10_University/Semester_03/Data Structures/Arrays & Loops.md": {
+    "md5": "f49a8ff9daca3617a1891d57a5fef400",
+    "slug": "10-univers-arrays-loops"
+  },
+  "10_University/Semester_03/Discrete Structures/(MOC) - Discrete Structures.md": {
+    "md5": "2ad9b71e32eb5e06daa741e3c5e31680",
+    "slug": "moc-discrete-structures"
+  },
+  "10_University/Semester_03/Discrete Structures/1.1.1  Propositions, Negations, Conjunctions, and Disjunctions.md": {
+    "md5": "2f5393d7ee37e8aa8e7758bf318d0f00",
+    "slug": "propositions-negations-conjunctions-and-disjunctions"
+  },
+  "10_University/Semester_03/Discrete Structures/1.1.2 Implications, Converse, Inverse, Contrapositive and Biconditionals.md": {
+    "md5": "5425cb28ec4bf0b2fa23d84fcba2a753",
+    "slug": "implications-converse-inverse-contrapositive-and-biconditionals"
+  },
+  "10_University/Semester_03/Discrete Structures/6.1 Set Notations.md": {
+    "md5": "569bd0a94e6ffe1c508f136a9f402eb2",
+    "slug": "set-notations"
+  },
+  "10_University/Semester_03/Discrete Structures/Proofs.md": {
+    "md5": "1bcf210c8965cc5187fb229028336e2a",
+    "slug": "proofs"
+  },
+  "10_University/Semester_03/Linear Algebra/(MOC) - Linear Algebra.md": {
+    "md5": "b9cd88fe352a8b64dd5a8ceb421a2f39",
+    "slug": "moc-linear-algebra"
+  },
+  "10_University/Semester_03/Linear Algebra/1.3 Vector Equations.md": {
+    "md5": "bf20feb9cdbba5d9324c7bdf8435f54d",
+    "slug": "vector-equations"
+  },
+  "10_University/Semester_03/Linear Algebra/Eigenvectors_and_Eigenvalues.md": {
+    "md5": "bf657ae263e8cb21ce90cafb4cc2b412",
+    "slug": "eigenvectors-and-eigenvalues"
+  },
+  "10_University/Semester_03/Linear Algebra/Span of Vectors.md": {
+    "md5": "68905202ec721f0bc0b7571b21e29ad2",
+    "slug": "span-of-vectors"
+  },
+  "10_University/Semester_03/PF/(MOC) - PF.md": {
+    "md5": "4117adc8c4d3537a1144c59cb33c2eaa",
+    "slug": "moc-pf"
+  },
+  "10_University/Semester_03/PF/Arrays & Loops.md": {
+    "md5": "1c5eb1bf051e1926f20bb1c9f6da9a77",
+    "slug": "10-univers-arrays-loops"
+  },
+  "10_University/Semester_03/Theory of Automata/(MOC) - Automata Theory.md": {
+    "md5": "9179ce2119c546cbae9b37e11c251ea3",
+    "slug": "moc-automata-theory"
+  },
+  "10_University/Semester_03/Theory of Automata/-NOTATIONS.md": {
+    "md5": "46e3f098bf2c0fbef9e11f5086a65c4a",
+    "slug": "notations"
+  },
+  "10_University/Semester_03/Theory of Automata/2.1 Theory of Formal Languages.md": {
+    "md5": "d85ee165db28f11f05a57ee8c7a7e86f",
+    "slug": "theory-of-formal-languages"
+  },
+  "10_University/Semester_03/Theory of Automata/2.2 Kleene's and Positive Closure.md": {
+    "md5": "89f75fcbbeb40591cb84380d75b5d107",
+    "slug": "kleenes-and-positive-closure"
+  },
+  "10_University/Semester_03/Theory of Automata/2.p Examples & Problems.md": {
+    "md5": "f6b52f398e6e65a86c96c101ebfe9ccd",
+    "slug": "2p-examples-problems"
+  },
+  "10_University/Semester_03/Theory of Automata/3.1 Recursive Definitions.md": {
+    "md5": "a38f5d211ec36f6b1192b43a3eb02dac",
+    "slug": "recursive-definitions"
+  },
+  "10_University/Semester_03/Theory of Automata/3.p Examples & Problems.md": {
+    "md5": "9cc40b844543d10fc9102d8730c69e25",
+    "slug": "3p-examples-problems"
+  },
+  "10_University/Semester_03/Theory of Automata/4.1 Regular Expressions.md": {
+    "md5": "a14783b80815d6c633321fb49bd430ff",
+    "slug": "regular-expressions"
+  },
+  "10_University/Semester_03/Theory of Automata/5.1 Finite Automata.md": {
+    "md5": "b7561a4cf0ea9adabf4f5df008ee0458",
+    "slug": "finite-automata"
+  },
+  "10_University/Semester_03/Theory of Automata/6.1 Transition Graphs.md": {
+    "md5": "7937a1294c293fe574fb1de137acee8d",
+    "slug": "transition-graphs"
+  },
+  "10_University/Semester_03/Theory of Automata/6.2 Generalized TGs.md": {
+    "md5": "c9a8d2d7faae72e4b3a13087386ff891",
+    "slug": "generalized-tgs"
+  },
+  "10_University/Semester_03/Theory of Automata/7.1 Pumping Lemma.md": {
+    "md5": "9a99daf0e587d15979dff146ca511f29",
+    "slug": "pumping-lemma"
+  },
+  "10_University/Semester_03/Theory of Automata/8.1 RE to e-NFA.md": {
+    "md5": "3fd92671dcad7bec649c21b64299dc56",
+    "slug": "re-to-e-nfa"
+  },
+  "10_University/Semester_03/Theory of Automata/9.1 Finite Automata With Output.md": {
+    "md5": "2f08d07338719c98dd94059c81fb7b61",
+    "slug": "finite-automata-with-output"
+  },
+  "10_University/Semester_03/Theory of Automata/Chapter 12.md": {
+    "md5": "2fd666a3375c11afdbc3f211284a0fe7",
+    "slug": "chapter-12"
+  },
+  "10_University/Semester_03/Theory of Automata/Introduction To Computer Theory.pdf.md": {
+    "md5": "499b0c92e42a87b6ba28b61095b5904c",
+    "slug": "introduction-to-computer-theorypdf"
+  },
+  "10_University/Semester_03/Theory of Automata/Test.md": {
+    "md5": "fbf8a59c2807ed0765667664a52e3264",
+    "slug": "test"
+  },
+  "10_University/Semester_04/Admin/Deadlines.md": {
+    "md5": "e83619a10148418b8b319d5278c0dae3",
+    "slug": "deadlines"
+  },
+  "10_University/Semester_04/Admin/Timetable.md": {
+    "md5": "e1b2a755f678bf738335e89055cadbd4",
+    "slug": "timetable"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Instructor Info.md": {
+    "md5": "50b686d456f2517ffb0cdb4947da3359",
+    "slug": "software-development-instructor-info"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.1 - Defining Intelligence.md": {
+    "md5": "d3c06960f98371c9c84fad4c5e494322",
+    "slug": "defining-intelligence"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.2 - What is AI.md": {
+    "md5": "b740b8a3266d425a803c54ac2e86e6a3",
+    "slug": "what-is-ai"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.3 - The Turing Test.md": {
+    "md5": "e8105c6991ea5b9bfe6bdefb8d286084",
+    "slug": "the-turing-test"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.4 - AI Subfields and Concepts.md": {
+    "md5": "c9714769b42662dd70430768c14dc3ca",
+    "slug": "ai-subfields-and-concepts"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.5 - AI vs ML vs DL.md": {
+    "md5": "3db7092cea634a579c34e1507214b5ac",
+    "slug": "ai-vs-ml-vs-dl"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.6 - Types of Machine Learning.md": {
+    "md5": "83deba7a908ceaef5b58c242bd3f536a",
+    "slug": "types-of-machine-learning"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.7 - Applications and Future of AI.md": {
+    "md5": "9fcb4f30a3d537255111665556351bd7",
+    "slug": "applications-and-future-of-ai"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.1.8 - LLM Input Processing.md": {
+    "md5": "5b629add64869893377b37888a8b5687",
+    "slug": "llm-input-processing"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.2.1 - AI Agents.md": {
+    "md5": "dbd51c247630c945519ee1cae9586018",
+    "slug": "ai-agents"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.2.2 - Agents Overview Simple Reflex.md": {
+    "md5": "9272e41c796cc0bb9c263cdf40b437e6",
+    "slug": "agents-overview-simple-reflex"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.2.3 - Model Based Agent.md": {
+    "md5": "693884e5e7cc0ccea1ad6610498dfd9b",
+    "slug": "model-based-agent"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.2.4 - Goal Based Agent.md": {
+    "md5": "1df06d8aa4abc9f2ad3c75d592c80584",
+    "slug": "goal-based-agent"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.2.5 - Utility Based Agent.md": {
+    "md5": "195c44ffc25403f7b81f53bc8e75d0e0",
+    "slug": "utility-based-agent"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.2.6 - Learning Agents.md": {
+    "md5": "83d56ac2a4847e6081775cf78b7fbaa0",
+    "slug": "learning-agents"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.1 - AI Search Foundations.md": {
+    "md5": "f9f880866476537cc228430aa951f010",
+    "slug": "ai-search-foundations"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.10 - A Star Algorithm.md": {
+    "md5": "cc65db2f794bb7ca48087639977aea83",
+    "slug": "a-star-algorithm"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.11 - Dijkstra Algorithm.md": {
+    "md5": "14fed1bf47603dfd439cea1374a83e26",
+    "slug": "dijkstra-algorithm"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.12 - Search Logic Details.md": {
+    "md5": "953e74db2c5adb27c673b417230eced8",
+    "slug": "search-logic-details"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.13 - A Star Optimality and Blocking.md": {
+    "md5": "171d41178b54210447ee451fea60520f",
+    "slug": "notes-a-star-optimality-and-blocking"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.14 - A Star vs Dijkstra Comparison.md": {
+    "md5": "9df91048fdbaf92b0835ad3914435c33",
+    "slug": "a-star-vs-dijkstra-comparison"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.15 - A Star Termination Conditions.md": {
+    "md5": "d966d1c2af35a56fa679da6dcb3ea4a3",
+    "slug": "a-star-termination-conditions"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.16 - A Star Non Admissible Heuristics.md": {
+    "md5": "1fbee8f5a67ec39bdb8a9103bb7ea134",
+    "slug": "a-star-non-admissible-heuristics"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.17 - Admissible Heuristics and Path Optimality.md": {
+    "md5": "4b8c36173aa3839e81f83a7cd9169a3b",
+    "slug": "admissible-heuristics-and-path-optimality"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.18 - A Star Tree Search Optimality Blocking.md": {
+    "md5": "baf4a21fe6f7297b98b67d660b0b3fa7",
+    "slug": "a-star-tree-search-optimality-blocking"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.19 - 8 Puzzle Problem A Star Application.md": {
+    "md5": "89422abb6800ac1a7f7b584f4963f214",
+    "slug": "8-puzzle-problem-a-star-application"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.2 - Search Recap.md": {
+    "md5": "12e929b799b1fc01bba4b42a9c807947",
+    "slug": "search-recap"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.3 - AI Uninformed Search.md": {
+    "md5": "514bac5316a059ede11b6423bf57452a",
+    "slug": "ai-uninformed-search"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.4 - AI Cost Sensitive Search.md": {
+    "md5": "a88a5297cc8d65028c79aeb0bee27dad",
+    "slug": "ai-cost-sensitive-search"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.5 - AI UCS Limitations.md": {
+    "md5": "75cc8d05157d0a4233b9072301e63f35",
+    "slug": "ai-ucs-limitations"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.6 - Pancake Problem.md": {
+    "md5": "ae64b853880b6a7b4eb3033cc77add75",
+    "slug": "pancake-problem"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.7 - Heuristic Functions.md": {
+    "md5": "41c55a4019294733974080589a66b9a4",
+    "slug": "heuristic-functions"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.8 - Greedy Search.md": {
+    "md5": "51347f8cf643b21548080d73d176bd91",
+    "slug": "greedy-search"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/1.3.9 - AI Search Costs.md": {
+    "md5": "b0ad09449f5cc2a6037107e413ad96a0",
+    "slug": "ai-search-costs"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/2.1.1 - Local Searches.md": {
+    "md5": "82526bb1af4327042cd7a8df926249f2",
+    "slug": "local-searches"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/2.2.1 - GA Introduction and Inception.md": {
+    "md5": "a350fe2d9674ae5087e2a173bdbfe342",
+    "slug": "ga-introduction-and-inception"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/2.2.2 - GA Core Mechanics.md": {
+    "md5": "af0926b3591eb198bad05ec9ed48cc4f",
+    "slug": "ga-core-mechanics"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/2.2.3 - GA Workflow.md": {
+    "md5": "6929437e993998714ca847ee3467242a",
+    "slug": "ga-workflow"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/2.2.4 - Selection and Operators.md": {
+    "md5": "089d985a7bbce6b8b3f31e1fc9b8e6b9",
+    "slug": "selection-and-operators"
+  },
+  "10_University/Semester_04/Artificial Intelligence/Notes/2.2.5 - Genetic Variation.md": {
+    "md5": "4bb7c35d5922bec86957fc3575f23ba4",
+    "slug": "genetic-variation"
+  },
+  "10_University/Semester_04/DB lab/Notes/Client_Server_Architecture.md": {
+    "md5": "96a19cef4ff60075c9a357f6ea0074ce",
+    "slug": "client-server-architecture"
+  },
+  "10_University/Semester_04/DB lab/Notes/Database_Integration_and_Migration.md": {
+    "md5": "eb9d9b55cbac52d96e40651e9fa85447",
+    "slug": "database-integration-and-migration"
+  },
+  "10_University/Semester_04/DB lab/Notes/Three_Tier_Architecture.md": {
+    "md5": "0c56f2d10839c9dfb99fce9acfd84fc8",
+    "slug": "three-tier-architecture"
+  },
+  "10_University/Semester_04/Database Systems/Instructor Info.md": {
+    "md5": "845a9d397e4ea4dbf3a3b7ead466aa0d",
+    "slug": "software-development-instructor-info"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.1 - Introduction to Databases.md": {
+    "md5": "56d642771059444a01865c7ddda64a48",
+    "slug": "introduction-to-databases"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.10 - SQL Query Construction System.md": {
+    "md5": "f0be74b0e8f6a44c43e359703a068189",
+    "slug": "sql-query-construction-system"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.11 - SQL Nested Queries Conceptual.md": {
+    "md5": "851ebf91df9f7fd5188bbf448b4493a7",
+    "slug": "sql-nested-queries-conceptual"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.12 - SQL Nested Queries Practical.md": {
+    "md5": "26332de5d8041a9b6f93f21eb118c908",
+    "slug": "sql-nested-queries-practical"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.13 - SQL Joins - Fundamentals.md": {
+    "md5": "93e04cc0fdf0a5a0b3c8b453aa08959f",
+    "slug": "sql-joins-fundamentals"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.14 - SQL Joins - Cross Join.md": {
+    "md5": "60046cb2de2ca96f9f98363089759a6b",
+    "slug": "sql-joins-cross-join"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.15 - SQL Joins - Inner Join.md": {
+    "md5": "1cbd326d233043710f95c9b7b4fad28f",
+    "slug": "sql-joins-inner-join"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.16 - SQL Joins - Outer Join Fundamentals.md": {
+    "md5": "d50b2e314e96889542239e9f74577173",
+    "slug": "sql-joins-outer-join-fundamentals"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.17 - SQL Joins - Full Outer Join.md": {
+    "md5": "19dbde780aac007a904c9c3a04d7339d",
+    "slug": "sql-joins-full-outer-join"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.18 - SQL Joins - Left Outer Join.md": {
+    "md5": "4cd34a9f8d7077cddf38696cbe97b319",
+    "slug": "sql-joins-left-outer-join"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.19 - SQL Joins - Right Outer Join.md": {
+    "md5": "670212605899a2aca873fc1d4900de3a",
+    "slug": "sql-joins-right-outer-join"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.2 - Data Types and Architecture.md": {
+    "md5": "5d964e050d57e7e158b65ea0958c0b64",
+    "slug": "data-types-and-architecture"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.20 - SQL Set Operations.md": {
+    "md5": "f3b8dd6c23bbcbf359b730f3a07ffe46",
+    "slug": "notes-sql-set-operations"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.21 - SQL Create and Drop.md": {
+    "md5": "dcefbf831dc2e09157996be93a3d00ae",
+    "slug": "sql-create-and-drop"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.22 - SQL Schema Lifecycle.md": {
+    "md5": "ec11e6e1cd985bcbe49516aae8f0f1b1",
+    "slug": "sql-schema-lifecycle"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.23 - SQL Set Operations.md": {
+    "md5": "8627402911b49e205c037121eaa3aaa4",
+    "slug": "notes-sql-set-operations-1"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.24 - SQL Create and Drop Operations.md": {
+    "md5": "5c6c15cfe8c86f17596eb37006060279",
+    "slug": "sql-create-and-drop-operations"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.25 - SQL Schema Workflow.md": {
+    "md5": "1c177cb5c72999abbe27e90fb8a212b4",
+    "slug": "sql-schema-workflow"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.26 - SQL Table Creation and Constraints.md": {
+    "md5": "f08fab9392af90f13d4f26f76af7da9f",
+    "slug": "sql-table-creation-and-constraints"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.3 - SQL Fundamentals and Retrieval.md": {
+    "md5": "c52dd77b239342b2d2fa94ce705559dd",
+    "slug": "sql-fundamentals-and-retrieval"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.4 - SQL Pattern Matching.md": {
+    "md5": "7a18f65ef952b80831c8773a41e1ae56",
+    "slug": "sql-pattern-matching"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.5 - SQL Null Handling and Updates.md": {
+    "md5": "fb67ca246424a19ef62774b45f3116ee",
+    "slug": "sql-null-handling-and-updates"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.6 - SQL Sorting and Ordering.md": {
+    "md5": "9a9c4534959c40d7f56e962fe0e846d4",
+    "slug": "sql-sorting-and-ordering"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.7 - SQL Aggregate Functions Overview.md": {
+    "md5": "cb92f037c5ac5a3092856c65384ed273",
+    "slug": "sql-aggregate-functions-overview"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.8 - SQL Standard Aggregates Deep Dive.md": {
+    "md5": "557b28cdb315f19367616a74905a1336",
+    "slug": "sql-standard-aggregates-deep-dive"
+  },
+  "10_University/Semester_04/Database Systems/Notes/1.1.9 - SQL Aggregation Case Study.md": {
+    "md5": "b0afa70ea8e49b0cdf0e4776b8087b89",
+    "slug": "sql-aggregation-case-study"
+  },
+  "10_University/Semester_04/Database Systems/Notes/2.1.1 - Database JOIN Strategies.md": {
+    "md5": "b4d4e7aba81d4cb339681906ed8dd519",
+    "slug": "database-join-strategies"
+  },
+  "10_University/Semester_04/Database Systems/Notes/2.2.1 - Intro to Entity Relation Diagram.md": {
+    "md5": "8c42440bad142c9efe46a346761d0329",
+    "slug": "intro-to-entity-relation-diagram"
+  },
+  "10_University/Semester_04/Database Systems/Notes/2.2.2 - Technical Specifics of an ER diagram.md": {
+    "md5": "0453b1f0026c8e1aa124fb3d09471bc6",
+    "slug": "technical-specifics-of-an-er-diagram"
+  },
+  "10_University/Semester_04/Database Systems/Notes/2.3.1 - EERD Introduction.md": {
+    "md5": "3d1a706255dfe6997d5eb6b49876e89a",
+    "slug": "eerd-introduction"
+  },
+  "10_University/Semester_04/Database Systems/Notes/2.3.2 - Supertype_Subtype hierarchies in EERD.md": {
+    "md5": "e1d9732c78a83e415386a9c8a6687530",
+    "slug": "supertype-subtype-hierarchies-in-eerd"
+  },
+  "10_University/Semester_04/Database Systems/Notes/2.3.3 - Specialization and Generalization in EERD.md": {
+    "md5": "713b68f4e7d52a3f9b49418d27d5e5e9",
+    "slug": "specialization-and-generalization-in-eerd"
+  },
+  "10_University/Semester_04/Database Systems/Notes/2.3.4 - Hierarchies, lattices and shared subclasses.md": {
+    "md5": "65ce108ed260c5e29fd5db776b069eda",
+    "slug": "hierarchies-lattices-and-shared-subclasses"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.1 - OS Process Fundamentals.md": {
+    "md5": "7cc0466e29abc26ec7ca03aed18f7d14",
+    "slug": "os-process-fundamentals"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.10 - OS Pipe Prototypes and Arrays.md": {
+    "md5": "a8a612714012bcc9779bb9625b158365",
+    "slug": "os-pipe-prototypes-and-arrays"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.11 - OS Pipe Backend Internals.md": {
+    "md5": "27f17d1b7a3db5dba7c70bfab69f45e0",
+    "slug": "os-pipe-backend-internals"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.12 - OS Pipe Synchronization and Blocking.md": {
+    "md5": "849736c844c4de55b043da9eb77d4d43",
+    "slug": "os-pipe-synchronization-and-blocking"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.13 - OS Named Pipes.md": {
+    "md5": "0268718fdb14c137ef6239091089d491",
+    "slug": "os-named-pipes"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.14 - OS Fork Bomb and Signal Handling.md": {
+    "md5": "7abc309ab3fc222b7471aee99a5609dc",
+    "slug": "os-fork-bomb-and-signal-handling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.15 - OS Pipe Inheritance Across Generations.md": {
+    "md5": "3540acfa45f21552184a090a282e06f6",
+    "slug": "os-pipe-inheritance-across-generations"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.16 - OS IO Redirection Mechanics in C.md": {
+    "md5": "6231bcf252b73c34d8eeb366eb765f63",
+    "slug": "os-io-redirection-mechanics-in-c"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.17 - OS Schedulers.md": {
+    "md5": "33dc08f1485e0dc59b7e4a91414218ff",
+    "slug": "os-schedulers"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.2 - OS Process Creation and Forking.md": {
+    "md5": "9d2dfdde46ed32ea3c1ee4fd20f8e3c8",
+    "slug": "os-process-creation-and-forking"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.3 - OS Parallelism Case Study.md": {
+    "md5": "87957814b8309db4e6736e04836a1294",
+    "slug": "os-parallelism-case-study"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.4 - OS Exec Syscalls.md": {
+    "md5": "877fa565c0ae3dda37d1a1d3eff16572",
+    "slug": "os-exec-syscalls"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.5 - IPC Concepts.md": {
+    "md5": "eb143408c77f210070ac2076fb910cee",
+    "slug": "ipc-concepts"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.6 - OS File Descriptors.md": {
+    "md5": "e8fd91fd44a4a0fc44d6e8d012818b52",
+    "slug": "os-file-descriptors"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.7 - OS Standard I-O Descriptors.md": {
+    "md5": "a323a50c8f3d372c942b168d68e781a2",
+    "slug": "os-standard-i-o-descriptors"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.8 - OS Read and Write Syntax.md": {
+    "md5": "f3290e0b319dd4424647c53171b999f5",
+    "slug": "os-read-and-write-syntax"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/1.1.9 - OS Pipes for IPC.md": {
+    "md5": "f554b9f3b48cd55ee56af330fdba4683",
+    "slug": "os-pipes-for-ipc"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.1 - Process Scheduling.md": {
+    "md5": "03668dac24bf5980b75c61229f2e116e",
+    "slug": "process-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.10 - Scheduling Misc.md": {
+    "md5": "59278f7788c521156ae381d1a9e8c0ae",
+    "slug": "scheduling-misc"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.11 - FCFS Scheduling.md": {
+    "md5": "b1da7e662c9d06619f6169c56d24940d",
+    "slug": "fcfs-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.12 - Round Robin Scheduling.md": {
+    "md5": "1c997eaf8cf0cfcb8af5ae6df40aa5bf",
+    "slug": "round-robin-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.13 - SJF Scheduling.md": {
+    "md5": "1dc0374a75498b698123b81d3028527f",
+    "slug": "sjf-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.14 - SRTF Scheduling.md": {
+    "md5": "a21dd8c4efd0216c5b0118f37e7240cb",
+    "slug": "srtf-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.15 - SJF vs Round Robin.md": {
+    "md5": "d5da6ff903e719688ba753d40dc31f07",
+    "slug": "sjf-vs-round-robin"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.16 - Priority Scheduling.md": {
+    "md5": "f2b732c7e6382336fd94a9367cf13ee6",
+    "slug": "priority-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.17 - Multilevel Queue Scheduling.md": {
+    "md5": "20afdadfd6d501cc07dc95efaa60b50f",
+    "slug": "multilevel-queue-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.18 - MLFQ Scheduling.md": {
+    "md5": "08da50f8d9b00d9ad92dd8c554ff8917",
+    "slug": "mlfq-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.2 - Two-State Process Model.md": {
+    "md5": "f880b91aba03556debf79c1df5872652",
+    "slug": "two-state-process-model"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.3 - Five-State Process Model.md": {
+    "md5": "7de80aa16a83195f2356213d216e3b13",
+    "slug": "five-state-process-model"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.4 - Suspended Processes.md": {
+    "md5": "6aa3fa77ef6f352ead74b724976d808b",
+    "slug": "suspended-processes"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.5 - Unix V Process State Transition.md": {
+    "md5": "8b247fda2278156487a72129f3a57ce6",
+    "slug": "unix-v-process-state-transition"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.6 - Context Switching.md": {
+    "md5": "494aaa1085f6e3e87a6a057b92ef38c5",
+    "slug": "context-switching"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.7 - Three level Scheduling.md": {
+    "md5": "bae25895eae39ce112141bf09295c1aa",
+    "slug": "three-level-scheduling"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.8 - Scheduling and Process Transitions.md": {
+    "md5": "93760c591666c06efb1a886296b72d92",
+    "slug": "scheduling-and-process-transitions"
+  },
+  "10_University/Semester_04/Operating Systems/Notes/2.1.9 - Decision Mode.md": {
+    "md5": "ee3a5dd0fba9e337eee9eff35ad402bf",
+    "slug": "decision-mode"
+  },
+  "10_University/Semester_04/Pak Studies/Notes/1.1.1 - Indus Valley Civilization.md": {
+    "md5": "2f2e0ffa5cd16e5a276b1971c43788b5",
+    "slug": "indus-valley-civilization"
+  },
+  "10_University/Semester_04/Pak Studies/Notes/1.1.2 - Muslim Opposition to Partition.md": {
+    "md5": "a4b4d8e58b3a067dcb3f4aa15fe1d747",
+    "slug": "muslim-opposition-to-partition"
+  },
+  "10_University/Semester_04/Pak Studies/Notes/1.1.3 - Khan Abdul Ghaffar Khan.md": {
+    "md5": "b0b32298cf64456e527a9e4405148505",
+    "slug": "khan-abdul-ghaffar-khan"
+  },
+  "10_University/Semester_04/Pak Studies/Notes/1.1.4 - Russian and Japanese Expansionism.md": {
+    "md5": "fafbe0f4c5b5b68aa516707c63607eb1",
+    "slug": "russian-and-japanese-expansionism"
+  },
+  "10_University/Semester_04/Pak Studies/Notes/1.1.5 - Political Parties in Pakistan.md": {
+    "md5": "dec67898fc653b775869b16d7f2c2594",
+    "slug": "political-parties-in-pakistan"
+  },
+  "10_University/Semester_04/Prob n Stats/Notes/1.1.1 - Permutations and Combinations.md": {
+    "md5": "826ce31e540c0dde40b79bc283f28909",
+    "slug": "permutations-and-combinations"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Instructor Info.md": {
+    "md5": "693177b994aa39852e5758cb702f82d1",
+    "slug": "software-development-instructor-info"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Lectures/Lecture 01 - Introduction.md": {
+    "md5": "d502b2b77efde183acdfd2b8f4eca8de",
+    "slug": "lecture-01-introduction"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.1.1 - Introduction to Software and SDA.md": {
+    "md5": "a7996db3e147d69eedab3e4469582817",
+    "slug": "introduction-to-software-and-sda"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.1.2 - SDA Lifecycle and Phases.md": {
+    "md5": "459ba393cb9cd1d6ad8cbb9f62785907",
+    "slug": "sda-lifecycle-and-phases"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.1.3 - SDA Methodologies.md": {
+    "md5": "bc2b8f33a625c4f8d1279c8634c7f11a",
+    "slug": "sda-methodologies"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.1.4 - Software Analysis vs Design.md": {
+    "md5": "44ce61465d3bae3fd7880f8e672bc384",
+    "slug": "software-analysis-vs-design"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.2.1 - UML Basics.md": {
+    "md5": "11e0cc12b76d0f39ae1d7c4add6e4840",
+    "slug": "uml-basics"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.2.2 - OOD and OOP Concepts.md": {
+    "md5": "d917e5770b56c16a2137e302f48fd861",
+    "slug": "ood-and-oop-concepts"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.2.3 - Programming Paradigms.md": {
+    "md5": "cc7496b38b53cdbc70052815531a066d",
+    "slug": "programming-paradigms"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.2.4 - OO Core Principles.md": {
+    "md5": "d7ad1aba8e8131df269ede76b56d67d7",
+    "slug": "oo-core-principles"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.2.5 - OO Relationships.md": {
+    "md5": "95c6dadb7b4d663bd3b0a9be28759626",
+    "slug": "oo-relationships"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.3.1 - Advanced SDA Concepts.md": {
+    "md5": "0a65b84156a02e2ebb2be6ed0113b3f6",
+    "slug": "advanced-sda-concepts"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.4.1 - Use Case Analysis.md": {
+    "md5": "c67e2cdd4640afe9a62b0e7903bcb983",
+    "slug": "use-case-analysis"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.5.1 - System Sequence Diagrams.md": {
+    "md5": "6a07f5b2c1c807419ea7e54bc1e4af34",
+    "slug": "system-sequence-diagrams"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.5.2 - SSD Theory.md": {
+    "md5": "8277dea4bf143082570b60e5c060b6ed",
+    "slug": "ssd-theory"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.5.3 - SSD Construction Lab.md": {
+    "md5": "454afb21f7e39cd7834492d3c0cf1ee4",
+    "slug": "ssd-construction-lab"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Notes/1.6.1 - Domain Modelling in SDA.md": {
+    "md5": "6bb8e827a057642bbd5140f1e0de148f",
+    "slug": "domain-modelling-in-sda"
+  },
+  "10_University/Semester_04/Software Development and Analysis/Projects/SDA_Project_ideas.md": {
+    "md5": "6b2dcb7773f8d415ab6d7932e6845add",
+    "slug": "sda-project-ideas"
+  },
+  "20_CS_Core/Development/Agent Harness Design and Stateful Execution Models.md": {
+    "md5": "6866257e3eb2761bdd56dbb9fb5c70ac",
+    "slug": "agent-harness-design-and-stateful-execution-models"
+  },
+  "20_CS_Core/Development/Claude_reponse_inline.md": {
+    "md5": "b05ee52066e8057e70e96704aa544b88",
+    "slug": "claude-reponse-inline"
+  },
+  "20_CS_Core/Development/MCP (Model Context Protocol).md": {
+    "md5": "d1f2f70a37f898d42740e1ab1cd192fd",
+    "slug": "mcp-model-context-protocol"
+  },
+  "20_CS_Core/Development/Onyx-16.md": {
+    "md5": "e308798be3e9eb0a6ed2ed8d7afea10e",
+    "slug": "onyx-16"
+  },
+  "20_CS_Core/Development/Singleton_Pattern.md": {
+    "md5": "e511b34a9b070d8ac593c70825c83230",
+    "slug": "singleton-pattern"
+  },
+  "20_CS_Core/Development/Software Engineering_ Singletons.md": {
+    "md5": "e68581b2c9f1088378ceb974d87f67a0",
+    "slug": "software-engineering-singletons"
+  },
+  "20_CS_Core/Development/Vault Explorer UI Design Concept.md": {
+    "md5": "38c974aa2fdf83ae32b4ac8130b19d38",
+    "slug": "vault-explorer-ui-design-concept"
+  },
+  "20_CS_Core/Development/design_patterns.md": {
+    "md5": "685c117380043d04272019f9512a57a5",
+    "slug": "design-patterns"
+  },
+  "20_CS_Core/Languages/C++/Memory_Arena_Test.md": {
+    "md5": "4004cc190459e0c7dfacc069b8271fd2",
+    "slug": "memory-arena-test"
+  },
+  "20_CS_Core/Languages/Java/01_Java_Fundamentals.md": {
+    "md5": "4be91b60ba6c2f66a5e63c2adf35f2c4",
+    "slug": "01-java-fundamentals"
+  },
+  "20_CS_Core/Languages/Java/02_Java_Architecture.md": {
+    "md5": "d6c22d27c7f2fb9af23237c0ad6607a3",
+    "slug": "02-java-architecture"
+  },
+  "20_CS_Core/Languages/Java/03_Java_Concepts.md": {
+    "md5": "8bd14b225d854b6d3c4f0cd8e0d3dd8e",
+    "slug": "03-java-concepts"
+  },
+  "20_CS_Core/Languages/Java/Java_Aggregation.md": {
+    "md5": "d430ba1513144e2ef428541621850e57",
+    "slug": "java-aggregation"
+  },
+  "20_CS_Core/Languages/Java/Java_Class_Definitions.md": {
+    "md5": "703de36787988aeae137068756f20375",
+    "slug": "java-class-definitions"
+  },
+  "20_CS_Core/Languages/Java/Java_Composition.md": {
+    "md5": "1660a1d256e96c9586aa4f756e665be3",
+    "slug": "java-composition"
+  },
+  "20_CS_Core/Languages/Java/Java_Diamond_Problem.md": {
+    "md5": "dd2e57f36ac0516aa253061a5120d1f9",
+    "slug": "java-diamond-problem"
+  },
+  "20_CS_Core/Languages/Java/Java_Fundamentals_Deep_Dive.md": {
+    "md5": "d2bc9d5207a8f0d4926c3f2d7c70ec11",
+    "slug": "java-fundamentals-deep-dive"
+  },
+  "20_CS_Core/Languages/Java/Java_IO_Mechanics_Scanner_vs_Buffer.md": {
+    "md5": "098521d4f15dbd3ecb74ff8181f648c7",
+    "slug": "java-io-mechanics-scanner-vs-buffer"
+  },
+  "20_CS_Core/Languages/Java/Java_Inheritance.md": {
+    "md5": "ccff5adc4c09490879b4fdea8361328d",
+    "slug": "java-inheritance"
+  },
+  "20_CS_Core/Languages/Java/Polymorphism.md": {
+    "md5": "6f2774acc6083fc7277213778293641a",
+    "slug": "polymorphism"
+  },
+  "20_CS_Core/Languages/Python/Python_Advanced_OOP_Metaprogramming.md": {
+    "md5": "70e663689243bb853966347773507a6e",
+    "slug": "python-advanced-oop-metaprogramming"
+  },
+  "20_CS_Core/Languages/Python/Python_Advanced_Polymorphism_and_Inheritance.md": {
+    "md5": "24d3cc7c48aaaa1db1728b0c703c1914",
+    "slug": "python-advanced-polymorphism-and-inheritance"
+  },
+  "20_CS_Core/Languages/Python/Python_Execution_and_Memory_Model.md": {
+    "md5": "50b138ff62b8b960e1c8b65dda0a35ad",
+    "slug": "python-execution-and-memory-model"
+  },
+  "20_CS_Core/Languages/Python/Python_Lists_and_Arrays_Deep_Dive.md": {
+    "md5": "63188124e16a852e0fbd9b22e7eef8de",
+    "slug": "python-lists-and-arrays-deep-dive"
+  },
+  "20_CS_Core/Languages/Python/Python_OOP_Mechanics.md": {
+    "md5": "75b8b9267a802a68c68cd296af7796a3",
+    "slug": "python-oop-mechanics"
+  },
+  "20_CS_Core/Languages/Python/Python_Philosophy_and_Intro.md": {
+    "md5": "c57f949e684c7b1ee1072bfa84e3f3e1",
+    "slug": "python-philosophy-and-intro"
+  },
+  "20_CS_Core/Languages/Python/Python_Strings_and_Literals.md": {
+    "md5": "53aba8aad4c534a9dd93f126cd3a5141",
+    "slug": "python-strings-and-literals"
+  },
+  "20_CS_Core/Languages/Python/Python_Tuples_Sets_and_Dictionaries.md": {
+    "md5": "212c2eee50fed233e33a76fffd9c38ad",
+    "slug": "python-tuples-sets-and-dictionaries"
+  },
+  "20_CS_Core/Languages/Python/Python_Variables_and_Casting.md": {
+    "md5": "87549da3ca526c679db86181ae43d768",
+    "slug": "python-variables-and-casting"
+  },
+  "20_CS_Core/Theory/Algorithms/A_Star_Heuristic_Admissibility.md": {
+    "md5": "bafff873d529a40a6f574674519d1237",
+    "slug": "a-star-heuristic-admissibility"
+  },
+  "20_CS_Core/Theory/Algorithms/A_Star_Optimality_and_Blocking.md": {
+    "md5": "2c8a0bf084ad34637f36f9af0019d3d7",
+    "slug": "algorithms-a-star-optimality-and-blocking"
+  },
+  "20_CS_Core/Theory/Algorithms/Local_Cost_in_Search.md": {
+    "md5": "73623c87e5c56290173aa4f40a3ea153",
+    "slug": "local-cost-in-search"
+  },
+  "20_CS_Core/Theory/Algorithms/Recursion.md": {
+    "md5": "f0f0913964895d6600f108dfda266786",
+    "slug": "recursion"
+  },
+  "20_CS_Core/Theory/Flutter's Multi-Tree Architecture - Widget, Render, and Layer Trees.md": {
+    "md5": "e4cd9cdb6310a46173f5e4875f2359e8",
+    "slug": "flutters-multi-tree-architecture-widget-render-and-layer-trees"
+  },
+  "20_CS_Core/Theory/Go-Explore's Archive-Based Exploration Strategy for Red Teaming AI Agents.md": {
+    "md5": "3d39cae01f4a8590d9c13bbc5606869f",
+    "slug": "go-explores-archive-based-exploration-strategy-for-red-teaming-ai-agents"
+  },
+  "20_CS_Core/Theory/Knowledge Graphs Foundations Purpose Implementation and Applications.md": {
+    "md5": "7367ed0e838dae93632a933228663769",
+    "slug": "knowledge-graphs-foundations-purpose-implementation-and-applications"
+  },
+  "20_CS_Core/Theory/LLMOps Operationalizing Large Language Models in Production.md": {
+    "md5": "c07b1ee31d95083d545850a67cd64a1d",
+    "slug": "llmops-operationalizing-large-language-models-in-production"
+  },
+  "20_CS_Core/Theory/MIS_Brainstorm.md": {
+    "md5": "2bf7ce61c3b3c08022cfae0318c904f5",
+    "slug": "mis-brainstorm"
+  },
+  "20_CS_Core/Theory/NEAT (NeuroEvolution of Augmenting Topologies).md": {
+    "md5": "1a9b69d9e58341de43ff67f92d9ab21a",
+    "slug": "neat-neuroevolution-of-augmenting-topologies"
+  },
+  "20_CS_Core/Theory/Operating Systems/Kernel_Architecture_and_Development.md": {
+    "md5": "c985ffcb0c2d29969ae308d49a7262e9",
+    "slug": "kernel-architecture-and-development"
+  },
+  "20_CS_Core/Theory/Operating Systems/Unnamed_Pipe_Array_Behavior.md": {
+    "md5": "350d4a784b04272010108be2f7832e28",
+    "slug": "unnamed-pipe-array-behavior"
+  },
+  "20_CS_Core/Theory/Operating Systems/Virtual_Memory_Mechanics.md": {
+    "md5": "d80335458726baff259341199be490d3",
+    "slug": "virtual-memory-mechanics"
+  },
+  "20_CS_Core/Theory/Software_Engineering/design_patterns_in_oop.md": {
+    "md5": "40f04a175d22c35e4b2c0a0f61cd1427",
+    "slug": "design-patterns-in-oop"
+  },
+  "20_CS_Core/Theory/The Data Intelligence Pipeline.md": {
+    "md5": "d7ac4ac09940274ed595c3e6919a224c",
+    "slug": "the-data-intelligence-pipeline"
+  },
+  "20_CS_Core/Tools/Arch_Linux_Transition_Analysis.md": {
+    "md5": "a7ae2340ee9645d24271b67e59ee59e0",
+    "slug": "arch-linux-transition-analysis"
+  },
+  "20_CS_Core/Tools/Arch_Linux_vs_Windows_Report.md": {
+    "md5": "1a899d4defe2deb27db7bdd23caa957d",
+    "slug": "arch-linux-vs-windows-report"
+  },
+  "30_Knowledge_Base/10_Concepts/Altruism_vs_Psychological_Egoism.md": {
+    "md5": "e5278d257d19d5dde479c272e99b1a8d",
+    "slug": "altruism-vs-psychological-egoism"
+  },
+  "30_Knowledge_Base/10_Concepts/Arguments_for_God.md": {
+    "md5": "42a24b18bde8d562cc7821cc31016e08",
+    "slug": "arguments-for-god"
+  },
+  "30_Knowledge_Base/10_Concepts/Authenticity_in_Existentialism.md": {
+    "md5": "fe471411162c68092fe1a205ec921c12",
+    "slug": "authenticity-in-existentialism"
+  },
+  "30_Knowledge_Base/10_Concepts/Business_Models.md": {
+    "md5": "36243ab0ac60f4ebc59987d63f2f1df6",
+    "slug": "business-models"
+  },
+  "30_Knowledge_Base/10_Concepts/CRISPR-Cas9_Mechanism.md": {
+    "md5": "cfe130fb3df07e60af80c319cd25e745",
+    "slug": "crispr-cas9-mechanism"
+  },
+  "30_Knowledge_Base/10_Concepts/Crisis_and_Reform_in_Islamic_Jurisprudence.md": {
+    "md5": "a410ce3aadf49ec72be3d66b73234030",
+    "slug": "crisis-and-reform-in-islamic-jurisprudence"
+  },
+  "30_Knowledge_Base/10_Concepts/Democracy_Incentive_Failure.md": {
+    "md5": "4c8ed827e887924fa5f476ce0fb4a275",
+    "slug": "democracy-incentive-failure"
+  },
+  "30_Knowledge_Base/10_Concepts/Descartes' Cogito Ergo Sum - A Philosophical Analysis.md": {
+    "md5": "0df23d438aff929b4a6819a95ce41cdc",
+    "slug": "descartes-cogito-ergo-sum-a-philosophical-analysis"
+  },
+  "30_Knowledge_Base/10_Concepts/Dreams_in_Crime_and_Punishment.md": {
+    "md5": "10ba03f8b5a84990ed8f0b3c28d5c775",
+    "slug": "dreams-in-crime-and-punishment"
+  },
+  "30_Knowledge_Base/10_Concepts/Game_Theory_of_Cartels.md": {
+    "md5": "a73c470aa495470ba049ad3155a2132f",
+    "slug": "game-theory-of-cartels"
+  },
+  "30_Knowledge_Base/10_Concepts/Ghalib - Analysis of Taghaful and the Diminished Gaze.md": {
+    "md5": "f9a744b2701a06ad5206f41857db5bd4",
+    "slug": "ghalib-analysis-of-taghaful-and-the-diminished-gaze"
+  },
+  "30_Knowledge_Base/10_Concepts/Gyroscopic_Precession.md": {
+    "md5": "79558c5fb3554921be6fbe554cb23785",
+    "slug": "gyroscopic-precession"
+  },
+  "30_Knowledge_Base/10_Concepts/Gödel's Incompleteness Theorems — Mathematical Limits as Philosophical Argument.md": {
+    "md5": "036142952a6f950542234b2527f75a3c",
+    "slug": "gdels-incompleteness-theorems-mathematical-limits-as-philosophical-argument"
+  },
+  "30_Knowledge_Base/10_Concepts/Iqbal, Rumi, and Khudi v2.md": {
+    "md5": "298334b81255d36f69a69960d2b0bd82",
+    "slug": "iqbal-rumi-and-khudi-v2"
+  },
+  "30_Knowledge_Base/10_Concepts/Islamic_Sectarianism_in_the_Subcontinent.md": {
+    "md5": "b9f7e3700bd01491b5b237eacfcaaa07",
+    "slug": "islamic-sectarianism-in-the-subcontinent"
+  },
+  "30_Knowledge_Base/10_Concepts/Kafka's Metamorphosis.md": {
+    "md5": "118fbd47ca125c0bc87b277eed86b4e2",
+    "slug": "kafkas-metamorphosis"
+  },
+  "30_Knowledge_Base/10_Concepts/Literature Interpretation.md": {
+    "md5": "eae3cd3f241edf378d7412936042b042",
+    "slug": "literature-interpretation"
+  },
+  "30_Knowledge_Base/10_Concepts/Marcus_Aurelius_Stoic_Philosophy.md": {
+    "md5": "0c6ed25b7938f058c52be4270dd2974d",
+    "slug": "marcus-aurelius-stoic-philosophy"
+  },
+  "30_Knowledge_Base/10_Concepts/Mechanics_ Lenz's Law.md": {
+    "md5": "c3ac7691b4fd94be24c9703d92eb9ca8",
+    "slug": "mechanics-lenzs-law"
+  },
+  "30_Knowledge_Base/10_Concepts/Origins and Historical Evolution of Shia Islam.md": {
+    "md5": "8253edfbff9cac606452fcc1b9fda7dd",
+    "slug": "origins-and-historical-evolution-of-shia-islam"
+  },
+  "30_Knowledge_Base/10_Concepts/Platonic Eros in the Symposium.md": {
+    "md5": "d48975cfd7e00c57caaf2176b9beea88",
+    "slug": "platonic-eros-in-the-symposium"
+  },
+  "30_Knowledge_Base/10_Concepts/Polishing the Street Tongue.md": {
+    "md5": "3944435d1a07bc077269bf37d3a5a5ef",
+    "slug": "polishing-the-street-tongue"
+  },
+  "30_Knowledge_Base/10_Concepts/Proxenos.md": {
+    "md5": "d477f2d01aea219256e62faf8ac939a7",
+    "slug": "proxenos"
+  },
+  "30_Knowledge_Base/10_Concepts/Pure Mathematics.md": {
+    "md5": "16150b00d3d471dce91fbc712755b378",
+    "slug": "pure-mathematics"
+  },
+  "30_Knowledge_Base/10_Concepts/Rhetorical and Thematic Analysis of the Tyrion-Jon Dungeon Dialogue.md": {
+    "md5": "f405fad1cadde5a0a2f3fe24325bd0bd",
+    "slug": "rhetorical-and-thematic-analysis-of-the-tyrion-jon-dungeon-dialogue"
+  },
+  "30_Knowledge_Base/10_Concepts/Rumi’s Life Before and After Shams of Tabriz: A Philosophical and Biographical Exploration.md": {
+    "md5": "cd76fba71c81c0b638ec7b44d93d5976",
+    "slug": "rumis-life-before-and-after-shams-of-tabriz-a-philosophical-and-biographical-exploration"
+  },
+  "30_Knowledge_Base/10_Concepts/The Balance Sheet of Literacy and Identity.md": {
+    "md5": "e980fa1cef12bfd3f5a8e190c6985d75",
+    "slug": "the-balance-sheet-of-literacy-and-identity"
+  },
+  "30_Knowledge_Base/10_Concepts/The Benares Spark and the Clerical War.md": {
+    "md5": "1ea5270ca274c22d20ea123d5fdb7e17",
+    "slug": "the-benares-spark-and-the-clerical-war"
+  },
+  "30_Knowledge_Base/10_Concepts/The Biological Tethering of Perception — Hoffman and Dawkins.md": {
+    "md5": "947a7d32c7ef2b47ea65f61f1c3e9b6a",
+    "slug": "the-biological-tethering-of-perception-hoffman-and-dawkins"
+  },
+  "30_Knowledge_Base/10_Concepts/The Concept of Kızıl Elma in Ottoman Thought and Its Significance.md": {
+    "md5": "724a126d88e94ae8ddd4f418366b2547",
+    "slug": "the-concept-of-kzl-elma-in-ottoman-thought-and-its-significance"
+  },
+  "30_Knowledge_Base/10_Concepts/The Crucible of Delhi_ Migration, Markets, and the Birth of Dehlavi.md": {
+    "md5": "a6f9a616bc6501d9f5f47b1e17732d8e",
+    "slug": "the-crucible-of-delhi-migration-markets-and-the-birth-of-dehlavi"
+  },
+  "30_Knowledge_Base/10_Concepts/The Cursive Nightmare and the Flat Stone.md": {
+    "md5": "c47bda0f33d0ea8a3f97f4430ea26148",
+    "slug": "the-cursive-nightmare-and-the-flat-stone"
+  },
+  "30_Knowledge_Base/10_Concepts/The Dawn of Philosophy and the First Philosophers.md": {
+    "md5": "8d31f6fb63d653e3f0803c9bc8116d0d",
+    "slug": "the-dawn-of-philosophy-and-the-first-philosophers"
+  },
+  "30_Knowledge_Base/10_Concepts/The Empty Treasury of Delhi.md": {
+    "md5": "26bc5763da3f725b90ea7c641cf079f6",
+    "slug": "the-empty-treasury-of-delhi"
+  },
+  "30_Knowledge_Base/10_Concepts/The Forced Caravan_ A Dialect Transplanted.md": {
+    "md5": "8b10337b9dcd01efe46e67bfacfdbc43",
+    "slug": "the-forced-caravan-a-dialect-transplanted"
+  },
+  "30_Knowledge_Base/10_Concepts/The Imperial Graft_ Daulatabad and the Genesis of Dakhni Urdu.md": {
+    "md5": "03194c425532ee90327b3544eddbdd76",
+    "slug": "the-imperial-graft-daulatabad-and-the-genesis-of-dakhni-urdu"
+  },
+  "30_Knowledge_Base/10_Concepts/The Indo-Aryan Skeleton.md": {
+    "md5": "b2431fff208415c7c0ef9a609f1dbf43",
+    "slug": "the-indo-aryan-skeleton"
+  },
+  "30_Knowledge_Base/10_Concepts/The Invasion of the Vernacular.md": {
+    "md5": "0f4112974c8d7418db42472de9d80213",
+    "slug": "the-invasion-of-the-vernacular"
+  },
+  "30_Knowledge_Base/10_Concepts/The Lab in Calcutta.md": {
+    "md5": "ef58adbd797fa148ac2e507961094223",
+    "slug": "the-lab-in-calcutta"
+  },
+  "30_Knowledge_Base/10_Concepts/The Lahori Crucible_ Ghaznavid Military Camps and the Birth of Hindavi.md": {
+    "md5": "285a38635df902dc3929961738374477",
+    "slug": "the-lahori-crucible-ghaznavid-military-camps-and-the-birth-of-hindavi"
+  },
+  "30_Knowledge_Base/10_Concepts/The Language of the Courtyard and the Soil.md": {
+    "md5": "72db515b5047aec2f221d38061f4e493",
+    "slug": "the-language-of-the-courtyard-and-the-soil"
+  },
+  "30_Knowledge_Base/10_Concepts/The Philosophy of Love Connection and Understanding in the Before Trilogy.md": {
+    "md5": "58f6f7ddbc3a415d8fd25904fce7f248",
+    "slug": "the-philosophy-of-love-connection-and-understanding-in-the-before-trilogy"
+  },
+  "30_Knowledge_Base/10_Concepts/The Psychological Corruption of Reason — Freud and Jung.md": {
+    "md5": "f4517187528ecca81820a689a7041e4a",
+    "slug": "the-psychological-corruption-of-reason-freud-and-jung"
+  },
+  "30_Knowledge_Base/10_Concepts/The Purifiers of Delhi.md": {
+    "md5": "136c73bf5051b977809c42171eec57b9",
+    "slug": "the-purifiers-of-delhi"
+  },
+  "30_Knowledge_Base/10_Concepts/The Scribes and the Typecasters.md": {
+    "md5": "6a38a3af1df5b9458178f380694ea209",
+    "slug": "the-scribes-and-the-typecasters"
+  },
+  "30_Knowledge_Base/10_Concepts/The Scribes of the Durbar.md": {
+    "md5": "a7ee1aa678519dd148d40771c2081fd0",
+    "slug": "the-scribes-of-the-durbar"
+  },
+  "30_Knowledge_Base/10_Concepts/The Scribes of the Old Order.md": {
+    "md5": "56513b17a587a08d3d9126d055ea8117",
+    "slug": "the-scribes-of-the-old-order"
+  },
+  "30_Knowledge_Base/10_Concepts/The Shifting Alignments of Identity.md": {
+    "md5": "7f1eb8fda87be4d33fe4ac8fe9e6f86f",
+    "slug": "the-shifting-alignments-of-identity"
+  },
+  "30_Knowledge_Base/10_Concepts/The Southern Crucible_ Dakhni and the Royal Ghazal.md": {
+    "md5": "5fcc1660344ee6db7dac0a95a09be8b2",
+    "slug": "the-southern-crucible-dakhni-and-the-royal-ghazal"
+  },
+  "30_Knowledge_Base/10_Concepts/The Structural Limits of Pure Reason — Immanuel Kant.md": {
+    "md5": "a2b624cfb0edb52497dcef0a8345d564",
+    "slug": "the-structural-limits-of-pure-reason-immanuel-kant"
+  },
+  "30_Knowledge_Base/10_Concepts/The Systematic Fallibility of Cognition — Daniel Kahneman.md": {
+    "md5": "78f5667f5663db17b038944894d3ae63",
+    "slug": "the-systematic-fallibility-of-cognition-daniel-kahneman"
+  },
+  "30_Knowledge_Base/10_Concepts/The Taxonomy of Ishq and the Ghalibian Reform of Tradition.md": {
+    "md5": "fb16327b17b934e9f151a0c936d09467",
+    "slug": "the-taxonomy-of-ishq-and-the-ghalibian-reform-of-tradition"
+  },
+  "30_Knowledge_Base/10_Concepts/The Trojan War Origins, Conflict, and Aftermath.md": {
+    "md5": "f8450919f36683ac2014a851a0811ae5",
+    "slug": "the-trojan-war-origins-conflict-and-aftermath"
+  },
+  "30_Knowledge_Base/10_Concepts/The_Blind_Spot.md": {
+    "md5": "a6f12650f274f7c03f9ca61881c47f7e",
+    "slug": "the-blind-spot"
+  },
+  "30_Knowledge_Base/10_Concepts/The_Colonial_Disruption_of_Islamic_Jurisprudence.md": {
+    "md5": "573130c9f8d7b13cf1fc15f927579c38",
+    "slug": "the-colonial-disruption-of-islamic-jurisprudence"
+  },
+  "30_Knowledge_Base/10_Concepts/The_Historical_Emergence_of_Sunni_Jurisprudence.md": {
+    "md5": "92d1cfa4cdcd9e193a19da1bc2b1a603",
+    "slug": "the-historical-emergence-of-sunni-jurisprudence"
+  },
+  "30_Knowledge_Base/10_Concepts/The_Rigidification_of_Islamic_Jurisprudence.md": {
+    "md5": "160200baf9fdce7d91d127f73bf767db",
+    "slug": "the-rigidification-of-islamic-jurisprudence"
+  },
+  "30_Knowledge_Base/10_Concepts/The_Theological_Foundation_of_Islamic_Jurisprudence.md": {
+    "md5": "6cb5d6d4259e6be26b649bd325a30261",
+    "slug": "the-theological-foundation-of-islamic-jurisprudence"
+  },
+  "30_Knowledge_Base/10_Concepts/Trolley_Problem.md": {
+    "md5": "585547acbd37cb1459cad71a7afb35b5",
+    "slug": "trolley-problem"
+  },
+  "30_Knowledge_Base/10_Concepts/Understanding Laptops: Definition, Components, and Uses.md": {
+    "md5": "16e0e109d99c893d390217364a13348c",
+    "slug": "understanding-laptops-definition-components-and-uses"
+  },
+  "30_Knowledge_Base/10_Concepts/Urdu Literature and Classical Era 1.md": {
+    "md5": "a43b7006b98998eaf610dc4e7e392854",
+    "slug": "urdu-literature-and-classical-era-1"
+  },
+  "30_Knowledge_Base/10_Concepts/Urdu Literature and Classical Era 2.md": {
+    "md5": "8f81959b1374bc574871a749656a125e",
+    "slug": "urdu-literature-and-classical-era-2"
+  },
+  "30_Knowledge_Base/10_Concepts/World War II: Causes, Events, Consequences, and Legacy.md": {
+    "md5": "6f8be9daf6684ad75a477ef32b814be9",
+    "slug": "world-war-ii-causes-events-consequences-and-legacy"
+  },
+  "30_Knowledge_Base/10_Concepts/iqbal_rumi_khudi.md": {
+    "md5": "d12d85d1bc1300aea2610df11110126a",
+    "slug": "iqbal-rumi-khudi"
+  },
+  "30_Knowledge_Base/20_Entities/Al Ghazali and the Seljuk-Abbasid Diarchy.md": {
+    "md5": "4ca9fbddfb57752a2c055c69c22c74de",
+    "slug": "al-ghazali-and-the-seljuk-abbasid-diarchy"
+  },
+  "30_Knowledge_Base/20_Entities/Chopins_Ballade_No_1_Analysis.md": {
+    "md5": "9d39119221190cf074c3b56cd2fe7139",
+    "slug": "chopins-ballade-no-1-analysis"
+  },
+  "30_Knowledge_Base/20_Entities/Corleone_Business_Organization_Analysis.md": {
+    "md5": "cb32a38313a25cbdc7730026f062f398",
+    "slug": "corleone-business-organization-analysis"
+  },
+  "30_Knowledge_Base/20_Entities/Economic_Consequences_Antonine_Plague.md": {
+    "md5": "c9869c1cc9e1acf97ae40a827bceaa29",
+    "slug": "economic-consequences-antonine-plague"
+  },
+  "30_Knowledge_Base/20_Entities/Godfather_Women_Analysis.md": {
+    "md5": "3bbe33bdd5341b1ed1e4ac527b9a3890",
+    "slug": "godfather-women-analysis"
+  },
+  "30_Knowledge_Base/20_Entities/Google_and_AI.md": {
+    "md5": "188b773dd3c3dd8acce9ed2824b04bdf",
+    "slug": "google-and-ai"
+  },
+  "30_Knowledge_Base/20_Entities/Historical Analysis.md": {
+    "md5": "5aacee2ab29f7a7cd3d2a965a680d52b",
+    "slug": "historical-analysis"
+  },
+  "30_Knowledge_Base/20_Entities/Ihya_Ulum_al_Din_Overview.md": {
+    "md5": "52cad4c4a247b27a897043583e26d149",
+    "slug": "ihya-ulum-al-din-overview"
+  },
+  "30_Knowledge_Base/20_Entities/Iron Requiem - Metal Slug Narrative Study.md": {
+    "md5": "5d9094d1fba681e88dfda9c786b49e6c",
+    "slug": "iron-requiem-metal-slug-narrative-study"
+  },
+  "30_Knowledge_Base/20_Entities/Italian_American_Immigration_Historical_Context.md": {
+    "md5": "780c9938b9b884856c7e989d9e92264f",
+    "slug": "italian-american-immigration-historical-context"
+  },
+  "30_Knowledge_Base/20_Entities/Jinnah_Final_Days.md": {
+    "md5": "216a191450c1c165640eb9bb51bb7796",
+    "slug": "jinnah-final-days"
+  },
+  "30_Knowledge_Base/20_Entities/Kal_Chaudhwin_Ki_Raat_Thi.md": {
+    "md5": "4802d87a523c1b9f5ff3c6350935e9ab",
+    "slug": "kal-chaudhwin-ki-raat-thi"
+  },
+  "30_Knowledge_Base/20_Entities/Karnal Sher Khan Shaheed Biography.md": {
+    "md5": "38a83c9aca6cfc1d9abb8e69f7b57547",
+    "slug": "karnal-sher-khan-shaheed-biography"
+  },
+  "30_Knowledge_Base/20_Entities/Marcus_Aurelius_Life_and_Power.md": {
+    "md5": "beb45ae2a8391dcdb116fd5b5a8d6d49",
+    "slug": "marcus-aurelius-life-and-power"
+  },
+  "30_Knowledge_Base/20_Entities/Michael_Corleone_Character_Arc_Analysis.md": {
+    "md5": "65b84cc41014adca44dfdeaf664ec7e7",
+    "slug": "michael-corleone-character-arc-analysis"
+  },
+  "30_Knowledge_Base/20_Entities/Mirza Asadullah Khan Ghalib.md": {
+    "md5": "b835a95532d88012debeb76a083a13c1",
+    "slug": "mirza-asadullah-khan-ghalib"
+  },
+  "30_Knowledge_Base/20_Entities/Ottoman_Empire_Fall_Causes.md": {
+    "md5": "3da62aa5b29e93f7774aa6a985ca6ac5",
+    "slug": "ottoman-empire-fall-causes"
+  },
+  "30_Knowledge_Base/20_Entities/Rasputin_And_The_Romanovs.md": {
+    "md5": "0e31f0db53a5520628acaf309ca0ee68",
+    "slug": "rasputin-and-the-romanovs"
+  },
+  "30_Knowledge_Base/20_Entities/Robb_Stark_Character_Study.md": {
+    "md5": "31b2250bf7ac2a0f991b92e1df6a8b83",
+    "slug": "robb-stark-character-study"
+  },
+  "30_Knowledge_Base/20_Entities/Siege_of_Constantinople_1453.md": {
+    "md5": "785dd1c7072b75a22f9ed1be279d7a26",
+    "slug": "siege-of-constantinople-1453"
+  },
+  "30_Knowledge_Base/20_Entities/Siege_of_Constantinople_Bayezid_I.md": {
+    "md5": "c567f4ba1d2579f4c53be0498f562662",
+    "slug": "siege-of-constantinople-bayezid-i"
+  },
+  "30_Knowledge_Base/20_Entities/The Mughal Empire: Structure, Governance, and Legacy.md": {
+    "md5": "23d008c3aef2031e04c96ae28016712f",
+    "slug": "the-mughal-empire-structure-governance-and-legacy"
+  },
+  "30_Knowledge_Base/20_Entities/The_Dire_Wolf.md": {
+    "md5": "d26f47f0876bc0218e15dba1cdca6e7d",
+    "slug": "the-dire-wolf"
+  },
+  "30_Knowledge_Base/20_Entities/Vito_Corleone_Sympathy_Analysis.md": {
+    "md5": "0c18cc9350dbe391bbe25e11e531e6aa",
+    "slug": "vito-corleone-sympathy-analysis"
+  },
+  "30_Knowledge_Base/30_Frameworks/Capitalism.md": {
+    "md5": "57457d43fbf7a8dc150dae545f7b7b50",
+    "slug": "capitalism"
+  },
+  "30_Knowledge_Base/30_Frameworks/Communism.md": {
+    "md5": "48518cd19ac9428fee5c5935d19a6e23",
+    "slug": "communism"
+  },
+  "30_Knowledge_Base/30_Frameworks/Evolution and Institutionalization of Islamic Jurisprudence.md": {
+    "md5": "289c6a97dbd915ee4a1c1cf605954161",
+    "slug": "evolution-and-institutionalization-of-islamic-jurisprudence"
+  },
+  "30_Knowledge_Base/30_Frameworks/Ihya_Ulum_al_Din_Structure.md": {
+    "md5": "93ff69ad246927aae389612d43af7c4b",
+    "slug": "ihya-ulum-al-din-structure"
+  },
+  "30_Knowledge_Base/30_Frameworks/Socialism.md": {
+    "md5": "b5d7ef15b115ec91c74228b6687b9615",
+    "slug": "socialism"
+  },
+  "30_Knowledge_Base/30_Frameworks/Stoic_Guide_to_Procrastination.md": {
+    "md5": "b1fb8388c4e8d847231730c613e2c6de",
+    "slug": "stoic-guide-to-procrastination"
+  },
+  "30_Knowledge_Base/30_Frameworks/The Synthesis — What Comes After Reason.md": {
+    "md5": "15f18e2640f87d8a8b34f40faec7a4a9",
+    "slug": "the-synthesis-what-comes-after-reason"
+  },
+  "30_Knowledge_Base/Fiqh/essential-muslim-habits/Hanafi - essential-muslim-habits.md": {
+    "md5": "4726dc3e76dea8136c33e1210afa9f46",
+    "slug": "hanafi-essential-muslim-habits"
+  },
+  "30_Knowledge_Base/Fiqh/essential-muslim-habits/Hanbali - essential-muslim-habits.md": {
+    "md5": "d31939d8220c918bc5f59f492ed5347f",
+    "slug": "hanbali-essential-muslim-habits"
+  },
+  "30_Knowledge_Base/Fiqh/essential-muslim-habits/Maliki - essential-muslim-habits.md": {
+    "md5": "8a385f9b9737c29c5ba24acc373ff1b7",
+    "slug": "maliki-essential-muslim-habits"
+  },
+  "30_Knowledge_Base/Fiqh/essential-muslim-habits/Shafii - essential-muslim-habits.md": {
+    "md5": "3f96c6b9f17afc2de8008aa58a431184",
+    "slug": "shafii-essential-muslim-habits"
+  },
+  "30_Knowledge_Base/Fiqh/essential-muslim-habits/Synthesis - essential-muslim-habits.md": {
+    "md5": "fd75fcf3e32198a42c62b27ccc4e5314",
+    "slug": "synthesis-essential-muslim-habits"
+  },
+  "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Hanafi - five-daily-prayers-ruling.md": {
+    "md5": "a235508e3ff879164a37de9a41a228a6",
+    "slug": "hanafi-five-daily-prayers-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Hanbali - five-daily-prayers-ruling.md": {
+    "md5": "61087dc957c219950eafd623a2888a10",
+    "slug": "hanbali-five-daily-prayers-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Maliki - five-daily-prayers-ruling.md": {
+    "md5": "1f3a69a1c4d8ab2ad2ba78212c56e96a",
+    "slug": "maliki-five-daily-prayers-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Shafii - five-daily-prayers-ruling.md": {
+    "md5": "87f67057d91b1d2f50fdbcbd28323587",
+    "slug": "shafii-five-daily-prayers-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/five-daily-prayers-ruling/Synthesis - five-daily-prayers-ruling.md": {
+    "md5": "3466899211f029deff4bdf58fcec85ca",
+    "slug": "synthesis-five-daily-prayers-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Hanafi - forex-trading-xauusd-halal.md": {
+    "md5": "8b4fc26642c97232e632ef7faa06d028",
+    "slug": "hanafi-forex-trading-xauusd-halal"
+  },
+  "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Hanbali - forex-trading-xauusd-halal.md": {
+    "md5": "6d1d06a2fbb069e1fdaf0d378db759e0",
+    "slug": "hanbali-forex-trading-xauusd-halal"
+  },
+  "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Maliki - forex-trading-xauusd-halal.md": {
+    "md5": "7d91bbcf9dc16f51961e5e0f0fb7fc9c",
+    "slug": "maliki-forex-trading-xauusd-halal"
+  },
+  "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Shafii - forex-trading-xauusd-halal.md": {
+    "md5": "2d9ef3462b523595ef580dad13801228",
+    "slug": "shafii-forex-trading-xauusd-halal"
+  },
+  "30_Knowledge_Base/Fiqh/forex-trading-xauusd-halal/Synthesis - forex-trading-xauusd-halal.md": {
+    "md5": "fbcd920a3b8740e263030b118ba8a3d3",
+    "slug": "synthesis-forex-trading-xauusd-halal"
+  },
+  "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Hanafi - hijab-niqab-women-ruling.md": {
+    "md5": "5fb1e09efdf0e465cfea1c8cb713f08f",
+    "slug": "hanafi-hijab-niqab-women-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Hanbali - hijab-niqab-women-ruling.md": {
+    "md5": "e3cd7bb80d0a90b4185e164a82e04cc3",
+    "slug": "hanbali-hijab-niqab-women-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Maliki - hijab-niqab-women-ruling.md": {
+    "md5": "3698855da191e4361788be9db090dc1e",
+    "slug": "maliki-hijab-niqab-women-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Shafii - hijab-niqab-women-ruling.md": {
+    "md5": "fce30a9f4eeff9f04d81cfa9f2ad0f03",
+    "slug": "shafii-hijab-niqab-women-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/hijab-niqab-women-ruling/Synthesis - hijab-niqab-women-ruling.md": {
+    "md5": "9bc64d0d754152dd1ddb08d8cc771c9f",
+    "slug": "synthesis-hijab-niqab-women-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Hanafi - musical-instruments-ruling.md": {
+    "md5": "2ed7eebe0f08cb74e21af2cebd5f7216",
+    "slug": "hanafi-musical-instruments-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Hanbali - musical-instruments-ruling.md": {
+    "md5": "3f7cc165262acb4548c42e34ac7ad391",
+    "slug": "hanbali-musical-instruments-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Maliki - musical-instruments-ruling.md": {
+    "md5": "ed9e0f93763c13d0112216aa4e9f586b",
+    "slug": "maliki-musical-instruments-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Shafii - musical-instruments-ruling.md": {
+    "md5": "1f1a5752fef698fd5fddcf1a45357704",
+    "slug": "shafii-musical-instruments-ruling"
+  },
+  "30_Knowledge_Base/Fiqh/musical-instruments-ruling/Synthesis - musical-instruments-ruling.md": {
+    "md5": "33c7fc060facede534fde30073f8e7eb",
+    "slug": "synthesis-musical-instruments-ruling"
+  },
+  "40_Projects/Active/FastBot.md": {
+    "md5": "66bfe3fa64fde1e61a2c5fc4e42f263c",
+    "slug": "fastbot"
+  },
+  "40_Projects/Active/Gmail Assistant.md": {
+    "md5": "d9dd261bfd2bb14e36cfa85a0d687d1d",
+    "slug": "gmail-assistant"
+  },
+  "40_Projects/Active/Lines of code, chapters of me.md": {
+    "md5": "9ba4674d07301b300af67d1f2eea074c",
+    "slug": "lines-of-code-chapters-of-me"
+  },
+  "40_Projects/Active/NuHub.md": {
+    "md5": "25ce05453c1f4ecca3ba6647b9e5aa46",
+    "slug": "nuhub"
+  },
+  "40_Projects/Active/Portfolio.md": {
+    "md5": "dba43d293c74c6899df8541012366970",
+    "slug": "portfolio"
+  },
+  "40_Projects/Active/The Mothership.md": {
+    "md5": "e9cd85f0e75375707a19c81b370ea5aa",
+    "slug": "the-mothership"
+  },
+  "50_Resources/Articles_Papers/Read - MIS.md": {
+    "md5": "263881bab692f1feff538999064c119d",
+    "slug": "read-mis"
+  },
+  "50_Resources/Articles_Papers/Read - MIS_Architecture.md": {
+    "md5": "7d6c6d965f72b24be2aff015187cb2e9",
+    "slug": "read-mis-architecture"
+  },
+  "50_Resources/Articles_Papers/Read - Model Context Protocol Intro.md": {
+    "md5": "c269c686e232903574c47cc0b98fbff9",
+    "slug": "read-model-context-protocol-intro"
+  }
+}

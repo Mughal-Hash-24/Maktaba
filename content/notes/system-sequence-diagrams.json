@@ -1,0 +1,13 @@
+{
+  "slug": "system-sequence-diagrams",
+  "title": "System Sequence Diagrams",
+  "tags": [
+    "field/cs"
+  ],
+  "htmlContent": "<h1>System Sequence Diagrams (SSD)</h1>\n<p>Up to SDA T.O.C</p>\n<h2>Overview</h2>\n<p>These notes cover the fundamentals and construction rules for System Sequence Diagrams as part of the Analysis phase in Software Development and Analysis.</p>\n<h2>Detailed Theory</h2>\n<p>Deep Dive: SSD Theory and SDLC Context</p>\n<ul>\n<li>Definition of SSD as a Black Box interaction.</li>\n<li>Relationship between Use Cases and SSDs.</li>\n<li>SDLC Phase: Analysis.</li>\n</ul>\n<h2>Construction Laboratory</h2>\n<p>Step-by-Step Guide to Constructing SSDs</p>\n<ul>\n<li>Deterministic rules for extracting system events.</li>\n<li>Case Study: Smart Kiosk.</li>\n<li>Mermaid diagram interpretations.</li>\n</ul>",
+  "rawMarkdown": "# System Sequence Diagrams (SSD)\nUp to SDA T.O.C\n\n## Overview\nThese notes cover the fundamentals and construction rules for System Sequence Diagrams as part of the Analysis phase in Software Development and Analysis.\n\n## Detailed Theory\nDeep Dive: SSD Theory and SDLC Context\n- Definition of SSD as a Black Box interaction.\n- Relationship between Use Cases and SSDs.\n- SDLC Phase: Analysis.\n\n## Construction Laboratory\nStep-by-Step Guide to Constructing SSDs\n- Deterministic rules for extracting system events.\n- Case Study: Smart Kiosk.\n- Mermaid diagram interpretations.\n",
+  "wordCount": 91,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_04/Software Development and Analysis/Notes/1.5.1 - System Sequence Diagrams.md",
+  "filename": "1.5.1 - System Sequence Diagrams"
+}

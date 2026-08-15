@@ -1,0 +1,20 @@
+{
+  "slug": "complexity-theory",
+  "title": "Complexity Theory",
+  "tags": [
+    "field/cs",
+    "subject/dsa",
+    "concept/1.7/complexity"
+  ],
+  "htmlContent": "<p>Here we start our journey towards actually becoming efficient coders.\nA computer program in the most basic sense is just an algorithm, with data.\nThere may be different algorithms to deal with a single problem. Some are better that others. How do we make a judgment on that? The following are the three major criteria for an efficient algorithm, listed from most important to least.</p>\n<ol>\n<li><strong>Time Complexity</strong>: How much time the algorithm takes to complete a task as the input size grows.</li>\n<li><strong>Space Complexity</strong>: How much space does the program occupy as the input grows.</li>\n<li>How easy it is to understand, implement and modify.</li>\n</ol>\n<p>With these criterion listed, we will now focus on the <strong>Time Complexity</strong>.</p>\n<hr>\n<h2>Time Complexity</h2>\n<p>Instead of seconds, we measure the time taken by an algorithm in steps, called <strong>Primitive Operations</strong>. Each operation, performed in an algorithm equals one step. These operations include:</p>\n<ul>\n<li>Assignment</li>\n<li>Increment/Decrement</li>\n<li>Memory allocation/deallocation using <em><strong>new</strong></em>/<em><strong>delete</strong></em>.</li>\n<li>Logical/Bitwise/Integer operations</li>\n<li>and others...</li>\n</ul>\n<p>Each operation runs in the step of 1 time unit.</p>\n<p>Complexity Rules and Exercises.pdf</p>",
+  "rawMarkdown": "\nHere we start our journey towards actually becoming efficient coders. \nA computer program in the most basic sense is just an algorithm, with data. \nThere may be different algorithms to deal with a single problem. Some are better that others. How do we make a judgment on that? The following are the three major criteria for an efficient algorithm, listed from most important to least.\n\n1. **Time Complexity**: How much time the algorithm takes to complete a task as the input size grows. \n2. **Space Complexity**: How much space does the program occupy as the input grows. \n3. How easy it is to understand, implement and modify. \n\nWith these criterion listed, we will now focus on the **Time Complexity**. \n\n---\n## Time Complexity\n\nInstead of seconds, we measure the time taken by an algorithm in steps, called **Primitive Operations**. Each operation, performed in an algorithm equals one step. These operations include:\n- Assignment \n- Increment/Decrement\n- Memory allocation/deallocation using ***new***/***delete***.\n- Logical/Bitwise/Integer operations\n- and others...\n\nEach operation runs in the step of 1 time unit.\n\nComplexity Rules and Exercises.pdf\n",
+  "wordCount": 179,
+  "backlinks": [
+    {
+      "slug": "moc-data-structures",
+      "title": "(MOC)   Data Structures"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/Data Structures/1.7 Complexity Theory.md",
+  "filename": "1.7 Complexity Theory"
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "circular-linked-list",
+  "title": "Circular Linked List",
+  "tags": [
+    "field/cs",
+    "subject/dsa",
+    "concept/1.6/circular"
+  ],
+  "htmlContent": "<p>This is an extension of regular linked lists, with the only difference being that the last element points back to the head. This changes the structure of Node and the List class in a few ways.</p>\n<h3>Node:</h3>\n<pre><code class=\"hljs language-cpp\"><span class=\"hljs-comment\">// NODE </span>\n<span class=\"hljs-keyword\">template</span>&#x3C;<span class=\"hljs-keyword\">typename</span> T>\n<span class=\"hljs-keyword\">struct</span> <span class=\"hljs-title class_\">Node</span>{\n\tT data;\n\tNode* next;\n\t<span class=\"hljs-built_in\">Node</span>(<span class=\"hljs-type\">const</span> T&#x26; value): <span class=\"hljs-built_in\">data</span>(value), <span class=\"hljs-built_in\">next</span>(*<span class=\"hljs-keyword\">this</span>) {}\n};\n\n</code></pre>\n<h3>List</h3>\n<pre><code class=\"hljs language-cpp\"><span class=\"hljs-keyword\">template</span>&#x3C;<span class=\"hljs-keyword\">typename</span> T>\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">CircularList</span>{\n\tNode* head;\n<span class=\"hljs-keyword\">public</span>:\n\t<span class=\"hljs-built_in\">CircularList</span>(): <span class=\"hljs-built_in\">head</span>(<span class=\"hljs-literal\">nullptr</span>) {}\n};\n</code></pre>\n<h3>Push back</h3>\n<pre><code class=\"hljs language-cpp\"><span class=\"hljs-function\"><span class=\"hljs-type\">void</span> <span class=\"hljs-title\">push_back</span><span class=\"hljs-params\">(<span class=\"hljs-type\">const</span> T&#x26; value)</span> </span>{\n\tNode&#x3C;T>* newNode = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-built_in\">Node</span>&#x3C;T>(value);\n\t<span class=\"hljs-keyword\">if</span> (!head) {\n\t\thead = newNode;\n\t} <span class=\"hljs-keyword\">else</span> {\n\t\tNode&#x3C;T>* tail = head;\n\t\t<span class=\"hljs-keyword\">while</span> (tail->next != head) {\n\t\t\ttail = tail->next;\n\t\t}\n\t\ttail->next = newNode;\n\t\tnewNode->next = head;\n\t}\n}\n</code></pre>",
+  "rawMarkdown": "\nThis is an extension of regular linked lists, with the only difference being that the last element points back to the head. This changes the structure of Node and the List class in a few ways.\n### Node:\n\n```cpp\n// NODE \ntemplate<typename T>\nstruct Node{\n\tT data;\n\tNode* next;\n\tNode(const T& value): data(value), next(*this) {}\n};\n\n```\n\n### List\n```cpp\ntemplate<typename T>\nclass CircularList{\n\tNode* head;\npublic:\n\tCircularList(): head(nullptr) {}\n};\n```\n### Push back\n```cpp\nvoid push_back(const T& value) {\n\tNode<T>* newNode = new Node<T>(value);\n\tif (!head) {\n\t\thead = newNode;\n\t} else {\n\t\tNode<T>* tail = head;\n\t\twhile (tail->next != head) {\n\t\t\ttail = tail->next;\n\t\t}\n\t\ttail->next = newNode;\n\t\tnewNode->next = head;\n\t}\n}\n```\n",
+  "wordCount": 106,
+  "backlinks": [
+    {
+      "slug": "moc-data-structures",
+      "title": "(MOC)   Data Structures"
+    },
+    {
+      "slug": "linked-lists",
+      "title": "Linked Lists"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/Data Structures/1.6 Circular Linked List.md",
+  "filename": "1.6 Circular Linked List"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "2p-examples-problems",
+  "title": "2.p Examples & Problems",
+  "tags": [
+    "field/cs",
+    "subject/automata",
+    "concept/2.p/examples"
+  ],
+  "htmlContent": "",
+  "rawMarkdown": "\n",
+  "wordCount": 0,
+  "backlinks": [
+    {
+      "slug": "moc-automata-theory",
+      "title": "(MOC)   Automata Theory"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/Theory of Automata/2.p Examples & Problems.md",
+  "filename": "2.p Examples & Problems"
+}

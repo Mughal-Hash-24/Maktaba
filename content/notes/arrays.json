@@ -1,0 +1,20 @@
+{
+  "slug": "arrays",
+  "title": "Arrays",
+  "tags": [
+    "field/cs",
+    "subject/dsa",
+    "concept/1.1/arrays"
+  ],
+  "htmlContent": "<h2>Next</h2>\n<p><a href=\"/notes/data-structures-stack\">1.9 Stack</a>\n<a href=\"/notes/queue\">1.8 Queue</a></p>",
+  "rawMarkdown": "\n## Next\n[1.9 Stack](/notes/data-structures-stack)\n[1.8 Queue](/notes/queue)\n",
+  "wordCount": 7,
+  "backlinks": [
+    {
+      "slug": "moc-data-structures",
+      "title": "(MOC)   Data Structures"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/Data Structures/1.1 Arrays.md",
+  "filename": "1.1 Arrays"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "introduction-to-computer-theorypdf",
+  "title": "Introduction To Computer Theory.pdf",
+  "tags": [
+    "field/cs",
+    "subject/automata",
+    "concept/introduction/to"
+  ],
+  "htmlContent": "",
+  "rawMarkdown": "\n",
+  "wordCount": 0,
+  "backlinks": [
+    {
+      "slug": "recursive-definitions",
+      "title": "Recursive Definitions"
+    },
+    {
+      "slug": "recursive-definitions",
+      "title": "Recursive Definitions"
+    },
+    {
+      "slug": "regular-expressions",
+      "title": "Regular Expressions"
+    },
+    {
+      "slug": "regular-expressions",
+      "title": "Regular Expressions"
+    },
+    {
+      "slug": "finite-automata",
+      "title": "Finite Automata"
+    },
+    {
+      "slug": "finite-automata",
+      "title": "Finite Automata"
+    },
+    {
+      "slug": "transition-graphs",
+      "title": "Transition Graphs"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/Theory of Automata/Introduction To Computer Theory.pdf.md",
+  "filename": "Introduction To Computer Theory.pdf"
+}

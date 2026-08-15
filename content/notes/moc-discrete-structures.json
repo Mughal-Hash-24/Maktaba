@@ -1,0 +1,15 @@
+{
+  "slug": "moc-discrete-structures",
+  "title": "(MOC)   Discrete Structures",
+  "tags": [
+    "field/cs",
+    "subject/math/discrete",
+    "type/map"
+  ],
+  "htmlContent": "<p>Up to Semester 03</p>\n<h2>Chapters</h2>\n<ul>\n<li><a href=\"/notes/propositions-negations-conjunctions-and-disjunctions\">1.1.1  Propositions, Negations, Conjunctions, and Disjunctions</a></li>\n<li><a href=\"/notes/implications-converse-inverse-contrapositive-and-biconditionals\">1.1.2 Implications, Converse, Inverse, Contrapositive and Biconditionals</a></li>\n<li><a href=\"/notes/set-notations\">6.1 Set Notations</a></li>\n<li><a href=\"/notes/proofs\">Proofs</a></li>\n</ul>",
+  "rawMarkdown": "\n\nUp to Semester 03\n\n## Chapters\n- [1.1.1  Propositions, Negations, Conjunctions, and Disjunctions](/notes/propositions-negations-conjunctions-and-disjunctions)\n- [1.1.2 Implications, Converse, Inverse, Contrapositive and Biconditionals](/notes/implications-converse-inverse-contrapositive-and-biconditionals)\n- [6.1 Set Notations](/notes/set-notations)\n- [Proofs](/notes/proofs)\n",
+  "wordCount": 33,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_03/Discrete Structures/(MOC) - Discrete Structures.md",
+  "filename": "(MOC) - Discrete Structures"
+}

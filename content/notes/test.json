@@ -1,0 +1,15 @@
+{
+  "slug": "test",
+  "title": "Test",
+  "tags": [
+    "field/cs",
+    "subject/automata",
+    "concept/test"
+  ],
+  "htmlContent": "<pre><code class=\"hljs language-mermaid\">%%{init: {\"flowchart\": {\"curve\": \"stepAfter\"}}}%%\nflowchart TD\n    %% --- SHAPES ---\n    %% Start/End: Round\n    %% READ: Parallelogram\n    %% POP: Diamond (Decision)\n    %% PUSH: Rectangle (Action)\n\n    Start((START)) --> InitPush[PUSH Z]\n    InitPush --> ReadState[/READ Input/]\n\n    %% --- THE MAIN LOOP ---\n    \n    %% Branch 1: Input is 'a'\n    ReadState -- input 'a' --> PopCheckA{POP Stack}\n    \n    PopCheckA -- found 'Z' --> PushAZ[PUSH Z] --> PushA1[PUSH a] --> ReadState\n    PopCheckA -- found 'a' --> PushAA[PUSH a] --> PushA2[PUSH a] --> ReadState\n    PopCheckA -- found 'b' --> CancelB[Do Nothing] --> ReadState\n    %% Explanation: If we pop 'b' and don't push anything back, we effectively cancelled them out.\n\n    %% Branch 2: Input is 'b'\n    ReadState -- input 'b' --> PopCheckB{POP Stack}\n\n    PopCheckB -- found 'Z' --> PushBZ[PUSH Z] --> PushB1[PUSH b] --> ReadState\n    PopCheckB -- found 'b' --> PushBB[PUSH b] --> PushB2[PUSH b] --> ReadState\n    PopCheckB -- found 'a' --> CancelA[Do Nothing] --> ReadState\n    %% Explanation: If we pop 'a' and don't push anything back, we cancelled them out.\n\n    %% Branch 3: End of Input\n    ReadState -- End of Input --> FinalCheck{POP Stack}\n\n    FinalCheck -- found 'Z' --> Accept(((ACCEPT)))\n    FinalCheck -- found 'a' --> Reject((REJECT))\n    FinalCheck -- found 'b' --> Reject\n</code></pre>",
+  "rawMarkdown": "\n```mermaid\n%%{init: {\"flowchart\": {\"curve\": \"stepAfter\"}}}%%\nflowchart TD\n    %% --- SHAPES ---\n    %% Start/End: Round\n    %% READ: Parallelogram\n    %% POP: Diamond (Decision)\n    %% PUSH: Rectangle (Action)\n\n    Start((START)) --> InitPush[PUSH Z]\n    InitPush --> ReadState[/READ Input/]\n\n    %% --- THE MAIN LOOP ---\n    \n    %% Branch 1: Input is 'a'\n    ReadState -- input 'a' --> PopCheckA{POP Stack}\n    \n    PopCheckA -- found 'Z' --> PushAZ[PUSH Z] --> PushA1[PUSH a] --> ReadState\n    PopCheckA -- found 'a' --> PushAA[PUSH a] --> PushA2[PUSH a] --> ReadState\n    PopCheckA -- found 'b' --> CancelB[Do Nothing] --> ReadState\n    %% Explanation: If we pop 'b' and don't push anything back, we effectively cancelled them out.\n\n    %% Branch 2: Input is 'b'\n    ReadState -- input 'b' --> PopCheckB{POP Stack}\n\n    PopCheckB -- found 'Z' --> PushBZ[PUSH Z] --> PushB1[PUSH b] --> ReadState\n    PopCheckB -- found 'b' --> PushBB[PUSH b] --> PushB2[PUSH b] --> ReadState\n    PopCheckB -- found 'a' --> CancelA[Do Nothing] --> ReadState\n    %% Explanation: If we pop 'a' and don't push anything back, we cancelled them out.\n\n    %% Branch 3: End of Input\n    ReadState -- End of Input --> FinalCheck{POP Stack}\n\n    FinalCheck -- found 'Z' --> Accept(((ACCEPT)))\n    FinalCheck -- found 'a' --> Reject((REJECT))\n    FinalCheck -- found 'b' --> Reject\n```\n\n",
+  "wordCount": 164,
+  "backlinks": [],
+  "relativePath": "10_University/Semester_03/Theory of Automata/Test.md",
+  "filename": "Test"
+}

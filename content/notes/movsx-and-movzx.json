@@ -1,0 +1,24 @@
+{
+  "slug": "movsx-and-movzx",
+  "title": "Movsx and Movzx",
+  "tags": [
+    "field/cs",
+    "subject/coal",
+    "concept/1.4/movsx"
+  ],
+  "htmlContent": "<pre><code class=\"hljs language-cpp\"><span class=\"hljs-number\">.386</span>\n.model flat, stdcall\n.stack <span class=\"hljs-number\">4096</span>\n\nExitProcess PROTO, dwExitCode: DWORD\n\n.data\n\tary1 db <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">-1</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">-2</span>\n\n.code\nmain PROC\n\tmovzx cx, ary1[<span class=\"hljs-number\">0</span>]\t; cx = <span class=\"hljs-number\">00000000</span> <span class=\"hljs-number\">00000001</span>\n\tmovsx dx, ary1[<span class=\"hljs-number\">1</span>]\t; dx = <span class=\"hljs-number\">11111111</span> <span class=\"hljs-number\">11111111</span> (sign-extended) which is <span class=\"hljs-number\">-1</span> in <span class=\"hljs-number\">2</span>s complement\n\n\t; <span class=\"hljs-keyword\">if</span> we were to <span class=\"hljs-keyword\">do</span>:\n\tmovzx bx, ary1[<span class=\"hljs-number\">1</span>] ; bx = <span class=\"hljs-number\">000000000</span> <span class=\"hljs-number\">11111111</span> (zero-extended) which is <span class=\"hljs-keyword\">not</span> <span class=\"hljs-number\">-1</span> in <span class=\"hljs-number\">2</span>s complement\n\tmovsx bx, ary1[<span class=\"hljs-number\">0</span>] ; bx = <span class=\"hljs-number\">000000000</span> <span class=\"hljs-number\">00000001</span> (sign-extended) which is <span class=\"hljs-number\">1</span>\n\n\t; movsx eax, <span class=\"hljs-number\">0</span>Fh ; Error, immediate vals are <span class=\"hljs-keyword\">not</span> accepted\n\t; movzx eax, <span class=\"hljs-number\">0</span>Fh ; Error, immediate vals are <span class=\"hljs-keyword\">not</span> accepted\n\t; so we need to load the immediate into a <span class=\"hljs-keyword\">register</span> first\n\tmov al, <span class=\"hljs-number\">0</span>Fh\n\tmovsx bx, al ; bx = <span class=\"hljs-number\">00000000</span> <span class=\"hljs-number\">00001111</span> (sign-extended) which is <span class=\"hljs-number\">15</span>\n\n\tmov eax, offset ary1\n\t; movsx ebx, byte ptr [eax<span class=\"hljs-number\">+3</span>] ; Error, size must be specified <span class=\"hljs-keyword\">for</span> memory operand\n\tmovsx ebx, byte ptr [eax<span class=\"hljs-number\">+3</span>] ; ebx = <span class=\"hljs-number\">11111111</span> <span class=\"hljs-number\">11111110</span> (sign-extended) which is <span class=\"hljs-number\">-2</span> in <span class=\"hljs-number\">2</span>s complement\n\n\tinvoke ExitProcess, <span class=\"hljs-number\">0</span>\n\t\nmain ENDP\nEND main\n</code></pre>",
+  "rawMarkdown": "\n```cpp\n.386\n.model flat, stdcall\n.stack 4096\n\nExitProcess PROTO, dwExitCode: DWORD\n\n.data\n\tary1 db 1, -1, 2, -2\n\n.code\nmain PROC\n\tmovzx cx, ary1[0]\t; cx = 00000000 00000001\n\tmovsx dx, ary1[1]\t; dx = 11111111 11111111 (sign-extended) which is -1 in 2s complement\n\n\t; if we were to do:\n\tmovzx bx, ary1[1] ; bx = 000000000 11111111 (zero-extended) which is not -1 in 2s complement\n\tmovsx bx, ary1[0] ; bx = 000000000 00000001 (sign-extended) which is 1\n\n\t; movsx eax, 0Fh ; Error, immediate vals are not accepted\n\t; movzx eax, 0Fh ; Error, immediate vals are not accepted\n\t; so we need to load the immediate into a register first\n\tmov al, 0Fh\n\tmovsx bx, al ; bx = 00000000 00001111 (sign-extended) which is 15\n\n\tmov eax, offset ary1\n\t; movsx ebx, byte ptr [eax+3] ; Error, size must be specified for memory operand\n\tmovsx ebx, byte ptr [eax+3] ; ebx = 11111111 11111110 (sign-extended) which is -2 in 2s complement\n\n\tinvoke ExitProcess, 0\n\t\nmain ENDP\nEND main\n```",
+  "wordCount": 161,
+  "backlinks": [
+    {
+      "slug": "moc-coal",
+      "title": "(MOC)   C.O.A.L"
+    },
+    {
+      "slug": "assignment-1-takeaways",
+      "title": "Assignment 1   Takeaways"
+    }
+  ],
+  "relativePath": "10_University/Semester_03/C.O.A.L/1.4 Movsx and Movzx.md",
+  "filename": "1.4 Movsx and Movzx"
+}
